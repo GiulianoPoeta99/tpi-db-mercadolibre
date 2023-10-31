@@ -6,14 +6,14 @@ CREATE TABLE usuario (
 );
 
 CREATE TABLE empresa (
-    usuario INT NOT NULL PRIMARY KEY REFERENCES usuario(numero_cliente),
+    usuario INT NOT NULL PRIMARY KEY REFERENCES usuario(numero_cliente) ON DELETE RESTRICT ON UPDATE CASCADE,
     CUIT VARCHAR(15) NOT NULL UNIQUE,
     nombre_fantasia VARCHAR(255) NOT NULL UNIQUE,
     fecha_creacion DATE NOT NULL 
 );
 
 CREATE TABLE particular (
-    usuario INT NOT NULL PRIMARY KEY REFERENCES usuario(numero_cliente),
+    usuario INT NOT NULL PRIMARY KEY REFERENCES usuario(numero_cliente) ON DELETE RESTRICT ON UPDATE CASCADE,
     DNI VARCHAR(15) NOT NULL UNIQUE,
     fecha_nacimiento DATE NOT NULL,
     nombre VARCHAR(255) NOT NULL,
@@ -36,7 +36,7 @@ CREATE TABLE metodo_de_pago (
     fecha_caducidad DATE NOT NULL,
     empresa_emisora VARCHAR(255) NOT NULL, /* hay que agregar check */
     tipo VARCHAR(255) NOT NULL, /* hay que agregar check */
-    usuario INT NOT NULL REFERENCES usuario(numero_cliente)
+    usuario INT NOT NULL REFERENCES usuario(numero_cliente) ON DELETE RESTRICT ON UPDATE CASCADE
 );
 
 CREATE TABLE producto (
@@ -48,7 +48,7 @@ CREATE TABLE producto (
     nombre_producto VARCHAR(255) NOT NULL,
     stock INT NOT NULL,
     calificacion INT NOT NULL, /* hay que agregar check */
-    usuario INT NOT NULL REFERENCES usuario(numero_cliente)
+    usuario INT NOT NULL REFERENCES usuario(numero_cliente) ON DELETE RESTRICT ON UPDATE CASCADE
 );
 
 CREATE TABLE categoria (
@@ -57,8 +57,8 @@ CREATE TABLE categoria (
 );
 
 CREATE TABLE categoria_subcategoria (
-    tiene_categoria INT NOT NULL REFERENCES categoria(id_categoria),
-    es_subcategoria INT NOT NULL REFERENCES categoria(id_categoria),
+    tiene_categoria INT NOT NULL REFERENCES categoria(id_categoria) ON DELETE RESTRICT ON UPDATE CASCADE,
+    es_subcategoria INT NOT NULL REFERENCES categoria(id_categoria) ON DELETE RESTRICT ON UPDATE CASCADE,
     PRIMARY KEY (tiene_categoria, es_subcategoria)
 );
 
@@ -76,7 +76,7 @@ CREATE TABLE pregunta (
 );
 
 CREATE TABLE imagen (
-    producto INT NOT NULL REFERENCES producto(numero_articulo),
+    producto INT NOT NULL REFERENCES producto(numero_articulo) ON DELETE RESTRICT ON UPDATE CASCADE,
     imagen VARCHAR(255) NOT NULL,
     PRIMARY KEY (producto, imagen)
 );
@@ -90,15 +90,15 @@ CREATE TABLE resenia (
     id_reseña SERIAL NOT NULL PRIMARY KEY,
     reseña_producto TEXT NOT NULL,
     calificacion INT NOT NULL,
-    producto INT NOT NULL REFERENCES producto(numero_articulo)
+    producto INT NOT NULL REFERENCES producto(numero_articulo) ON DELETE RESTRICT ON UPDATE CASCADE
 );
 
 CREATE TABLE pedido (
     numero_de_pedido SERIAL NOT NULL PRIMARY KEY,
     fecha_pedido DATE NOT NULL,
-    metodo_pago INT NOT NULL REFERENCES metodo_de_pago(id_tarjeta),
-    particular INT NOT NULL REFERENCES particular(usuario),
-    resenia INT NOT NULL REFERENCES resenia(id_reseña)
+    metodo_pago INT NOT NULL REFERENCES metodo_de_pago(id_tarjeta) ON DELETE RESTRICT ON UPDATE CASCADE,
+    particular INT NOT NULL REFERENCES particular(usuario) ON DELETE RESTRICT ON UPDATE CASCADE,
+    resenia INT NOT NULL REFERENCES resenia(id_reseña) ON DELETE RESTRICT ON UPDATE CASCADE
 );
 
 CREATE TABLE item (
@@ -107,45 +107,45 @@ CREATE TABLE item (
     estado VARCHAR(255) NOT NULL, /* hay que agregar check */
     tipo_entrega VARCHAR(255) NOT NULL,
     envio_domicilio BOOLEAN NOT NULL,
-    usuario INT NOT NULL REFERENCES usuario(numero_cliente),
-    producto INT NOT NULL REFERENCES producto(numero_articulo),
-    direccion INT NOT NULL REFERENCES direccion(id_direccion),
-    pedido INT NOT NULL REFERENCES pedido(numero_de_pedido)
+    usuario INT NOT NULL REFERENCES usuario(numero_cliente) ON DELETE RESTRICT ON UPDATE CASCADE,
+    producto INT NOT NULL REFERENCES producto(numero_articulo) ON DELETE RESTRICT ON UPDATE CASCADE,
+    direccion INT NOT NULL REFERENCES direccion(id_direccion) ON DELETE RESTRICT ON UPDATE CASCADE,
+    pedido INT NOT NULL REFERENCES pedido(numero_de_pedido) ON DELETE RESTRICT ON UPDATE CASCADE
 );
 
 CREATE TABLE usuario_direccion (
-    usuario INT NOT NULL REFERENCES usuario(numero_cliente),
-    direccion INT NOT NULL REFERENCES direccion(id_direccion),
+    usuario INT NOT NULL REFERENCES usuario(numero_cliente) ON DELETE RESTRICT ON UPDATE CASCADE,
+    direccion INT NOT NULL REFERENCES direccion(id_direccion) ON DELETE RESTRICT ON UPDATE CASCADE,
     PRIMARY KEY (usuario, direccion)
 );
 
 CREATE TABLE item_envio (
-    item INT NOT NULL PRIMARY KEY REFERENCES item(id_item),
-    envio INT NOT NULL REFERENCES envio(id_envio)
+    item INT NOT NULL PRIMARY KEY REFERENCES item(id_item) ON DELETE RESTRICT ON UPDATE CASCADE,
+    envio INT NOT NULL REFERENCES envio(id_envio) ON DELETE RESTRICT ON UPDATE CASCADE
 );
 
 CREATE TABLE pregunta_producto_usuario (
-    pregunta INT NOT NULL REFERENCES pregunta(id_pregunta),
-    producto INT NOT NULL REFERENCES producto(numero_articulo),
-    usuario INT NOT NULL REFERENCES usuario(numero_cliente),
+    pregunta INT NOT NULL REFERENCES pregunta(id_pregunta) ON DELETE RESTRICT ON UPDATE CASCADE,
+    producto INT NOT NULL REFERENCES producto(numero_articulo) ON DELETE RESTRICT ON UPDATE CASCADE,
+    usuario INT NOT NULL REFERENCES usuario(numero_cliente) ON DELETE RESTRICT ON UPDATE CASCADE,
     PRIMARY KEY (pregunta, producto, usuario)
 );
 
 CREATE TABLE producto_categoria (
-    producto INT NOT NULL REFERENCES producto(numero_articulo),
-    categoria INT NOT NULL REFERENCES categoria(id_categoria),
+    producto INT NOT NULL REFERENCES producto(numero_articulo) ON DELETE RESTRICT ON UPDATE CASCADE,
+    categoria INT NOT NULL REFERENCES categoria(id_categoria) ON DELETE RESTRICT ON UPDATE CASCADE,
     PRIMARY KEY (producto, categoria)
 );
 
 CREATE TABLE pregunta_respuesta (
-    pregunta INT NOT NULL REFERENCES pregunta(id_pregunta),
-    respuesta INT NOT NULL REFERENCES pregunta(id_pregunta),
+    pregunta INT NOT NULL REFERENCES pregunta(id_pregunta) ON DELETE RESTRICT ON UPDATE CASCADE,
+    respuesta INT NOT NULL REFERENCES pregunta(id_pregunta) ON DELETE RESTRICT ON UPDATE CASCADE,
     PRIMARY KEY (pregunta, respuesta)
 );
 
 CREATE TABLE oferta_producto (
-    oferta INT NOT NULL REFERENCES oferta(id_oferta),
-    producto INT NOT NULL REFERENCES producto(numero_articulo),
+    oferta INT NOT NULL REFERENCES oferta(id_oferta) ON DELETE RESTRICT ON UPDATE CASCADE,
+    producto INT NOT NULL REFERENCES producto(numero_articulo) ON DELETE RESTRICT ON UPDATE CASCADE,
     PRIMARY KEY (oferta, producto)
 );
 
