@@ -2,7 +2,7 @@ CREATE TABLE usuario (
 	numero_cliente serial NOT NULL PRIMARY KEY,
 	correo_electronico VARCHAR(255) UNIQUE NOT NULL,
 	telefono VARCHAR(15) UNIQUE NOT NULL,
-	contraseña VARCHAR(255) NOT NULL
+	contrasenia VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE empresa (
@@ -87,8 +87,8 @@ CREATE TABLE envio (
 );
 
 CREATE TABLE resenia (
-    id_reseña SERIAL NOT NULL PRIMARY KEY,
-    reseña_producto TEXT NOT NULL,
+    id_resenia SERIAL NOT NULL PRIMARY KEY,
+    resenia_producto TEXT NOT NULL,
     calificacion INT NOT NULL,
     producto INT NOT NULL REFERENCES producto(numero_articulo) ON DELETE RESTRICT ON UPDATE CASCADE
 );
@@ -98,7 +98,7 @@ CREATE TABLE pedido (
     fecha_pedido DATE NOT NULL,
     metodo_pago INT NOT NULL REFERENCES metodo_de_pago(id_tarjeta) ON DELETE RESTRICT ON UPDATE CASCADE,
     particular INT NOT NULL REFERENCES particular(usuario) ON DELETE RESTRICT ON UPDATE CASCADE,
-    resenia INT NOT NULL REFERENCES resenia(id_reseña) ON DELETE RESTRICT ON UPDATE CASCADE
+    resenia INT NOT NULL REFERENCES resenia(id_resenia) ON DELETE RESTRICT ON UPDATE CASCADE
 );
 
 CREATE TABLE item (
