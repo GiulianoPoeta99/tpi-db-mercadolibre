@@ -1,14 +1,7 @@
 from faker import Faker
 import psycopg2
 import random
-from datetime import datetime, timedelta
-
-# Datos de conexión
-DB_NAME = "mercadoLibre"
-DB_USER = "dbi"
-DB_PASS = "123456"
-DB_HOST = "localhost"  # Por lo general, localhost si estás trabajando de manera local
-DB_PORT = "5435"
+from constantes import *
 
 # Crear una conexión a la base de datos
 conn = psycopg2.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASS, host=DB_HOST, port=DB_PORT)
