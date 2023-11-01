@@ -1,13 +1,13 @@
 CREATE TABLE usuario (
 	numero_cliente serial NOT NULL PRIMARY KEY,
 	correo_electronico VARCHAR(255) UNIQUE NOT NULL,
-	telefono VARCHAR(15) UNIQUE NOT NULL,
+	telefono VARCHAR(20) UNIQUE NOT NULL,
 	contrasenia VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE empresa (
     usuario INT NOT NULL PRIMARY KEY REFERENCES usuario(numero_cliente) ON DELETE RESTRICT ON UPDATE CASCADE,
-    CUIT VARCHAR(15) NOT NULL UNIQUE,
+    cuit VARCHAR(15) NOT NULL UNIQUE,
     nombre_fantasia VARCHAR(255) NOT NULL UNIQUE,
     fecha_creacion DATE NOT NULL 
 );
