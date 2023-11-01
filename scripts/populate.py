@@ -35,18 +35,6 @@ while count < 500:
         print("Error en usuarios:", e)
         conn.rollback()
 
-<<<<<<< HEAD
-# CREATE TABLE empresa (
-#     usuario INT NOT NULL PRIMARY KEY REFERENCES usuario(numero_cliente) ON DELETE RESTRICT ON UPDATE CASCADE,
-#     CUIT VARCHAR(15) NOT NULL UNIQUE,
-#     nombre_fantasia VARCHAR(255) NOT NULL UNIQUE,
-#     fecha_creacion DATE NOT NULL 
-# );
-for _ in range(500):
-    usuarioRandom = random.randint(1, 500)
-    cuit = str(random.randint(10000000, 99999999))
-    
-=======
 # empresa
 count = 0
 while count < 100:
@@ -63,7 +51,6 @@ while count < 100:
         print("Error en Empresa:", e)
         conn.rollback()
 
->>>>>>> 22d6c2f5e42383f260329a37c67ab2d12c9103f4
 conn.commit()
 cur.close()
 conn.close()
