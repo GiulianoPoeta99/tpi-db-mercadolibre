@@ -3,16 +3,17 @@ import psycopg2
 import random
 
 # Datos de conexión
-DB_NAME = "mercado_libre_db"
-DB_USER = "mercado_libre_db"
-DB_PASS = "mercado_libre_db"
+DB_NAME = "mercadoLibre"
+DB_USER = "dbi"
+DB_PASS = "123456"
 DB_HOST = "localhost"  # Por lo general, localhost si estás trabajando de manera local
-DB_PORT = "6004"
+DB_PORT = "5435"
 
 # Crear una conexión a la base de datos
 conn = psycopg2.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASS, host=DB_HOST, port=DB_PORT)
 
 # creamos onjeto fake
+
 fakeEn = Faker()
 fakeEsEs = Faker()
 fakeEsAr = Faker()
@@ -36,7 +37,6 @@ for _ in range(500):
     usuarioRandom = random.randint(1, 500)
     cuit = str(random.randint(10000000, 99999999))
     
-
 conn.commit()
 cur.close()
 conn.close()
