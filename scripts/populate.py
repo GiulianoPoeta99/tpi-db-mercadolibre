@@ -1,6 +1,7 @@
 from faker import Faker
 import psycopg2
 import random
+from datetime import datetime, timedelta
 
 # Datos de conexión
 DB_NAME = "mercado_libre_db"
@@ -14,28 +15,40 @@ conn = psycopg2.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASS, host=DB_
 
 # creamos onjeto fake
 fakeEn = Faker()
-fakeEsEs = Faker()
-fakeEsAr = Faker()
+fakeEsEs = Faker('es_ES')
+fakeEsAr = Faker('es_AR')
 
 cur = conn.cursor()
 
 # rellenamos tabla usuario
-for _ in range(500):
-    email = fakeEn.email()
-    telefono = fakeEn.msisdn()
-    contrasenia = fakeEn.lexify(text='??????????')
-    cur.execute("INSERT INTO usuario (correo_electronico, telefono, contrasenia) VALUES (%s, %s, %s)", (email, telefono, contrasenia))
+count = 0
+while count < 500:
+    try:
+        email = fakeEsAr.email()
+        telefono = fakeEsAr.phone_number()
+        contrasenia = fakeEn.lexify(text='??????????')
+        cur.execute("INSERT INTO usuario (correo_electronico, telefono, contrasenia) VALUES (%s, %s, %s)", (email, telefono, contrasenia))
+        conn.commit()
+        count += 1
+    except psycopg2.Error as e:
+        print("Error en usuarios:", e)
+        conn.rollback()
 
-# CREATE TABLE empresa (
-#     usuario INT NOT NULL PRIMARY KEY REFERENCES usuario(numero_cliente) ON DELETE RESTRICT ON UPDATE CASCADE,
-#     CUIT VARCHAR(15) NOT NULL UNIQUE,
-#     nombre_fantasia VARCHAR(255) NOT NULL UNIQUE,
-#     fecha_creacion DATE NOT NULL 
-# );
-for _ in range(500):
-    usuarioRandom = random.randint(1, 500)
-    cuit = str(random.randint(10000000, 99999999))
-    
+# empresa
+count = 0
+while count < 100:
+    try:
+        usuarioRandom = random.randint(1, 500)
+        cuit = fakeEn.bothify(text='##-########-#')
+        nombreFantasia = fakeEsEs.company()
+        fecha_creacion = fakeEn.past_date('-18263d') # Genera una fecha pasada aleatoria en los últimos 50 años
+
+        cur.execute("INSERT INTO empresa (usuario, cuit, nombre_fantasia, fecha_creacion) VALUES (%s, %s, %s, %s)", (usuarioRandom, cuit, nombreFantasia, fecha_creacion))
+        conn.commit()
+        count += 1
+    except psycopg2.Error as e:
+        print("Error en Empresa:", e)
+        conn.rollback()
 
 conn.commit()
 cur.close()
