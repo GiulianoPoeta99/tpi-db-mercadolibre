@@ -7,20 +7,20 @@ from customProviders import *
 # obtengo los usuarios
 def getUsers():
     query = "SELECT numero_cliente FROM usuario"
-    cur.execute(query)
-    allUsers = cur.fetchall()
+    cursor.execute(query)
+    allUsers = cursor.fetchall()
     allUsers = [element[0] for element in allUsers]
     return allUsers 
 
 # Crear una conexión a la base de datos
-conn = psycopg2.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASS, host=DB_HOST, port=DB_PORT)
+connection = psycopg2.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASS, host=DB_HOST, port=DB_PORT)
 
 # creamos onjetos fake en diferentes regiones
 fakeEn = Faker()
 fakeEsEs = Faker('es_ES')
 fakeEsAr = Faker('es_AR')
 
-cur = conn.cursor()
+cursor = connection.cursor()
 
 print('Quiere crear la base de datos?')
 createDatabase = ''
@@ -39,8 +39,8 @@ if (createDatabase == 's'):
     except Exception as e:
         print(f"Ocurrió un error al leer el archivo: {str(e)}")
 
-    cur.execute(content)
-    conn.commit()
+    cursor.execute(content)
+    connection.commit()
 
 # tabla usuario
 table = 'usuario'
@@ -58,12 +58,12 @@ if (fillUsers == 's'):
         phone = fakeEsAr.phone_number()
         password = fakeEn.lexify(text='??????????')
         try:
-            cur.execute(f"INSERT INTO {table} (correo_electronico, telefono, contrasenia) VALUES ('{email}', '{phone}', '{password}')")
+            cursor.execute(f"INSERT INTO {table} (correo_electronico, telefono, contrasenia) VALUES ('{email}', '{phone}', '{password}')")
         except psycopg2.Error as error:
             print(f"Error en {table}: \n{error}")
-            conn.rollback()
+            connection.rollback()
         else:
-            conn.commit()
+            connection.commit()
             index += 1
         print(f"Completado: {index}/{count}")
 
@@ -87,19 +87,19 @@ if (fillCorporate == 's'):
         fantasyName = fakeEn.pymes_provider()
         creationDate = fakeEn.past_date('-18263d') # Genera una fecha pasada aleatoria en los últimos 50 años
         try:
-            cur.execute(f"INSERT INTO {table} (usuario, cuit, nombre_fantasia, fecha_creacion) VALUES ({randomUser}, '{cuit}', '{fantasyName}', '{creationDate}')")
+            cursor.execute(f"INSERT INTO {table} (usuario, cuit, nombre_fantasia, fecha_creacion) VALUES ({randomUser}, '{cuit}', '{fantasyName}', '{creationDate}')")
         except psycopg2.Error as error:
             print(f"Error en {table}: \n{error}")
-            conn.rollback()
+            connection.rollback()
         else:
-            conn.commit()
+            connection.commit()
             index += 1
         print(f"Completado: {index}/{count}")
 
 # obtengo los usuarios que no son empresas
 query = "SELECT usuario FROM empresa"
-cur.execute(query)
-corporateUser = cur.fetchall()
+cursor.execute(query)
+corporateUser = cursor.fetchall()
 corporateUser = [element[0] for element in corporateUser]
 allUsersAvailable = set(getUsers()) - set(corporateUser)
 
@@ -121,19 +121,19 @@ if (fillParticular == 's'):
         firstName = fakeEsAr.first_name()
         lastName = fakeEsAr.last_name()
         try:
-            cur.execute(f"INSERT INTO {table} (usuario, DNI, fecha_nacimiento, nombre, apellido) VALUES ({randomUser}, '{dni}', '{dateOfBirth}', '{firstName}', '{lastName}')")
+            cursor.execute(f"INSERT INTO {table} (usuario, DNI, fecha_nacimiento, nombre, apellido) VALUES ({randomUser}, '{dni}', '{dateOfBirth}', '{firstName}', '{lastName}')")
         except psycopg2.Error as error:
             print(f"Error en {table}: \n{error}")
-            conn.rollback()
+            connection.rollback()
         else:
-            conn.commit()
+            connection.commit()
             index += 1
 
         print(f"Completado: {index}/{count}")
 
-conn.commit()
-cur.close()
-conn.close()
+connection.commit()
+cursor.close()
+connection.close()
 
 
 
