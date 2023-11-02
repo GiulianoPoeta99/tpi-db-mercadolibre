@@ -90,25 +90,25 @@ arg_lastname_provider= DynamicProvider(
 arg_prefixphone_provider = DynamicProvider(
     provider_name = "prefixphone_procider",
     elements=[
-        "11","221","223","291","3833","351"
-        ,"3783","3722","2965","343","3717","2954"
-        ,"3822","261","3752","299","2920","387","264"
-        ,"2652","2966","342","341","385","381","2901"
+        "11","221","223","291","3833","351",
+        "3783","3722","2965","343","3717","2954",
+        "3822","261","3752","299","2920","387","264",
+        "2652","2966","342","341","385","381","2901"
     ]
 )
 
 arg_cat_provider = DynamicProvider(
     provider_name = "cat_provider",
     elements = [
-        "Electrónica","Ropa y Accesorios","Calzado","Belleza y Cuidado Personal"
-        ,"Hogar","Jardín","Deportes y Actividades al Aire Libre","Juguetes y Juegos"
-        ,"Libros y Material de Oficina","Electrodomésticos","Muebles","Alimentos y Bebidas"
-        ,"Automóviles y Accesorios","Instrumentos Musicales","Arte y Manualidades",
+        "Electrónica","Ropa y Accesorios","Calzado","Belleza y Cuidado Personal",
+        "Hogar","Jardín","Deportes y Actividades al Aire Libre","Juguetes y Juegos",
+        "Libros y Material de Oficina","Electrodomésticos","Muebles","Alimentos y Bebidas",
+        "Automóviles y Accesorios","Instrumentos Musicales","Arte y Manualidades",
         "Electrónica de Consumo","Salud y Bienestar","Maletas y Equipaje",
         "Productos para Bebés y Niños","Joyas y Relojes","Electrodomésticos de Cocina",
-        "Herramientas y Mejoras para el Hogar","Productos para Mascotas","Equipamiento para Negocios"
-        ,"Productos para el Cuidado del Cabello","Cámaras y Fotografía","Equipamiento para Deportes y Fitness"
-        ,"Equipos de Oficina","Juegos de Mesa y Rompecabezas","Suministros para Fiestas y Eventos",
+        "Herramientas y Mejoras para el Hogar","Productos para Mascotas","Equipamiento para Negocios",
+        "Productos para el Cuidado del Cabello","Cámaras y Fotografía","Equipamiento para Deportes y Fitness",
+        "Equipos de Oficina","Juegos de Mesa y Rompecabezas","Suministros para Fiestas y Eventos",
         "Equipamiento para Viajes y Aventuras","Productos para el Cuidado de la Piel",
         "Equipamiento para Acampar y Excursionismo","Equipamiento para Actividades Acuáticas",
         "Electrodomésticos para la Limpieza","Equipamiento para la Playa y Piscina",
@@ -151,8 +151,8 @@ arg_pymes_provider = DynamicProvider(
         "UrbanHarvest","SkyHighAdventures","GoldenCoast","InnovaTech","FreshMarket","EliteEvents",
         "OceanVoyage","IdeaFactory","SunsetView","SilverLining","UrbanStyle","PacificPearls",
         "HarmonyHomes","ZenithBuilders","NatureFresh","EnchantedGardens","SunriseVista",
-        "RoyalRidge","DreamBuilders","AmberWaves","RadiantRidge","StarrySkies","OceanBreeze"
-        ,"PacificPearls","GoldenFields","WhisperingWinds","NovaBuilders","BlissfulBoutique",
+        "RoyalRidge","DreamBuilders","AmberWaves","RadiantRidge","StarrySkies","OceanBreeze",
+        "PacificPearls","GoldenFields","WhisperingWinds","NovaBuilders","BlissfulBoutique",
         "UrbanEscape","LuxeDesigns","RadiantGrove","SeaBreeze","AmbientGlow","EmeraldEchoes",
         "TechNova","GlobalGenius","EmpireBuilders","NatureNest","UrbanAura","EcoHarbor",
         "DreamyInteriors","TimelessTreasures","UrbanVibe","StarrySkies","RadiantRidge",
