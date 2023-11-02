@@ -148,6 +148,3 @@ CREATE TABLE oferta_producto (
     producto INT NOT NULL REFERENCES producto(numero_articulo) ON DELETE RESTRICT ON UPDATE CASCADE,
     PRIMARY KEY (oferta, producto)
 );
-
-
-
