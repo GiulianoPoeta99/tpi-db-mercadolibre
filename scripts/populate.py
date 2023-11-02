@@ -1,7 +1,6 @@
 from faker import Faker
 import psycopg2
 import random
-from dynamicProvider import *
 from constantes import *
 from customProviders import *
 
