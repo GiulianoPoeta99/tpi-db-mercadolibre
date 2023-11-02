@@ -1,6 +1,0 @@
-# Datos de conexión
-DB_NAME = ""
-DB_USER = ""
-DB_PASS = ""
-DB_HOST = ""  # Por lo general, localhost si estás trabajando de manera local
-DB_PORT = ""

@@ -3,7 +3,7 @@ from faker.providers import DynamicProvider
 
 
 arg_province_provider = DynamicProvider(
-    provider_name="province_provider",
+    provider_name="province_provider", #nombre del metodo
     elements=["Buenos Aires", "Catamarca", "Chaco", "Chubut", "Córdoba", "Corrientes", "Entre Ríos", "Formosa", "Jujuy", "La Pampa", "La Rioja", "Mendoza", "Misiones", "Neuquén", "Río Negro", "Salta", "San Juan", "San Luis", "Santa Cruz", "Santa Fe", "Santiago del Estero", "Tierra del Fuego", "Tucumán"
     ],
 )
@@ -21,7 +21,7 @@ arg_lastname_provider= DynamicProvider(
 )
 
 arg_prefixphone_provider = DynamicProvider(
-    provider_name="prefixphone_procider",
+    provider_name="prefixphone_provider",
     elements=["11","221","223","291","3833","351","3783","3722","2965","343","3717","2954","3822","261","3752","299","2920","387","264","2652","2966","342","341","385","381","2901"]
 )
 
@@ -38,10 +38,11 @@ arg_pymes_provider = DynamicProvider(
 )
 
 fake = Faker()
+fake.add_provider(arg_province_provider)
 
 for _ in range(100):
     # then add new provider to faker instance
-    fake.add_provider(arg_province_provider)
+    
     # now you can use:
     print(fake.province_provider())
     # 'dr.'
