@@ -46,3 +46,4 @@ def createDataBase(connection: psycopg2.extensions.connection, cursor: psycopg2.
             print('\n'+ Fore.RED + '✘ - No se creo la base de datos exitosamente. - ✘')
         else:
             print('\n'+ Fore.YELLOW + '⚠ - Se creo la base de datos parcialmente. - ⚠')
+    print('\n')

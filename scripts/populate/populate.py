@@ -16,6 +16,9 @@ init(autoreset=True)
 # constantes
 YES_NO = Fore.GREEN + 's' + Fore.RESET + '/' + Fore.RED + 'n' + Fore.RESET
 
+def clearScreen() -> None:
+    os.system('clear')
+
 # obtengo los usuarios
 def getUsers() -> list:
     query = "SELECT numero_cliente FROM usuario"
@@ -24,15 +27,27 @@ def getUsers() -> list:
     allUsers = [element[0] for element in allUsers]
     return allUsers 
 
-def clearScreen() -> None:
-    os.system('clear')
-
 def askTable(number: int, table: str) -> str:
     print(Fore.MAGENTA + f'({number})' + Fore.RESET + f' ¿Quiere cargar la tabla {table}?')
     fillTable = ''
     while ((fillTable != 's') & (fillTable != 'n')):
         fillTable = input(YES_NO + '\n')
     return fillTable
+
+def viewErrors(errors) -> None:
+    print(Fore.RED + '(!)' + Fore.RESET + ' ¿Desea ver los errores durante la creación de datos?')
+    seeErrors = ''
+    while ((seeErrors != 's') & (seeErrors != 'n')):
+        seeErrors = input(YES_NO + '\n')
+
+    clearScreen()
+    if (seeErrors == 's'):
+        if (len(errors) != 0):
+            for numberError, error in errors:
+                print(Fore.RED + str(numberError) +Fore.RESET + error)
+        else:
+            print(Fore.LIGHTGREEN_EX + 'No se produjeron errores durante la ejecucion.')
+        print (Fore.YELLOW + '(*)' + Fore.RESET + ' Hubo un total de ' + Fore.RED + str(len(errors)) + Fore.RESET)
 
 # Crear una conexión a la base de datos y habilitamos el cursor
 connection = psycopg2.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASS, host=DB_HOST, port=DB_PORT)
@@ -64,6 +79,7 @@ clearScreen()
 if (fillUsers == 's'):
     index = 0
     count = 0
+    errors = []
 
     while ((count < 100) | (count > 5000)):
         count = input('¿Cuantos usuarios quiere agregar?\n' + Fore.YELLOW + '⚠ - Recomendamos no menos de 100 usuarios y no mas de 5000. - ⚠\n' + Fore.RESET)
@@ -78,7 +94,7 @@ if (fillUsers == 's'):
             try:
                 cursor.execute(f"INSERT INTO {table} (correo_electronico, telefono, contrasenia) VALUES ('{email}', '{phone}', '{password}')")
             except psycopg2.Error as error:
-                print(Fore.YELLOW + f"⚠ Error en {table}:{Fore.RESET}\n{error}")
+                errors.append(Fore.YELLOW + f"⚠ Error en {table}:{Fore.RESET}\n{error}")
                 connection.rollback()
                 sleep(0.02)
             else:
@@ -87,7 +103,8 @@ if (fillUsers == 's'):
                 sleep(0.02)
                 bar()
     print('\n')
-
+    viewErrors(errors)
+    print('\n')
 
 # tabla empresa
 table = 'empresa'
@@ -99,6 +116,7 @@ if (fillCorporate == 's'):
     index = 0
     # count = len(getUsers()) // 3
     count = 100
+    errors = []
 
     clearScreen()
     with alive_bar(count, title='Creando...', bar='filling', spinner='arrows') as bar:
@@ -111,7 +129,7 @@ if (fillCorporate == 's'):
             try:
                 cursor.execute(f"INSERT INTO {table} (usuario, cuit, nombre_fantasia, fecha_creacion) VALUES ({randomUser}, '{cuit}', '{fantasyName}', '{creationDate}')")
             except psycopg2.Error as error:
-                print(Fore.YELLOW + f"⚠ Error en {table}:{Fore.RESET}\n{error}")
+                errors.append(Fore.YELLOW + f"⚠ Error en {table}:{Fore.RESET}\n{error}")
                 connection.rollback()
                 sleep(0.02)
             else:
@@ -119,7 +137,10 @@ if (fillCorporate == 's'):
                 index += 1
                 sleep(0.02)
                 bar()  
-    print('\n')    
+    print('\n')
+    viewErrors(errors)
+    print('\n')
+
 
 #tabla particular
 table = 'particular'
@@ -129,6 +150,7 @@ fillParticular = askTable(3, table)
 clearScreen()
 if (fillParticular == 's'):
     index = 0
+    errors = []
 
     # obtengo los usuarios que no son empresas
     query = "SELECT usuario FROM empresa"
@@ -148,7 +170,7 @@ if (fillParticular == 's'):
             try:
                 cursor.execute(f"INSERT INTO {table} (usuario, DNI, fecha_nacimiento, nombre, apellido) VALUES ({randomUser}, '{dni}', '{dateOfBirth}', '{firstName}', '{lastName}')")
             except psycopg2.Error as error:
-                print(Fore.YELLOW + f"⚠ Error en {table}:{Fore.RESET}\n{error}")
+                errors.append(Fore.YELLOW + f"⚠ Error en {table}:{Fore.RESET}\n{error}")
                 connection.rollback()
                 sleep(0.02)
             else:
@@ -157,13 +179,17 @@ if (fillParticular == 's'):
                 sleep(0.02)
                 bar() 
     print('\n')
+    viewErrors(errors)
+    print('\n')
+
 
 connection.commit()
 cursor.close()
 connection.close()
 
 sleep(2)
-clearScreen()
+# clearScreen()
+# sleep(0.10)
 print(Fore.GREEN + "✔ - La base de datos fue poblada exitosamente. - ✔")
 sleep(0.10)
 
