@@ -4,7 +4,7 @@ from colorama import init, Fore
 # Inicializa colorama para sistemas Windows
 init(autoreset=True)
 
-def createDataBase(connection, cursor):
+def createDataBase(connection: psycopg2.extensions.connection, cursor: psycopg2.extensions.cursor) -> None:
     # traigo el contenido del ddl para ejecutarlo
     database = "./scripts/ddl.sql"  
     content = ""

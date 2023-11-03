@@ -7,31 +7,39 @@ from constantes import *
 from customProviders import *
 from createDataBase import *
 
+# Inicializa colorama para sistemas Windows
+init(autoreset=True)
+
+# constantes
+YES_NO = Fore.GREEN + 's' + Fore.RESET + '/' + Fore.RED + 'n' + Fore.RESET
+
 # obtengo los usuarios
-def getUsers():
+def getUsers() -> list:
     query = "SELECT numero_cliente FROM usuario"
     cursor.execute(query)
     allUsers = cursor.fetchall()
     allUsers = [element[0] for element in allUsers]
     return allUsers 
 
-def clearScreen():
+def clearScreen() -> None:
     os.system('clear')
 
-# Inicializa colorama para sistemas Windows
-init(autoreset=True)
+def askTable(number: int, table: str) -> str:
+    print(Fore.MAGENTA + f'({number})' + Fore.RESET + f'¿Quiere cargar la tabla {table}?')
+    fillTable = ''
+    while ((fillTable != 's') & (fillTable != 'n')):
+        fillTable = input(YES_NO + '\n')
+    return fillTable
 
-YES_NO = Fore.GREEN + 's' + Fore.RESET + '/' + Fore.RED + 'n' + Fore.RESET
-
-# Crear una conexión a la base de datos
+# Crear una conexión a la base de datos y habilitamos el cursor
 connection = psycopg2.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASS, host=DB_HOST, port=DB_PORT)
+cursor = connection.cursor()
 
-# creamos onjetos fake en diferentes regiones
+# creamos objetos fake en diferentes regiones
 fakeEn = Faker() # ingles
 fakeEsAr = Faker('es_AR') # español argentina
 
-cursor = connection.cursor()
-
+# creamos la bd si se solicita
 clearScreen()
 print('Quiere crear la base de datos?')
 createDatabase = ''
@@ -46,15 +54,11 @@ if (createDatabase == 's'):
 table = 'usuario'
 
 print('\n')
-
 print(Fore.YELLOW + '⚠ - SI hubo algun problema en la etapa anterior cancele la ejecucion con CTRL+C - ⚠')
-print(f'Quiere cargar la tabla {table}?')
-fillUsers = ''
-while ((fillUsers != 's') & (fillUsers != 'n')):
-    fillUsers = input(YES_NO + '\n')
+
+fillUsers = askTable(1, table)
 
 clearScreen()
-
 if (fillUsers == 's'):
     index = 0
     count = 500
@@ -72,21 +76,24 @@ if (fillUsers == 's'):
             index += 1
         print(f"Completado: {index}/{count}")
 
-allUsers = getUsers()
 
 # tabla empresa
 table = 'empresa'
 
-print(f'Quiere cargar la tabla {table}?')
-fillCorporate = ''
-while ((fillCorporate != 's') & (fillCorporate != 'n')):
-    fillCorporate = input(YES_NO + '\n')
+fillCorporate = askTable(2, table)
 
+clearScreen()
 if (fillCorporate == 's'):
     index = 0
-    count = 100
+    count = 0
+    
+    while ((count < 100) & (count > 5000)):
+        count = input('¿Cuantos usuarios quiere agregar?\n' + Fore.YELLOW + '⚠ - Recomendamos no menos de 100 usuarios y no mas de 5000. - ⚠\n' + Fore.RESET)
+        count = int(count)
+
+    clearScreen()
     while (index < count):
-        randomUser = random.choice(list(allUsers))
+        randomUser = random.choice(list(getUsers()))
         cuit = fakeEn.bothify(text = '##-########-#')
         fakeEn.add_provider(arg_pymes_provider)
         fantasyName = fakeEn.pymes_provider()
@@ -101,24 +108,23 @@ if (fillCorporate == 's'):
             index += 1
         print(f"Completado: {index}/{count}")
 
-# obtengo los usuarios que no son empresas
-query = "SELECT usuario FROM empresa"
-cursor.execute(query)
-corporateUser = cursor.fetchall()
-corporateUser = [element[0] for element in corporateUser]
-allUsersAvailable = set(getUsers()) - set(corporateUser)
-
 #tabla particular
 table = 'particular'
 
-print(f'Quiere cargar la tabla {table}?')
-fillParticular = ''
-while ((fillParticular != 's') & (fillParticular != 'n')):
-    fillParticular = input(YES_NO + '\n')
+fillParticular = askTable(3, table)
 
+clearScreen()
 if (fillParticular == 's'):
     index = 0
     count = 400
+
+    # obtengo los usuarios que no son empresas
+    query = "SELECT usuario FROM empresa"
+    cursor.execute(query)
+    corporateUser = cursor.fetchall()
+    corporateUser = [element[0] for element in corporateUser]
+    allUsersAvailable = set(getUsers()) - set(corporateUser)
+
     while (index < count):
         randomUser = random.choice(list(allUsersAvailable))
         dni = fakeEn.bothify(text = '########')
