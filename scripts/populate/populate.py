@@ -43,8 +43,8 @@ def viewErrors(errors) -> None:
     clearScreen()
     if (seeErrors == 's'):
         if (len(errors) != 0):
-            for numberError, error in errors:
-                print(Fore.RED + str(numberError) +Fore.RESET + error)
+            for numberError, error in enumerate(errors):
+                print(Fore.RED + '(' + str(numberError) + ') ' + Fore.RESET + error)
         else:
             print(Fore.LIGHTGREEN_EX + 'No se produjeron errores durante la ejecucion.')
         print (Fore.YELLOW + '(*)' + Fore.RESET + ' Hubo un total de ' + Fore.RED + str(len(errors)) + Fore.RESET)
