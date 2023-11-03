@@ -1,8 +1,11 @@
 from faker import Faker
+from colorama import init, Fore
 import psycopg2
 import random
+import os
 from constantes import *
 from customProviders import *
+from createDataBase import *
 
 # obtengo los usuarios
 def getUsers():
@@ -12,43 +15,45 @@ def getUsers():
     allUsers = [element[0] for element in allUsers]
     return allUsers 
 
+def clearScreen():
+    os.system('clear')
+
+# Inicializa colorama para sistemas Windows
+init(autoreset=True)
+
+YES_NO = Fore.GREEN + 's' + Fore.RESET + '/' + Fore.RED + 'n' + Fore.RESET
+
 # Crear una conexión a la base de datos
 connection = psycopg2.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASS, host=DB_HOST, port=DB_PORT)
 
 # creamos onjetos fake en diferentes regiones
-fakeEn = Faker()
-fakeEsEs = Faker('es_ES')
-fakeEsAr = Faker('es_AR')
+fakeEn = Faker() # ingles
+fakeEsAr = Faker('es_AR') # español argentina
 
 cursor = connection.cursor()
 
+clearScreen()
 print('Quiere crear la base de datos?')
 createDatabase = ''
 while ((createDatabase != 's') & (createDatabase != 'n')):
-    createDatabase = input('s/n\n')
+    createDatabase = input(YES_NO + '\n')
 
+clearScreen()
 if (createDatabase == 's'):
-    # traigo el contenido del ddl para ejecutarlo
-    database = "./scripts/ddl.sql"  
-    content = ""
-    try:
-        with open(database, "r", encoding="utf-8") as file:
-            content = file.read()
-    except FileNotFoundError:
-        print(f"El archivo {database} no fue encontrado.")
-    except Exception as e:
-        print(f"Ocurrió un error al leer el archivo: {str(e)}")
-
-    cursor.execute(content)
-    connection.commit()
+    createDataBase(connection, cursor)
 
 # tabla usuario
 table = 'usuario'
 
+print('\n')
+
+print(Fore.YELLOW + '⚠ - SI hubo algun problema en la etapa anterior cancele la ejecucion con CTRL+C - ⚠')
 print(f'Quiere cargar la tabla {table}?')
 fillUsers = ''
 while ((fillUsers != 's') & (fillUsers != 'n')):
-    fillUsers = input('s/n\n')
+    fillUsers = input(YES_NO + '\n')
+
+clearScreen()
 
 if (fillUsers == 's'):
     index = 0
@@ -75,7 +80,7 @@ table = 'empresa'
 print(f'Quiere cargar la tabla {table}?')
 fillCorporate = ''
 while ((fillCorporate != 's') & (fillCorporate != 'n')):
-    fillCorporate = input('s/n\n')
+    fillCorporate = input(YES_NO + '\n')
 
 if (fillCorporate == 's'):
     index = 0
@@ -109,7 +114,7 @@ table = 'particular'
 print(f'Quiere cargar la tabla {table}?')
 fillParticular = ''
 while ((fillParticular != 's') & (fillParticular != 'n')):
-    fillParticular = input('s/n\n')
+    fillParticular = input(YES_NO + '\n')
 
 if (fillParticular == 's'):
     index = 0
