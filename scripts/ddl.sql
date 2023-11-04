@@ -31,7 +31,7 @@ CREATE TABLE direccion (
 CREATE TABLE metodo_de_pago (
     id_tarjeta SERIAL PRIMARY KEY,
     titular VARCHAR(255) NOT NULL,
-    numero_tarjeta VARCHAR(20) NOT NULL UNIQUE,
+    numero_tarjeta VARCHAR(16) NOT NULL UNIQUE,
     clave_seguridad VARCHAR(10) NOT NULL,
     fecha_caducidad DATE NOT NULL,
     empresa_emisora VARCHAR(255) NOT NULL varchar(20) CHECK (empresa_emisora IN ('Visa', 'MasterCard', 'American Express', 'Maestro')),

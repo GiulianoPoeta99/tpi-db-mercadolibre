@@ -32,6 +32,9 @@ def getCount(count: int, lowerLimit: int, upperLimit: int) -> int:
         count = input('¿Cuantos registros quiere agregar?\n' + Fore.YELLOW + f'⚠ - Recomendamos no menos de {lowerLimit} registros y no mas de {upperLimit}. - ⚠\n' + Fore.RESET)
     return int(count)
 
+def getRandomUser(cursor):
+    return random.choice(list(getUsers(cursor)))
+
 def getTitleBar(table: str) -> str:
     return f'Llenando tabla ({table})...'
 
@@ -136,7 +139,7 @@ def fillCorporate(connection: psycopg2.extensions.connection, cursor: psycopg2.e
         clearScreen()
         with alive_bar(count, title = getTitleBar(table), bar = STYLE_BAR, spinner = STYLE_SPINNER) as bar:
             while (index < count):
-                randomUser = random.choice(list(getUsers(cursor)))
+                randomUser = getRandomUser(cursor)
                 cuit = fakeEn.bothify(text = '##-########-#')
                 fakeEn.add_provider(arg_pymes_provider)
                 fantasyName = fakeEn.pymes_provider()
@@ -203,8 +206,48 @@ def fillAdresses(connection: psycopg2.extensions.connection, cursor: psycopg2.ex
             while (index < count):
                 zipCode = random.randint(1001,9431)
                 street = fakeEsAr.street_name()
-                streetNumber = fakeEn.bothify(text='####')
+                streetNumber = fakeEn.bothify(text = '####')
                 insert = f"INSERT INTO {table} (codigo_postal, calle, altura) VALUES ('{zipCode}', '{street}', '{streetNumber}')"
+                try:
+                    cursor.execute(insert)
+                except psycopg2.Error as error:
+                    errors.append(Fore.YELLOW + f"⚠ Error en {table}:{Fore.RESET}\n{error}")
+                    connection.rollback()
+                    sleep(0.02)
+                else:
+                    connection.commit()
+                    index += 1
+                    sleep(0.02)
+                    bar()
+        print('\n')
+        viewErrors(errors)
+
+# tabla metodo_de_pago 
+def fillMetodoDePago(connection: psycopg2.extensions.connection, cursor: psycopg2.extensions.cursor) -> None:
+    table = 'metodo_de_pago'
+    fillTable = askTable(5, table)
+    clearScreen()
+    if (fillTable == 's'):
+        index = 0
+        count = 0
+        errors = []
+        count = getCount(count, 100, 500)
+        clearScreen()
+        with alive_bar(count, title = f'Llenando tabla ({table})...', bar = STYLE_BAR, spinner = STYLE_SPINNER) as bar:
+            while (index < count):
+                cardHolder = fakeEsAr.name()
+                cardNumber = fakeEn.bothify(text = '################')
+                securityKey = fakeEn.bothify(text = '###')
+                expirationDate = fakeEn.past_date('2555d')
+                partsExpirationDate = expirationDate.split('-')
+                expirationDate = partsExpirationDate[0] + '-' + partsExpirationDate[1] + '-01'
+                issuerCompany = random.choice(list(CARD_TYPES))
+                cardType = random.choice(list(ISSUER_COMPANY))
+                user = getRandomUser(cursor)
+
+                insert = f"INSERT INTO {table} (titular, numero_tarjeta, clave_seguridad, fecha_caducidad, empresa_emisora, tipo, usuario) VALUES ('{cardHolder}', '{cardNumber}', '{securityKey}', '{expirationDate}', '{issuerCompany}', '{cardType}', {user})"
+
+                # ¡Esto no se toca!                 
                 try:
                     cursor.execute(insert)
                 except psycopg2.Error as error:
