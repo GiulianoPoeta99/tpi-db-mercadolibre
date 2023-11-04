@@ -71,8 +71,10 @@ def viewErrors(errors: list) -> None:
 #                 # Definir los atributos de la tabla
 #                 # la documentacion para hacerlo es la siguiente:
 #                 # https://faker.readthedocs.io/en/master/index.html
-
+#
 #                 insert = f"INSERT INTO {table} ([ATRIBUTTES])) VALUES ([DEFINED_ATRIBUTTES])"
+#
+#                 # ¡Esto no se toca!                 
 #                 try:
 #                     cursor.execute(insert)
 #                 except psycopg2.Error as error:
