@@ -3,7 +3,7 @@ from colorama import init, Fore
 import psycopg2
 import random
 import os
-from constantes import *
+from connection import *
 from customProviders import *
 from createDataBase import *
 from alive_progress import alive_bar
@@ -34,7 +34,7 @@ def askTable(number: int, table: str) -> str:
         fillTable = input(YES_NO + '\n')
     return fillTable
 
-def viewErrors(errors) -> None:
+def viewErrors(errors: list) -> None:
     print(Fore.RED + '(!)' + Fore.RESET + ' ¿Desea ver los errores durante la creación de datos?')
     seeErrors = ''
     while ((seeErrors != 's') & (seeErrors != 'n')):
@@ -44,10 +44,18 @@ def viewErrors(errors) -> None:
     if (seeErrors == 's'):
         if (len(errors) != 0):
             for numberError, error in enumerate(errors):
-                print(Fore.RED + '(' + str(numberError) + ') ' + Fore.RESET + error)
+                print(Fore.RED + '(' + str(numberError + 1) + ') ' + Fore.RESET + error)
         else:
             print(Fore.LIGHTGREEN_EX + 'No se produjeron errores durante la ejecucion.')
+        print('\n')
         print (Fore.YELLOW + '(*)' + Fore.RESET + ' Hubo un total de ' + Fore.RED + str(len(errors)) + Fore.RESET)
+        print('\n')
+
+def getCount(count: int, lowerLimit: int, upperLimit: int) -> int:
+    while ((int(count) < lowerLimit) | (int(count) > upperLimit)):
+        count = input('¿Cuantos registros quiere agregar?\n' + Fore.YELLOW + f'⚠ - Recomendamos no menos de {lowerLimit} registros y no mas de {upperLimit}. - ⚠\n' + Fore.RESET)
+    return int(count)
+
 
 # Crear una conexión a la base de datos y habilitamos el cursor
 connection = psycopg2.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASS, host=DB_HOST, port=DB_PORT)
@@ -81,12 +89,10 @@ if (fillUsers == 's'):
     count = 0
     errors = []
 
-    while ((count < 100) | (count > 5000)):
-        count = input('¿Cuantos usuarios quiere agregar?\n' + Fore.YELLOW + '⚠ - Recomendamos no menos de 100 usuarios y no mas de 5000. - ⚠\n' + Fore.RESET)
-        count = int(count)
-
+    count = getCount(count, 100, 5000)
+    
     clearScreen()
-    with alive_bar(count, title='Creando...', bar='filling', spinner='arrows') as bar:
+    with alive_bar(count, title = f'Llenando tabla ({table})...', bar = 'filling', spinner = 'arrows') as bar:
         while (index < count):
             email = fakeEsAr.email()
             phone = fakeEsAr.phone_number()
@@ -104,7 +110,6 @@ if (fillUsers == 's'):
                 bar()
     print('\n')
     viewErrors(errors)
-    print('\n')
 
 # tabla empresa
 table = 'empresa'
@@ -119,7 +124,7 @@ if (fillCorporate == 's'):
     errors = []
 
     clearScreen()
-    with alive_bar(count, title='Creando...', bar='filling', spinner='arrows') as bar:
+    with alive_bar(count, title = f'Llenando tabla ({table})...', bar = 'filling', spinner = 'arrows') as bar:
         while (index < count):
             randomUser = random.choice(list(getUsers()))
             cuit = fakeEn.bothify(text = '##-########-#')
@@ -139,10 +144,9 @@ if (fillCorporate == 's'):
                 bar()  
     print('\n')
     viewErrors(errors)
-    print('\n')
 
 
-#tabla particular
+# tabla particular
 table = 'particular'
 
 fillParticular = askTable(3, table)
@@ -160,7 +164,7 @@ if (fillParticular == 's'):
     allUsersAvailable = set(getUsers()) - set(corporateUser)
 
     count = len(allUsersAvailable)
-    with alive_bar(count, title='Creando...', bar='filling', spinner='arrows') as bar:
+    with alive_bar(count, title = f'Llenando tabla ({table})...', bar = 'filling', spinner = 'arrows') as bar:
         while (index < count):
             randomUser = random.choice(list(allUsersAvailable))
             dni = fakeEn.bothify(text = '########')
@@ -180,16 +184,50 @@ if (fillParticular == 's'):
                 bar() 
     print('\n')
     viewErrors(errors)
-    print('\n')
 
+
+# tabla direccion
+table = 'direccion'
+
+fillAdresses = askTable(4, table)
+
+clearScreen()
+if (fillAdresses == 's'):
+    index = 0
+    count = 0
+    errors = []
+
+    count = getCount(count, 100, 500)
+
+    clearScreen()
+    with alive_bar(count, title = f'Llenando tabla ({table})...', bar = 'filling', spinner = 'arrows') as bar:
+        while (index < count):
+            zipCode = random.randint(1001,9431)
+            street = fakeEsAr.street_name()
+            streetNumber = fakeEn.bothify(text='####')
+            try:
+                cursor.execute(f"INSERT INTO {table} (codigo_postal, calle, altura) VALUES ('{zipCode}', '{street}', '{streetNumber}')")
+            except psycopg2.Error as error:
+                errors.append(Fore.YELLOW + f"⚠ Error en {table}:{Fore.RESET}\n{error}")
+                connection.rollback()
+                sleep(0.02)
+            else:
+                connection.commit()
+                index += 1
+                sleep(0.02)
+                bar()
+    print('\n')
+    viewErrors(errors)
+
+
+sleep(5)
+clearScreen()
+sleep(1)
+print(Fore.GREEN + "✔ - La base de datos fue poblada exitosamente. - ✔")
+sleep(0.10)
 
 connection.commit()
 cursor.close()
 connection.close()
 
-sleep(2)
-# clearScreen()
-# sleep(0.10)
-print(Fore.GREEN + "✔ - La base de datos fue poblada exitosamente. - ✔")
-sleep(0.10)
 
