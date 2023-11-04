@@ -34,8 +34,8 @@ CREATE TABLE metodo_de_pago (
     numero_tarjeta VARCHAR(20) NOT NULL UNIQUE,
     clave_seguridad VARCHAR(10) NOT NULL,
     fecha_caducidad DATE NOT NULL,
-    empresa_emisora VARCHAR(255) NOT NULL, /* hay que agregar check */
-    tipo VARCHAR(255) NOT NULL, /* hay que agregar check */
+    empresa_emisora VARCHAR(255) NOT NULL varchar(20) CHECK (empresa_emisora IN ('Visa', 'MasterCard', 'American Express', 'Maestro')),
+    tipo VARCHAR(255) NOT NULL varchar(20) CHECK (tipo IN ('Crédito', 'Debito')),
     usuario INT NOT NULL REFERENCES usuario(numero_cliente) ON DELETE RESTRICT ON UPDATE CASCADE
 );
 
@@ -47,7 +47,7 @@ CREATE TABLE producto (
     descripcion_producto TEXT NULL,
     nombre_producto VARCHAR(255) NOT NULL,
     stock INT NOT NULL,
-    calificacion INT NOT NULL, /* hay que agregar check */
+    calificacion INT NOT NULL CHECK (calificacion >= 1 AND Valor <= 5),
     usuario INT NOT NULL REFERENCES usuario(numero_cliente) ON DELETE RESTRICT ON UPDATE CASCADE
 );
 
@@ -104,7 +104,7 @@ CREATE TABLE pedido (
 CREATE TABLE item (
     id_item SERIAL PRIMARY KEY,
     cantidad INT NOT null,
-    estado VARCHAR(255) NOT NULL, /* hay que agregar check */
+    estado VARCHAR(255) NOT NULL CHECK (estado IN ('Preparando el envio', 'Listo para enviar', 'Enviado', 'Recibido')),
     tipo_entrega VARCHAR(255) NOT NULL,
     envio_domicilio BOOLEAN NOT NULL,
     usuario INT NOT NULL REFERENCES usuario(numero_cliente) ON DELETE RESTRICT ON UPDATE CASCADE,
