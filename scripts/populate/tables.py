@@ -32,6 +32,9 @@ def getCount(count: int, lowerLimit: int, upperLimit: int) -> int:
         count = input('¿Cuantos registros quiere agregar?\n' + Fore.YELLOW + f'⚠ - Recomendamos no menos de {lowerLimit} registros y no mas de {upperLimit}. - ⚠\n' + Fore.RESET)
     return int(count)
 
+def getTitleBar(table: str) -> str:
+    return f'Llenando tabla ({table})...'
+
 def viewErrors(errors: list) -> None:
     print(Fore.RED + '(!)' + Fore.RESET + ' ¿Desea ver los errores durante la creación de datos?')
     seeErrors = ''
@@ -63,9 +66,12 @@ def viewErrors(errors: list) -> None:
 #         errors = []
 #         count = getCount(count, [MIN_TUPLES], [MAX_TUPLES])
 #         clearScreen()
-#         with alive_bar(count, title = f'Llenando tabla ({table})...', bar = 'filling', spinner = 'arrows') as bar:
+#         with alive_bar(count, title = f'Llenando tabla ({table})...', bar = STYLE_BAR, spinner = STYLE_SPINNER) as bar:
 #             while (index < count):
 #                 # Definir los atributos de la tabla
+#                 # la documentacion para hacerlo es la siguiente:
+#                 # https://faker.readthedocs.io/en/master/index.html
+
 #                 insert = f"INSERT INTO {table} ([ATRIBUTTES])) VALUES ([DEFINED_ATRIBUTTES])"
 #                 try:
 #                     cursor.execute(insert)
@@ -95,7 +101,7 @@ def fillUsers(connection: psycopg2.extensions.connection, cursor: psycopg2.exten
         errors = []
         count = getCount(count, 100, 5000)
         clearScreen()
-        with alive_bar(count, title = f'Llenando tabla ({table})...', bar = 'filling', spinner = 'arrows') as bar:
+        with alive_bar(count, title = getTitleBar(table), bar = STYLE_BAR, spinner = STYLE_SPINNER) as bar:
             while (index < count):
                 email = fakeEsAr.email()
                 phone = fakeEsAr.phone_number()
@@ -126,7 +132,7 @@ def fillCorporate(connection: psycopg2.extensions.connection, cursor: psycopg2.e
         count = 100
         errors = []
         clearScreen()
-        with alive_bar(count, title = f'Llenando tabla ({table})...', bar = 'filling', spinner = 'arrows') as bar:
+        with alive_bar(count, title = getTitleBar(table), bar = STYLE_BAR, spinner = STYLE_SPINNER) as bar:
             while (index < count):
                 randomUser = random.choice(list(getUsers(cursor)))
                 cuit = fakeEn.bothify(text = '##-########-#')
@@ -158,7 +164,7 @@ def fillParticular(connection: psycopg2.extensions.connection, cursor: psycopg2.
         errors = []
         allUsersAvailable = getUsersNotCorporate(cursor)
         count = len(allUsersAvailable)
-        with alive_bar(count, title = f'Llenando tabla ({table})...', bar = 'filling', spinner = 'arrows') as bar:
+        with alive_bar(count, title = getTitleBar(table), bar = STYLE_BAR, spinner = STYLE_SPINNER) as bar:
             while (index < count):
                 randomUser = random.choice(list(allUsersAvailable))
                 dni = fakeEn.bothify(text = '########')
@@ -191,7 +197,7 @@ def fillAdresses(connection: psycopg2.extensions.connection, cursor: psycopg2.ex
         errors = []
         count = getCount(count, 100, 500)
         clearScreen()
-        with alive_bar(count, title = f'Llenando tabla ({table})...', bar = 'filling', spinner = 'arrows') as bar:
+        with alive_bar(count, title = getTitleBar(table), bar = STYLE_BAR, spinner = STYLE_SPINNER) as bar:
             while (index < count):
                 zipCode = random.randint(1001,9431)
                 street = fakeEsAr.street_name()
