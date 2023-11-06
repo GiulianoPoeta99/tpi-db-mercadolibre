@@ -1,24 +1,23 @@
 import os
 from colorama import init, Fore
 import psycopg2
-from faker import Faker
 from alive_progress import alive_bar
 from time import sleep
 import random
 
 from constants import *
+from fakerData import *
 from querys import *
 from customProviders import *
 
 # Inicializa colorama para sistemas Windows
 init(autoreset=True)
 
-# creamos objetos fake en diferentes regiones
-fakeEn = Faker() # ingles
-fakeEsAr = Faker('es_AR') # español argentina
-
 def clearScreen() -> None:
     os.system('clear')
+
+def printWarning() -> str:
+    return Fore.YELLOW + '⚠ - Si hubo algun problema en la etapa anterior cancele la ejecucion con CTRL+C - ⚠'
 
 def askTable(number: int, table: str) -> str:
     print(Fore.MAGENTA + f'({number})' + Fore.RESET + f' ¿Quiere cargar la tabla {table}?')
@@ -32,11 +31,14 @@ def getCount(count: int, lowerLimit: int, upperLimit: int) -> int:
         count = input('¿Cuantos registros quiere agregar?\n' + Fore.YELLOW + f'⚠ - Recomendamos no menos de {lowerLimit} registros y no mas de {upperLimit}. - ⚠\n' + Fore.RESET)
     return int(count)
 
-def getRandomUser(cursor):
-    return random.choice(list(getUsers(cursor)))
-
 def getTitleBar(table: str) -> str:
     return f'Llenando tabla ({table})...'
+
+def getInsert(table, values, data) -> str:
+    return f"INSERT INTO {table} ({values}) VALUES ({data})"
+
+def printError(table, error) -> str:
+    return Fore.YELLOW + f"⚠ Error en {table}:{Fore.RESET}\n{error}"
 
 def viewErrors(errors: list) -> None:
     print(Fore.RED + '(!)' + Fore.RESET + ' ¿Desea ver los errores durante la creación de datos?')
@@ -55,209 +57,148 @@ def viewErrors(errors: list) -> None:
         print (Fore.YELLOW + '(*)' + Fore.RESET + ' Hubo un total de ' + Fore.RED + str(len(errors)) + Fore.RESET)
         print('\n')
 
+def executeInsert(
+    connection: psycopg2.extensions.connection, 
+    cursor: psycopg2.extensions.cursor ,
+    table: str, 
+    values: str, 
+    index: int, 
+    count: int, 
+    errors: list, 
+    dataFunction: any
+):
+    with alive_bar(count, title = getTitleBar(table), bar = STYLE_BAR, spinner = STYLE_SPINNER) as bar:
+        while (index < count):
+
+            data = dataFunction()
+
+            try:
+                cursor.execute(getInsert(table, values, data))
+            except psycopg2.Error as error:
+                errors.append(printError(table, error))
+                connection.rollback()
+                sleep(0.02)
+            else:
+                connection.commit()
+                index += 1
+                sleep(0.02)
+                bar()
+    print('\n')
+    viewErrors(errors)
+
 
 # PLANTILLA
-# Solo hay que cambiar los parametro que esta entre [] un ejemplo es [TABLE_NAME]
+# def fillTableName(connection: psycopg2.extensions.connection, cursor: psycopg2.extensions.cursor) -> None:
+#     table = 'table name'
+#     values = 'attribute separeted with comas'
+#     dataFunction = fakeTableNameData
 
-# def fill([TABLE_NAME])(connection: psycopg2.extensions.connection, cursor: psycopg2.extensions.cursor) -> None:
-#     table = '[TABLE_NAME]'
-#     fillTable = askTable([NUMBER_TABLE], table)
+#     printWarning()
+#     fillTable = askTable(numberTable, table)
 #     clearScreen()
+
 #     if (fillTable == 's'):
 #         index = 0
 #         count = 0
 #         errors = []
-#         count = getCount(count, [MIN_TUPLES], [MAX_TUPLES])
-#         clearScreen()
-#         with alive_bar(count, title = f'Llenando tabla ({table})...', bar = STYLE_BAR, spinner = STYLE_SPINNER) as bar:
-#             while (index < count):
-#                 # Definir los atributos de la tabla
-#                 # la documentacion para hacerlo es la siguiente:
-#                 # https://faker.readthedocs.io/en/master/index.html
-#
-#                 insert = f"INSERT INTO {table} ([ATRIBUTTES])) VALUES ([DEFINED_ATRIBUTTES])"
-#
-#                 # ¡Esto no se toca!                 
-#                 try:
-#                     cursor.execute(insert)
-#                 except psycopg2.Error as error:
-#                     errors.append(Fore.YELLOW + f"⚠ Error en {table}:{Fore.RESET}\n{error}")
-#                     connection.rollback()
-#                     sleep(0.02)
-#                 else:
-#                     connection.commit()
-#                     index += 1
-#                     sleep(0.02)
-#                     bar()
-#         print('\n')
-#         viewErrors(errors)
 
+#         # esto puede cabiar dependiento de lo que se tenga que hacer
+#         count = getCount(count, 100, 5000)
+#         clearScreen()
+
+#         executeInsert(connection, cursor, table, values, index, count, errors, dataFunction)
 
 
 # tabla usuario
 def fillUsers(connection: psycopg2.extensions.connection, cursor: psycopg2.extensions.cursor) -> None:
     table = 'usuario'
-    print(Fore.YELLOW + '⚠ - Si hubo algun problema en la etapa anterior cancele la ejecucion con CTRL+C - ⚠')
+    values = 'correo_electronico, telefono, contrasenia'
+    dataFunction = fakeUserData
+
+    printWarning()
     fillTable = askTable(1, table)
     clearScreen()
+
     if (fillTable == 's'):
         index = 0
         count = 0
         errors = []
+
         count = getCount(count, 100, 5000)
         clearScreen()
-        with alive_bar(count, title = getTitleBar(table), bar = STYLE_BAR, spinner = STYLE_SPINNER) as bar:
-            while (index < count):
-                email = fakeEsAr.email()
-                phone = fakeEsAr.phone_number()
-                password = fakeEn.lexify(text='??????????')
-                insert = f"INSERT INTO {table} (correo_electronico, telefono, contrasenia) VALUES ('{email}', '{phone}', '{password}')"
-                try:
-                    cursor.execute(insert)
-                except psycopg2.Error as error:
-                    errors.append(Fore.YELLOW + f"⚠ Error en {table}:{Fore.RESET}\n{error}")
-                    connection.rollback()
-                    sleep(0.02)
-                else:
-                    connection.commit()
-                    index += 1
-                    sleep(0.02)
-                    bar()
-        print('\n')
-        viewErrors(errors)
+
+        executeInsert(connection, cursor, table, values, index, count, errors, dataFunction)
 
 # tabla empresa
 def fillCorporate(connection: psycopg2.extensions.connection, cursor: psycopg2.extensions.cursor) -> None:
     table = 'empresa'
+    values = 'usuario, cuit, nombre_fantasia, fecha_creacion'
+    dataFunction = fakeCorporateData
+
     fillTable = askTable(2, table)
     clearScreen()
+
     if (fillTable == 's'):
         index = 0
         # count = len(getUsers(cursor)) // 3 #para hacer esto necesitamos muchas mas empresas alrededor de 1700
         count = 100
         errors = []
         clearScreen()
-        with alive_bar(count, title = getTitleBar(table), bar = STYLE_BAR, spinner = STYLE_SPINNER) as bar:
-            while (index < count):
-                randomUser = getRandomUser(cursor)
-                cuit = fakeEn.bothify(text = '##-########-#')
-                fakeEn.add_provider(arg_pymes_provider)
-                fantasyName = fakeEn.pymes_provider()
-                creationDate = fakeEn.past_date('-18263d') # Genera una fecha pasada aleatoria en los últimos 50 años
-                insert = f"INSERT INTO {table} (usuario, cuit, nombre_fantasia, fecha_creacion) VALUES ({randomUser}, '{cuit}', '{fantasyName}', '{creationDate}')"
-                try:
-                    cursor.execute(insert)
-                except psycopg2.Error as error:
-                    errors.append(Fore.YELLOW + f"⚠ Error en {table}:{Fore.RESET}\n{error}")
-                    connection.rollback()
-                    sleep(0.02)
-                else:
-                    connection.commit()
-                    index += 1
-                    sleep(0.02)
-                    bar()  
-        print('\n')
-        viewErrors(errors)
+
+        executeInsert(connection, cursor, table, values, index, count, errors, dataFunction)
 
 # tabla particular
 def fillParticular(connection: psycopg2.extensions.connection, cursor: psycopg2.extensions.cursor) -> None:
     table = 'particular'
+    values = 'usuario, DNI, fecha_nacimiento, nombre, apellido'
+    dataFunction = fakeParticularData
+
     fillTable = askTable(3, table)
     clearScreen()
+
     if (fillTable == 's'):
         index = 0
         errors = []
+
         allUsersAvailable = getUsersNotCorporate(cursor)
         count = len(allUsersAvailable)
-        with alive_bar(count, title = getTitleBar(table), bar = STYLE_BAR, spinner = STYLE_SPINNER) as bar:
-            while (index < count):
-                randomUser = random.choice(list(allUsersAvailable))
-                dni = fakeEn.bothify(text = '########')
-                dateOfBirth = fakeEn.past_date('-29220d') # Genera una fecha pasada aleatoria en los últimos 80 años
-                firstName = fakeEsAr.first_name()
-                lastName = fakeEsAr.last_name()
-                insert = f"INSERT INTO {table} (usuario, DNI, fecha_nacimiento, nombre, apellido) VALUES ({randomUser}, '{dni}', '{dateOfBirth}', '{firstName}', '{lastName}')"
-                try:
-                    cursor.execute(insert)
-                except psycopg2.Error as error:
-                    errors.append(Fore.YELLOW + f"⚠ Error en {table}:{Fore.RESET}\n{error}")
-                    connection.rollback()
-                    sleep(0.02)
-                else:
-                    connection.commit()
-                    index += 1
-                    sleep(0.02)
-                    bar() 
-        print('\n')
-        viewErrors(errors)
+
+        executeInsert(connection, cursor, table, values, index, count, errors, dataFunction)
 
 # tabla direccion
 def fillAdresses(connection: psycopg2.extensions.connection, cursor: psycopg2.extensions.cursor) -> None:
     table = 'direccion'
+    values = 'codigo_postal, calle, altura'
+    dataFunction = fakeAdressData
+
     fillTable = askTable(4, table)
     clearScreen()
+
     if (fillTable == 's'):
         index = 0
         count = 0
         errors = []
+
         count = getCount(count, 100, 500)
         clearScreen()
-        with alive_bar(count, title = getTitleBar(table), bar = STYLE_BAR, spinner = STYLE_SPINNER) as bar:
-            while (index < count):
-                zipCode = random.randint(1001,9431)
-                street = fakeEsAr.street_name()
-                streetNumber = fakeEn.bothify(text = '####')
-                insert = f"INSERT INTO {table} (codigo_postal, calle, altura) VALUES ('{zipCode}', '{street}', '{streetNumber}')"
-                try:
-                    cursor.execute(insert)
-                except psycopg2.Error as error:
-                    errors.append(Fore.YELLOW + f"⚠ Error en {table}:{Fore.RESET}\n{error}")
-                    connection.rollback()
-                    sleep(0.02)
-                else:
-                    connection.commit()
-                    index += 1
-                    sleep(0.02)
-                    bar()
-        print('\n')
-        viewErrors(errors)
+
+        executeInsert(connection, cursor, table, values, index, count, errors, dataFunction)
 
 # tabla metodo_de_pago 
-def fillMetodoDePago(connection: psycopg2.extensions.connection, cursor: psycopg2.extensions.cursor) -> None:
+def fillPaymentMethod(connection: psycopg2.extensions.connection, cursor: psycopg2.extensions.cursor) -> None:
     table = 'metodo_de_pago'
+    values = 'titular, numero_tarjeta, clave_seguridad, fecha_caducidad, empresa_emisora, tipo, usuario'
+    dataFunction = fakePaymentMethodData
+    
     fillTable = askTable(5, table)
     clearScreen()
+
     if (fillTable == 's'):
         index = 0
         count = 0
         errors = []
+
         count = getCount(count, 100, 500)
         clearScreen()
-        with alive_bar(count, title = f'Llenando tabla ({table})...', bar = STYLE_BAR, spinner = STYLE_SPINNER) as bar:
-            while (index < count):
-                cardHolder = fakeEsAr.name()
-                cardNumber = fakeEn.bothify(text = '################')
-                securityKey = fakeEn.bothify(text = '###')
-                expirationDate = fakeEn.past_date('2555d')
-                partsExpirationDate = expirationDate.split('-')
-                expirationDate = partsExpirationDate[0] + '-' + partsExpirationDate[1] + '-01'
-                issuerCompany = random.choice(list(CARD_TYPES))
-                cardType = random.choice(list(ISSUER_COMPANY))
-                user = getRandomUser(cursor)
 
-                insert = f"INSERT INTO {table} (titular, numero_tarjeta, clave_seguridad, fecha_caducidad, empresa_emisora, tipo, usuario) VALUES ('{cardHolder}', '{cardNumber}', '{securityKey}', '{expirationDate}', '{issuerCompany}', '{cardType}', {user})"
-
-                # ¡Esto no se toca!                 
-                try:
-                    cursor.execute(insert)
-                except psycopg2.Error as error:
-                    errors.append(Fore.YELLOW + f"⚠ Error en {table}:{Fore.RESET}\n{error}")
-                    connection.rollback()
-                    sleep(0.02)
-                else:
-                    connection.commit()
-                    index += 1
-                    sleep(0.02)
-                    bar()
-        print('\n')
-        viewErrors(errors)
+        executeInsert(connection, cursor, table, values, index, count, errors, dataFunction)

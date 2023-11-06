@@ -39,7 +39,7 @@ fillParticular(connection, cursor)
 # tabla direccion
 fillAdresses(connection, cursor)
 
-sleep(5)
+sleep(3)
 clearScreen()
 sleep(1)
 print(Fore.GREEN + "✔ - La base de datos fue poblada exitosamente. - ✔")
