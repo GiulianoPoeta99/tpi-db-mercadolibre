@@ -34,8 +34,8 @@ CREATE TABLE metodo_de_pago (
     numero_tarjeta VARCHAR(16) NOT NULL UNIQUE,
     clave_seguridad VARCHAR(10) NOT NULL,
     fecha_caducidad DATE NOT NULL,
-    empresa_emisora VARCHAR(255) NOT NULL varchar(20) CHECK (empresa_emisora IN ('Visa', 'MasterCard', 'American Express', 'Maestro')),
-    tipo VARCHAR(255) NOT NULL varchar(20) CHECK (tipo IN ('Crédito', 'Debito')),
+    empresa_emisora VARCHAR(255) NOT NULL CHECK (empresa_emisora IN ('Visa', 'MasterCard', 'American Express', 'Maestro')),
+    tipo VARCHAR(255) NOT NULL CHECK (tipo IN ('Crédito', 'Debito')),
     usuario INT NOT NULL REFERENCES usuario(numero_cliente) ON DELETE RESTRICT ON UPDATE CASCADE
 );
 
@@ -47,7 +47,7 @@ CREATE TABLE producto (
     descripcion_producto TEXT NULL,
     nombre_producto VARCHAR(255) NOT NULL,
     stock INT NOT NULL,
-    calificacion INT NOT NULL CHECK (calificacion >= 1 AND Valor <= 5),
+    calificacion INT NOT NULL CHECK (calificacion >= 1 AND calificacion <= 5),
     usuario INT NOT NULL REFERENCES usuario(numero_cliente) ON DELETE RESTRICT ON UPDATE CASCADE
 );
 
