@@ -65,3 +65,18 @@ def fakeOfertData(cursor: psycopg2.extensions.cursor) -> str:
     date_from = fakeEn.date_between('-100d','+1d')
     date_to = fakeEn.date_between('+2d','+100d')
     return f"'{percentage}', '{date_from}', '{date_to}'"
+
+def fakeProductData(cursor) -> str:
+    isNew = bool(random.choice(list([0,1])))
+    uniquePrice = fakeEn.bothify(text= "####.##" )
+    detail = fakeEn.paragraph(nb_sentences = 2)
+    description = fakeEn.paragraph(nb_sentences= 5)
+    fakeEn.add_provider(arg_products_provider)
+    productName =  fakeEn.products_provider()
+    if (not(isNew)): 
+        stock = 1
+    else:
+        stock = fakeEn.bothify(text= "##")
+    calification = random.randint(1,5)
+    randomUser = getRandomUser(cursor)
+    return f"{isNew}, '{uniquePrice}','{detail}', '{description}' , '{productName}', '{stock}', {calification}, {randomUser}"
