@@ -91,19 +91,6 @@ maxQuantity = 500
 warning = False
 fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
 
-# tabla producto
-# CREATE TABLE producto (
-#     numero_articulo SERIAL PRIMARY KEY,
-#     es_nuevo BOOLEAN NOT NULL,
-#     precio_unitario NUMERIC(10, 2) NOT NULL,
-#     detalle VARCHAR(255) NULL,
-#     descripcion_producto TEXT NULL,
-#     nombre_producto VARCHAR(255) NOT NULL,
-#     stock INT NOT NULL,
-#     calificacion INT NOT NULL CHECK (calificacion >= 1 AND calificacion <= 5),
-#     usuario INT NOT NULL REFERENCES usuario(numero_cliente) ON DELETE RESTRICT ON UPDATE CASCADE
-# );
-
 #tabla producto
 numberTable += 1
 table = 'producto'
