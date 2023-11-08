@@ -77,7 +77,7 @@ table = 'direccion'
 values = 'codigo_postal, calle, altura'
 dataFunction = fakeAdressData
 minQuantity = 100
-maxQuantity = 500
+maxQuantity = len(getUsers(cursor)) *2
 warning = False
 fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
 
@@ -87,7 +87,7 @@ table = 'metodo_de_pago'
 values = 'titular, numero_tarjeta, clave_seguridad, fecha_caducidad, empresa_emisora, tipo, usuario'
 dataFunction = fakePaymentMethodData
 minQuantity = 100
-maxQuantity = 500
+maxQuantity = 10000
 warning = False
 fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
 
@@ -96,8 +96,8 @@ numberTable += 1
 table = 'producto'
 values = 'es_nuevo, precio_unitario, detalle, descripcion_producto, nombre_producto, stock, calificacion, usuario'
 dataFunction = fakeProductData # nombre de la funcion hecha en fakerData
-minQuantity = 100
-maxQuantity = 500 # si se hace con esto se da a entender que es el mismo numero por lo tanto no hay intervalo
+minQuantity = 300
+maxQuantity = 3000 # si se hace con esto se da a entender que es el mismo numero por lo tanto no hay intervalo
 warning = False # se escribe un mensaje de advertencia del paso anterior 
 # ¡No se toca!
 fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
@@ -118,8 +118,8 @@ numberTable += 1
 table = 'oferta'
 values = 'porcentaje, fecha_desde, fecha_hasta'
 dataFunction = fakeOfertData
-minQuantity = 100
-maxQuantity = 500
+minQuantity = 10
+maxQuantity = 100
 warning = False
 fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
 
@@ -129,6 +129,14 @@ fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuant
 #     fecha_de_la_pregunta DATE NOT NULL
 # );
 
+# numberTable += 1 
+# table = 'pregunta'
+# values = 'preguntas_del_producto, fecha_de_la_pregunta'
+# dataFunction = fakeQuestionData
+# minQuantity = 50
+# maxQuantity = 500 
+# warning = False 
+# fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
 
 # CREATE TABLE imagen (
 #     producto INT NOT NULL REFERENCES producto(numero_articulo) ON DELETE RESTRICT ON UPDATE CASCADE,
@@ -153,12 +161,31 @@ fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuant
 #     tipo_envio VARCHAR(255) NOT NULL 
 # );
 
+# tabla envio 
+numberTable += 1
+table = 'envio'
+values = 'tipo_envio'
+dataFunction = fakeEnvio # nombre de la funcion hecha en fakerData
+minQuantity = 300
+maxQuantity = 3000 # si se hace con esto se da a entender que es el mismo numero por lo tanto no hay intervalo
+warning = False 
+fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
 # CREATE TABLE resenia (
 #     id_resenia SERIAL NOT NULL PRIMARY KEY,
 #     resenia_producto TEXT NOT NULL,
 #     calificacion INT NOT NULL,
 #     producto INT NOT NULL REFERENCES producto(numero_articulo) ON DELETE RESTRICT ON UPDATE CASCADE
 # );
+
+#tabla resenia 
+numberTable += 1
+table = 'envio'
+values = 'tipo_envio'
+dataFunction = fakeEnvio # nombre de la funcion hecha en fakerData
+minQuantity = 300
+maxQuantity = 3000 # si se hace con esto se da a entender que es el mismo numero por lo tanto no hay intervalo
+warning = False 
+fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
 
 # CREATE TABLE pedido (
 #     numero_de_pedido SERIAL NOT NULL PRIMARY KEY,

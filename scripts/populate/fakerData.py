@@ -80,3 +80,7 @@ def fakeProductData(cursor) -> str:
     calification = random.randint(1,5)
     randomUser = getRandomUser(cursor)
     return f"{isNew}, '{uniquePrice}','{detail}', '{description}' , '{productName}', '{stock}', {calification}, {randomUser}"
+
+def fakeEnvio(cursor) -> str:
+    shippingType = random.choice(list(SHIPPING_TYPE))
+    return f" '{shippingType}'"

@@ -83,7 +83,7 @@ CREATE TABLE imagen (
 
 CREATE TABLE envio (
     id_envio SERIAL NOT NULL PRIMARY KEY,
-    tipo_envio VARCHAR(255) NOT NULL 
+    tipo_envio VARCHAR(255) NOT NULL CHECK (tipo_envio IN ('envio rapido','envio normal a domicilio', 'envio a correo', 'retiro en sucursal'))
 );
 
 CREATE TABLE resenia (
@@ -121,7 +121,7 @@ CREATE TABLE usuario_direccion (
 
 CREATE TABLE item_envio (
     item INT NOT NULL PRIMARY KEY REFERENCES item(id_item) ON DELETE RESTRICT ON UPDATE CASCADE,
-    envio INT NOT NULL REFERENCES envio(id_envio) ON DELETE RESTRICT ON UPDATE CASCADE
+    envio INT NOT NULL REFERENCES envio(id_envio) ON DELETE RESTRICT ON UPDATE CASCADE 
 );
 
 CREATE TABLE pregunta_producto_usuario (

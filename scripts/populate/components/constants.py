@@ -14,3 +14,4 @@ STYLE_SPINNER = 'triangles'
 # checks
 ISSUER_COMPANY = ['Visa', 'MasterCard', 'American Express', 'Maestro']
 CARD_TYPES = ['Crédito', 'Debito'] 
+SHIPPING_TYPE = ['envio rapido','envio normal a domicilio', 'envio a correo', 'retiro en sucursal']
