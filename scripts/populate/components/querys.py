@@ -56,16 +56,15 @@ def getOrder(cursor: psycopg2.extensions.cursor) -> list:
 
 #obtengo un metodo de pago del usuario solicitado
 def getPaymentMethod(cursor: psycopg2.extensions.cursor, userNumber) -> list:
-    query = "SELECT id_tarjeta FROM metodo_de_pago WHERE usuario = %s"
-    cursor.execute(query, (userNumber,))
+    query = f"SELECT id_tarjeta FROM metodo_de_pago WHERE usuario = {userNumber}"
+    cursor.execute(query)
     results = cursor.fetchall()
     return [result[0] for result in results] if results else [] 
     
-    
 #obtengo tipo de envio del pedido 
 def getShippingTypeOrder(cursor: psycopg2.extensions.cursor, orderNumber) -> str:
-    query = "SELECT tipo_envio FROM envio WHERE id_envio = %s" 
-    cursor.execute(query, (orderNumber,))
+    query = f"SELECT tipo_envio FROM envio WHERE id_envio = {orderNumber}" 
+    cursor.execute(query)
     result = cursor.fetchone()
     return result[0]
 
@@ -76,9 +75,8 @@ def getReview(cursor: psycopg2.extensions.cursor) -> int:
     return result[0]
 
 def getProductName(cursor: psycopg2.extensions.cursor, productID) -> str:
-    query = "SELECT nombre_producto FROM producto WHERE numero_articulo = %s"
-    cursor.execute(query, (productID,))
+    query = f"SELECT nombre_producto FROM producto WHERE numero_articulo = {productID}"
+    cursor.execute(query)
     result = cursor.fetchone()
     return result[0] 
-    
     

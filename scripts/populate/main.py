@@ -106,13 +106,13 @@ fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuant
 # tabla categoria
 numberTable += 1
 table = 'categoria'
-notFillTable(table)
+notFillTable(table, numberTable)
 sleep(2)
 
 # tabla categoria_subcateoria
 numberTable += 1
 table = 'categoria_subcateoria'
-notFillTable(table)
+notFillTable(table, numberTable)
 sleep(2)
 
 # tabla oferta
@@ -128,7 +128,7 @@ fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuant
 # tabla pregunta
 numberTable += 1
 table = 'pregunta'
-notFillTable(table)
+notFillTable(table, numberTable)
 sleep(2)
 
 # tabla imagen
@@ -184,37 +184,37 @@ fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuant
 # tabla usuario_direccion
 numberTable += 1
 table = 'usuario_direccion'
-notFillTable(table)
+notFillTable(table, numberTable)
 sleep(2)
 
 # tabla item_envio
 numberTable += 1
 table = 'item_envio'
-notFillTable(table)
+notFillTable(table, numberTable)
 sleep(2)
 
 # tabla pregunta_producto_usuario
 numberTable += 1
 table = 'pregunta_producto_usuario'
-notFillTable(table)
+notFillTable(table, numberTable)
 sleep(2)
 
 # tabla producto_categoria
 numberTable += 1
 table = 'producto_categoria'
-notFillTable(table)
+notFillTable(table, numberTable)
 sleep(2)
 
 # tabla pregunta_respuesta
 numberTable += 1
 table = 'pregunta_respuesta'
-notFillTable(table)
+notFillTable(table, numberTable)
 sleep(2)
 
 # tabla oferta_producto
 numberTable += 1
 table = 'oferta_producto'
-notFillTable(table)
+notFillTable(table, numberTable)
 sleep(2)
 
 sleep(3)
