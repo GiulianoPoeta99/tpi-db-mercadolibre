@@ -105,12 +105,14 @@ fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuant
 
 # tabla categoria
 numberTable += 1
-print('La tabla categoria para hacer la muestra se carga manualmente.\n\n')
+table = 'categoria'
+notFillTable(table)
 sleep(2)
 
 # tabla categoria_subcateoria
 numberTable += 1
-print('La tabla categoria_subcategoria para hacer la muestra se carga manualmente.\n\n')
+table = 'categoria_subcateoria'
+notFillTable(table)
 sleep(2)
 
 # tabla oferta
@@ -123,20 +125,11 @@ maxQuantity = 100
 warning = False
 fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
 
-# CREATE TABLE pregunta (
-#     id_pregunta SERIAL NOT NULL PRIMARY KEY,
-#     preguntas_del_producto TEXT NOT NULL,
-#     fecha_de_la_pregunta DATE NOT NULL
-# );
-
-# numberTable += 1 
-# table = 'pregunta'
-# values = 'preguntas_del_producto, fecha_de_la_pregunta'
-# dataFunction = fakeQuestionData
-# minQuantity = 50
-# maxQuantity = 500 
-# warning = False 
-# fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
+# tabla pregunta
+numberTable += 1
+table = 'pregunta'
+notFillTable(table)
+sleep(2)
 
 # CREATE TABLE imagen (
 #     producto INT NOT NULL REFERENCES producto(numero_articulo) ON DELETE RESTRICT ON UPDATE CASCADE,
@@ -171,14 +164,6 @@ maxQuantity = 3000 # si se hace con esto se da a entender que es el mismo numero
 warning = False 
 fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
 
-
-# CREATE TABLE resenia (
-#     id_resenia SERIAL NOT NULL PRIMARY KEY,
-#     resenia_producto TEXT NOT NULL,
-#     calificacion INT NOT NULL,
-#     producto INT NOT NULL REFERENCES producto(numero_articulo) ON DELETE RESTRICT ON UPDATE CASCADE
-# );
-
 #tabla resenia 
 numberTable += 1
 table = 'resenia'
@@ -206,6 +191,18 @@ minOrderQuantity = 1000
 maxQuantity = 6000
 warning = False 
 fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
+
+# CREATE TABLE item (
+#     id_item SERIAL PRIMARY KEY,
+#     cantidad INT NOT null,
+#     estado VARCHAR(255) NOT NULL CHECK (estado IN ('Preparando el envio', 'Listo para enviar', 'Enviado', 'Recibido')),
+#     tipo_entrega VARCHAR(255) NOT NULL,
+#     envio_domicilio BOOLEAN NOT NULL,
+#     usuario INT NOT NULL REFERENCES usuario(numero_cliente) ON DELETE RESTRICT ON UPDATE CASCADE,
+#     producto INT NOT NULL REFERENCES producto(numero_articulo) ON DELETE RESTRICT ON UPDATE CASCADE,
+#     direccion INT NOT NULL REFERENCES direccion(id_direccion) ON DELETE RESTRICT ON UPDATE CASCADE,
+#     pedido INT NOT NULL REFERENCES pedido(numero_de_pedido) ON DELETE RESTRICT ON UPDATE CASCADE
+# );
 
 #tabla item 
 numberTable += 1 

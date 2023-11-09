@@ -108,3 +108,6 @@ def fillTable(
             count = minQuantity
         clearScreen()
         executeInsert(connection, cursor, table, values, count, dataFunction)
+
+def notFillTable(table: str) -> None:
+    print(f'La tabla {table} para hacer la muestra se carga manualmente.\n\n')
