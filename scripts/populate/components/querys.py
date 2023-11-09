@@ -14,6 +14,15 @@ def getUsersNotCorporate(cursor: psycopg2.extensions.cursor) -> list:
     cursor.execute(searchCorporateUser)
     corporateUser = cursor.fetchall()
     corporateUser = [element[0] for element in corporateUser]
+
+    return set(getUsers(cursor)) - set(corporateUser)
+
+# obtengo los usuarios que no son empresas
+def getUsersNotCorporateAvaible(cursor: psycopg2.extensions.cursor) -> list:
+    searchCorporateUser = "SELECT usuario FROM empresa"
+    cursor.execute(searchCorporateUser)
+    corporateUser = cursor.fetchall()
+    corporateUser = [element[0] for element in corporateUser]
     searchParticularUser = "SELECT usuario FROM particular"
     cursor.execute(searchParticularUser)
     particularUser = cursor.fetchall()

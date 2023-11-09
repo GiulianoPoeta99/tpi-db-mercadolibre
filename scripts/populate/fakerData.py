@@ -35,7 +35,7 @@ def fakeCorporateData(cursor: psycopg2.extensions.cursor) -> str:
     return f"{randomUser}, '{cuit}', '{fantasyName}', '{creationDate}'"
 
 def fakeParticularData(cursor: psycopg2.extensions.cursor) -> str:
-    randomUser = random.choice(list(getUsersNotCorporate(cursor)))
+    randomUser = random.choice(list(getUsersNotCorporateAvaible(cursor)))
     dni = fakeEn.bothify(text = '########')
     dateOfBirth = fakeEn.past_date('-29220d') # Genera una fecha pasada aleatoria en los últimos 80 años
     firstName = fakeEsAr.first_name()
