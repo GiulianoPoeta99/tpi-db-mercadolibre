@@ -100,7 +100,7 @@ minProductQuantity = 300
 maxQuantity = 3000 # si se hace con esto se da a entender que es el mismo numero por lo tanto no hay intervalo
 warning = False # se escribe un mensaje de advertencia del paso anterior 
 # ¡No se toca!
-fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
+fillTable(connection, cursor, numberTable, table, values, dataFunction, minProductQuantity, maxQuantity, warning)
 # 
 
 # tabla categoria
@@ -169,7 +169,7 @@ dataFunction = fakeOrder
 minOrderQuantity = 1000 
 maxQuantity = 6000
 warning = False 
-fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
+fillTable(connection, cursor, numberTable, table, values, dataFunction, minOrderQuantity, maxQuantity, warning)
 
 # tabla item 
 numberTable += 1 
