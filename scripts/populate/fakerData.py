@@ -117,3 +117,9 @@ def fakeItem(cursor) -> str: #queda un error en esta funcion pendiente de resolv
         homeShip = False 
     
     return f" {quantity}, '{state}','{shippingType}', {homeShip}, {user}, {product}, '{address}', {orderNumber}"
+
+def fakeImage(cursor) -> str: 
+    product = random.choice(list(getProduct(cursor)))
+    productName = getProductName(cursor, product)
+    imageSource =  fakeEn.word()+ ".JPEG"
+    return f" {product}, '{imageSource}'"   

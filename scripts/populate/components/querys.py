@@ -74,4 +74,11 @@ def getReview(cursor: psycopg2.extensions.cursor) -> int:
     cursor.execute(query)
     result = cursor.fetchone()
     return result[0]
+
+def getProductName(cursor: psycopg2.extensions.cursor, productID) -> str:
+    query = "SELECT nombre_producto FROM producto WHERE numero_articulo = %s"
+    cursor.execute(query, (productID,))
+    result = cursor.fetchone()
+    return result[0] 
+    
     
