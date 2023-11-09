@@ -77,7 +77,7 @@ table = 'direccion'
 values = 'codigo_postal, calle, altura'
 dataFunction = fakeAdressData
 minQuantity = 100
-maxQuantity = len(getUsers(cursor)) *2
+maxQuantity = len(getUsers(cursor)) * 2
 warning = False
 fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
 
@@ -91,7 +91,7 @@ maxQuantity = 10000
 warning = False
 fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
 
-#tabla producto
+# tabla producto
 numberTable += 1
 table = 'producto'
 values = 'es_nuevo, precio_unitario, detalle, descripcion_producto, nombre_producto, stock, calificacion, usuario'
@@ -131,13 +131,7 @@ table = 'pregunta'
 notFillTable(table)
 sleep(2)
 
-# CREATE TABLE imagen (
-#     producto INT NOT NULL REFERENCES producto(numero_articulo) ON DELETE RESTRICT ON UPDATE CASCADE,
-#     imagen VARCHAR(255) NOT NULL,
-#     PRIMARY KEY (producto, imagen)
-# );
-
-#tabla imagen
+# tabla imagen
 numberTable += 1
 table = 'imagen'
 values = 'producto, imagen'
@@ -146,18 +140,6 @@ minQuantity = minProductQuantity
 maxQuantity = 50000
 warning = False
 fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
-
-# tabla table_name
-# numberTable += 1
-# table = 'image'
-# values = 'producto, imagen'
-# dataFunction = fakeImageData # nombre de la funcion hecha en fakerData
-# minQuantity = 100
-# maxQuantity = minQuantity # si se hace con esto se da a entender que es el mismo numero por lo tanto no hay intervalo
-# warning = True/False # se escribe un mensaje de advertencia del paso anterior 
-# ¡No se toca!
-# fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
-
 
 # tabla envio 
 numberTable += 1
@@ -169,7 +151,7 @@ maxQuantity = 3000 # si se hace con esto se da a entender que es el mismo numero
 warning = False 
 fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
 
-#tabla resenia 
+# tabla resenia 
 numberTable += 1
 table = 'resenia'
 values = 'resenia_producto, calificacion, producto'
@@ -179,8 +161,7 @@ maxQuantity = 3000 # si se hace con esto se da a entender que es el mismo numero
 warning = False 
 fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
 
-
-#tabla pedido 
+# tabla pedido 
 numberTable += 1 
 table = 'pedido'
 values = 'fecha_pedido, metodo_pago, particular, resenia'
@@ -190,7 +171,7 @@ maxQuantity = 6000
 warning = False 
 fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
 
-#tabla item 
+# tabla item 
 numberTable += 1 
 table = 'item'
 values = 'cantidad, estado, tipo_entrega, envio_domicilio, usuario, producto, direccion, pedido'
@@ -200,41 +181,41 @@ maxQuantity = 6000
 warning = False 
 fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
 
-# CREATE TABLE usuario_direccion (
-#     usuario INT NOT NULL REFERENCES usuario(numero_cliente) ON DELETE RESTRICT ON UPDATE CASCADE,
-#     direccion INT NOT NULL REFERENCES direccion(id_direccion) ON DELETE RESTRICT ON UPDATE CASCADE,
-#     PRIMARY KEY (usuario, direccion)
-# );
+# tabla usuario_direccion
+numberTable += 1
+table = 'usuario_direccion'
+notFillTable(table)
+sleep(2)
 
-# CREATE TABLE item_envio (
-#     item INT NOT NULL PRIMARY KEY REFERENCES item(id_item) ON DELETE RESTRICT ON UPDATE CASCADE,
-#     envio INT NOT NULL REFERENCES envio(id_envio) ON DELETE RESTRICT ON UPDATE CASCADE
-# );
+# tabla item_envio
+numberTable += 1
+table = 'item_envio'
+notFillTable(table)
+sleep(2)
 
-# CREATE TABLE pregunta_producto_usuario (
-#     pregunta INT NOT NULL REFERENCES pregunta(id_pregunta) ON DELETE RESTRICT ON UPDATE CASCADE,
-#     producto INT NOT NULL REFERENCES producto(numero_articulo) ON DELETE RESTRICT ON UPDATE CASCADE,
-#     usuario INT NOT NULL REFERENCES usuario(numero_cliente) ON DELETE RESTRICT ON UPDATE CASCADE,
-#     PRIMARY KEY (pregunta, producto, usuario)
-# );
+# tabla pregunta_producto_usuario
+numberTable += 1
+table = 'pregunta_producto_usuario'
+notFillTable(table)
+sleep(2)
 
-# CREATE TABLE producto_categoria (
-#     producto INT NOT NULL REFERENCES producto(numero_articulo) ON DELETE RESTRICT ON UPDATE CASCADE,
-#     categoria INT NOT NULL REFERENCES categoria(id_categoria) ON DELETE RESTRICT ON UPDATE CASCADE,
-#     PRIMARY KEY (producto, categoria)
-# );
+# tabla producto_categoria
+numberTable += 1
+table = 'producto_categoria'
+notFillTable(table)
+sleep(2)
 
-# CREATE TABLE pregunta_respuesta (
-#     pregunta INT NOT NULL REFERENCES pregunta(id_pregunta) ON DELETE RESTRICT ON UPDATE CASCADE,
-#     respuesta INT NOT NULL REFERENCES pregunta(id_pregunta) ON DELETE RESTRICT ON UPDATE CASCADE,
-#     PRIMARY KEY (pregunta, respuesta)
-# );
+# tabla pregunta_respuesta
+numberTable += 1
+table = 'pregunta_respuesta'
+notFillTable(table)
+sleep(2)
 
-# CREATE TABLE oferta_producto (
-#     oferta INT NOT NULL REFERENCES oferta(id_oferta) ON DELETE RESTRICT ON UPDATE CASCADE,
-#     producto INT NOT NULL REFERENCES producto(numero_articulo) ON DELETE RESTRICT ON UPDATE CASCADE,
-#     PRIMARY KEY (oferta, producto)
-# );
+# tabla oferta_producto
+numberTable += 1
+table = 'oferta_producto'
+notFillTable(table)
+sleep(2)
 
 sleep(3)
 clearScreen()

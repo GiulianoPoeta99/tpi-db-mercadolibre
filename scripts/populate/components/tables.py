@@ -88,7 +88,7 @@ def executeInsert(
 def fillTable(
     connection: psycopg2.extensions.connection, 
     cursor: psycopg2.extensions.cursor,
-    numberTable: str,
+    numberTable: int,
     table: str,
     values: str,
     dataFunction: any,
@@ -109,5 +109,6 @@ def fillTable(
         clearScreen()
         executeInsert(connection, cursor, table, values, count, dataFunction)
 
-def notFillTable(table: str) -> None:
-    print(f'La tabla {table} para hacer la muestra se carga manualmente.\n\n')
+def notFillTable(table: str, numberTable: int) -> None:
+    print(Fore.MAGENTA + f'({numberTable})' + Fore.RESET + f' ¿Quiere cargar la tabla {table}?')
+    print(Fore.YELLOW + f'La tabla {table} para hacer la muestra se carga manualmente.\n\n' + Fore.RESET)
