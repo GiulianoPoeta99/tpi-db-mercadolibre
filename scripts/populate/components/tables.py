@@ -74,7 +74,7 @@ def executeInsert(
                 cursor.execute(getInsert(table, values, data))
             except psycopg2.Error as error:
                 errors.append(printError(table, error))
-                # print(printError(table, error))
+                print(printError(table, error))
                 connection.rollback()
                 sleep(0.02)
             else:

@@ -68,7 +68,7 @@ def fakeOfertData(cursor: psycopg2.extensions.cursor) -> str:
 
 def fakeProductData(cursor) -> str:
     isNew = bool(random.choice(list([0,1])))
-    uniquePrice = fakeEn.bothify(text= "####.##" )
+    unityPrice = fakeEn.bothify(text= "####.##" )
     detail = fakeEn.paragraph(nb_sentences = 2)
     description = fakeEn.paragraph(nb_sentences= 5)
     fakeEn.add_provider(arg_products_provider)
@@ -79,8 +79,37 @@ def fakeProductData(cursor) -> str:
         stock = fakeEn.bothify(text= "##")
     calification = random.randint(1,5)
     randomUser = getRandomUser(cursor)
-    return f"{isNew}, '{uniquePrice}','{detail}', '{description}' , '{productName}', '{stock}', {calification}, {randomUser}"
+    return f"{isNew}, '{unityPrice}','{detail}', '{description}' , '{productName}', '{stock}', {calification}, {randomUser}"
 
-def fakeEnvio(cursor) -> str:
+def fakeShipping(cursor) -> str:
     shippingType = random.choice(list(SHIPPING_TYPE))
     return f" '{shippingType}'"
+
+def fakeReview(cursor) -> str: 
+    reviewContent = fakeEn.paragraph(nb_sentences= 5)
+    calification = random.randint(1, 5)
+    product = random.choice(list(getProduct(cursor)))
+    return f" '{reviewContent}', {calification}, {product}"
+
+def fakeOrder(cursor) -> str: 
+    orderDate = fakeEn.date_between('-100d','+1d')
+    particular = random.choice(list(getUsersNotCorporate(cursor))) #esta lista esta volviendo vacia no entiendo por que
+    paymentMethod = getPaymentMethod(cursor, particular)
+    review = getReview(cursor)
+    return f"'{orderDate}', {paymentMethod}, {particular}, {review} "
+
+def fakeItem(cursor) -> str: #queda un error en esta funcion pendiente de resolver
+    quantity = fakeEn.bothify(text="#")
+    state = random.choice(list(SHIPPING_STATE))
+    shippingType = random.choice(list(SHIPPING_TYPE))
+    user = random.choice(list(getUsersNotCorporate(cursor)))
+    product = random.choice(list(getProduct(cursor)))
+    address = random.choice(list(getAddress(cursor)))
+    orderNumber = random.choice(list(getOrder(cursor)))
+    orderType = getShippingTypeOrder(cursor, orderNumber)
+    if orderType in ['envio rapido','envio normal a domicilio']: 
+        homeShip = True 
+    else: 
+        homeShip = False 
+    
+    return f" {quantity}, '{state}','{shippingType}', {homeShip}, {user}, {product}, '{address}', {orderNumber}"
