@@ -40,7 +40,7 @@ def getProduct(cursor: psycopg2.extensions.cursor) -> list:
 
 # obtengo direcciones de usuarios existentes
 def getAddress(cursor: psycopg2.extensions.cursor) -> list:
-    query = "SELECT direccion FROM usuario_direccion"
+    query = "SELECT id_direccion FROM direccion"
     cursor.execute(query)
     allAddress = cursor.fetchall()
     allAddress = [element[0] for element in allAddress]
@@ -55,11 +55,11 @@ def getOrder(cursor: psycopg2.extensions.cursor) -> list:
     return allOrders 
 
 #obtengo un metodo de pago del usuario solicitado
-def getPaymentMethod(cursor: psycopg2.extensions.cursor, userNumber) -> int:
+def getPaymentMethod(cursor: psycopg2.extensions.cursor, userNumber) -> list:
     query = "SELECT id_tarjeta FROM metodo_de_pago WHERE usuario = %s"
     cursor.execute(query, (userNumber,))
-    result = cursor.fetchone()
-    return result[0] #problema: si tiene multiples metodos de pago siempre va a usar el mismo
+    results = cursor.fetchall()
+    return [result[0] for result in results] if results else [] 
     
     
 #obtengo tipo de envio del pedido 

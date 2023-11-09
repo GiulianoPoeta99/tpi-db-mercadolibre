@@ -93,8 +93,12 @@ def fakeReview(cursor) -> str:
 
 def fakeOrder(cursor) -> str: 
     orderDate = fakeEn.date_between('-100d','+1d')
-    particular = random.choice(list(getUsersNotCorporate(cursor))) #esta lista esta volviendo vacia no entiendo por que
-    paymentMethod = getPaymentMethod(cursor, particular)
+    particular = random.choice(list(getUsersNotCorporate(cursor))) 
+    paymentMethodList = list(getPaymentMethod(cursor, particular))
+    while not(paymentMethodList): 
+        particular = random.choice(list(getUsersNotCorporate(cursor)))
+        paymentMethodList = list(getPaymentMethod(cursor, particular))
+    paymentMethod = random.choice(paymentMethodList) 
     review = getReview(cursor)
     return f"'{orderDate}', {paymentMethod}, {particular}, {review} "
 
@@ -106,7 +110,7 @@ def fakeItem(cursor) -> str: #queda un error en esta funcion pendiente de resolv
     product = random.choice(list(getProduct(cursor)))
     address = random.choice(list(getAddress(cursor)))
     orderNumber = random.choice(list(getOrder(cursor)))
-    orderType = getShippingTypeOrder(cursor, orderNumber)
+    orderType = getShippingTypeOrder(cursor, orderNumber)   
     if orderType in ['envio rapido','envio normal a domicilio']: 
         homeShip = True 
     else: 
