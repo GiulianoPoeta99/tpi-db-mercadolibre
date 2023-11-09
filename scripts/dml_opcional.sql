@@ -371,7 +371,7 @@ INSERT INTO public.particular (usuario,dni,fecha_nacimiento,nombre,apellido) VAL
 	 (41,'75924580','2008-10-15','Candela','Vazquez'),
 	 (177,'09155570','2005-04-06','Francesca','Aguirre'),
 	 (5,'90479209','1967-03-04','Juan Ignacio','Rodriguez'),
-	 (201,'89007745','1995-09-17','Kiara','Moyano'),
+	 (58,'89007745','1995-09-17','Kiara','Moyano'),
 	 (37,'57535099','2020-05-07','Luciano','Alvarez'),
 	 (160,'64207161','1976-02-06','Maria Victoria','Sanchez');
 INSERT INTO public.particular (usuario,dni,fecha_nacimiento,nombre,apellido) VALUES
