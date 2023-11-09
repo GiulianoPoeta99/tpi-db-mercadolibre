@@ -111,4 +111,4 @@ def fillTable(
 
 def notFillTable(table: str, numberTable: int) -> None:
     print(Fore.MAGENTA + f'({numberTable})' + Fore.RESET + f' ¿Quiere cargar la tabla {table}?')
-    print(Fore.YELLOW + f'La tabla {table} para hacer la muestra se carga manualmente.\n\n' + Fore.RESET)
+    print(Fore.YELLOW + f'⚠ - La tabla {table} para hacer la muestra se carga manualmente. - ⚠\n\n' + Fore.RESET)
