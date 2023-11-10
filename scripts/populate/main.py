@@ -101,7 +101,6 @@ maxQuantity = 3000 # si se hace con esto se da a entender que es el mismo numero
 warning = False # se escribe un mensaje de advertencia del paso anterior 
 # ¡No se toca!
 fillTable(connection, cursor, numberTable, table, values, dataFunction, minProductQuantity, maxQuantity, warning)
-# 
 
 # tabla categoria
 numberTable += 1
@@ -228,6 +227,19 @@ minQuantity = minOfertQuantity * 4
 maxQuantity = minQuantity
 warning = False 
 fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
+
+print('''\n
+Las tablas:
+  * producto
+  * categoria
+  * categoria_subcateoria
+  * pregunta
+  * pregunta_producto_usuario
+  * producto_categoria
+  * pregunta_respuesta
+      
+Se rellenaran manualmente en el archivo "dml.sql".
+''')
 
 sleep(3)
 clearScreen()
