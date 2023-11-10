@@ -76,10 +76,10 @@ numberTable += 1
 table = 'direccion'
 values = 'codigo_postal, calle, altura'
 dataFunction = fakeAdressData
-minQuantity = 100
+minAdressesQuantity = 100
 maxQuantity = len(getUsers(cursor)) * 2
 warning = False
-fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
+fillTable(connection, cursor, numberTable, table, values, dataFunction, minAdressesQuantity, maxQuantity, warning)
 
 # tabla metodo_de_pago
 numberTable += 1
@@ -120,10 +120,10 @@ numberTable += 1
 table = 'oferta'
 values = 'porcentaje, fecha_desde, fecha_hasta'
 dataFunction = fakeOfertData
-minQuantity = 10
+minOfertQuantity = 10
 maxQuantity = 100
 warning = False
-fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
+fillTable(connection, cursor, numberTable, table, values, dataFunction, minOfertQuantity, maxQuantity, warning)
 
 # tabla pregunta
 numberTable += 1
@@ -146,10 +146,10 @@ numberTable += 1
 table = 'envio'
 values = 'tipo_envio'
 dataFunction = fakeShipping # nombre de la funcion hecha en fakerData
-minQuantity = 300
+minShippingQuantity = 300
 maxQuantity = 3000 # si se hace con esto se da a entender que es el mismo numero por lo tanto no hay intervalo
 warning = False 
-fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
+fillTable(connection, cursor, numberTable, table, values, dataFunction, minShippingQuantity, maxQuantity, warning)
 
 # tabla resenia 
 numberTable += 1
@@ -181,17 +181,25 @@ maxQuantity = 6000
 warning = False 
 fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
 
-# tabla usuario_direccion
-numberTable += 1
+# tabla usuario_direccion 
+numberTable += 1 
 table = 'usuario_direccion'
-notFillTable(table, numberTable)
-sleep(2)
+values = 'usuario, direccion'
+dataFunction = fakeUserAdress 
+minQuantity = minAdressesQuantity
+maxQuantity = minQuantity
+warning = False 
+fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
 
-# tabla item_envio
-numberTable += 1
+# tabla item_envio 
+numberTable += 1 
 table = 'item_envio'
-notFillTable(table, numberTable)
-sleep(2)
+values = 'item, envio'
+dataFunction = fakeItemShipping
+minQuantity = minShippingQuantity
+maxQuantity = minQuantity
+warning = False 
+fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
 
 # tabla pregunta_producto_usuario
 numberTable += 1
@@ -211,11 +219,15 @@ table = 'pregunta_respuesta'
 notFillTable(table, numberTable)
 sleep(2)
 
-# tabla oferta_producto
-numberTable += 1
+# tabla oferta_producto 
+numberTable += 1 
 table = 'oferta_producto'
-notFillTable(table, numberTable)
-sleep(2)
+values = 'oferta, producto'
+dataFunction = fakeOfertProduct
+minQuantity = minOfertQuantity * 4
+maxQuantity = minQuantity
+warning = False 
+fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
 
 sleep(3)
 clearScreen()

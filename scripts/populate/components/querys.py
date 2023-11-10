@@ -79,4 +79,19 @@ def getProductName(cursor: psycopg2.extensions.cursor, productID) -> str:
     cursor.execute(query)
     result = cursor.fetchone()
     return result[0] 
+
+def getItems(cursor) -> list:
+    query = "SELECT id_item FROM item"
+    cursor.execute(query)
+    allItems = cursor.fetchall()
+    allItems = [element[0] for element in allItems]
+    return allItems
+
+def getShippings(cursor) -> list:
+    query = "SELECT id_envio FROM envio"
+    cursor.execute(query)
+    allItems = cursor.fetchall()
+    allItems = [element[0] for element in allItems]
+    return allItems
+
     

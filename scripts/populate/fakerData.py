@@ -116,10 +116,25 @@ def fakeItem(cursor) -> str: #queda un error en esta funcion pendiente de resolv
     else: 
         homeShip = False 
     
-    return f" {quantity}, '{state}','{shippingType}', {homeShip}, {user}, {product}, '{address}', {orderNumber}"
+    return f"{quantity}, '{state}','{shippingType}', {homeShip}, {user}, {product}, '{address}', {orderNumber}"
 
 def fakeImage(cursor) -> str: 
     product = random.choice(list(getProduct(cursor)))
     productName = getProductName(cursor, product)
     imageSource =  fakeEn.word()+ ".JPEG"
-    return f" {product}, '{imageSource}'"   
+    return f"{product}, '{imageSource}'"   
+
+def fakeUserAdress(cursor) -> str:
+    user = getRandomUser(cursor)
+    address = random.choice(list(getAddress(cursor)))
+    return f"{user}, {address}"
+
+def fakeItemShipping(cursor) -> str:
+    item = random.choice(list(getItems(cursor)))
+    shippping = random.choice(list(getShippings(cursor)))
+    return f"{item}, {shippping}"
+
+def fakeOfertProduct(cursor) -> str:
+    ofert = random.choice(list(getOrder(cursor)))
+    product = random.choice(list(getProduct(cursor)))
+    return f"{ofert}, {product}"
