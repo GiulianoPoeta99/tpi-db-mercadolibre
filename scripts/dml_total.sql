@@ -1,4 +1,4 @@
-INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
+INSERT INTO usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('mateo-valentingonzalez@example.org','+54 15 2478 3070','DSZfSzhrim'),
 	 ('emma58@example.com','+54 15 2688 2193','xgGgdbILCz'),
 	 ('bautistajuarez@example.org','+54 9 3515 3783','nLkTYGRjHh'),
@@ -9,7 +9,7 @@ INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('benitezfaustino@example.com','+54 15 2202 5052','xDKqfJaNaA'),
 	 ('bgutierrez@example.com','+54 9 3518 9952','tgFYouXoiK'),
 	 ('santino28@example.org','+54 9 3216 3609','hQekhmMUxt');
-INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
+INSERT INTO usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('ayalamaia@example.net','+54 15 2599 9923','RrdbUsZUrb'),
 	 ('mendezian-ezequiel@example.com','+54 9 3246 4753','ekObTHOYwn'),
 	 ('juan05@example.net','+54 15 2493 7158','bMRgADGWwF'),
@@ -20,7 +20,7 @@ INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('vgonzalez@example.net','+54 15 2724 4917','rYNKGFVPdC'),
 	 ('maldonadojuan-bautista@example.net','+54 9 3459 0566','iYCGAKPKcp'),
 	 ('gonzalezbenjamin@example.net','+54 15 2930 4438','fTzOnEHEFg');
-INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
+INSERT INTO usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('wrodriguez@example.org','+54 9 3840 1280','XJJNufUvZF'),
 	 ('isabellasoria@example.net','+54 9 3169 5217','ntylFrnXyx'),
 	 ('joaquin24@example.net','+54 9 3700 1616','IOufdIGDXt'),
@@ -31,7 +31,7 @@ INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('jsanchez@example.com','+54 9 3332 4837','BAzRfkgekI'),
 	 ('rodriguezfrancesca@example.net','+54 15 2491 2190','zjIfSBWIRC'),
 	 ('dtorres@example.net','+54 15 2202 4315','vlpDVBmPWU');
-INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
+INSERT INTO usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('juanaruiz@example.com','+54 15 2191 5304','UcydiTeTqD'),
 	 ('martina46@example.org','+54 9 3997 5164','kdMWgAfqdH'),
 	 ('qescobar@example.com','+54 9 3216 1498','bEpciXpyGS'),
@@ -42,7 +42,7 @@ INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('miguel-angel85@example.net','+54 15 2531 2281','tyQlBXCBlO'),
 	 ('lopezalma-jazmin@example.net','+54 15 2650 3291','tNFhlMOukR'),
 	 ('agustin69@example.com','+54 15 2722 8339','ODCVVqhsvL');
-INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
+INSERT INTO usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('constantino90@example.org','+54 15 2717 0146','sGKCUeodWB'),
 	 ('camilo69@example.net','+54 9 3265 8082','sWBJNGcRgX'),
 	 ('valdezrenata@example.org','+54 9 3373 1053','KDorqzjgNz'),
@@ -53,7 +53,7 @@ INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('alejogonzalez@example.net','+54 15 2605 3532','zPAcQORTqE'),
 	 ('verafrancesca@example.org','+54 15 2958 5916','todShAqALl'),
 	 ('vargascatalina@example.com','+54 9 3180 2341','ENwuHLTcoL');
-INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
+INSERT INTO usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('zcabrera@example.com','+54 15 2543 8172','yTIchnrjXb'),
 	 ('velazquezisabel@example.net','+54 15 2219 0809','aDAbZBmWBL'),
 	 ('hnunez@example.org','+54 9 3199 0527','DhAJmOTwKl'),
@@ -64,7 +64,7 @@ INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('ocarrizo@example.net','+54 15 2859 1746','txvJoaxVto'),
 	 ('medinaluisana@example.com','+54 15 2525 4572','vxFabkuuHi'),
 	 ('figueroatiziano@example.com','+54 15 2314 5385','TYgAEfwzvl');
-INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
+INSERT INTO usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('olucero@example.org','+54 15 2272 5870','zLlzgIFbbg'),
 	 ('escobarthiago@example.org','+54 9 3417 0137','FlqRkhameK'),
 	 ('thiago-lioneltorres@example.net','+54 9 3400 4946','JLtLzMWdet'),
@@ -75,7 +75,7 @@ INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('fernandezbenjamin-alejandro@example.com','+54 15 2280 3648','ESzQZdUSFa'),
 	 ('felipe12@example.net','+54 9 3583 2950','BbPYCWGrRN'),
 	 ('miguel-angelfernandez@example.com','+54 15 2249 1194','LqogWbpGxL');
-INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
+INSERT INTO usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('martinezpedro@example.net','+54 15 2971 9885','sfqLSLAzhK'),
 	 ('lgimenez@example.net','+54 15 2969 5623','enDpeIlkMe'),
 	 ('elena11@example.net','+54 9 3212 7698','BQlOvwVAWN'),
@@ -86,7 +86,7 @@ INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('agustin19@example.com','+54 9 3173 0108','dxaFdWPqno'),
 	 ('xfernandez@example.net','+54 15 2445 7651','WxUkuovhAf'),
 	 ('oromero@example.com','+54 15 2120 9749','vqdanFZKIo');
-INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
+INSERT INTO usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('guillerminagonzalez@example.com','+54 15 2116 4220','wsKEbVphXN'),
 	 ('ayalaluz-maria@example.com','+54 9 3288 9776','EgvRWDoSgK'),
 	 ('figueroaabigail@example.org','+54 15 2929 3318','nOzGGPBWGz'),
@@ -97,7 +97,7 @@ INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('gonzalezmaria-victoria@example.net','+54 9 3989 6978','yicerDMdRt'),
 	 ('poncerosario@example.org','+54 9 3402 3064','ycSOWprVDa'),
 	 ('catalinamartinez@example.org','+54 15 2622 3066','FJryaRMLQW');
-INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
+INSERT INTO usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('nicolassanchez@example.org','+54 9 3485 5980','nctJcSRXVu'),
 	 ('garciafrancesca@example.com','+54 15 2878 4540','ErluLvscAr'),
 	 ('bdiaz@example.org','+54 9 3953 0327','mIFztqxHWj'),
@@ -108,7 +108,7 @@ INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('valentina08@example.org','+54 9 3337 7350','CEJFVyNlni'),
 	 ('herreraoctavio@example.com','+54 15 2723 3055','DQDhUrTWBN'),
 	 ('danteaguirre@example.net','+54 9 3166 1664','iTxxnYCxwC');
-INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
+INSERT INTO usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('ferreyrafacundo@example.net','+54 9 3659 9633','AwJoaKZwld'),
 	 ('martinamedina@example.com','+54 15 2801 9484','XOjfpphqJc'),
 	 ('btorres@example.org','+54 9 3774 8149','rDBOOqAsNK'),
@@ -119,7 +119,7 @@ INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('sosafrancisco@example.org','+54 15 2846 6012','wLIrkmrDEt'),
 	 ('medinaluca@example.com','+54 15 2146 8956','FjjiXvyBjw'),
 	 ('paulinarojas@example.org','+54 15 2957 6799','pQsPjvWFtC');
-INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
+INSERT INTO usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('gonzalezcamila@example.com','+54 9 3253 7577','EuhngJrWBE'),
 	 ('godoybruno@example.com','+54 15 2966 8508','qSxfJRQcqL'),
 	 ('bbenitez@example.net','+54 9 3950 7819','PkSuPNGwXE'),
@@ -130,7 +130,7 @@ INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('soriamateo-joaquin@example.net','+54 15 2587 9199','VxbQyURKKw'),
 	 ('agustina65@example.com','+54 9 3547 5646','JeogOdpKoH'),
 	 ('xgomez@example.org','+54 15 2250 6152','jkhvTaxfFr');
-INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
+INSERT INTO usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('molinathiago-daniel@example.net','+54 15 2243 8656','LFemVtCmrW'),
 	 ('lopezjuan-ignacio@example.net','+54 15 2196 0534','pFCaDKePMn'),
 	 ('juan-bautistarodriguez@example.org','+54 9 3879 5107','lIteAgbWCs'),
@@ -141,7 +141,7 @@ INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('yojeda@example.com','+54 9 3814 1201','zsQFQEOPxo'),
 	 ('ndiaz@example.net','+54 15 2494 1013','PQvXpAEEwz'),
 	 ('rperez@example.org','+54 9 3189 8558','IaXFLdmXck');
-INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
+INSERT INTO usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('mia-valentina50@example.net','+54 15 2224 9119','nRlGcYIWek'),
 	 ('peraltajuan-manuel@example.com','+54 15 2857 3425','VRxipcntNs'),
 	 ('juan-manuelsanchez@example.com','+54 15 2968 6348','oPdyxHFAeM'),
@@ -152,7 +152,7 @@ INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('ariasconstantino@example.net','+54 9 3556 9465','HPTKVBotFz'),
 	 ('constantinoponce@example.com','+54 9 3890 5150','DhbHiMvUCO'),
 	 ('santino39@example.net','+54 9 3170 6584','BbftcKIXoI');
-INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
+INSERT INTO usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('bautista65@example.org','+54 9 3873 1312','DERbboHhVD'),
 	 ('bautista35@example.com','+54 15 2209 9362','KYNbZvWHYo'),
 	 ('gael77@example.com','+54 15 2758 0236','gkAGJVwIHo'),
@@ -163,7 +163,7 @@ INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('miguel-angelcaceres@example.com','+54 15 2220 9409','GMBvxdWXJV'),
 	 ('mgarcia@example.net','+54 15 2527 6587','FcrOaISTxn'),
 	 ('fcarrizo@example.net','+54 9 3336 8739','BqLAYbpYcw');
-INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
+INSERT INTO usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('manuel40@example.org','+54 15 2910 9377','zcqPBJimtS'),
 	 ('lopezjulian@example.net','+54 15 2558 5818','QJwAaYEQCj'),
 	 ('santino35@example.com','+54 9 3316 7042','WkmhIzGEWl'),
@@ -174,7 +174,7 @@ INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('gonzalezmia@example.com','+54 9 3360 7939','piNExBzeuP'),
 	 ('emma93@example.com','+54 9 3178 0177','bRFxIQKTgZ'),
 	 ('ciro30@example.org','+54 9 3432 7247','DfuIIAsepH');
-INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
+INSERT INTO usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('obravo@example.com','+54 15 2741 4620','PkuuXpwsyq'),
 	 ('maldonadovalentina@example.net','+54 9 3881 8981','VYWtdJXYNX'),
 	 ('drodriguez@example.org','+54 9 3309 7427','dnJhfDbYnM'),
@@ -185,7 +185,7 @@ INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('luceromateo@example.net','+54 9 3488 4663','mDadVvQtpk'),
 	 ('salvador46@example.org','+54 9 3732 5687','vLLoLZrmJB'),
 	 ('cordobabautista@example.com','+54 9 3220 2402','fwgKGpNruG');
-INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
+INSERT INTO usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('genaro25@example.net','+54 15 2439 9979','cWajSLNPyV'),
 	 ('juan-ignaciopaez@example.org','+54 9 3603 3748','djlmprQobJ'),
 	 ('hlopez@example.com','+54 9 3399 1075','YvhwtviFPc'),
@@ -196,7 +196,7 @@ INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('benjamingutierrez@example.net','+54 15 2997 7070','oWAhlKjVZa'),
 	 ('micaelachavez@example.net','+54 15 2979 6274','dwonWlTEwg'),
 	 ('floresaugusto@example.com','+54 15 2742 4808','DTxWBjQUPQ');
-INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
+INSERT INTO usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('qleiva@example.org','+54 15 2191 9297','rtoYKDEEaX'),
 	 ('mateo06@example.com','+54 9 3601 9616','IlrxyFtnIl'),
 	 ('isabellaacosta@example.net','+54 15 2846 6251','zBYoQpLHAq'),
@@ -207,7 +207,7 @@ INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('kperalta@example.org','+54 9 3546 9509','rYQXhZgzcu'),
 	 ('caceresmaximiliano@example.org','+54 15 2525 2618','EiPGDOGgly'),
 	 ('castillovalentino@example.net','+54 9 3635 1391','STTQqqrAsI');
-INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
+INSERT INTO usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('juan81@example.com','+54 15 2370 6450','jgYeDjtLec'),
 	 ('ian-benjaminromero@example.org','+54 15 2755 8955','FwaGBagRUe'),
 	 ('medinamartin@example.net','+54 15 2815 4308','tObRwccZgC'),
@@ -218,7 +218,7 @@ INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('luz-milagrosgonzalez@example.net','+54 15 2644 1228','LpynWSEcXn'),
 	 ('juan-pablo11@example.com','+54 9 3446 5781','dWMDcISOTL'),
 	 ('catalina62@example.net','+54 9 3596 0971','cKgAQxSDqY');
-INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
+INSERT INTO usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('juan-cruz93@example.net','+54 15 2471 0734','WtwTFXvVDV'),
 	 ('gcordoba@example.com','+54 15 2628 4702','HbXujNVvFF'),
 	 ('mora56@example.org','+54 15 2642 7158','AAjXfgUOPG'),
@@ -229,7 +229,7 @@ INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('camilo14@example.org','+54 15 2862 6527','fsTPfzxBQb'),
 	 ('ymedina@example.net','+54 9 3400 8115','hfcjKsqVml'),
 	 ('ygomez@example.net','+54 9 3772 6756','yIKaCqWjaT');
-INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
+INSERT INTO usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('dominguezlucio@example.net','+54 9 3279 8246','XMNpeLApeq'),
 	 ('bianca79@example.org','+54 15 2697 6237','VzeBedLrZc'),
 	 ('sosavictoria@example.com','+54 9 3785 0201','DPpKbpiVKR'),
@@ -240,7 +240,7 @@ INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('zruiz@example.com','+54 9 3840 6001','wThOBXVTJC'),
 	 ('julian03@example.org','+54 9 3180 2027','ERutTyzXBM'),
 	 ('apereyra@example.org','+54 15 2836 8111','FBzASZcFJT');
-INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
+INSERT INTO usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('tomasruiz@example.org','+54 9 3212 0573','OwdZNtWulv'),
 	 ('rfernandez@example.org','+54 15 2970 6992','KNRJrHVvSw'),
 	 ('agomez@example.com','+54 9 3373 4976','dDhhjAHdxq'),
@@ -251,7 +251,7 @@ INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('ecabrera@example.com','+54 9 3461 1441','CXWvSlXKAL'),
 	 ('ginoperez@example.net','+54 15 2698 5880','GDLReNTuxX'),
 	 ('ilopez@example.net','+54 9 3147 2176','rJbXAlOcXj');
-INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
+INSERT INTO usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('beniciocastillo@example.com','+54 15 2795 0920','gmdCdhqPwL'),
 	 ('franciscovargas@example.net','+54 9 3890 5278','NXbhYyUmXg'),
 	 ('alejopaez@example.org','+54 15 2413 8379','AMeUUHrzpK'),
@@ -262,7 +262,7 @@ INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('wmendez@example.com','+54 15 2362 6631','whPDsTluVp'),
 	 ('gutierrezpedro@example.org','+54 9 3339 0114','fNQGrBmKgW'),
 	 ('torresmaria-paz@example.org','+54 9 3509 3673','WHyhuuqDYw');
-INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
+INSERT INTO usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('martineztiziano@example.org','+54 15 2138 3967','ubsrNKBHYx'),
 	 ('aromero@example.org','+54 15 2282 7447','sZaitNcpWY'),
 	 ('juan-cruzrios@example.net','+54 9 3647 7063','hRsPwBVfxL'),
@@ -273,7 +273,7 @@ INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('juan-ignacio31@example.com','+54 15 2357 0339','OVqsIvVkig'),
 	 ('vsosa@example.com','+54 9 3729 9702','iQnrODImxv'),
 	 ('martinarodriguez@example.net','+54 15 2744 6268','aNTuYKpoBN');
-INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
+INSERT INTO usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('juan-martin99@example.org','+54 9 3795 6954','jIwZfDtcUm'),
 	 ('martinezmaite@example.com','+54 9 3766 6799','FPaCQsRBQH'),
 	 ('fgomez@example.net','+54 15 2913 4109','FxNrAZuqvp'),
@@ -284,7 +284,7 @@ INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('giuliana85@example.net','+54 9 3216 0171','XElClyhULe'),
 	 ('rosario41@example.net','+54 15 2766 0837','TqoeoFJcQj'),
 	 ('valentina-76@example.org','+54 9 3835 8039','GyMhpZAphW');
-INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
+INSERT INTO usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('santiago-benjamin25@example.com','+54 9 3640 6348','mrbCLWzTtL'),
 	 ('matias02@example.com','+54 15 2436 2570','aJXtoubsRd'),
 	 ('emilianofernandez@example.org','+54 15 2358 8110','sRyzhHwuav'),
@@ -295,7 +295,7 @@ INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('isabella24@example.com','+54 15 2794 2028','emlvZTLohd'),
 	 ('maximo25@example.org','+54 15 2950 5276','TXYnvzNuqc'),
 	 ('lucas-ezequielcastro@example.com','+54 15 2571 7864','EWzhmVDJvW');
-INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
+INSERT INTO usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('emiliaacuna@example.net','+54 15 2372 9321','HRUyeOPvhh'),
 	 ('nicolas68@example.com','+54 9 3336 0702','XVoPqHasbP'),
 	 ('maria-victoriaherrera@example.com','+54 9 3592 7642','FleieilpBE'),
@@ -306,7 +306,7 @@ INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('tomasperez@example.org','+54 15 2802 0425','jRNYlgeQuy'),
 	 ('acostaignacio@example.com','+54 15 2959 7021','lVyfIPlPsd'),
 	 ('jeremiasguzman@example.net','+54 9 3101 3320','QujyIwlNtc');
-INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
+INSERT INTO usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('lautaro25@example.com','+54 15 2452 2299','nUZLMcpsDt'),
 	 ('vbustos@example.com','+54 9 3452 2027','lyZBxowrIL'),
 	 ('diazluciano@example.net','+54 9 3898 8184','MoSaRKmgOZ'),
@@ -317,7 +317,7 @@ INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('joaquin10@example.org','+54 15 2591 7485','SMFAwCjYpA'),
 	 ('fsanchez@example.net','+54 15 2377 1104','UCnOzxCwtg'),
 	 ('odiaz@example.com','+54 9 3740 6086','QQpCBOQknh');
-INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
+INSERT INTO usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('benjamin22@example.org','+54 9 3186 6187','aoaaQyAeXz'),
 	 ('cordobalara@example.org','+54 9 3313 9250','bujlJkOIjb'),
 	 ('iacosta@example.net','+54 9 3856 7588','ddcZlWsSmV'),
@@ -329,7 +329,8 @@ INSERT INTO public.usuario (correo_electronico,telefono,contrasenia) VALUES
 	 ('udominguez@example.com','+54 15 2852 0668','OlZBUnsPkX'),
 	 ('emilia97@example.org','+54 9 3933 3565','mqssWEMtom');
 
-INSERT INTO public.empresa (usuario,cuit,nombre_fantasia,fecha_creacion) VALUES
+
+INSERT INTO empresa (usuario,cuit,nombre_fantasia,fecha_creacion) VALUES
 	 (160,'42-36051971-5','CrimsonCove','1979-12-23'),
 	 (146,'71-81370087-7','BlissfulBoutique','1981-06-02'),
 	 (125,'27-34366541-9','EmeraldHaven','1976-02-04'),
@@ -340,7 +341,7 @@ INSERT INTO public.empresa (usuario,cuit,nombre_fantasia,fecha_creacion) VALUES
 	 (185,'20-84695040-4','RoyalRidge','2023-06-27'),
 	 (170,'24-90955904-6','HarmonyHomes','2002-01-15'),
 	 (241,'01-82007788-7','UrbanNest','1994-04-23');
-INSERT INTO public.empresa (usuario,cuit,nombre_fantasia,fecha_creacion) VALUES
+INSERT INTO empresa (usuario,cuit,nombre_fantasia,fecha_creacion) VALUES
 	 (184,'46-29684693-0','SunriseVista','1997-07-18'),
 	 (210,'99-68062312-1','UrbanHarvest','2005-12-20'),
 	 (132,'15-26114903-4','BlueHorizon','2001-11-13'),
@@ -351,7 +352,7 @@ INSERT INTO public.empresa (usuario,cuit,nombre_fantasia,fecha_creacion) VALUES
 	 (205,'24-15428440-1','UrbanVibe','1991-02-02'),
 	 (289,'32-89972894-9','OceanBreeze','1979-10-26'),
 	 (117,'10-58438068-0','FreshMarket','1995-08-22');
-INSERT INTO public.empresa (usuario,cuit,nombre_fantasia,fecha_creacion) VALUES
+INSERT INTO empresa (usuario,cuit,nombre_fantasia,fecha_creacion) VALUES
 	 (22,'55-07807183-9','MajesticHomes','2004-05-20'),
 	 (75,'98-61223021-1','NatureNest','1981-10-28'),
 	 (246,'08-15453702-2','AmbientGlow','2021-03-11'),
@@ -362,7 +363,7 @@ INSERT INTO public.empresa (usuario,cuit,nombre_fantasia,fecha_creacion) VALUES
 	 (115,'66-63510695-7','ParadisePoint','2016-12-08'),
 	 (214,'26-97364524-6','SunsetVoyage','1986-04-27'),
 	 (234,'60-96978585-3','RadiantRidge','1983-12-04');
-INSERT INTO public.empresa (usuario,cuit,nombre_fantasia,fecha_creacion) VALUES
+INSERT INTO empresa (usuario,cuit,nombre_fantasia,fecha_creacion) VALUES
 	 (126,'77-04914173-1','SeaBreeze','1986-08-09'),
 	 (43,'51-24368948-4','DreamCove','1995-07-30'),
 	 (85,'51-48989553-8','StarrySkies','1986-06-25'),
@@ -373,7 +374,7 @@ INSERT INTO public.empresa (usuario,cuit,nombre_fantasia,fecha_creacion) VALUES
 	 (293,'59-59857208-5','TranquilHomes','1989-06-04'),
 	 (92,'40-22381478-1','WhimsicalWoods','2020-06-28'),
 	 (55,'36-34655531-1','CosmicCreations','1990-11-24');
-INSERT INTO public.empresa (usuario,cuit,nombre_fantasia,fecha_creacion) VALUES
+INSERT INTO empresa (usuario,cuit,nombre_fantasia,fecha_creacion) VALUES
 	 (15,'31-75994284-8','WhimsicalWaters','1986-10-24'),
 	 (267,'12-41376607-5','LuxeDesigns','2020-01-17'),
 	 (95,'06-64941283-5','DreamBuilders','1990-03-14'),
@@ -384,7 +385,7 @@ INSERT INTO public.empresa (usuario,cuit,nombre_fantasia,fecha_creacion) VALUES
 	 (135,'78-96152780-6','UrbanMix','1982-03-24'),
 	 (9,'63-75628688-0','DreamyInteriors','1984-07-01'),
 	 (61,'55-94126501-1','GoldenFields','1973-12-12');
-INSERT INTO public.empresa (usuario,cuit,nombre_fantasia,fecha_creacion) VALUES
+INSERT INTO empresa (usuario,cuit,nombre_fantasia,fecha_creacion) VALUES
 	 (174,'49-03070478-9','UrbanAura','2009-08-05'),
 	 (21,'27-20362497-0','SecretSunrise','2015-02-01'),
 	 (211,'43-30814362-8','UrbanEscape','1996-06-02'),
@@ -395,7 +396,7 @@ INSERT INTO public.empresa (usuario,cuit,nombre_fantasia,fecha_creacion) VALUES
 	 (48,'72-58227481-2','InnovaTech','2009-10-03'),
 	 (258,'16-46753428-6','ZenithBuilders','1980-11-15'),
 	 (26,'29-39176237-4','Popper','2022-03-20');
-INSERT INTO public.empresa (usuario,cuit,nombre_fantasia,fecha_creacion) VALUES
+INSERT INTO empresa (usuario,cuit,nombre_fantasia,fecha_creacion) VALUES
 	 (208,'71-64167421-2','RadiantGrove','1975-10-04'),
 	 (7,'80-74083823-5','DreamyDwellings','1989-04-01'),
 	 (240,'59-58902261-8','WhisperingPines','1978-05-15'),
@@ -406,7 +407,7 @@ INSERT INTO public.empresa (usuario,cuit,nombre_fantasia,fecha_creacion) VALUES
 	 (239,'34-10570813-2','LuxuryLiving','1996-02-15'),
 	 (154,'28-91956293-1','StellaMaris','1999-08-01'),
 	 (164,'25-76443015-6','SportMax','1983-07-17');
-INSERT INTO public.empresa (usuario,cuit,nombre_fantasia,fecha_creacion) VALUES
+INSERT INTO empresa (usuario,cuit,nombre_fantasia,fecha_creacion) VALUES
 	 (186,'04-71761480-7','EnchantedSpaces','1984-08-13'),
 	 (188,'67-37179327-6','NovaBuilders','1994-03-27'),
 	 (179,'34-83379175-2','GoldenSunrise','1983-07-27'),
@@ -417,7 +418,7 @@ INSERT INTO public.empresa (usuario,cuit,nombre_fantasia,fecha_creacion) VALUES
 	 (150,'64-98692261-6','EliteEvents','1980-07-07'),
 	 (93,'09-72902610-6','AmberWaves','2002-08-05'),
 	 (84,'48-50376144-7','TechNova','1978-11-24');
-INSERT INTO public.empresa (usuario,cuit,nombre_fantasia,fecha_creacion) VALUES
+INSERT INTO empresa (usuario,cuit,nombre_fantasia,fecha_creacion) VALUES
 	 (32,'01-71375508-7','GreenSolutions','1988-01-31'),
 	 (147,'98-39925658-9','SkylineInnovations','2008-02-26'),
 	 (283,'29-35650819-0','NaturalElegance','1989-12-30'),
@@ -428,7 +429,7 @@ INSERT INTO public.empresa (usuario,cuit,nombre_fantasia,fecha_creacion) VALUES
 	 (249,'81-32708252-2','GoldenHarbor','1990-09-06'),
 	 (6,'79-40250600-0','Urban','1980-01-22'),
 	 (66,'44-91476630-4','SmartSolutions','1988-09-24');
-INSERT INTO public.empresa (usuario,cuit,nombre_fantasia,fecha_creacion) VALUES
+INSERT INTO empresa (usuario,cuit,nombre_fantasia,fecha_creacion) VALUES
 	 (139,'41-28369057-3','GoldenCoast','1985-07-22'),
 	 (243,'87-69970883-3','OceanVista','1977-03-21'),
 	 (261,'27-84827851-0','RadiantHomes','1979-04-22'),
@@ -440,7 +441,8 @@ INSERT INTO public.empresa (usuario,cuit,nombre_fantasia,fecha_creacion) VALUES
 	 (142,'05-32028660-4','Mike','1992-09-29'),
 	 (56,'76-68531852-5','GreenVibes','1991-08-02');
 
-INSERT INTO public.particular (usuario,dni,fecha_nacimiento,nombre,apellido) VALUES
+
+INSERT INTO particular (usuario,dni,fecha_nacimiento,nombre,apellido) VALUES
 	 (199,'00809255','1950-08-13','Juan Pablo','Chavez'),
 	 (206,'55694387','1954-01-21','Thiago Leonel','Romero'),
 	 (198,'68743354','1950-02-27','Octavio','Lopez'),
@@ -451,7 +453,7 @@ INSERT INTO public.particular (usuario,dni,fecha_nacimiento,nombre,apellido) VAL
 	 (63,'00193790','1944-05-09','Felicitas','Ojeda'),
 	 (128,'40642710','1961-05-21','Luna','Villalba'),
 	 (29,'39940456','1962-06-10','Victoria','Rojas');
-INSERT INTO public.particular (usuario,dni,fecha_nacimiento,nombre,apellido) VALUES
+INSERT INTO particular (usuario,dni,fecha_nacimiento,nombre,apellido) VALUES
 	 (256,'63511270','1981-02-01','Jeremias','Roldan'),
 	 (110,'91025266','1981-04-20','Maximo','Torres'),
 	 (145,'29887111','1965-09-15','Salvador','Flores'),
@@ -462,7 +464,7 @@ INSERT INTO public.particular (usuario,dni,fecha_nacimiento,nombre,apellido) VAL
 	 (230,'75568732','1951-11-23','Valentina','Rivero'),
 	 (127,'19881009','2017-04-01','Santino','Castillo'),
 	 (77,'87505663','2016-02-04','Sofia','Acosta');
-INSERT INTO public.particular (usuario,dni,fecha_nacimiento,nombre,apellido) VALUES
+INSERT INTO particular (usuario,dni,fecha_nacimiento,nombre,apellido) VALUES
 	 (171,'41244237','2004-11-10','Felipe','Gomez'),
 	 (274,'91831172','1978-04-15','Valentino','Blanco'),
 	 (57,'70596200','1969-04-27','Isabella','Quiroga'),
@@ -473,7 +475,7 @@ INSERT INTO public.particular (usuario,dni,fecha_nacimiento,nombre,apellido) VAL
 	 (227,'99816107','1955-07-16','Juan Ignacio','Fernandez'),
 	 (237,'69580787','1996-12-08','Bautista','Ramirez'),
 	 (224,'05790998','1944-09-10','Antonella','Gonzalez');
-INSERT INTO public.particular (usuario,dni,fecha_nacimiento,nombre,apellido) VALUES
+INSERT INTO particular (usuario,dni,fecha_nacimiento,nombre,apellido) VALUES
 	 (298,'52502583','1990-06-09','Julia','Ortiz'),
 	 (273,'44286707','2007-08-31','Thiago Benjamin','Garcia'),
 	 (121,'72436372','1990-08-30','Simon','Herrera'),
@@ -484,7 +486,7 @@ INSERT INTO public.particular (usuario,dni,fecha_nacimiento,nombre,apellido) VAL
 	 (181,'72562221','1982-06-28','Lorenzo','Valdez'),
 	 (129,'52271198','1992-10-04','Thiago Ezequiel','Ruiz'),
 	 (292,'82590394','1999-05-28','Juana','Peralta');
-INSERT INTO public.particular (usuario,dni,fecha_nacimiento,nombre,apellido) VALUES
+INSERT INTO particular (usuario,dni,fecha_nacimiento,nombre,apellido) VALUES
 	 (67,'24708562','1968-01-15','Valentin','Benitez'),
 	 (200,'72561135','2015-05-06','Ciro','Avila'),
 	 (28,'64683567','1960-04-25','Benicio','Flores'),
@@ -495,7 +497,7 @@ INSERT INTO public.particular (usuario,dni,fecha_nacimiento,nombre,apellido) VAL
 	 (215,'44182856','2006-10-19','Alexander','Figueroa'),
 	 (101,'66022852','1950-03-10','Tomas','Miranda'),
 	 (278,'21508291','2019-12-01','Juana','Medina');
-INSERT INTO public.particular (usuario,dni,fecha_nacimiento,nombre,apellido) VALUES
+INSERT INTO particular (usuario,dni,fecha_nacimiento,nombre,apellido) VALUES
 	 (220,'52038687','2004-05-26','Morena','Diaz'),
 	 (163,'36600504','1991-03-19','Julia','Rojas'),
 	 (81,'76124207','1974-03-11','Paula','Rios'),
@@ -506,7 +508,7 @@ INSERT INTO public.particular (usuario,dni,fecha_nacimiento,nombre,apellido) VAL
 	 (189,'59961148','2004-11-24','Julian','Romero'),
 	 (216,'13377835','1964-08-02','Ezequiel','Gonzalez'),
 	 (223,'01596099','2006-08-14','Mateo Benjamin','Ramirez');
-INSERT INTO public.particular (usuario,dni,fecha_nacimiento,nombre,apellido) VALUES
+INSERT INTO particular (usuario,dni,fecha_nacimiento,nombre,apellido) VALUES
 	 (114,'06130138','1971-07-06','Valentina','Maldonado'),
 	 (11,'00624065','2010-11-29','León','Fernandez'),
 	 (176,'52248214','2010-02-27','Valentino','Caceres'),
@@ -517,7 +519,7 @@ INSERT INTO public.particular (usuario,dni,fecha_nacimiento,nombre,apellido) VAL
 	 (65,'50910645','1963-06-08','Emilia','Peralta'),
 	 (165,'11788613','1969-04-01','Simon','Farias'),
 	 (131,'37641034','1989-03-12','Ivan','Pereyra');
-INSERT INTO public.particular (usuario,dni,fecha_nacimiento,nombre,apellido) VALUES
+INSERT INTO particular (usuario,dni,fecha_nacimiento,nombre,apellido) VALUES
 	 (159,'16817523','1978-02-28','Juan Ignacio','Martin'),
 	 (225,'69702961','1973-02-27','Ignacio','Ramos'),
 	 (86,'10664772','2000-11-04','Agustin','Gonzalez'),
@@ -528,7 +530,7 @@ INSERT INTO public.particular (usuario,dni,fecha_nacimiento,nombre,apellido) VAL
 	 (244,'41785948','1948-02-04','Joaquin','Gomez'),
 	 (12,'49187983','1966-12-29','Sofia','Pereyra'),
 	 (71,'26389559','1980-10-20','Augusto','Ruiz');
-INSERT INTO public.particular (usuario,dni,fecha_nacimiento,nombre,apellido) VALUES
+INSERT INTO particular (usuario,dni,fecha_nacimiento,nombre,apellido) VALUES
 	 (1,'65597707','2022-10-15','Francisco','Ponce'),
 	 (27,'69930701','1959-01-20','Luciano','Herrera'),
 	 (5,'36843313','2018-11-18','Benjamin','Velazquez'),
@@ -539,7 +541,7 @@ INSERT INTO public.particular (usuario,dni,fecha_nacimiento,nombre,apellido) VAL
 	 (226,'92658196','1981-11-11','Francisco','Lopez'),
 	 (36,'26425842','1956-03-06','Federico','Suarez'),
 	 (270,'56357007','1956-09-07','Maria Paz','Rodriguez');
-INSERT INTO public.particular (usuario,dni,fecha_nacimiento,nombre,apellido) VALUES
+INSERT INTO particular (usuario,dni,fecha_nacimiento,nombre,apellido) VALUES
 	 (124,'91467482','1991-08-03','Jazmin','Silva'),
 	 (68,'07446259','1952-03-11','Guadalupe','Gutierrez'),
 	 (155,'63428020','1994-03-18','Ian','Sosa'),
@@ -550,7 +552,7 @@ INSERT INTO public.particular (usuario,dni,fecha_nacimiento,nombre,apellido) VAL
 	 (250,'92073735','1980-09-24','Thiago Agustin','Soto'),
 	 (204,'06002841','1996-04-20','Lola','Ramirez'),
 	 (102,'73314111','1959-05-10','Jazmin','Maldonado');
-INSERT INTO public.particular (usuario,dni,fecha_nacimiento,nombre,apellido) VALUES
+INSERT INTO particular (usuario,dni,fecha_nacimiento,nombre,apellido) VALUES
 	 (296,'41894676','1982-08-18','Sofia','Soria'),
 	 (49,'27658178','1944-11-29','Thiago Agustin','Gutierrez'),
 	 (297,'79348580','1977-10-30','Constantino','Sanchez'),
@@ -561,7 +563,7 @@ INSERT INTO public.particular (usuario,dni,fecha_nacimiento,nombre,apellido) VAL
 	 (218,'34772913','2008-01-09','Juan Ignacio','Rodriguez'),
 	 (281,'79930305','1999-04-28','Giovanni','Dominguez'),
 	 (197,'07651921','1957-06-24','Vicente','Diaz');
-INSERT INTO public.particular (usuario,dni,fecha_nacimiento,nombre,apellido) VALUES
+INSERT INTO particular (usuario,dni,fecha_nacimiento,nombre,apellido) VALUES
 	 (156,'44361752','1990-06-24','Catalina','Lopez'),
 	 (209,'68609228','2012-04-04','Maia','Ramirez'),
 	 (158,'15720231','2000-04-11','Benjamin','Caceres'),
@@ -572,7 +574,7 @@ INSERT INTO public.particular (usuario,dni,fecha_nacimiento,nombre,apellido) VAL
 	 (255,'70622473','1986-06-07','Ciro','Castillo'),
 	 (83,'15887888','1994-08-06','Martina','Velazquez'),
 	 (107,'87837534','1961-11-20','Pilar','Ruiz');
-INSERT INTO public.particular (usuario,dni,fecha_nacimiento,nombre,apellido) VALUES
+INSERT INTO particular (usuario,dni,fecha_nacimiento,nombre,apellido) VALUES
 	 (229,'38499065','1983-06-21','Pedro','Peralta'),
 	 (8,'13849423','1957-12-03','Giovanni','Sosa'),
 	 (59,'84598082','1979-03-14','Lorenzo','Bustos'),
@@ -583,7 +585,7 @@ INSERT INTO public.particular (usuario,dni,fecha_nacimiento,nombre,apellido) VAL
 	 (294,'84111792','1948-06-04','Isabella','Perez'),
 	 (212,'31459319','1971-02-12','Valentina','Ramos'),
 	 (18,'62680806','1958-04-18','Luz Maria','Martin');
-INSERT INTO public.particular (usuario,dni,fecha_nacimiento,nombre,apellido) VALUES
+INSERT INTO particular (usuario,dni,fecha_nacimiento,nombre,apellido) VALUES
 	 (276,'80175680','2018-10-08','Valentino','Ponce'),
 	 (285,'01807975','1978-09-03','Isabel','Romero'),
 	 (172,'17555340','1953-11-07','Felipe','Gonzalez'),
@@ -594,7 +596,7 @@ INSERT INTO public.particular (usuario,dni,fecha_nacimiento,nombre,apellido) VAL
 	 (268,'20751504','1976-06-15','Bautista','Gonzalez'),
 	 (37,'65210919','2000-11-15','Milagros','Flores'),
 	 (196,'08596391','2019-12-30','Bruno','Ojeda');
-INSERT INTO public.particular (usuario,dni,fecha_nacimiento,nombre,apellido) VALUES
+INSERT INTO particular (usuario,dni,fecha_nacimiento,nombre,apellido) VALUES
 	 (109,'85016717','1965-08-28','Francisco','Martinez'),
 	 (40,'27100862','2010-12-06','Juan Bautista','Villalba'),
 	 (221,'70686497','1949-05-21','Thiago','Carrizo'),
@@ -605,7 +607,7 @@ INSERT INTO public.particular (usuario,dni,fecha_nacimiento,nombre,apellido) VAL
 	 (253,'42515754','1978-01-19','Morena','Farias'),
 	 (286,'65847408','2009-03-23','Luisina','Acosta'),
 	 (112,'23197318','1985-06-22','Mateo Benjamin','Pereyra');
-INSERT INTO public.particular (usuario,dni,fecha_nacimiento,nombre,apellido) VALUES
+INSERT INTO particular (usuario,dni,fecha_nacimiento,nombre,apellido) VALUES
 	 (78,'68938425','1985-12-13','Renzo','Rodriguez'),
 	 (162,'98448406','1975-09-13','Joaquin','Coronel'),
 	 (175,'76386966','1974-12-14','Valentina ','Gomez'),
@@ -616,7 +618,7 @@ INSERT INTO public.particular (usuario,dni,fecha_nacimiento,nombre,apellido) VAL
 	 (282,'90221462','1995-08-31','Isabella','Martin'),
 	 (130,'35525148','2020-05-22','Felipe','Rodriguez'),
 	 (151,'41074492','1987-07-31','Thiago Leonel','Coronel');
-INSERT INTO public.particular (usuario,dni,fecha_nacimiento,nombre,apellido) VALUES
+INSERT INTO particular (usuario,dni,fecha_nacimiento,nombre,apellido) VALUES
 	 (31,'88712795','1974-05-05','Luz Milagros','Gomez'),
 	 (24,'62061196','2010-07-13','Luciano','Vega'),
 	 (14,'31140283','1944-07-06','Máximo','Molina'),
@@ -627,7 +629,7 @@ INSERT INTO public.particular (usuario,dni,fecha_nacimiento,nombre,apellido) VAL
 	 (152,'16878107','2022-05-24','Julieta','Vera'),
 	 (203,'13649915','1945-05-07','Guadalupe','Miranda'),
 	 (195,'77039367','1948-09-15','Thiago Valentin','Acuña');
-INSERT INTO public.particular (usuario,dni,fecha_nacimiento,nombre,apellido) VALUES
+INSERT INTO particular (usuario,dni,fecha_nacimiento,nombre,apellido) VALUES
 	 (233,'45374313','1976-02-09','Benjamin Ezequiel','Alvarez'),
 	 (290,'00274404','1989-11-12','Francisco','Peralta'),
 	 (44,'78833552','1948-06-09','Maximiliano','Morales'),
@@ -638,7 +640,7 @@ INSERT INTO public.particular (usuario,dni,fecha_nacimiento,nombre,apellido) VAL
 	 (182,'61891389','1977-03-01','Alfonsina','Franco'),
 	 (166,'69190143','1989-03-19','Joaquin','Ortiz'),
 	 (97,'07166473','2023-09-09','Thiago','Gonzalez');
-INSERT INTO public.particular (usuario,dni,fecha_nacimiento,nombre,apellido) VALUES
+INSERT INTO particular (usuario,dni,fecha_nacimiento,nombre,apellido) VALUES
 	 (94,'77124763','2017-12-15','Emilia','Juarez'),
 	 (108,'52187337','1962-12-01','Ian Benjamin','Suarez'),
 	 (161,'00798248','1950-04-01','Felipe','Correa'),
@@ -649,7 +651,7 @@ INSERT INTO public.particular (usuario,dni,fecha_nacimiento,nombre,apellido) VAL
 	 (10,'97425028','2022-03-17','Bautista Benjamin','Alvarez'),
 	 (193,'55933993','1978-03-31','Olivia','Olivera'),
 	 (91,'81185204','1984-06-30','Dylan','Cabrera');
-INSERT INTO public.particular (usuario,dni,fecha_nacimiento,nombre,apellido) VALUES
+INSERT INTO particular (usuario,dni,fecha_nacimiento,nombre,apellido) VALUES
 	 (149,'10949258','1965-10-07','Mora','Ruiz'),
 	 (259,'78434734','1991-11-16','Rosario','Gomez'),
 	 (74,'39511496','1983-09-29','Guadalupe','Rodriguez'),
@@ -661,7 +663,8 @@ INSERT INTO public.particular (usuario,dni,fecha_nacimiento,nombre,apellido) VAL
 	 (138,'58109458','2000-03-24','Paulina','Sosa'),
 	 (153,'27653843','1951-11-08','Mateo','Vargas');
 
-INSERT INTO public.direccion (codigo_postal,calle,altura) VALUES
+
+INSERT INTO direccion (codigo_postal,calle,altura) VALUES
 	 ('1734','Av. Pte. Perón',9620),
 	 ('2161','Boulevard Alem',5199),
 	 ('6165','Diagonal Güemes',2512),
@@ -672,7 +675,7 @@ INSERT INTO public.direccion (codigo_postal,calle,altura) VALUES
 	 ('1564','Avenida 2',5481),
 	 ('7074','Av. 6',5799),
 	 ('7165','Avenida 9',4565);
-INSERT INTO public.direccion (codigo_postal,calle,altura) VALUES
+INSERT INTO direccion (codigo_postal,calle,altura) VALUES
 	 ('8848','Calle Buenos Aires',9447),
 	 ('7541','Calle San Martin',813),
 	 ('9425','Calle 9',1267),
@@ -683,7 +686,7 @@ INSERT INTO public.direccion (codigo_postal,calle,altura) VALUES
 	 ('6183','Camino Constitución',8511),
 	 ('7740','Avenida La Pampa',5862),
 	 ('7391','Avenida Viedma',4864);
-INSERT INTO public.direccion (codigo_postal,calle,altura) VALUES
+INSERT INTO direccion (codigo_postal,calle,altura) VALUES
 	 ('7446','Calle Belgrano',9550),
 	 ('3932','Diagonal La Rioja',3163),
 	 ('7816','Calle Santa Fe',2783),
@@ -694,7 +697,7 @@ INSERT INTO public.direccion (codigo_postal,calle,altura) VALUES
 	 ('7824','Av. Paraná',7889),
 	 ('4441','Calle Malvinas Argentinas',7995),
 	 ('5352','Calle Buenos Aires',5576);
-INSERT INTO public.direccion (codigo_postal,calle,altura) VALUES
+INSERT INTO direccion (codigo_postal,calle,altura) VALUES
 	 ('5594','Calle San Martin',1284),
 	 ('1698','Calle Catamarca',3826),
 	 ('4210','Av. Saavedra',7444),
@@ -705,7 +708,7 @@ INSERT INTO public.direccion (codigo_postal,calle,altura) VALUES
 	 ('5252','Avenida Pte. Perón',3738),
 	 ('6184','Avenida 8',2520),
 	 ('4962','Diagonal Entre Ríos',6265);
-INSERT INTO public.direccion (codigo_postal,calle,altura) VALUES
+INSERT INTO direccion (codigo_postal,calle,altura) VALUES
 	 ('9241','Av. Alvear',1802),
 	 ('4948','Av. Malvinas Argentinas',901),
 	 ('2774','Av. Güemes',2831),
@@ -716,7 +719,7 @@ INSERT INTO public.direccion (codigo_postal,calle,altura) VALUES
 	 ('9424','Avenida Rawson',8948),
 	 ('3153','Avenida Santa Fe',2926),
 	 ('2792','Camino Paraná',4685);
-INSERT INTO public.direccion (codigo_postal,calle,altura) VALUES
+INSERT INTO direccion (codigo_postal,calle,altura) VALUES
 	 ('8593','Calle Omar Nuñez',854),
 	 ('3141','Calle 9',3162),
 	 ('3102','Diagonal Rawson',525),
@@ -727,7 +730,7 @@ INSERT INTO public.direccion (codigo_postal,calle,altura) VALUES
 	 ('7482','Avenida Pte. Perón',5258),
 	 ('7392','Diag. San Salvador de Jujuy',5428),
 	 ('6708','Diagonal 5',8299);
-INSERT INTO public.direccion (codigo_postal,calle,altura) VALUES
+INSERT INTO direccion (codigo_postal,calle,altura) VALUES
 	 ('4404','Avenida 5',5799),
 	 ('5208','Boulevard Malvinas Argentinas',9087),
 	 ('7041','Av. 5',5316),
@@ -738,7 +741,7 @@ INSERT INTO public.direccion (codigo_postal,calle,altura) VALUES
 	 ('3455','Diagonal San Martin',6515),
 	 ('1317','Blv. Santa Fe',8980),
 	 ('2320','Av. Malvinas Argentinas',198);
-INSERT INTO public.direccion (codigo_postal,calle,altura) VALUES
+INSERT INTO direccion (codigo_postal,calle,altura) VALUES
 	 ('9200','Avenida Rivadavia',4506),
 	 ('8316','Diagonal Alem',349),
 	 ('2521','Diag. San Juan',4519),
@@ -749,7 +752,7 @@ INSERT INTO public.direccion (codigo_postal,calle,altura) VALUES
 	 ('9165','Av. 7',8714),
 	 ('8379','Avenida 6',9984),
 	 ('2693','Camino Viedma',6569);
-INSERT INTO public.direccion (codigo_postal,calle,altura) VALUES
+INSERT INTO direccion (codigo_postal,calle,altura) VALUES
 	 ('9316','Av. La Plata',3383),
 	 ('5974','Camino Alem',2442),
 	 ('6075','Av. Catamarca',1922),
@@ -760,7 +763,7 @@ INSERT INTO public.direccion (codigo_postal,calle,altura) VALUES
 	 ('5536','Avenida J.M. de Rosas',1622),
 	 ('5612','Avenida J.B. Alberdi',2075),
 	 ('3984','Avenida Omar Nuñez',3617);
-INSERT INTO public.direccion (codigo_postal,calle,altura) VALUES
+INSERT INTO direccion (codigo_postal,calle,altura) VALUES
 	 ('5016','Av. Corrientes',8717),
 	 ('6481','Avenida J.B. Alberdi',9290),
 	 ('2869','Camino La Pampa',6231),
@@ -771,7 +774,7 @@ INSERT INTO public.direccion (codigo_postal,calle,altura) VALUES
 	 ('4187','Diagonal 8',6544),
 	 ('4831','Boulevard 124 Bis',4004),
 	 ('6201','Avenida Chilecito',9832);
-INSERT INTO public.direccion (codigo_postal,calle,altura) VALUES
+INSERT INTO direccion (codigo_postal,calle,altura) VALUES
 	 ('8056','Av. Comodoro Rivadavia',3488),
 	 ('5296','Avenida Rawson',164),
 	 ('1611','Avenida Corrientes',539),
@@ -782,7 +785,7 @@ INSERT INTO public.direccion (codigo_postal,calle,altura) VALUES
 	 ('2369','Boulevard 129 B',7401),
 	 ('6407','Diagonal 1',9327),
 	 ('1213','Diag. 180 Bis',9292);
-INSERT INTO public.direccion (codigo_postal,calle,altura) VALUES
+INSERT INTO direccion (codigo_postal,calle,altura) VALUES
 	 ('3502','Camino Santa Fe',4988),
 	 ('1211','Av. Güemes',4822),
 	 ('1623','Diagonal Chaco',8543),
@@ -793,7 +796,7 @@ INSERT INTO public.direccion (codigo_postal,calle,altura) VALUES
 	 ('8741','Avenida 2',4954),
 	 ('1994','Avenida Rivadavia',5787),
 	 ('6125','Calle Santa Rosa',9124);
-INSERT INTO public.direccion (codigo_postal,calle,altura) VALUES
+INSERT INTO direccion (codigo_postal,calle,altura) VALUES
 	 ('6824','Avenida Buenos Aires',1268),
 	 ('1864','Avenida San Luis',5510),
 	 ('7010','Diagonal Salta',8401),
@@ -804,7 +807,7 @@ INSERT INTO public.direccion (codigo_postal,calle,altura) VALUES
 	 ('1379','Diagonal Pte. Perón',7226),
 	 ('8589','Blv. Rosario',6120),
 	 ('6788','Calle Río Negro',5376);
-INSERT INTO public.direccion (codigo_postal,calle,altura) VALUES
+INSERT INTO direccion (codigo_postal,calle,altura) VALUES
 	 ('1162','Av. Alem',6767),
 	 ('8670','Av. San Luis',9090),
 	 ('1506','Avenida San Martin',7428),
@@ -815,7 +818,7 @@ INSERT INTO public.direccion (codigo_postal,calle,altura) VALUES
 	 ('5261','Diagonal Formosa',2717),
 	 ('6417','Blv. Güemes',7858),
 	 ('4865','Avenida 9',2756);
-INSERT INTO public.direccion (codigo_postal,calle,altura) VALUES
+INSERT INTO direccion (codigo_postal,calle,altura) VALUES
 	 ('1678','Diag. Güemes',1331),
 	 ('1482','Calle 4',4707),
 	 ('5433','Av. San Salvador de Jujuy',2073),
@@ -826,7 +829,7 @@ INSERT INTO public.direccion (codigo_postal,calle,altura) VALUES
 	 ('3579','Avenida 9',5911),
 	 ('2847','Avenida Saavedra',1973),
 	 ('3031','Diagonal J.J. Castelli',8276);
-INSERT INTO public.direccion (codigo_postal,calle,altura) VALUES
+INSERT INTO direccion (codigo_postal,calle,altura) VALUES
 	 ('4100','Avenida Tucumán',7704),
 	 ('7814','Boulevard Malvinas Argentinas',4442),
 	 ('4566','Avenida Merlo',8323),
@@ -837,7 +840,7 @@ INSERT INTO public.direccion (codigo_postal,calle,altura) VALUES
 	 ('8265','Av. J.M. de Rosas',850),
 	 ('5186','Boulevard Tucumán',1092),
 	 ('4885','Av. 3',595);
-INSERT INTO public.direccion (codigo_postal,calle,altura) VALUES
+INSERT INTO direccion (codigo_postal,calle,altura) VALUES
 	 ('4387','Avenida 5',2992),
 	 ('2841','Camino Rosario',1348),
 	 ('8730','Calle La Pampa',7590),
@@ -848,7 +851,7 @@ INSERT INTO public.direccion (codigo_postal,calle,altura) VALUES
 	 ('1108','Diagonal 7',3472),
 	 ('9156','Avenida Constitución',6691),
 	 ('1278','Diagonal Santiago del Estero',7896);
-INSERT INTO public.direccion (codigo_postal,calle,altura) VALUES
+INSERT INTO direccion (codigo_postal,calle,altura) VALUES
 	 ('4736','Camino 120 A',2734),
 	 ('4493','Av. Mitre',442),
 	 ('3344','Calle San Martin',4509),
@@ -859,7 +862,7 @@ INSERT INTO public.direccion (codigo_postal,calle,altura) VALUES
 	 ('1686','Calle 4',2618),
 	 ('8684','Boulevard 114 Bis',9423),
 	 ('8385','Avenida 4',3751);
-INSERT INTO public.direccion (codigo_postal,calle,altura) VALUES
+INSERT INTO direccion (codigo_postal,calle,altura) VALUES
 	 ('5696','Calle Alem',1571),
 	 ('7506','Camino Corrientes',15),
 	 ('3592','Diagonal 4',1986),
@@ -870,7 +873,7 @@ INSERT INTO public.direccion (codigo_postal,calle,altura) VALUES
 	 ('2129','Av. Merlo',3151),
 	 ('6964','Diagonal Tierra del Fuego',3262),
 	 ('2697','Diagonal Saavedra',4204);
-INSERT INTO public.direccion (codigo_postal,calle,altura) VALUES
+INSERT INTO direccion (codigo_postal,calle,altura) VALUES
 	 ('2712','Diagonal Santiago del Estero',2716),
 	 ('7316','Avenida J.M. de Rosas',5984),
 	 ('8248','Calle Alem',103),
@@ -882,7 +885,8 @@ INSERT INTO public.direccion (codigo_postal,calle,altura) VALUES
 	 ('7688','Camino Río Gallegos',3443),
 	 ('5197','Av. Tierra del Fuego',5554);
 
-INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
+
+INSERT INTO metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
 	 ('Jazmin Morena Dominguez','9291333525383126','823','2028-03-01','MasterCard','Debito',228),
 	 ('Valentina Jazmin Bautista Benjamin Valdez Cordoba','2737953842873774','401','2025-02-01','MasterCard','Debito',278),
 	 ('Dr(a). Ciro Franco','5057547079542361','574','2030-08-01','Maestro','Debito',42),
@@ -893,7 +897,7 @@ INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_
 	 ('Nahiara Jazmin Julian Rodriguez Lopez','4909939749131243','374','2030-03-01','MasterCard','Crédito',81),
 	 ('Dr(a). Benjamin Gomez','1473215932728109','718','2026-01-01','Visa','Crédito',179),
 	 ('Sr(a). Thiago Daniel Rodriguez','2105747982499881','954','2027-06-01','American Express','Debito',92);
-INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
+INSERT INTO metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
 	 ('Ezequiel Lopez Fernandez','9448792072145831','175','2025-03-01','American Express','Crédito',281),
 	 ('Agustina Martina Chavez','0746532686971946','727','2024-04-01','Visa','Debito',252),
 	 ('Angel Gabriel Olivia Avila Vazquez','0682822424520754','665','2027-01-01','MasterCard','Debito',259),
@@ -904,7 +908,7 @@ INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_
 	 ('Dr(a). Zoe Cabrera','8529172935433818','154','2030-06-01','MasterCard','Debito',56),
 	 ('Julia Torres Gomez','8893107359183319','175','2028-08-01','American Express','Debito',47),
 	 ('Benicio Maria Paz Velazquez','3231071024305079','427','2027-09-01','Visa','Crédito',85);
-INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
+INSERT INTO metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
 	 ('Catalina Pereyra','6288275031814251','139','2029-12-01','Visa','Crédito',254),
 	 ('Maximo Alma Fernandez','5441215294068110','592','2024-08-01','Maestro','Crédito',187),
 	 ('Thiago Benjamin Garcia Gonzalez','4908866231580760','445','2028-12-01','American Express','Debito',116),
@@ -915,7 +919,7 @@ INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_
 	 ('Dr(a). Bautista Rojas','2363960357772297','282','2029-01-01','Visa','Crédito',224),
 	 ('Ramiro Lautaro Nicolas Martinez Sanchez','4984284451184750','406','2024-06-01','American Express','Debito',60),
 	 ('Uma Vazquez Fernandez','7759283222807093','048','2030-11-01','Maestro','Crédito',120);
-INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
+INSERT INTO metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
 	 ('Simon Luciana Vega Lopez','8355218076107257','565','2024-03-01','Visa','Debito',247),
 	 ('Martina Sanchez Gonzalez','9427212317728878','672','2024-03-01','MasterCard','Crédito',112),
 	 ('Thiago Leonel Medina','3310521486832578','259','2025-07-01','MasterCard','Crédito',176),
@@ -926,7 +930,7 @@ INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_
 	 ('Federico Flores','1857222293380854','678','2026-03-01','Maestro','Debito',235),
 	 ('Isabella Franco Paz Caceres','1848152315791416','018','2024-05-01','American Express','Crédito',255),
 	 ('Pedro Suarez Cabrera','3919414353623473','663','2029-02-01','Maestro','Crédito',226);
-INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
+INSERT INTO metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
 	 ('Sr(a). Maia Sosa','0767954102191749','544','2025-03-01','American Express','Crédito',246),
 	 ('Juan Cruz Juana Ramos','4377011686912385','473','2027-10-01','Maestro','Debito',128),
 	 ('Constantino Santino Benjamin Ruiz','7027891928499693','143','2030-02-01','Visa','Debito',74),
@@ -937,7 +941,7 @@ INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_
 	 ('Isabella Mansilla','2086486318843648','122','2028-12-01','Maestro','Crédito',131),
 	 ('Guillermina Martinez Molina','8771315835409005','814','2030-09-01','American Express','Crédito',64),
 	 ('Agustin Juan Martin Torres','4912040396213440','370','2028-05-01','Maestro','Crédito',187);
-INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
+INSERT INTO metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
 	 ('Juan Martin Aguero Villalba','9237120816750669','762','2029-12-01','Maestro','Debito',82),
 	 ('Santino Ezequiel Dominguez Garcia','1880797516102021','017','2024-07-01','Maestro','Crédito',107),
 	 ('Luisina Romero','8194855054616132','846','2025-04-01','MasterCard','Debito',234),
@@ -948,7 +952,7 @@ INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_
 	 ('Juan Manuel Sosa Martinez','4778489934079159','966','2025-12-01','American Express','Debito',132),
 	 ('Agustin Mateo Joaquin Fernandez Rodriguez','3062360610296109','376','2024-04-01','American Express','Debito',187),
 	 ('Manuel Aguirre','4336834932246163','811','2025-02-01','MasterCard','Crédito',265);
-INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
+INSERT INTO metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
 	 ('Sr(a). Salvador Velazquez','4438861597218177','466','2029-04-01','American Express','Crédito',207),
 	 ('Juan Manuel Benitez','2178648392378199','123','2023-12-01','American Express','Crédito',198),
 	 ('Mateo Valentin Ian Benjamin Rodriguez','9677889189760728','511','2026-01-01','Maestro','Crédito',115),
@@ -959,7 +963,7 @@ INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_
 	 ('Juan Gabriel Pilar Gonzalez','3700740486403109','795','2024-12-01','American Express','Debito',122),
 	 ('Fausto Fernandez','0545046840708158','565','2029-05-01','Visa','Crédito',12),
 	 ('Mia Cruz','0260961581621965','337','2024-09-01','MasterCard','Debito',21);
-INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
+INSERT INTO metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
 	 ('Benjamin Emilia Ortiz','9275268629815802','490','2024-04-01','Maestro','Debito',143),
 	 ('Mia Valentina Santino Rodriguez','9187138226428563','836','2028-07-01','Visa','Crédito',64),
 	 ('Tomàs Thiago Valentin Barrios','1514684281916503','023','2027-08-01','Visa','Crédito',191),
@@ -970,7 +974,7 @@ INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_
 	 ('Juan Cruz Maria Victoria Mansilla','7862105744789945','667','2027-03-01','Maestro','Crédito',48),
 	 ('Dr(a). Luca Godoy','0303794296192121','922','2029-11-01','American Express','Debito',177),
 	 ('Abigail Julieta Sanchez Ledesma','5664621588699128','511','2027-11-01','MasterCard','Crédito',90);
-INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
+INSERT INTO metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
 	 ('Juan Ignacio Santiago Correa','0330923196880903','409','2024-02-01','Visa','Crédito',26),
 	 ('Joaquin Rosario Rodriguez','2755586196365317','203','2027-12-01','American Express','Debito',197),
 	 ('Maria Belen Gonzalez','2342726918145229','948','2027-11-01','Maestro','Crédito',108),
@@ -981,7 +985,7 @@ INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_
 	 ('Catalina Garcia','3366264712495371','684','2027-05-01','Visa','Debito',29),
 	 ('Uma Farias','2544422674282445','343','2026-07-01','American Express','Crédito',73),
 	 ('Martina Sosa','6507371697330698','635','2027-08-01','American Express','Crédito',126);
-INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
+INSERT INTO metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
 	 ('Benjamin Luisana Perez Paz','0883869549239467','765','2030-08-01','MasterCard','Debito',229),
 	 ('Dr(a). Valentina Medina','3740223249599675','424','2030-10-01','Maestro','Debito',261),
 	 ('Mateo Muñoz','5680935727070430','154','2026-01-01','MasterCard','Crédito',257),
@@ -992,7 +996,7 @@ INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_
 	 ('Joaquin Juan Ignacio Quiroga','7985488373922170','723','2027-01-01','Maestro','Crédito',44),
 	 ('Sr(a). Tiziano Suarez','4783558920798312','653','2025-03-01','American Express','Debito',260),
 	 ('Sr(a). Nicolas Rodriguez','2347651654086031','936','2027-10-01','American Express','Crédito',90);
-INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
+INSERT INTO metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
 	 ('Emma Catalina Gutierrez Correa','2328818442475387','397','2029-10-01','Maestro','Crédito',28),
 	 ('Mia Manuel Sanchez Castillo','7514596298141036','673','2026-02-01','MasterCard','Debito',134),
 	 ('Giovanni Aguirre Ponce','9629700579756850','668','2029-07-01','MasterCard','Crédito',151),
@@ -1003,7 +1007,7 @@ INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_
 	 ('Renata Blanco','9159708491675294','298','2025-09-01','Visa','Crédito',190),
 	 ('Sofia Juan Ignacio Gutierrez Ramirez','7144671865322537','534','2026-04-01','American Express','Crédito',55),
 	 ('Milo Diaz','9223119511946401','275','2028-05-01','American Express','Crédito',93);
-INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
+INSERT INTO metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
 	 ('Pedro Gomez Ojeda','2908787840521808','246','2026-04-01','Maestro','Debito',196),
 	 ('Sr(a). Catalina Lucero','2444288875517236','012','2026-01-01','MasterCard','Debito',15),
 	 ('Mateo Ezequiel Paz','4039185909882710','511','2028-10-01','Maestro','Debito',74),
@@ -1014,7 +1018,7 @@ INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_
 	 ('Maria Emilia Juan Martin Vega','7387211302789119','439','2030-09-01','Maestro','Crédito',285),
 	 ('Nicolas Ambar Medina','0710157446256398','215','2025-07-01','Maestro','Debito',25),
 	 ('Agostina Rivero Vazquez','4703357204566776','591','2027-07-01','American Express','Crédito',225);
-INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
+INSERT INTO metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
 	 ('Thiago Nicolas Emma Perez Cordoba','2901626857707194','649','2028-10-01','MasterCard','Debito',239),
 	 ('Dr(a). Valentina Flores','2104926363921868','208','2029-06-01','American Express','Debito',257),
 	 ('Tomàs Mendez Cardozo','0767626700211404','272','2027-04-01','MasterCard','Debito',280),
@@ -1025,7 +1029,7 @@ INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_
 	 ('Lorenzo Fernandez','0374865042761893','503','2026-06-01','American Express','Crédito',32),
 	 ('Joaquin Camila Martinez','8663752998852009','673','2028-03-01','American Express','Debito',125),
 	 ('Bianca Benjamin Ramirez Caceres','8872393733146201','541','2025-01-01','MasterCard','Crédito',297);
-INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
+INSERT INTO metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
 	 ('Valentino Ema Lopez','0205520519978296','190','2028-10-01','MasterCard','Debito',293),
 	 ('Joaquina Maite Duarte Luna','5945467885112729','822','2026-11-01','MasterCard','Crédito',24),
 	 ('Alma Flores','6093464745123712','194','2024-06-01','Maestro','Crédito',114),
@@ -1036,7 +1040,7 @@ INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_
 	 ('Ramiro Thiago Nahuel Torres Gutierrez','5057781108728037','209','2030-06-01','Visa','Debito',79),
 	 ('Gabriel Delfina Ramos Diaz','8182090758141677','228','2026-06-01','Visa','Crédito',14),
 	 ('Francisco Julieta Velazquez','1860264433018414','656','2029-10-01','MasterCard','Debito',122);
-INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
+INSERT INTO metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
 	 ('Lautaro Nicolas Morales Valdez','4550227694165684','805','2028-11-01','Visa','Debito',252),
 	 ('Mateo Vargas Garcia','8152827743653208','441','2025-01-01','MasterCard','Debito',150),
 	 ('Thiago Nicolas Juan Ignacio Sosa Garcia','3569664411829968','647','2028-01-01','American Express','Crédito',202),
@@ -1047,7 +1051,7 @@ INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_
 	 ('Isabella Matilda Mansilla Gonzalez','8246700324502707','102','2030-01-01','American Express','Debito',257),
 	 ('Ana Paula Isabella Peralta Maldonado','6794249605501660','842','2027-11-01','MasterCard','Debito',160),
 	 ('Sr(a). Morena Cordoba','7411063001338674','545','2024-01-01','Maestro','Debito',287);
-INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
+INSERT INTO metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
 	 ('Luz Maria Muñoz','3640610505554200','144','2027-07-01','Visa','Crédito',255),
 	 ('Paloma Pereyra Hernandez','0648443132546506','778','2026-01-01','American Express','Debito',225),
 	 ('Guadalupe Rodriguez Fernandez','9799015887048064','116','2025-05-01','American Express','Debito',101),
@@ -1058,7 +1062,7 @@ INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_
 	 ('Ana Paula Perez','9320387538915842','612','2030-03-01','American Express','Debito',55),
 	 ('Clara Escobar','1891052332844758','255','2028-12-01','Maestro','Debito',45),
 	 ('Juan Ignacio Faustino Fernandez','2930843747174174','040','2027-04-01','MasterCard','Crédito',203);
-INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
+INSERT INTO metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
 	 ('Sr(a). Luisana Villalba','9622762105061479','845','2024-01-01','MasterCard','Debito',93),
 	 ('Mateo Castro Molina','7018398657010909','391','2024-06-01','Maestro','Debito',172),
 	 ('Lucía Juan Martin Ruiz Martinez','3053196675344944','371','2024-06-01','Visa','Debito',47),
@@ -1069,7 +1073,7 @@ INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_
 	 ('Agustín Tomas Benjamin Rodriguez','5558391126421002','873','2027-07-01','Maestro','Crédito',265),
 	 ('Ciro Bravo Juarez','7788888584371587','839','2025-03-01','Maestro','Debito',239),
 	 ('Sofia Victoria Sosa Gutierrez','9555065467290733','817','2027-05-01','Visa','Crédito',294);
-INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
+INSERT INTO metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
 	 ('Bautista Benjamin Sanchez Fernandez','0450553528208566','686','2026-11-01','Maestro','Crédito',138),
 	 ('Maria Paz Malena Correa Herrera','0218926359197128','303','2026-10-01','MasterCard','Debito',102),
 	 ('Sr(a). Genaro Garcia','6594037992037031','982','2025-10-01','American Express','Debito',162),
@@ -1080,7 +1084,7 @@ INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_
 	 ('Federico Pilar Correa','0239228506431957','285','2026-04-01','American Express','Crédito',289),
 	 ('Renata Ivan Paz','0840706352690740','970','2025-09-01','MasterCard','Crédito',175),
 	 ('Gonzalo Agustín Garcia Fernandez','6886736079036476','365','2028-08-01','Maestro','Debito',287);
-INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
+INSERT INTO metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
 	 ('Dr(a). Catalina Aguirre','9849081458071769','822','2025-10-01','Maestro','Crédito',90),
 	 ('Felipe Rodriguez','6359295551769964','511','2030-06-01','Maestro','Crédito',8),
 	 ('Thiago Valentin Peralta Diaz','4886580216320319','470','2027-10-01','Visa','Crédito',213),
@@ -1091,7 +1095,7 @@ INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_
 	 ('Agustin Diaz','5445557313242309','692','2028-12-01','Visa','Debito',131),
 	 ('Guillermina Sebastian Fernandez Olivera','1973597963391007','341','2026-12-01','Visa','Crédito',9),
 	 ('Ludmila Thiago Benjamin Luna Torres','0025653183057894','599','2025-05-01','Visa','Crédito',163);
-INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
+INSERT INTO metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
 	 ('Luca Gonzalez Lopez','4876215158560797','251','2028-11-01','Visa','Debito',145),
 	 ('Dr(a). Bianca Nuñez','5137053696980685','173','2026-04-01','MasterCard','Debito',188),
 	 ('Dr(a). Juan Pablo Farias','7558567714405526','839','2030-10-01','Maestro','Crédito',255),
@@ -1102,7 +1106,7 @@ INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_
 	 ('Sr(a). Lucia Peralta','5758258240533286','654','2029-03-01','Maestro','Debito',33),
 	 ('Juan Ignacio Sofía Acosta','5781918831617121','021','2025-09-01','Maestro','Crédito',289),
 	 ('Lautaro Agustín Villalba','4451904743845125','818','2025-04-01','MasterCard','Crédito',227);
-INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
+INSERT INTO metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
 	 ('Thiago Vera','6409766023510318','117','2027-05-01','MasterCard','Crédito',228),
 	 ('Simon Tomàs Vargas Mansilla','7716188374772133','427','2024-08-01','American Express','Crédito',9),
 	 ('Bruno Mateo Muñoz Sanchez','3013973470489371','490','2029-08-01','MasterCard','Crédito',49),
@@ -1113,7 +1117,7 @@ INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_
 	 ('Josefina Torres Acosta','5494628531800096','448','2028-07-01','Visa','Crédito',87),
 	 ('Benjamin Perez','0689242122632273','118','2026-01-01','American Express','Crédito',286),
 	 ('Lorenzo Francisca Herrera','3010253682038709','486','2027-10-01','American Express','Crédito',283);
-INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
+INSERT INTO metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
 	 ('Morena Duarte Mendoza','6963474383477490','352','2025-09-01','MasterCard','Crédito',265),
 	 ('Juan Pablo Maria Victoria Gomez','1501019340725502','950','2030-09-01','MasterCard','Debito',197),
 	 ('Zoe Valentina Rodriguez Romero','0032745259765348','858','2028-01-01','MasterCard','Debito',221),
@@ -1124,7 +1128,7 @@ INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_
 	 ('Catalina Ambar Sanchez Sanchez','6324106381040368','362','2026-01-01','Maestro','Debito',251),
 	 ('Benjamin Ezequiel Thiago Emanuel Morales','2351251078310372','491','2027-06-01','Visa','Crédito',182),
 	 ('Victoria Gonzalez Mansilla','1326877413341324','474','2027-10-01','MasterCard','Debito',253);
-INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
+INSERT INTO metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
 	 ('Ambar Isabella Diaz Acosta','5196702151300972','567','2028-12-01','American Express','Debito',184),
 	 ('Dr(a). Antonella Muñoz','4473067944123379','489','2028-02-01','Visa','Crédito',77),
 	 ('Emma Flores Fernandez','3814834995855344','230','2029-05-01','MasterCard','Crédito',211),
@@ -1135,7 +1139,7 @@ INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_
 	 ('Augusto Gonzalez Ramos','2848508127909773','684','2028-08-01','Visa','Crédito',117),
 	 ('Alejo Guillermina Lopez Barrios','2433430185210448','631','2027-02-01','MasterCard','Crédito',148),
 	 ('Thiago Nahuel Soto Paez','7197319791203897','896','2024-10-01','Visa','Crédito',79);
-INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
+INSERT INTO metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
 	 ('Sr(a). Sofia Alvarez','7878969032619321','512','2030-07-01','MasterCard','Crédito',104),
 	 ('Bautista Garcia','2946887063679061','531','2024-12-01','Visa','Debito',99),
 	 ('Lola Mateo Ezequiel Lucero Perez','1226706226710259','919','2024-11-01','Maestro','Crédito',124),
@@ -1146,7 +1150,7 @@ INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_
 	 ('Augusto Gutierrez Acosta','7283356735842919','090','2024-02-01','American Express','Crédito',55),
 	 ('Paulina Renata Soria','0013969109123251','292','2025-11-01','Visa','Crédito',278),
 	 ('Amparo Gimenez Rios','6430515658213119','392','2027-04-01','Maestro','Crédito',144);
-INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
+INSERT INTO metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
 	 ('Dr(a). Sofia Rodriguez','7245506338556887','430','2027-04-01','Maestro','Debito',187),
 	 ('Jazmin Bautista Gomez Sanchez','8660016846183344','576','2023-11-01','MasterCard','Debito',126),
 	 ('Mateo Benjamin Gonzalez Sosa','3455756852151328','052','2028-04-01','MasterCard','Debito',76),
@@ -1157,7 +1161,7 @@ INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_
 	 ('Sr(a). Franco Hernandez','7097241916426466','257','2023-12-01','Visa','Debito',26),
 	 ('Lucas Ponce Perez','4391947411769138','807','2026-08-01','Visa','Crédito',232),
 	 ('Santiago Medina','3717351874331564','498','2024-03-01','American Express','Debito',26);
-INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
+INSERT INTO metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
 	 ('Dr(a). Julieta Fernandez','7501007542909121','110','2028-05-01','American Express','Crédito',32),
 	 ('Sara Castillo Gomez','8370289614939232','678','2028-11-01','Maestro','Debito',226),
 	 ('Rafael Martinez Maidana','9627427986457809','552','2024-06-01','Maestro','Debito',90),
@@ -1168,7 +1172,7 @@ INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_
 	 ('Sr(a). Juan Cruz Ojeda','2832035499585534','702','2024-10-01','American Express','Debito',48),
 	 ('Dylan Benjamin Gimenez','1338816726101402','157','2028-12-01','Visa','Debito',194),
 	 ('Benjamin Fernandez Flores','8056989114925386','328','2026-02-01','Visa','Crédito',280);
-INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
+INSERT INTO metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
 	 ('Victoria Valentin Martinez','7905285277110970','145','2030-03-01','Maestro','Crédito',191),
 	 ('Santiago Luna Romero','9402756809460179','991','2024-02-01','Visa','Crédito',126),
 	 ('Lorenzo Francesca Peralta','4326816936660677','707','2025-05-01','MasterCard','Crédito',294),
@@ -1179,7 +1183,7 @@ INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_
 	 ('Joaquina Fernandez Sanchez','4002766957867630','718','2025-10-01','American Express','Crédito',86),
 	 ('Francisco Paz','0927485432427590','785','2030-09-01','American Express','Crédito',69),
 	 ('Kiara Dante Gimenez Flores','5383859895906185','738','2029-05-01','Visa','Crédito',239);
-INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
+INSERT INTO metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
 	 ('Sr(a). Juan Martin Campos','8906667889106983','210','2029-11-01','Visa','Crédito',235),
 	 ('Lautaro Nicolas Isabella Lucero','0587162430773762','053','2024-02-01','Visa','Crédito',123),
 	 ('Juana Coronel','6621798626392967','891','2025-08-01','Visa','Crédito',116),
@@ -1190,7 +1194,7 @@ INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_
 	 ('Francisca Perez Bustos','8690929208501475','228','2029-07-01','Visa','Crédito',212),
 	 ('Santiago Matilda Moyano','3557126649487452','913','2028-06-01','Maestro','Debito',182),
 	 ('Juan Martin Gonzalez','2771668425351365','460','2026-01-01','Maestro','Crédito',110);
-INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
+INSERT INTO metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
 	 ('Manuel Medina Gonzalez','1988674659874292','214','2027-09-01','American Express','Crédito',150),
 	 ('Joaquin Juan Martin Morales Sosa','4431438514280308','220','2026-08-01','American Express','Crédito',93),
 	 ('Dr(a). Delfina Ramirez','3307719491594337','109','2029-08-01','Maestro','Debito',120),
@@ -1201,7 +1205,7 @@ INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_
 	 ('Sr(a). Santiago Guzman','2738506183717331','819','2025-09-01','Visa','Debito',22),
 	 ('Dr(a). Valentina Arias','3761877005333723','074','2027-05-01','MasterCard','Debito',100),
 	 ('Benjamin Gomez','3216762783195473','014','2025-06-01','Maestro','Crédito',96);
-INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
+INSERT INTO metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_caducidad,empresa_emisora,tipo,usuario) VALUES
 	 ('Dr(a). Pedro Ortiz','3217221728870078','806','2024-03-01','American Express','Debito',75),
 	 ('Dr(a). Lara Vargas','4887761344041696','235','2030-10-01','Maestro','Crédito',261),
 	 ('Agustin Rojas Chavez','2441479133285563','343','2029-02-01','American Express','Crédito',273),
@@ -1213,7 +1217,8 @@ INSERT INTO public.metodo_de_pago (titular,numero_tarjeta,clave_seguridad,fecha_
 	 ('Violeta Franco Mansilla','1391566494179084','001','2028-10-01','American Express','Crédito',119),
 	 ('Lautaro Ezequiel Romero Flores','8160210005488669','719','2025-09-01','American Express','Crédito',92);
 
-INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
+
+INSERT INTO producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
 	 (true,379.46,'Low number course likely.','Computer production add oil admit throw end receive. Painting teacher evening picture guess professor standard. Base point everything remember save. Stock hand look trip will. Sound exactly entire process often recognize message. Energy professor effect bed side theory other.','Google Pixel 4a',60,4),
 	 (false,1601.62,'Marriage quite easy cold focus them put. Man organization democratic next address those.','Fight including major stock commercial condition of. Writer turn six usually prepare. Forward individual sure both certainly community. She bring least share protect walk allow. Behavior beyond as open. Upon strong hair guy season.','Birkenstock Yao',1,1),
 	 (true,3825.87,'Run several together interview rest cultural test. My able coach pretty sit east indicate.','Raise win guess although. Option though she way such. Including network study ground me. National lead central stage. Law really because who speak all. West word have woman do two sure.','Google Pixel 3 XL',81,3),
@@ -1224,7 +1229,7 @@ INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_produc
 	 (true,8128.60,'Like identify boy well throughout mean. Star measure discover ok claim gun.','Though list order inside might practice. Eye entire soldier. Daughter remember drop charge value. Toward movement agent government listen.','Cuadro',72,4),
 	 (false,1280.55,'Service score son air certain million include pressure. Performance type relate friend garden short.','Paper western away view watch someone store. Plan shoulder change start. Rest activity or top drop.','Espejo',1,3),
 	 (false,750.89,'Game election receive team treatment.','Bank follow player article team. High toward property. Seek low old open clearly bill receive.','Huawei P30 Pro',1,3);
-INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
+INSERT INTO producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
 	 (false,69.59,'Contain team long travel from while. Cause toward project compare.','Business senior five. Sound that two. Mrs career society occur put debate. Site Democrat heart forward owner score focus.','OnePlus 6',1,5),
 	 (true,4011.73,'Including field produce successful front.','Too certain manage teacher. Investment financial paper analysis technology personal plan. Assume arrive amount about event edge husband outside. From factor century there provide study. Try both better newspaper matter.','Huawei P40 Lite',55,1),
 	 (true,4002.65,'Staff prepare adult success. Magazine foreign close performance future step surface.','Food tough yet window ten discuss six every. Next reach sing blood participant. Career issue building local respond them.','Amana ABB1924BRM',77,4),
@@ -1235,18 +1240,19 @@ INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_produc
 	 (true,8436.39,'Traditional improve second note catch.','Dinner consumer foreign economy. This above stay owner many. East name five term. Feel play myself. Some store car black man agency act agree. Live discuss role law blood also itself.','Vionic Tide',34,3),
 	 (false,2698.07,'Together with town feel stop. Try everyone produce for run that apply.','Carry rule society bank animal indeed born. Onto short picture list trial season. Either message court culture tax artist ten. Recognize probably from whether exactly huge summer. Seem nearly behavior cut president plan.','Vans Old Skool',1,3),
 	 (true,8732.65,'Might week take them marriage prevent town.','Guy collection structure professional forget red company walk. Health despite such social suddenly. Executive although beautiful. Claim point wind concern poor indeed. Little white list reflect. Leader friend on up source together. Around send a bring choice lawyer indeed training.','Birkenstock Mayari',77,3);
-INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
+INSERT INTO producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
 	 (false,7776.32,'Congress imagine style positive increase vote.','Cover per kitchen item degree thousand near. Whose always activity goal. Down approach serve view size director your. Series lead on third drug sing stand any.','UGG Fluff Yeah',1,2),
 	 (false,3075.42,'Mother build wife decide.','Play policy able without debate. Four fact street mother once agent. Maintain federal open usually left feel. Discussion standard decide.','Silla',1,2),
 	 (true,3266.74,'Degree around reach. Identify those drive five.','Defense cut as image. Concern common degree among. Center six leg deep operation alone statement. Much bar customer game strategy interesting enough. Someone boy pull responsibility hard thank too.','Dr. Martens 2976 Chelsea Boot',75,3),
 	 (true,129.50,'Professional international economy down. Year meet within prepare doctor.','A recognize member project exist up option. Federal however bill size possible management. Low network wife point describe air argue. Same explain boy true.','Huawei P30 Pro',64,3),
 	 (true,3151.23,'Father admit value. Easy fill chair.','Actually game evidence foreign century her husband. Claim condition growth admit article. Check mouth time tend crime score. Seek trade chance anything thought how.','Samsung Galaxy A51',24,1),
 	 (true,7430.27,'Prepare week machine heavy increase me suffer.','Face quality thank production. Challenge half born organization. What product trip family. Couple like heart fine. Former democratic include method. Direction notice respond employee read score language.','OnePlus 7T',15,2),
+	 (true,1285.87,'Line soon deal son. Effect visit morning happen.','Major summer garden heart party sense truth Congress. Manage affect you fly receive. Fear best admit generation style.','Samsung QLED Q90T',15,2),
 	 (true,1181.55,'Every no their purpose.','West remain clearly. Surface produce teacher party happy. Enough surface leg manage. Like also growth purpose artist investment. Low sense director. Type benefit eat situation.','Columbia Redmond V2',51,5),
 	 (true,5428.39,'South contain protect.','Close size western thing line. Available suddenly rock already strong language doctor. City father no.','Samsung Galaxy S10e',85,3),
-	 (true,5472.14,'Lead interview court learn available clear protect.','Our agency eat kid ever college. Inside energy rather. Lead someone role economic pattern. Pattern feel people sometimes fund.','Timberland Earthkeepers',67,4),
-	 (false,3528.26,'Store such sell pick still.','Red experience responsibility oil seem feeling production. Last law on investment major factor establish. Option size cause great above pretty. Perhaps rule person play production indeed.','Samsung Galaxy Note 10',1,2);
-INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
+	 (true,5472.14,'Lead interview court learn available clear protect.','Our agency eat kid ever college. Inside energy rather. Lead someone role economic pattern. Pattern feel people sometimes fund.','Timberland Earthkeepers',67,4);
+INSERT INTO producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
+	 (false,3528.26,'Store such sell pick still.','Red experience responsibility oil seem feeling production. Last law on investment major factor establish. Option size cause great above pretty. Perhaps rule person play production indeed.','Samsung Galaxy Note 10',1,2),
 	 (true,6156.40,'Thank parent live network less game rather miss. Weight range student success include office property situation.','Test through know network represent wait raise. Candidate determine dream prepare same away age. Impact kid evidence begin best central. Boy fear region month protect forget. Growth wall than range open writer. Budget inside those sometimes nothing decision form.','KitchenAid KRFC300ESS',78,3),
 	 (false,5683.86,'Lay certain significant.','Computer financial call open. Mr such may use. Talk head both class marriage join kid mention.','Birkenstock Milano',1,5),
 	 (false,6355.20,'Save provide scene rest page outside why. Whom door adult popular together media.','Piece western card. Face suffer shake safe hope throughout. War pattern family go. Player charge put interest source interesting seven.','Silla',1,2),
@@ -1255,9 +1261,9 @@ INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_produc
 	 (false,1890.41,'Character bit media score. Set cause Congress class every.','Field price possible large over movie suggest. Design lay someone office else wrong cut wear. News word concern result media ground other opportunity. Vote policy lot technology role arm pressure.','Cole Haan Original Grand',1,4),
 	 (false,7265.07,'Particular item food point. Feel section can call nor.','Decide poor lot hear pay machine. Common voice popular stay herself worry. Wind sell visit there. Claim ask nearly current citizen. Treatment skill rock measure. Someone Mrs now remain degree office finish day.','Xiaomi Mi 9T Pro',1,1),
 	 (true,5107.25,'Color police my.','Real position far friend. Expect west senior become view economy foot. Say avoid indeed.','Google Pixel 3a XL',86,2),
-	 (true,8497.63,'Safe challenge born available speech particularly mission source. Foot compare go answer world least note.','Suffer build onto cup increase only. Radio organization onto ask. Write method artist week week. Around follow themselves Mr. Major pressure meet general. Manage memory firm election.','Dr. Martens 1460',97,3),
-	 (true,5631.85,'Explain hot measure know bill together activity. Alone season where worry.','Ten share stuff huge floor. Check spend those high degree development. Phone movement follow.','UGG Dakota',17,4);
-INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
+	 (true,8497.63,'Safe challenge born available speech particularly mission source. Foot compare go answer world least note.','Suffer build onto cup increase only. Radio organization onto ask. Write method artist week week. Around follow themselves Mr. Major pressure meet general. Manage memory firm election.','Dr. Martens 1460',97,3);
+INSERT INTO producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
+	 (true,5631.85,'Explain hot measure know bill together activity. Alone season where worry.','Ten share stuff huge floor. Check spend those high degree development. Phone movement follow.','UGG Dakota',17,4),
 	 (true,2173.97,'Happy modern us author notice relationship affect. Tv light economic.','Call expert pay leader place. Reality allow support. Tv happy miss century alone coach old. Treat without a every. Station push hotel.','Sony Xperia XZ',58,1),
 	 (true,6894.24,'Mr but design nation yes.','Seek study process special amount sit to. Cultural southern fact real early. Over picture low long Democrat less. Difficult necessary bit peace. Capital color include population party.','Samsung Galaxy A51',97,4),
 	 (true,7805.78,'Television interview especially strong list movement night.','Few check doctor enough position change. Performance rule foreign see our purpose. Send business analysis reveal. Between just three single determine whether customer. Piece allow son fill. Popular today on ground suddenly heart as visit.','iPhone 6 Plus',89,1),
@@ -1266,20 +1272,19 @@ INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_produc
 	 (false,8929.94,'Professor report personal special main.','Quickly job health amount executive during then. Final apply involve day ready would. Young adult rate democratic station traditional board.','Paraguas',1,5),
 	 (false,2752.16,'Site long machine out participant factor every. White half view discover.','Nice hope culture blue sell according. Room teach price win yard. Pattern forward according bit finally fine. Help look he lay choice officer relate.','Sony Xperia 5 II',1,4),
 	 (true,2605.11,'Others party dinner not. Partner decade month stock official two movie.','Front fire day new only themselves too around. Realize in go culture actually. Would long record ago class.','Birkenstock Yao',99,1),
-	 (false,6411.36,'Write once government senior within attention. Test plan system wait order fine.','Together compare entire former teach campaign. Some democratic role. Compare here pattern partner hit. Message police half issue trip never.','Fila Disruptor II',1,4),
-	 (true,581.17,'Pattern may water management but budget for. Born already billion message chance whatever.','Put under grow everything business our series if. Strong kitchen position series sure. Rest value relate stay general become specific. Theory whole raise board field speech edge. Trial successful Mrs stand may wait painting.','Under Armour Charged Assert 8',99,4);
-INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
+	 (false,6411.36,'Write once government senior within attention. Test plan system wait order fine.','Together compare entire former teach campaign. Some democratic role. Compare here pattern partner hit. Message police half issue trip never.','Fila Disruptor II',1,4);
+INSERT INTO producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
+	 (true,581.17,'Pattern may water management but budget for. Born already billion message chance whatever.','Put under grow everything business our series if. Strong kitchen position series sure. Rest value relate stay general become specific. Theory whole raise board field speech edge. Trial successful Mrs stand may wait painting.','Under Armour Charged Assert 8',99,4),
 	 (true,4652.34,'Policy today garden sell particular past growth.','Tough last now tax crime without blood political. Role wall modern expect sit. Family evidence character future line left.','Sony Xperia 5 II',20,3),
 	 (true,4176.47,'Drop sense despite.','Mission include medical point discover step second. Really value stand various campaign record during. Military morning task listen. Perform staff apply whom market. Whose thought personal seem charge. One best rock total position class.','Keen Targhee II',38,5),
 	 (false,4886.11,'Firm high operation newspaper season concern. Seem charge consumer right house.','Station situation chair loss program. Lose Mr make line tough. A out member effect hair least make. Cost meeting region way ability inside rather. Discover certainly enjoy challenge per result.','Guitarra',1,4),
 	 (false,4954.13,'Affect worker down. Third fill loss will whose.','Whole community above page. Vote Mr instead address have score kitchen. Task whatever between bag term open color.','Dr. Martens 1460',1,2),
-	 (true,1285.87,'Line soon deal son. Effect visit morning happen.','Major summer garden heart party sense truth Congress. Manage affect you fly receive. Fear best admit generation style.','Samsung QLED Q90T',15,2),
 	 (false,5300.66,'Thousand raise face later. Worker already discussion environment man.','Eight true argue. Fact impact wear rule else during. Girl meet high much such must movement want. Test red wide work. Low pretty care. Cover style ball then.','Vela',1,3),
 	 (false,6476.82,'True different modern month be television despite effort.','Along call bring actually. Not worry almost sure first read whose together. Sense approach note cold gas. Well difference human summer market hope adult.','Salomon XA Pro 3D V8',1,3),
 	 (false,8551.73,'Traditional right campaign call.','Continue field we drug. Quality century attention. Cultural owner I place. Positive oil each whatever air wife parent. Again speak street current reflect couple Republican major. Bar turn hand ten owner new.','Samsung QLED Q90T',1,5),
 	 (true,3318.61,'Hold Republican such site politics everything. Tell close cold interview cold easy push whatever.','Loss career animal continue. Million capital mind hour enough. Defense stuff win they that teacher. Increase piece factor good hospital prove age someone. Fly and Congress mind push fight.','LG OLED C1',51,5),
 	 (false,8390.78,'Identify task politics on onto thing.','Around spend project movement. Special natural positive walk place single the. Next within record vote girl write test.','Libro',1,4);
-INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
+INSERT INTO producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
 	 (true,1285.82,'Vote such fight sign nor success fear shoulder.','Over blood capital move commercial line pay. Live compare last drive power start body. Federal management husband cup conference. North painting activity their keep word positive. Source suffer college beat because than. Call ago politics west.','Converse Chuck 70',31,2),
 	 (false,5130.76,'Participant cold customer push instead prove style itself.','Common budget hundred data price common. Use career court school provide south task. Yet attack financial suffer. Drop hundred social.','Teva Tirra',1,2),
 	 (false,5542.57,'Sound glass success. Expect month meet site skin.','Who nearly ask. I little shake adult. Difficult bank human technology matter. Once strategy before news two own fish. Return know far street summer bed tell.','KitchenAid KRMF706ESS',1,2),
@@ -1290,7 +1295,7 @@ INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_produc
 	 (true,7908.70,'Draw half notice contain.','Thing memory pattern. Time politics get statement image popular probably. Election site than quality small among into. Energy hit field see alone next continue. Your investment house guy report her. Late purpose result shake.','Sony Xperia 10',13,4),
 	 (false,5047.69,'Education watch policy government future whose.','Do success company bank. Bring instead one experience. Data finally develop military green card direction. Board there administration between interest ok exactly two. Art her anything tree.','ASICS Gel-Nimbus 23',1,3),
 	 (true,8917.75,'Law rule specific computer PM policy decide high. Treat mind population everybody thought table business.','Card college measure occur. Tv industry radio return compare above. Season prepare sell hundred best through he. Big science now actually market.','Sony Xperia 10 Plus',14,5);
-INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
+INSERT INTO producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
 	 (true,6741.91,'Best save consumer leader.','Despite suggest environmental thing. Evening into measure everybody glass form fact. Him value could agent music. Level world page hope imagine within require.','Reebok Classic Leather',10,4),
 	 (true,2008.93,'Campaign she move relationship. Factor understand situation sister.','All air degree player. Call attention city off arrive discover reach. Game miss room would. Son produce rate surface environmental. Head senior black table for. Television result night drop.','LG NanoCell 90',52,5),
 	 (false,2083.41,'Executive owner black tough hope while.','Stay significant stage mission another establish. Perhaps young moment because low. Together country leave clearly along.','Google Pixel 2 XL',1,2),
@@ -1301,7 +1306,7 @@ INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_produc
 	 (false,5717.56,'Move realize suddenly job for. Marriage else no treatment consumer feel during know.','Test you land society. Sell feel everything bar worker yourself everybody. May different local customer off. At almost heart only list cover including. Foot choose teach she score. Ever almost section force appear lay others Mrs.','Samsung QLED Q90T',1,2),
 	 (false,3453.02,'Various him debate him man situation plan bit. Change drive range Congress business low.','Growth matter represent thought school show anyone allow. Cover smile sing perhaps available power garden. Half trade civil door herself allow. Themselves second structure. Fine once move member. Property draw letter bag.','Crocs Classic',1,4),
 	 (true,8064.09,'Window area activity.','Buy know concern past enjoy baby end. Price industry page find. Check star he same course increase sense process.','Converse Chuck Taylor All Star High Top',67,5);
-INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
+INSERT INTO producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
 	 (true,2246.68,'Everyone old since check probably bit. Value wind maybe standard deep serve.','Charge school week. Expert many civil likely. Friend act rock bring happen economy.','Chaco Z/Cloud',47,5),
 	 (false,8780.62,'Price reveal recognize expect cell song through.','Father inside upon boy thank alone key necessary. Represent action feel weight. Stay very series impact story suffer itself. Rule live difference support institution receive. Over share ahead create.','TCL 6-Series R635',1,5),
 	 (false,696.90,'Interesting add break. Worker fact vote back good.','Evidence total side contain. Professional rate so church state hour arm tree. Western physical happen style. Floor artist relate song majority others hair back. Six themselves range plan nature its trouble.','Xiaomi Mi A2',1,3),
@@ -1312,7 +1317,7 @@ INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_produc
 	 (true,3447.11,'Little bag reach way note. Walk manage citizen role open benefit.','Room sit somebody Mrs. Difference trouble positive law free happen value. Ok bar course vote although former. To technology listen have finish audience.','OnePlus 8 Pro',46,5),
 	 (false,7597.88,'Defense tell pay apply idea. Once data soon simple ten director.','Mouth century professor practice business million throughout beat. Recent strong interest right. Institution inside more admit wear. But relate surface effect audience most.','Steve Madden Gills',1,5),
 	 (true,1327.61,'Clear cold effect series possible require economy. Meeting since power central so professor its ready.','Term day foot meet win. Mean live Congress. Indeed newspaper particular Congress base difficult without. Upon myself available figure.','ASICS Gel-Kayano 27',25,2);
-INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
+INSERT INTO producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
 	 (false,3073.08,'Then young four.','Movie end national PM as road. Laugh Mr whether top career culture cup. Fund call open information national finally. Suggest couple large play. Four garden rock and how they. Wide east tree friend behavior whether significant claim.','Xiaomi Mi 11',1,3),
 	 (false,2414.94,'Foreign Mr kitchen four. Right talk affect Democrat trouble.','Six summer listen bring artist. Somebody bit number skill. Bed without speech control major. Strong region tell out price couple week.','Xiaomi Mi A2',1,5),
 	 (true,8688.14,'Push turn on cause knowledge budget. Occur let once feel television name.','School candidate computer determine. Too control suffer campaign military lot. Open question official no. Establish forward arm less yard. Without manager need natural.','Xiaomi Redmi Note 8 Pro',76,5),
@@ -1323,7 +1328,7 @@ INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_produc
 	 (true,5358.95,'Course education war century like husband strong.','Guy visit early yard who sell. Common tend leave member simple together citizen. Task eight across you minute last place. Speak material represent nothing between miss choice.','Google Pixel',25,5),
 	 (false,5500.53,'Discussion measure bag campaign. History partner dark market ability seem song.','Our writer nature indeed statement way much box. Discussion behavior learn international. Keep ok of nice range.','Paraguas',1,4),
 	 (false,1520.17,'Say daughter reveal morning. Truth mean spring talk sense they project.','Perhaps others few pay. Money education small capital never save. Religious ready someone law local magazine early. Box let just program check million.','Xiaomi Redmi Note 7',1,4);
-INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
+INSERT INTO producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
 	 (true,2181.84,'Whom yard certainly air impact pretty.','Suddenly little build in and. White listen well while. Man trip meet. Alone threat close cost into theory. Ball side size long blue. Career citizen plant could material nearly.','Sony Xperia L3',45,2),
 	 (false,7469.15,'Level blue evening wish or president eight. Pick field son probably item building model agent.','Alone really left maybe. Future be speech upon. Against message trouble skill threat left. Road reality public large middle. Civil city central whether if.','New Balance 990',1,1),
 	 (false,4699.74,'Oil wish expect bill camera party ok. Ready class end meeting together protect first.','Bar myself loss factor. Team place tell financial of just fear traditional. Feel though investment say suddenly.','Converse Chuck Taylor All Star',1,4),
@@ -1334,7 +1339,7 @@ INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_produc
 	 (false,9758.70,'Professional young bar. Piece build officer example.','Remain behind green second nice. Data give discuss they especially painting. Explain find top southern behavior would indeed. Show center rate professional. They agency student yes. Beautiful various event.','Sony Xperia XZ1',1,2),
 	 (false,8887.06,'According quite once sister investment station.','Free owner hand trial. Take collection social one Mr. Enjoy window artist there across not service. Often food learn person institution much treat watch.','Sony Xperia XZ2',1,1),
 	 (false,9441.07,'Cut station without check identify maybe action.','Scene around necessary authority career. Democrat easy choose example. Treat stand final know yeah. Study popular each church week explain factor. Time treatment no through part difficult wide. Part page buy particular. Success contain where popular.','Xiaomi Mi A3',1,1);
-INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
+INSERT INTO producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
 	 (true,4265.54,'Guess apply join whole medical evidence firm.','Build article end federal throw particularly camera. Rise way apply idea me room. Baby break model head. Require true none send no to. Against door high determine explain be it step.','Merrell Jungle Moc',60,2),
 	 (true,2028.73,'Fine ready because address avoid.','Meeting cost situation bank American fear language. Now policy board five use. Case grow top run experience my stay ever.','Sony Xperia 5 II',71,3),
 	 (true,6117.45,'Standard society laugh they special any action. Similar ago after heavy.','Condition bring player car nor middle stay. Computer every anyone dark land heart laugh. Mention language miss note blood interview. Instead fear late around. Some simply much enjoy. Bad nearly once good edge project me.','Huawei Mate 20 Lite',83,2),
@@ -1345,7 +1350,7 @@ INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_produc
 	 (false,6061.35,'Century what team with.','Late college animal likely. Onto serve action national message. Approach baby gun whatever participant grow name animal.','LG LFXS28968S',1,1),
 	 (true,7596.34,'Present chair Mr agent.','Material north almost or buy finish. Above try finish wall on president sing. Ahead itself guy soon space. Benefit guy trade heavy street per recently mind.','Chaco Z/2 Classic',75,4),
 	 (true,5748.98,'Sure long member between but. Structure agency must vote design seat five employee.','Sort another base. Billion plant six security. Plant police health admit trial. Hold bring already final.','Ecco Biom Fjuel',68,5);
-INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
+INSERT INTO producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
 	 (true,3187.22,'Amount resource suddenly environment. Put purpose power capital.','Him involve institution morning. Trial take turn say southern. Health suffer public raise rich international. Trial guy we culture produce myself skill long. Mission strategy project quality brother respond.','Mizuno Wave Rider 24',30,2),
 	 (false,4640.19,'Phone interest million term quite include apply. Hospital herself fast work.','Occur establish later season great pressure cup. Accept structure night change major magazine cause. Dark western material thus number sort. Example serious walk too. Perhaps certain along people want. Discuss too training his will station weight center.','Birkenstock Zurich',1,5),
 	 (true,2144.64,'Leg agree glass difficult room exactly.','Again get whose stuff rule attorney hear old. Structure class floor certain step nice conference. Color rather data. Create while share. Four cell less gun number quality available focus. Movie financial economic join action general clearly.','iPhone 11',3,2),
@@ -1356,7 +1361,7 @@ INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_produc
 	 (true,4339.25,'Benefit main power make people plan.','Matter eat notice type appear room short. Rate building term election one show government. Spring analysis next center theory statement. Employee create miss national central may option. Professor nothing miss where east impact before. General indeed interesting education computer my technology list.','Crocs Classic Clog',37,3),
 	 (false,7999.15,'Hour decade politics of question. Century although why.','See term product stage behind future whole. Color institution whether dark type nearly. Us shake lose seven defense commercial land. Without Mrs trouble here trip. Television admit become bed fund. Join environmental computer magazine see short television.','Chaco Z/Cloud',1,5),
 	 (true,1136.65,'Fine situation race Republican.','Stock model take school election. Social yourself treat these training put positive. Attack work despite.','Xiaomi Mi 9T Pro',29,2);
-INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
+INSERT INTO producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
 	 (true,2948.11,'Watch computer leave out sure reduce.','Sound not suggest. Democratic later air first head. Outside I black teach summer cause.','Sketchers Go Walk 5',0,4),
 	 (false,4951.09,'Congress foreign bad natural which network care. Bring culture question if.','Station feeling establish say. Idea bank wrong somebody answer trouble affect. Director movie military each data camera economy.','Toms Avalon',1,4),
 	 (true,9766.01,'Light culture carry pull cold clearly.','Level when rise together admit. Sport cause share stay coach. Today general sing kid game middle rise. Institution into relationship police. Decade moment meeting Democrat sell dark.','Xiaomi Poco F2 Pro',80,1),
@@ -1367,7 +1372,7 @@ INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_produc
 	 (true,9775.90,'Manager wish base open.','Four foreign option price but national image. Near pretty window two right. Thought inside argue painting. Be action maybe laugh low school bad. Because physical must popular hospital. Discussion on article grow.','Xiaomi Mi Note 10',7,4),
 	 (true,6784.06,'Including sort fast least away at pretty.','Deal let guess program fill. Artist wonder traditional near resource after race. Majority yard health once prepare. After win small. Everybody finish education attention heavy mind.','iPhone 13 Pro',58,2),
 	 (false,8340.44,'Response pretty physical guess long theory.','Girl compare back former Mr. Project his unit ability decision. Require either trip within. Machine keep least various check positive them. Woman behind phone six street character investment arrive. Investment next above include crime sort there.','Chaco Z/Volv',1,5);
-INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
+INSERT INTO producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
 	 (false,6428.25,'Go include dark speak carry.','Wide agency such article cost pattern decide. Eight material talk weight. Physical action include pick tend very job. Rock brother politics gun amount. Expect bill between animal century.','OnePlus 7T',1,2),
 	 (false,5603.97,'Behavior we rather stage consider fact.','Executive know thus attention believe computer. Play coach black interest physical. Everyone public under nothing. Many situation along report.','OnePlus 8 Pro',1,1),
 	 (true,6984.77,'Answer stock change fine quickly. Figure debate his good.','Heavy sell send kid huge. Most special fight total eight. Such firm life including technology professor produce.','Maytag MVWB865GC',61,3),
@@ -1378,7 +1383,7 @@ INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_produc
 	 (false,9909.91,'Final give authority here operation sign.','Environmental seek citizen stay treat per forget. Or usually general blood well no. Determine with live than leader wait for. Tend certain car say. Side key reveal. East store too part policy tell.','Google Pixel 2',1,3),
 	 (false,3876.86,'Example support financial employee possible.','Suggest Democrat product moment understand learn. Southern less herself protect suggest. Either against analysis. Its report number brother which age society.','Vionic Tide',1,2),
 	 (true,8816.35,'Red indicate audience world environmental road. Watch industry fast enter situation fall.','This throughout dream industry perhaps. Else much our suffer particular table. Visit act role million win finally enjoy provide.','TCL 6-Series R635',29,5);
-INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
+INSERT INTO producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
 	 (true,4304.46,'Including quickly become those these.','Vote type customer each front others. Myself because back sign. Firm significant sea.','Huawei P40 Lite',86,1),
 	 (false,8234.07,'Republican left spring always.','Support concern another. Behind form then. Bank rather middle every her.','OnePlus 9',1,3),
 	 (false,9119.53,'Decision continue forget star fast economy it. Animal discover stand region board color question.','Attention government democratic dinner. No room traditional law trouble maintain fast. Turn often whose admit high.','Xiaomi Redmi Note 7',1,3),
@@ -1389,7 +1394,7 @@ INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_produc
 	 (true,1381.92,'Building take spring short key argue light. Company anything out.','This education fire find race best need else. Guy dog account high somebody between product reason. Listen decade magazine population budget education. Boy discover animal sea I. Exactly worker blood design. Authority throughout station before herself official type.','Electrolux EFLS627UIW',49,4),
 	 (false,9118.73,'Send prevent mother which reach mind medical improve. New several little suffer everybody every management.','Clear analysis owner production million then. Wife sister small age common serious term color. Foreign year task whom rather speak. About eight glass family purpose can produce whether. Quality service rather wall character vote. Something senior seem region size.','Toms Alpargata',1,5),
 	 (false,6042.84,'Full run kid probably. Baby place too ground room ever management compare.','Worker evening soon health school same actually. Everything quite development thousand thank exactly window. There actually form heart public fight. Since deal affect. Democrat nothing door central whose.','LG WT7300CW',1,3);
-INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
+INSERT INTO producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
 	 (false,1157.97,'Individual day ago yes station. Community attention consumer a operation around.','Subject catch age significant soldier purpose create. Page probably myself chance clearly. Available student party water.','Birkenstock Gizeh',1,1),
 	 (false,980.14,'Great about site. Four never eye approach.','His few wear according. Message religious simply. Alone onto condition off though catch entire. Recently home special year girl. Single blood task surface people success do. Year develop local why.','ASICS Gel-Nimbus 23',1,4),
 	 (false,9955.07,'Theory however region.','Maybe president whose whatever feel. For line prove suffer know job. Skin third civil action. Almost finish morning that. Son within usually water wish.','OnePlus 8 Pro',1,2),
@@ -1400,7 +1405,7 @@ INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_produc
 	 (true,4953.14,'Resource control imagine past. Short both small reach training technology.','Person right picture. Pick data reality today piece. Film news outside item carry. Sport eat million child purpose. Tv hot machine position. Book serve on course about.','GE GTW720BPNDG',19,4),
 	 (true,4327.07,'Window somebody over without big smile whether. Name before support rich recently deal.','Too conference both each. Already American nation reality collection again. Baby hot little society example. Want character five sing item director professional. Strong care field month off safe. Bill wind same information have into group.','UGG Ansley',38,5),
 	 (false,1546.98,'Budget direction across foreign scientist rate.','Place happen environmental officer pay them lawyer become. Their cut impact with. Five south audience bed pretty daughter relationship. Suddenly buy majority cover interesting. Level determine pull the might.','Samsung Galaxy Note 20 Ultra',1,3);
-INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
+INSERT INTO producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
 	 (false,3456.03,'Past stock recognize position.','Out talk listen beat whole body. Board say purpose crime. Go nothing every least some support. Majority order or finally. Beat few above vote choose follow.','Columbia Redmond V2',1,4),
 	 (false,2517.02,'Hit quite economy represent. Cut instead management enough party face respond place.','Check bring media little television too discuss. Tough follow drug. Notice day still themselves rise. Take add civil production reveal live several. Himself billion follow worry. Fear result fish decide four from.','Fila Ray Tracer',1,5),
 	 (true,1663.34,'Measure safe agent have concern tend. Society first these mouth teacher statement.','Night necessary either artist. Save site traditional. Later mind leg second. Those well owner address example your upon.','Bolso',36,2),
@@ -1411,7 +1416,7 @@ INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_produc
 	 (true,6266.12,'Over mother clear anything. Learn over eight bad in.','Professional he light challenge decide bag order. Bit on subject business outside rock area. Company enough hospital degree firm hope brother weight. Believe black result and. Wife ability least often fill exist. His travel onto piece store development.','Lápiz',34,4),
 	 (true,2936.83,'Open assume spend activity face learn company. Crime partner fill measure arrive.','Republican may bill describe college power police him. A commercial right detail concern check. Woman dream require property. Contain whom return involve imagine hotel avoid. Talk carry course hotel and page federal.','Xiaomi Mi 10',58,4),
 	 (false,6235.42,'Firm dog let like. Stay north player soldier trouble ahead test sell.','Bad begin cut. Name manager value decision politics. Black else than former return southern.','Amana NTW4516FW',1,3);
-INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
+INSERT INTO producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
 	 (false,2796.36,'Power rate player recently policy. Big city treat must base.','Letter clear history address station get. Pm officer book system. He test magazine. Prove traditional already world compare according decision early. Produce true wear Mrs account main. Growth once stage easy statement spring.','Google Pixel 3 XL',1,3),
 	 (true,3369.60,'There local poor cup.','Strategy company past kitchen throughout eye. Movement water put where production. Media hot year statement director able.','Cepillo',91,4),
 	 (true,1533.71,'Ever upon control cell approach.','Whole there no white what. Whatever allow current soldier draw. Example artist sense serious. Maintain boy nothing either career. Cup current painting glass yard.','OnePlus 6T',9,1),
@@ -1422,7 +1427,7 @@ INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_produc
 	 (false,1679.79,'Spend future adult should. Degree character break step bar heavy glass project.','A garden whatever law executive. Old unit bill radio yeah. Make sort develop thought community. Prevent reach seat. Science top through family tell suffer.','Samsung RS27T5200SR',1,2),
 	 (true,3759.11,'Radio data fight government fast interesting. Arrive record add past lawyer discover war find.','Head I at body message save camera. See as certainly. Hear rather available after. Discuss want close present I big beat. Push performance never compare. Majority radio teach while call spend ok.','Birkenstock Zurich',9,1),
 	 (false,1747.47,'Plant toward everyone relationship. Live add deep fear concern medical type.','Human anyone assume music. Find fact body report girl rule. Send since including sea TV reason management. Forward meet travel ok region wrong. Full doctor class one what.','Samsung Galaxy A52',1,3);
-INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
+INSERT INTO producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
 	 (false,3783.17,'Strategy time provide.','Single scene business institution. Prevent most yeah season also mention cut. By doctor cell fly.','Hoka One One Clifton 7',1,3),
 	 (true,7082.53,'Relate thing special reality serious attention.','Power skill anything world your others. Finally news office nor worry every. White spring contain or meet provide smile. New market hand man with. Third resource machine almost. Later church yes magazine.','Skechers Go Run',98,2),
 	 (false,8843.23,'Either yard situation sport lawyer.','Office wide worry. Dog by such sense push. Very leader rich fill. Arrive industry citizen west happen somebody hospital. Alone if law reduce. Green energy land station majority standard push.','Teva Tirra',1,2),
@@ -1433,7 +1438,7 @@ INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_produc
 	 (false,598.31,'Buy sort personal increase.','Red prevent road lay let account lot. Very change form exactly side local newspaper. Where move speech claim value increase. Standard enjoy play as next medical develop really. Nothing usually any concern.','Birkenstock Milano',1,5),
 	 (false,5601.21,'Sense action join. Baby environment live say once middle he.','Loss yourself loss music. Father hundred use his camera including direction. Sister order now will. Any another activity thing. Reality site sport others mission down fill tell. Pm tree century side computer.','Samsung DV42H5000EW',1,1),
 	 (true,6482.21,'Particularly mean amount stage anything. Her government walk traditional attention concern blood.','Here want project last catch. Technology along beautiful leg institution. Technology purpose still social expect. His car new.','Sanuk Yoga Mat',28,3);
-INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
+INSERT INTO producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
 	 (false,2352.00,'Agent nothing early major second military.','Position also religious send glass traditional unit. Both throw than animal structure this community. The onto full medical local use.','LG NanoCell 90',1,5),
 	 (false,8790.48,'Spend with growth wall.','Somebody strong plan information but. The method every little run. Him chance enjoy anyone tonight argue.','iPhone 6',1,2),
 	 (false,2942.66,'Arrive just also or beyond sometimes single. Child huge recognize seem authority adult.','On trouble with source price mean. Eye election amount from. Blue use unit what four money read. Pattern notice international whatever. Third issue lead impact seat authority nature.','Google Pixel 6',1,5),
@@ -1444,7 +1449,7 @@ INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_produc
 	 (true,8359.03,'Involve if list grow rock. Important note three paper interest manager score.','Degree response on fire forward. Speak involve spring throughout professor. Make one car house speak.','Huawei Mate 20 Pro',76,1),
 	 (false,1040.66,'Ball media loss. Me attorney thing song if technology.','Available term account bank PM month write. Add energy somebody member audience by age theory. Protect factor east. Different serious music degree expert music.','Dr. Martens 1460',1,3),
 	 (false,5669.35,'Continue easy very for alone hot trade concern. Bar form face hear.','Science later place arm. Seem wish social. Similar up adult capital. Once world hear join human staff rule smile. Thing may crime left American save. Some natural me campaign.','Reebok Classic Leather',1,1);
-INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
+INSERT INTO producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
 	 (false,987.57,'Put bill organization positive would phone company.','Include reality shake close conference really whether. Player everyone half although federal seat among. Behind cold deep gun reality pressure. Mrs adult wind however up. Scientist gas sure boy dark food much.','Columbia Redmond V2',1,4),
 	 (true,4380.18,'Realize soldier own single office prepare.','Argue despite wife act. Pm reveal collection sell guy recognize. Treat feeling bit particular institution cold. Could skill beautiful ago effect.','UGG Dakota',43,4),
 	 (true,2888.12,'Record idea need fire what other give rise.','Daughter pick call our step brother. So above far their camera effect subject own. Benefit music main foreign just.','Converse Chuck Taylor All Star',85,2),
@@ -1455,7 +1460,7 @@ INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_produc
 	 (false,7748.35,'Itself will deep job up. Plant a generation into.','Describe half who wonder spend list. Kid administration Mrs director free. Money body teacher class name sometimes usually agency. Factor word see article teach them. Sort building world.','Xiaomi Redmi Note 8 Pro',1,3),
 	 (true,4641.17,'Hope decade board board truth lead.','Low religious consumer paper word. Result minute certainly detail make. Wait night race. Actually newspaper half step drop. Soon drive describe catch without risk.','UGG Dakota',64,5),
 	 (false,5372.35,'Image practice represent consumer.','If material within. Firm size push account environment challenge go both. Address wait explain. Head ever do agency pretty.','Maytag MVWB865GC',1,4);
-INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
+INSERT INTO producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
 	 (true,6097.72,'Brother fine store surface community. Sign home himself thus.','Around decide boy top debate whose through themselves. Reflect age others population until first. Song book take room song manager. General add final travel. Form something never car field him food idea. Ask for check maybe environment nor information.','Libro',77,1),
 	 (false,813.31,'Word area police important hard hit.','Player century book southern approach herself development. During blood camera show information sing. Apply author draw institution. Wait of series experience whether per. Smile yes under drug parent girl green suggest. North establish but four.','Dr. Martens 2976 Chelsea Boot',1,1),
 	 (false,9552.88,'Couple owner its information western. Data may reality.','Deep price yeah practice. Act end live several. Pattern mention when.','Teva Tirra',1,1),
@@ -1466,7 +1471,7 @@ INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_produc
 	 (false,8751.27,'Cultural important analysis answer. Conference item assume kid music old.','Me store continue carry yard operation. Assume between their. Science wear wind matter. Decade family sound choice source. While guy talk fear coach.','Sony Bravia XR A90J',1,2),
 	 (false,9243.72,'Seem consumer age business watch community deep. Time condition increase evidence.','Vote sell ok time. Want together pay truth dream society program. Hour environment that everything art. Between east make summer million.','Cepillo',1,5),
 	 (true,3224.67,'Your article tell.','Peace fill reach employee. Participant teach lose send bag. Base successful thing attorney particularly stay without.','Xiaomi Poco X3',39,1);
-INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
+INSERT INTO producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
 	 (false,8495.55,'Provide along source.','Beyond decade our environmental. Rest art trial draw believe national world town. Author here here red every. Black both herself American majority husband girl. Little could dream style leave learn size. Production land both knowledge tend.','Samsung Galaxy S9+',1,1),
 	 (true,2382.08,'Full chance back far issue. Maybe others painting tax.','During move no edge. Particularly conference break source. Type your community bring you customer.','Bufanda',94,3),
 	 (false,9184.34,'Painting fall increase will physical school loss. The fund offer without may.','Leave series activity piece interest. Financial article report. Sit mind cold rest on. Way keep much pretty ahead science. Point rise likely main company must.','Samsung Galaxy A52',1,5),
@@ -1477,7 +1482,7 @@ INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_produc
 	 (false,69.84,'Bit simple side sort improve war.','You buy majority watch. Forward house go decide lose beat time. Young us conference. Throw heavy any color heavy local. Special through hospital north. Set radio go sit very what.','Cámara',1,3),
 	 (true,4578.30,'Next land ready. Approach will great trip upon best stay.','Employee seek happy decide challenge that. Window simple home next if market business. Name list guess truth up your put agency. Out defense end serious really meet. Finish technology seek agree. Lawyer home where difficult clear baby why.','OnePlus 7T Pro',76,4),
 	 (false,8851.03,'Hit ahead student hear today fire especially.','Big series executive attack. Prepare reveal wind red box pay speech. All at often fast.','Bosch SHPM65W55N',1,2);
-INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
+INSERT INTO producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
 	 (false,764.88,'Difference hair threat teacher artist stay.','Development arm participant raise technology. Rate new town certainly we cover culture. Water drug here great nature respond structure defense.','LG WT7300CW',1,1),
 	 (false,8054.50,'Him public same very.','Study positive can own arrive major happen. Pm century news staff sister professional letter friend. Plan tell special skill sign late involve. Watch report week line fish coach.','Huawei Mate 20 Pro',1,2),
 	 (false,3237.18,'Onto she before reality do language get.','Find party serve certainly peace despite laugh. Raise lawyer head himself. Animal run international writer feeling with.','ASICS Gel-Nimbus 23',1,2),
@@ -1488,7 +1493,7 @@ INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_produc
 	 (false,8036.92,'Among everything soon space.','Would trip worry involve office environment. Light price low stock common. Single agreement anyone where mission unit amount. Knowledge about know nice describe beat drive. Memory scientist management son.','Fila Disruptor',1,5),
 	 (true,3485.79,'Dream consumer camera southern really give special.','Exactly if western for miss quality. Matter purpose likely interest oil book learn. Animal miss sit save. These operation remember rule society have international.','Bosch SHPM78W55N',60,2),
 	 (true,6713.53,'Wear chair dream politics writer.','Growth do practice economic time at option. Success material professional card. Either great project. Experience chance early political. Year itself choose.','Libro',94,1);
-INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
+INSERT INTO producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
 	 (true,9366.56,'Minute machine crime approach employee. Million instead off skin.','Star however figure address. Defense serve more central performance stage million. Note room well rate difference. Off finally magazine clear subject score local. Little television surface drive church. Nearly town group serve.','Cepillo de dientes',65,1),
 	 (false,4619.87,'Hold window gun affect protect everybody scene. Song identify treatment father drive consumer note.','Ground both form president business vote. Be five away American story. Collection look mean head we. Sea imagine third top again speak. Safe news family beat beat while majority indeed.','Ecco Soft 7',1,2),
 	 (true,4355.56,'Air social window pattern. Shake some million south.','Kid thousand store technology too. Across claim turn two doctor job clear. Official so goal. Remember next husband too want. Agreement necessary both second increase. Interview article that town compare company.','Puma RS-X',34,3),
@@ -1499,7 +1504,7 @@ INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_produc
 	 (false,7833.08,'Wind at front million mind information. Million so offer world oil want coach.','Relate parent policy article computer improve. Family deep black population go significant end. That head best want compare ok. Fall could old from.','Cepillo de dientes',1,1),
 	 (false,1671.51,'Usually show suffer moment field.','About stay language show whether property check. Dark perform all thank group. Only reality responsibility exactly happy military. Face modern late after know weight focus.','Dr. Martens 2976 Chelsea Boot',1,2),
 	 (false,727.46,'Generation authority perhaps inside suddenly. Scene major give painting member ever spend.','Involve appear note number. Run while American reflect sign serve. Cost serious school floor candidate her foreign letter. Beautiful similar civil. Will prepare hope task. Magazine century region talk.','Bufanda',1,2);
-INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
+INSERT INTO producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
 	 (false,4970.02,'Top join close. Statement study tell.','Professional reflect role research expect soon. Officer always few indicate policy truth. Specific real form get yeah form. Structure safe believe dinner mouth why. Budget ground tell risk hair plan. Strategy some soon prepare.','Vans Authentic',1,3),
 	 (false,9370.91,'Work air join bit she future visit.','Avoid seek despite evening and. Ahead beat major reach process really seven. Quite painting both camera.','Samsung Galaxy S10',1,2),
 	 (false,8707.23,'Anyone marriage half light.','Action prove offer hundred community involve travel. Agreement down assume money. Actually something company save. Company project bank interesting begin challenge say.','Electrolux EFME627UTT',1,4),
@@ -1510,7 +1515,7 @@ INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_produc
 	 (false,2864.56,'Loss west discover whatever too.','Better fly market analysis. Area room serve Democrat do several. You lot piece same prevent guess wait. Participant as real will. Method party bad few pass. Thousand deal college over.','OnePlus 6T',1,4),
 	 (false,252.25,'Short reason store foot.','Provide similar billion start. Fund wish book wall he themselves. Across time suddenly move practice population couple. Point peace he enjoy yet have. Learn resource couple identify bill person. Word candidate cup head gun economic election.','Converse Chuck Taylor All Star High Top',1,3),
 	 (false,4176.68,'Trip ability believe many nearly tend. Claim board anything sing source.','Product building anything see. With western speak somebody father would ever event. Sit southern so especially. Instead explain yeah member speak simple seek. Write sometimes people matter amount social soldier play. Wrong social level allow once bed commercial physical.','Samsung Galaxy A51',1,5);
-INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
+INSERT INTO producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
 	 (true,6923.24,'Reality drug community evidence operation.','Building red tend able left factor kid. Boy use seat old bed employee shoulder. War record brother individual modern toward charge. He consumer nothing organization maintain.','iPhone XR',94,1),
 	 (false,1547.22,'Law whose man.','Wrong such guess their country true him. Risk although short month occur ground. Then include allow before visit similar. Thought artist fall energy. Value exactly hour. Exist animal their wait production.','iPhone SE (2020)',1,2),
 	 (true,9036.96,'Position themselves decision professor fund school great. Protect effect rather write south brother.','Home finally trip despite place. Laugh close beyond team house college present. Still down economic other rather value. Answer concern wide thus group. Behind economy than couple cost evidence large.','Sony Xperia XZ1',88,2),
@@ -1521,7 +1526,7 @@ INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_produc
 	 (false,1110.11,'Environmental technology radio.','Style gas member again. Continue girl stay trade opportunity. Impact drug consider right. Sign value pass walk piece nation. Much much school. Return player reach create tonight dinner find production.','Huawei Nova 5T',1,4),
 	 (false,3744.65,'Form hundred ready one eat building clearly. Natural fire very store four.','Draw list late until style dinner. Performance everything very role. Now manage be spend goal degree knowledge.','Vans Authentic',1,2),
 	 (false,3849.01,'Item pattern represent a forward.','Cultural subject leader. South others all bank. Including walk camera all. Pick heart keep leader draw level necessary.','Silla',1,3);
-INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
+INSERT INTO producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
 	 (false,6252.84,'Church here future anything threat people. Former election matter program answer.','Or less society rock who court. Walk me middle site street. When investment society remain look.','Converse Chuck Taylor All Star High Top',1,4),
 	 (false,8618.25,'Key international defense can anyone describe responsibility. Mention pass television performance think issue position.','Case poor political relate force care listen. Perform human agency. Probably career the we. Do media including sea usually win book. Improve edge attack easy federal door. New suddenly law thus movement ago.','Sony Xperia XZ',1,3),
 	 (true,5420.11,'Seek store let from approach.','Law bed behavior step. Per group film. Fast thank medical occur. Game story everybody. Audience against vote particularly visit others third.','Panasonic HZ2000',6,2),
@@ -1532,7 +1537,7 @@ INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_produc
 	 (true,8018.35,'Prevent radio skin after computer into audience home.','Write foot explain your resource seat. Suggest customer oil above include discussion. Network player may there detail great police. Keep hope they north former institution.','OnePlus 8',35,4),
 	 (false,6215.05,'Because market when because age theory drug. Writer field everybody recognize for me.','Detail page study station bar seven. Evidence information each decide loss able fact. Radio relationship factor break memory probably wide.','Under Armour HOVR Phantom',1,4),
 	 (false,6919.47,'Structure full level today. Help list what market.','School out tree ability exactly bad often. Very course system buy culture than. Either effort guess either step buy adult.','Whirlpool WRF555SDHV',1,3);
-INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
+INSERT INTO producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
 	 (true,4136.46,'All sure music effort almost. Against clearly candidate town future sister leave discuss.','Or local American check within right mother. Democrat very prevent social dream glass. Cold first act site house. Quality TV analysis commercial cover personal.','Sony Xperia XZ3',33,5),
 	 (true,1348.86,'Morning sometimes others.','Century adult nice year. Camera wait least on just eye billion. Establish bad voice we. Like occur black likely chance matter. Throughout six several morning war attack modern.','Samsung Galaxy S9',8,2),
 	 (false,6149.97,'Not generation despite measure participant director from. Tell series heavy son seat environment.','It public recently quite. Skin common site stock. Laugh exactly seven program just state evening.','Salomon XA Pro 3D V8',1,1),
@@ -1543,8 +1548,136 @@ INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_produc
 	 (false,1525.23,'Budget focus production situation image choice. Between alone standard difference indeed.','Campaign here write whole opportunity sometimes either. Quite throw music short story responsibility. What before full eye level wish senior.','Panasonic HZ2000',1,3),
 	 (true,5060.00,'Book town blue. Call attack quality key yes decide.','Free information left. Collection option his drop source surface edge. Produce trouble soldier least.','OnePlus 7T',44,1),
 	 (false,8062.77,'Three yes west total. Article product accept white.','Travel in despite role voice tough public. Next good something certainly. Magazine president his help smile choose source. Specific begin answer may star pressure.','Huawei Mate 10 Pro',1,1);
+INSERT INTO producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
+	 (false,19530.00,'Lámpara de escritorio','Lámpara de escritorio moderna con base de madera','Lámpara de escritorio',20,4),
+	 (true,519999.99,'Samsung Galaxy S23 Fe 256gb 8gb Ram Negro','Procesador y memoria RAM de 8 GB, alcanzará un alto rendimiento con gran velocidad y memoria interna de 256 GB.','Samsung Galaxy S23 Fe',50,5),
+	 (false,30990.00,'Mesa auxiliar','Mesa auxiliar redonda de metal con acabado dorado','Mesa auxiliar dorada',2,3),
+	 (true,569999.99,'Notebook Ryzen 7 Asus Vivobook Amd 512gb Ssd 16gb Ram','ASUS VivoBook 15 39,6 cm (15.6") Full HD AMD Ryzen 7 5800H 16 GB DDR4-SDRAM 512 GB SSD Wi-Fi 6E (802.11ax) Windows 11 Home Quiet Blue','Notebook Ryzen 7 Asus Vivobook',10,4),
+	 (true,259999.00,'Smart TV LG Smart TV 43ur8750 ','Televisor LED WebOS  de 44 pulgadas con resolución 4K UHD 220V','Smart TV LG Smart TV 43ur8750',5,5),
+	 (false,45000.00,'Silla de comedor','Silla de comedor moderna y ergonómica','Silla de comedor ergonómica',4,3),
+	 (false,60500.00,'Mesa de centro','Mesa de centro de madera maciza con cajones de almacenamiento','Mesa de centro moderna',1,4),
+	 (true,28999.00,'Parlante Philco Djp10p Portátil Con Bluetooth 220v','Altavoz Bluetooth portátil con batería de larga duración','Parlante Philco Djp10p',40,4),
+	 (false,30000.00,'Auriculares inalámbricos','Auriculares inalámbricos con cancelación de ruido','AirPods Pro 2da Generación',1,5),
+	 (true,13999.99,'Reloj Unisex Gadnic Alarma Cronometro Elegante Digital Color de la malla Negro','Reloj de pulsera resistente al agua con malla negra','Reloj Unisex Gadnic',30,5);
 
-INSERT INTO public.oferta (porcentaje,fecha_desde,fecha_hasta) VALUES
+
+INSERT INTO categoria (nombre) VALUES
+	 ('Electrónica'),
+	 ('Ropa y Accesorios'),
+	 ('Calzado'),
+	 ('Belleza y Cuidado Personal'),
+	 ('Hogar'),
+	 ('Jardín'),
+	 ('Deportes y Actividades al Aire Libre'),
+	 ('Juguetes y Juegos'),
+	 ('Libros y Material de Oficina'),
+	 ('Electrodomésticos');
+INSERT INTO categoria (nombre) VALUES
+	 ('Muebles'),
+	 ('Alimentos y Bebidas'),
+	 ('Automóviles y Accesorios'),
+	 ('Instrumentos Musicales'),
+	 ('Arte y Manualidades'),
+	 ('Electrónica de Consumo'),
+	 ('Salud y Bienestar'),
+	 ('Maletas y Equipaje'),
+	 ('Productos para Bebés y Niños'),
+	 ('Joyas y Relojes');
+INSERT INTO categoria (nombre) VALUES
+	 ('Electrodomésticos de Cocina'),
+	 ('Herramientas y Mejoras para el Hogar'),
+	 ('Productos para Mascotas'),
+	 ('Equipamiento para Negocios'),
+	 ('Productos para el Cuidado del Cabello'),
+	 ('Cámaras y Fotografía'),
+	 ('Equipamiento para Deportes y Fitness'),
+	 ('Equipos de Oficina'),
+	 ('Juegos de Mesa y Rompecabezas'),
+	 ('Suministros para Fiestas y Eventos');
+INSERT INTO categoria (nombre) VALUES
+	 ('Equipamiento para Viajes y Aventuras'),
+	 ('Productos para el Cuidado de la Piel'),
+	 ('Equipamiento para Acampar y Excursionismo'),
+	 ('Equipamiento para Actividades Acuáticas'),
+	 ('Electrodomésticos para la Limpieza'),
+	 ('Equipamiento para la Playa y Piscina'),
+	 ('Equipos de Sonido y Audio'),
+	 ('Equipamiento para Ciclismo'),
+	 ('Equipamiento para Deportes de Invierno'),
+	 ('Productos para el Cuidado de la Salud');
+INSERT INTO categoria (nombre) VALUES
+	 ('Equipamiento para Deportes de Raqueta'),
+	 ('Equipamiento para Deportes de Pelota'),
+	 ('Equipamiento para Deportes de Combate'),
+	 ('Productos para el Cuidado Oral'),
+	 ('Equipamiento para Deportes de Equipo'),
+	 ('Productos para el Cuidado de los Ojos'),
+	 ('Productos de Higiene Personal'),
+	 ('Equipamiento para Deportes de Agua'),
+	 ('Equipamiento para Deportes de Aventura'),
+	 ('Productos para el Cuidado de las Uñas');
+INSERT INTO categoria (nombre) VALUES
+	 ('Equipamiento para Deportes de Montaña'),
+	 ('Equipamiento para Deportes de Escalada'),
+	 ('Equipamiento para Deportes de Motor'),
+	 ('Productos para el Cuidado de la Barba'),
+	 ('Equipamiento para Deportes de Vuelo'),
+	 ('Equipamiento para Deportes de Tiro'),
+	 ('Productos de Aseo Personal'),
+	 ('Equipamiento para Deportes de Lucha');
+
+
+INSERT INTO categoria_subcategoria (tiene_categoria,es_subcategoria) VALUES
+	 (1,10),
+	 (1,16),
+	 (1,26),
+	 (1,37),
+	 (2,3),
+	 (2,20),
+	 (4,17),
+	 (4,25),
+	 (4,47),
+	 (4,50);
+INSERT INTO categoria_subcategoria (tiene_categoria,es_subcategoria) VALUES
+	 (4,54),
+	 (4,57),
+	 (5,6),
+	 (5,11),
+	 (5,22),
+	 (7,27),
+	 (7,31),
+	 (7,33),
+	 (7,34),
+	 (7,36);
+INSERT INTO categoria_subcategoria (tiene_categoria,es_subcategoria) VALUES
+	 (7,38),
+	 (7,39),
+	 (7,41),
+	 (7,42),
+	 (7,43),
+	 (7,45),
+	 (7,48),
+	 (7,49),
+	 (7,51),
+	 (7,52);
+INSERT INTO categoria_subcategoria (tiene_categoria,es_subcategoria) VALUES
+	 (7,53),
+	 (7,55),
+	 (7,56),
+	 (7,58),
+	 (8,29),
+	 (9,24),
+	 (9,28),
+	 (10,21),
+	 (10,35),
+	 (17,32);
+INSERT INTO categoria_subcategoria (tiene_categoria,es_subcategoria) VALUES
+	 (17,40),
+	 (17,44),
+	 (17,46);
+
+
+INSERT INTO oferta (porcentaje,fecha_desde,fecha_hasta) VALUES
 	 (19.00,'2023-11-03','2024-01-17'),
 	 (65.00,'2023-09-01','2023-12-20'),
 	 (57.00,'2023-10-20','2023-11-16'),
@@ -1555,7 +1688,7 @@ INSERT INTO public.oferta (porcentaje,fecha_desde,fecha_hasta) VALUES
 	 (72.00,'2023-09-10','2023-11-20'),
 	 (31.00,'2023-08-29','2023-12-04'),
 	 (16.00,'2023-10-20','2023-12-28');
-INSERT INTO public.oferta (porcentaje,fecha_desde,fecha_hasta) VALUES
+INSERT INTO oferta (porcentaje,fecha_desde,fecha_hasta) VALUES
 	 (73.00,'2023-11-03','2024-01-07'),
 	 (58.00,'2023-08-15','2024-01-29'),
 	 (40.00,'2023-10-17','2024-01-17'),
@@ -1567,7 +1700,72 @@ INSERT INTO public.oferta (porcentaje,fecha_desde,fecha_hasta) VALUES
 	 (8.00,'2023-11-04','2024-01-11'),
 	 (41.00,'2023-10-24','2024-01-07');
 
-INSERT INTO public.imagen (producto,imagen) VALUES
+INSERT INTO pregunta VALUES
+     (0,'','1900-01-01');
+INSERT INTO pregunta (preguntas_del_producto,fecha_de_la_pregunta) VALUES
+	 ('¿La lámpara de escritorio incluye la bombilla?','2020-09-01'),
+	 ('Hola, no. Cualquier otra consulta estoy a su disposición','2020-09-01'),
+	 ('Bombita De cuantos w soporta el artefacto ? El portalámparas es universal ?','2020-09-01'),
+	 ('¡Hola! Es el portalámparas convencional a rosca comúnmente denominado E27 Máximo 60w...cuando normalmente se utilizan lámparas entre 9w y 12w de led que te representan entre 60 a 75w de las antiguas lámparas incandescentes Saludos','2020-09-02'),
+	 ('Okey, muchas gracias!','2020-09-02'),
+	 ('¿La lámpara de escritorio tiene ajuste de intensidad de luz?','2020-09-17'),
+	 ('¡Hola! No, no tiene ajuste de la intensidad de luz. Saludos','2020-09-18'),
+	 ('¿Viene con garantía el Samsung Galaxy S23 Fe?','2023-05-02'),
+	 ('¡Hola!Si viene con garantía. ¡Gracias por su consulta! Saludos.','2023-05-02');
+INSERT INTO pregunta (preguntas_del_producto,fecha_de_la_pregunta) VALUES
+	 ('Buenisimo! Gracias!.','2023-05-02'),
+	 ('Por nada!  Estamos a tu disposición cualquier otra consulta que desee hacernos.','2023-05-03'),
+	 ('Hola, ¿ tiene carga inalámbrica el Samsung Galaxy S23 Fe?','2023-05-12'),
+	 ('Hola, esperamos se encuentre bien. Le informamos que el Samsung Galaxy S23 Fe 128gb 8gb Ram Violeta posee: 3.900 mAh-Carga rápida de 25 W-Carga inalámbrica de 10 W. Quedamos a disposición. ¡Gracias por su consulta! Saludos.','2023-05-13'),
+	 ('¿El Samsung Galaxy S23 Fe tiene ranura para tarjeta de memoria externa?','2023-07-18'),
+	 ('Hola, esperamos se encuentre bien. Le informamos que el Samsung Galaxy S23 Fe 128gb 8gb Ram Violeta si tiene ranura para tarjeta de memoria externa. Quedamos a disposición. ¡Gracias por su consulta! Saludos.','2023-05-13'),
+	 ('Genial! Muchas gracias!','2023-05-13'),
+	 ('Por nada!  Estamos a tu disposición cualquier otra consulta que desee hacernos.','2023-05-14'),
+	 ('¿Cuál es el diámetro de la mesa auxiliar?','2021-11-03'),
+	 ('¡Hola! El diámetro es de 41cm x 53cm de altura. Saludos','2021-11-03');
+INSERT INTO pregunta (preguntas_del_producto,fecha_de_la_pregunta) VALUES
+	 ('¿La mesa auxiliar requiere montaje?','2021-11-12'),
+	 ('¡Hola! La mesa no requiere montaje','2021-11-12'),
+	 ('¿Cuánto pesará el pedido entonces? Ya que viene montada','2021-11-12'),
+	 ('¿Tiene la notebook Ryzen 7 Asus Vivobook teclado retroiluminado?','2022-12-24'),
+	 ('Hola, muchas gracias por su consulta. Sí, cuenta con teclado retroiluminado. Cualquier otra duda quedamos a su disposición.','2022-12-25'),
+	 ('Hola, ¿Sirve para  diseño 3D? La notebook Ryzen 7 Asus Vivobook','2023-08-11'),
+	 ('Hola, muchas gracias por su consulta. Sí te sirve. Cualquier otra duda quedamos a su disposición.','2023-08-11'),
+	 ('¡Gracias!','2023-08-11'),
+	 ('De nada!. Cualquier otra consulta quedamos a su disposición. Saludos!','2023-08-11'),
+	 ('¿La notebook Ryzen 7 Asus Vivobook tiene teclado numérico?','2023-05-25');
+INSERT INTO pregunta (preguntas_del_producto,fecha_de_la_pregunta) VALUES
+	 ('Hola, muchas gracias por su consulta. Sí tiene. Cualquier otra duda quedamos a su disposición.','2023-05-26'),
+	 ('¿Es tactil el reloj unisex Gadnic?','2022-10-05'),
+	 ('Hola ¿Cómo estás? Es con pantalla táctil. Estamos online las 24 horas para brindarte la mejor atención y responder todas tus consultas Saludos.','2022-10-05'),
+	 ('¿Es fuerte la malla?','2022-10-05'),
+	 ('Hola ¿Cómo estás? Si claro, la malla es super resistente.Estamos online las 24 horas para brindarte la mejor atención y responder todas tus consultas Saludos.','2022-10-06'),
+	 ('Buenisimo! Entonces compraré.','2022-10-06'),
+	 ('¿Viene con soporte de montaje en pared el Smart TV LG Smart TV 43ur8750?','2023-04-06'),
+	 ('¡Hola! no está incluido. Saludos.','2023-04-06'),
+	 ('ah bueno, está bien, gracias.','2023-04-06'),
+	 ('¿El televisor LG Smart TV 43ur8750 trae control remoto?','2022-11-27');
+INSERT INTO pregunta (preguntas_del_producto,fecha_de_la_pregunta) VALUES
+	 ('¡Hola! SI Saludos.','2022-11-27'),
+	 ('¿Se venden las sillas de comedor por separado?','2019-01-07'),
+	 ('Hola, no se vende por separado. Saludos','2019-01-07'),
+	 ('¿La silla de comedor es ajustable en altura?','2019-02-08'),
+	 ('Hola, no es ajustable. Saludos','2019-02-09'),
+	 ('¿Viene ensamblada la mesa de centro o requiere montaje?','2023-04-08'),
+	 ('Hola, viene ensamblada. Saludos','2023-04-09'),
+	 ('Hola, ¿Es stereo? ¿Y cuanto dura la batería aprox del parlante Philco Djp10p?','2021-11-09'),
+	 ('Hola. Te confirmamos que si es estéreo y la duración de la batería depende del uso que se le dé al producto. Aguardamos tu compra. Saludos','2021-11-09'),
+	 ('Pero me podrias dar un estimado de la duración?','2021-11-09');
+INSERT INTO pregunta (preguntas_del_producto,fecha_de_la_pregunta) VALUES
+	 ('¿Viene con estuche de carga los auriculares inalámbricos AirPods Pro 2da Generación?','2022-06-10'),
+	 ('Hola y gracias por comunicarnos!Si trae estuche de carga. Quedamos a disposición, saludo ','2022-06-11'),
+	 ('¿Los auriculares inalámbricos AirPods Pro 2da Generación son compatibles con Android?','2023-03-15'),
+	 ('Hola, ¿cómo estás? Muchas gracias por contactarnos. No es compatible, desde ya muchas gracias y saludos.','2023-03-16'),
+	 ('¿Los auriculares inalámbricos tienen cancelación activa de ruido?','2023-03-20'),
+	 ('Hola, ¿cómo estás? Muchas gracias por contactarnos. Si tienen cancelación de ruido, desde ya muchas gracias y saludos.','2023-03-21');
+
+
+INSERT INTO imagen (producto,imagen) VALUES
 	 (272,'model.JPEG'),
 	 (167,'crime.JPEG'),
 	 (213,'reality.JPEG'),
@@ -1578,7 +1776,7 @@ INSERT INTO public.imagen (producto,imagen) VALUES
 	 (282,'company.JPEG'),
 	 (158,'at.JPEG'),
 	 (3,'city.JPEG');
-INSERT INTO public.imagen (producto,imagen) VALUES
+INSERT INTO imagen (producto,imagen) VALUES
 	 (54,'themselves.JPEG'),
 	 (39,'despite.JPEG'),
 	 (243,'Republican.JPEG'),
@@ -1589,7 +1787,7 @@ INSERT INTO public.imagen (producto,imagen) VALUES
 	 (1,'book.JPEG'),
 	 (180,'describe.JPEG'),
 	 (216,'say.JPEG');
-INSERT INTO public.imagen (producto,imagen) VALUES
+INSERT INTO imagen (producto,imagen) VALUES
 	 (203,'both.JPEG'),
 	 (107,'together.JPEG'),
 	 (291,'prove.JPEG'),
@@ -1600,7 +1798,7 @@ INSERT INTO public.imagen (producto,imagen) VALUES
 	 (35,'human.JPEG'),
 	 (278,'increase.JPEG'),
 	 (233,'nice.JPEG');
-INSERT INTO public.imagen (producto,imagen) VALUES
+INSERT INTO imagen (producto,imagen) VALUES
 	 (270,'you.JPEG'),
 	 (169,'she.JPEG'),
 	 (218,'spend.JPEG'),
@@ -1611,7 +1809,7 @@ INSERT INTO public.imagen (producto,imagen) VALUES
 	 (41,'audience.JPEG'),
 	 (35,'practice.JPEG'),
 	 (143,'stay.JPEG');
-INSERT INTO public.imagen (producto,imagen) VALUES
+INSERT INTO imagen (producto,imagen) VALUES
 	 (237,'down.JPEG'),
 	 (181,'friend.JPEG'),
 	 (260,'save.JPEG'),
@@ -1622,7 +1820,7 @@ INSERT INTO public.imagen (producto,imagen) VALUES
 	 (209,'look.JPEG'),
 	 (240,'piece.JPEG'),
 	 (217,'class.JPEG');
-INSERT INTO public.imagen (producto,imagen) VALUES
+INSERT INTO imagen (producto,imagen) VALUES
 	 (199,'alone.JPEG'),
 	 (141,'seem.JPEG'),
 	 (225,'these.JPEG'),
@@ -1633,7 +1831,7 @@ INSERT INTO public.imagen (producto,imagen) VALUES
 	 (119,'describe.JPEG'),
 	 (190,'beat.JPEG'),
 	 (70,'professional.JPEG');
-INSERT INTO public.imagen (producto,imagen) VALUES
+INSERT INTO imagen (producto,imagen) VALUES
 	 (254,'skin.JPEG'),
 	 (194,'allow.JPEG'),
 	 (20,'will.JPEG'),
@@ -1644,7 +1842,7 @@ INSERT INTO public.imagen (producto,imagen) VALUES
 	 (248,'sign.JPEG'),
 	 (232,'though.JPEG'),
 	 (208,'indicate.JPEG');
-INSERT INTO public.imagen (producto,imagen) VALUES
+INSERT INTO imagen (producto,imagen) VALUES
 	 (284,'expert.JPEG'),
 	 (53,'officer.JPEG'),
 	 (221,'example.JPEG'),
@@ -1655,7 +1853,7 @@ INSERT INTO public.imagen (producto,imagen) VALUES
 	 (159,'explain.JPEG'),
 	 (198,'support.JPEG'),
 	 (32,'beautiful.JPEG');
-INSERT INTO public.imagen (producto,imagen) VALUES
+INSERT INTO imagen (producto,imagen) VALUES
 	 (268,'president.JPEG'),
 	 (12,'do.JPEG'),
 	 (299,'them.JPEG'),
@@ -1666,7 +1864,7 @@ INSERT INTO public.imagen (producto,imagen) VALUES
 	 (18,'down.JPEG'),
 	 (128,'though.JPEG'),
 	 (283,'though.JPEG');
-INSERT INTO public.imagen (producto,imagen) VALUES
+INSERT INTO imagen (producto,imagen) VALUES
 	 (150,'try.JPEG'),
 	 (203,'lose.JPEG'),
 	 (269,'along.JPEG'),
@@ -1677,7 +1875,7 @@ INSERT INTO public.imagen (producto,imagen) VALUES
 	 (12,'be.JPEG'),
 	 (128,'garden.JPEG'),
 	 (236,'follow.JPEG');
-INSERT INTO public.imagen (producto,imagen) VALUES
+INSERT INTO imagen (producto,imagen) VALUES
 	 (213,'turn.JPEG'),
 	 (64,'military.JPEG'),
 	 (110,'service.JPEG'),
@@ -1688,7 +1886,7 @@ INSERT INTO public.imagen (producto,imagen) VALUES
 	 (121,'wide.JPEG'),
 	 (220,'appear.JPEG'),
 	 (189,'why.JPEG');
-INSERT INTO public.imagen (producto,imagen) VALUES
+INSERT INTO imagen (producto,imagen) VALUES
 	 (179,'type.JPEG'),
 	 (217,'near.JPEG'),
 	 (189,'know.JPEG'),
@@ -1699,7 +1897,7 @@ INSERT INTO public.imagen (producto,imagen) VALUES
 	 (7,'health.JPEG'),
 	 (209,'hour.JPEG'),
 	 (67,'condition.JPEG');
-INSERT INTO public.imagen (producto,imagen) VALUES
+INSERT INTO imagen (producto,imagen) VALUES
 	 (288,'water.JPEG'),
 	 (108,'participant.JPEG'),
 	 (276,'wide.JPEG'),
@@ -1710,7 +1908,7 @@ INSERT INTO public.imagen (producto,imagen) VALUES
 	 (192,'home.JPEG'),
 	 (168,'hot.JPEG'),
 	 (211,'whatever.JPEG');
-INSERT INTO public.imagen (producto,imagen) VALUES
+INSERT INTO imagen (producto,imagen) VALUES
 	 (115,'compare.JPEG'),
 	 (258,'last.JPEG'),
 	 (81,'education.JPEG'),
@@ -1721,7 +1919,7 @@ INSERT INTO public.imagen (producto,imagen) VALUES
 	 (88,'response.JPEG'),
 	 (239,'vote.JPEG'),
 	 (160,'wide.JPEG');
-INSERT INTO public.imagen (producto,imagen) VALUES
+INSERT INTO imagen (producto,imagen) VALUES
 	 (184,'beautiful.JPEG'),
 	 (243,'everyone.JPEG'),
 	 (297,'activity.JPEG'),
@@ -1732,7 +1930,7 @@ INSERT INTO public.imagen (producto,imagen) VALUES
 	 (295,'candidate.JPEG'),
 	 (152,'spring.JPEG'),
 	 (193,'wall.JPEG');
-INSERT INTO public.imagen (producto,imagen) VALUES
+INSERT INTO imagen (producto,imagen) VALUES
 	 (239,'agreement.JPEG'),
 	 (288,'economic.JPEG'),
 	 (80,'study.JPEG'),
@@ -1743,7 +1941,7 @@ INSERT INTO public.imagen (producto,imagen) VALUES
 	 (218,'one.JPEG'),
 	 (34,'claim.JPEG'),
 	 (110,'road.JPEG');
-INSERT INTO public.imagen (producto,imagen) VALUES
+INSERT INTO imagen (producto,imagen) VALUES
 	 (200,'media.JPEG'),
 	 (30,'that.JPEG'),
 	 (29,'dream.JPEG'),
@@ -1754,7 +1952,7 @@ INSERT INTO public.imagen (producto,imagen) VALUES
 	 (133,'down.JPEG'),
 	 (277,'professional.JPEG'),
 	 (49,'strategy.JPEG');
-INSERT INTO public.imagen (producto,imagen) VALUES
+INSERT INTO imagen (producto,imagen) VALUES
 	 (218,'thousand.JPEG'),
 	 (212,'adult.JPEG'),
 	 (282,'wife.JPEG'),
@@ -1765,7 +1963,7 @@ INSERT INTO public.imagen (producto,imagen) VALUES
 	 (127,'star.JPEG'),
 	 (285,'their.JPEG'),
 	 (173,'toward.JPEG');
-INSERT INTO public.imagen (producto,imagen) VALUES
+INSERT INTO imagen (producto,imagen) VALUES
 	 (133,'stuff.JPEG'),
 	 (256,'or.JPEG'),
 	 (274,'order.JPEG'),
@@ -1776,7 +1974,7 @@ INSERT INTO public.imagen (producto,imagen) VALUES
 	 (184,'coach.JPEG'),
 	 (140,'near.JPEG'),
 	 (97,'effect.JPEG');
-INSERT INTO public.imagen (producto,imagen) VALUES
+INSERT INTO imagen (producto,imagen) VALUES
 	 (149,'bit.JPEG'),
 	 (43,'conference.JPEG'),
 	 (236,'should.JPEG'),
@@ -1787,7 +1985,7 @@ INSERT INTO public.imagen (producto,imagen) VALUES
 	 (61,'clearly.JPEG'),
 	 (23,'democratic.JPEG'),
 	 (271,'bit.JPEG');
-INSERT INTO public.imagen (producto,imagen) VALUES
+INSERT INTO imagen (producto,imagen) VALUES
 	 (170,'above.JPEG'),
 	 (20,'ahead.JPEG'),
 	 (198,'quickly.JPEG'),
@@ -1798,7 +1996,7 @@ INSERT INTO public.imagen (producto,imagen) VALUES
 	 (229,'opportunity.JPEG'),
 	 (88,'travel.JPEG'),
 	 (97,'magazine.JPEG');
-INSERT INTO public.imagen (producto,imagen) VALUES
+INSERT INTO imagen (producto,imagen) VALUES
 	 (124,'however.JPEG'),
 	 (86,'arm.JPEG'),
 	 (44,'program.JPEG'),
@@ -1809,7 +2007,7 @@ INSERT INTO public.imagen (producto,imagen) VALUES
 	 (240,'pretty.JPEG'),
 	 (110,'wait.JPEG'),
 	 (117,'see.JPEG');
-INSERT INTO public.imagen (producto,imagen) VALUES
+INSERT INTO imagen (producto,imagen) VALUES
 	 (29,'behind.JPEG'),
 	 (37,'development.JPEG'),
 	 (2,'partner.JPEG'),
@@ -1820,7 +2018,7 @@ INSERT INTO public.imagen (producto,imagen) VALUES
 	 (89,'late.JPEG'),
 	 (217,'reality.JPEG'),
 	 (14,'arm.JPEG');
-INSERT INTO public.imagen (producto,imagen) VALUES
+INSERT INTO imagen (producto,imagen) VALUES
 	 (36,'certainly.JPEG'),
 	 (42,'think.JPEG'),
 	 (155,'cover.JPEG'),
@@ -1831,7 +2029,7 @@ INSERT INTO public.imagen (producto,imagen) VALUES
 	 (163,'participant.JPEG'),
 	 (1,'father.JPEG'),
 	 (273,'country.JPEG');
-INSERT INTO public.imagen (producto,imagen) VALUES
+INSERT INTO imagen (producto,imagen) VALUES
 	 (121,'pretty.JPEG'),
 	 (164,'thousand.JPEG'),
 	 (168,'animal.JPEG'),
@@ -1842,7 +2040,7 @@ INSERT INTO public.imagen (producto,imagen) VALUES
 	 (25,'wind.JPEG'),
 	 (254,'pick.JPEG'),
 	 (280,'another.JPEG');
-INSERT INTO public.imagen (producto,imagen) VALUES
+INSERT INTO imagen (producto,imagen) VALUES
 	 (194,'reveal.JPEG'),
 	 (53,'plant.JPEG'),
 	 (77,'kind.JPEG'),
@@ -1853,7 +2051,7 @@ INSERT INTO public.imagen (producto,imagen) VALUES
 	 (250,'company.JPEG'),
 	 (277,'company.JPEG'),
 	 (154,'night.JPEG');
-INSERT INTO public.imagen (producto,imagen) VALUES
+INSERT INTO imagen (producto,imagen) VALUES
 	 (170,'president.JPEG'),
 	 (45,'international.JPEG'),
 	 (180,'consumer.JPEG'),
@@ -1864,7 +2062,7 @@ INSERT INTO public.imagen (producto,imagen) VALUES
 	 (138,'instead.JPEG'),
 	 (300,'boy.JPEG'),
 	 (247,'read.JPEG');
-INSERT INTO public.imagen (producto,imagen) VALUES
+INSERT INTO imagen (producto,imagen) VALUES
 	 (165,'southern.JPEG'),
 	 (143,'whether.JPEG'),
 	 (72,'sign.JPEG'),
@@ -1875,7 +2073,7 @@ INSERT INTO public.imagen (producto,imagen) VALUES
 	 (21,'great.JPEG'),
 	 (264,'since.JPEG'),
 	 (284,'fight.JPEG');
-INSERT INTO public.imagen (producto,imagen) VALUES
+INSERT INTO imagen (producto,imagen) VALUES
 	 (14,'lay.JPEG'),
 	 (156,'father.JPEG'),
 	 (59,'citizen.JPEG'),
@@ -1886,7 +2084,7 @@ INSERT INTO public.imagen (producto,imagen) VALUES
 	 (240,'carry.JPEG'),
 	 (199,'question.JPEG'),
 	 (280,'present.JPEG');
-INSERT INTO public.imagen (producto,imagen) VALUES
+INSERT INTO imagen (producto,imagen) VALUES
 	 (83,'with.JPEG'),
 	 (36,'staff.JPEG'),
 	 (145,'focus.JPEG'),
@@ -1898,7 +2096,8 @@ INSERT INTO public.imagen (producto,imagen) VALUES
 	 (233,'science.JPEG'),
 	 (266,'rule.JPEG');
 
-INSERT INTO public.envio (tipo_envio) VALUES
+
+INSERT INTO envio (tipo_envio) VALUES
 	 ('envio rapido'),
 	 ('envio a correo'),
 	 ('envio a correo'),
@@ -1909,7 +2108,7 @@ INSERT INTO public.envio (tipo_envio) VALUES
 	 ('retiro en sucursal'),
 	 ('envio rapido'),
 	 ('envio normal a domicilio');
-INSERT INTO public.envio (tipo_envio) VALUES
+INSERT INTO envio (tipo_envio) VALUES
 	 ('envio rapido'),
 	 ('envio normal a domicilio'),
 	 ('envio normal a domicilio'),
@@ -1920,7 +2119,7 @@ INSERT INTO public.envio (tipo_envio) VALUES
 	 ('envio a correo'),
 	 ('envio normal a domicilio'),
 	 ('envio a correo');
-INSERT INTO public.envio (tipo_envio) VALUES
+INSERT INTO envio (tipo_envio) VALUES
 	 ('envio a correo'),
 	 ('envio a correo'),
 	 ('envio normal a domicilio'),
@@ -1931,7 +2130,7 @@ INSERT INTO public.envio (tipo_envio) VALUES
 	 ('envio normal a domicilio'),
 	 ('retiro en sucursal'),
 	 ('retiro en sucursal');
-INSERT INTO public.envio (tipo_envio) VALUES
+INSERT INTO envio (tipo_envio) VALUES
 	 ('envio a correo'),
 	 ('envio a correo'),
 	 ('envio rapido'),
@@ -1942,7 +2141,7 @@ INSERT INTO public.envio (tipo_envio) VALUES
 	 ('envio rapido'),
 	 ('envio a correo'),
 	 ('envio rapido');
-INSERT INTO public.envio (tipo_envio) VALUES
+INSERT INTO envio (tipo_envio) VALUES
 	 ('envio normal a domicilio'),
 	 ('retiro en sucursal'),
 	 ('envio rapido'),
@@ -1953,7 +2152,7 @@ INSERT INTO public.envio (tipo_envio) VALUES
 	 ('envio rapido'),
 	 ('envio rapido'),
 	 ('envio a correo');
-INSERT INTO public.envio (tipo_envio) VALUES
+INSERT INTO envio (tipo_envio) VALUES
 	 ('envio a correo'),
 	 ('envio a correo'),
 	 ('envio normal a domicilio'),
@@ -1964,7 +2163,7 @@ INSERT INTO public.envio (tipo_envio) VALUES
 	 ('envio rapido'),
 	 ('envio rapido'),
 	 ('envio rapido');
-INSERT INTO public.envio (tipo_envio) VALUES
+INSERT INTO envio (tipo_envio) VALUES
 	 ('retiro en sucursal'),
 	 ('envio rapido'),
 	 ('envio normal a domicilio'),
@@ -1975,7 +2174,7 @@ INSERT INTO public.envio (tipo_envio) VALUES
 	 ('envio normal a domicilio'),
 	 ('envio a correo'),
 	 ('envio rapido');
-INSERT INTO public.envio (tipo_envio) VALUES
+INSERT INTO envio (tipo_envio) VALUES
 	 ('envio normal a domicilio'),
 	 ('envio normal a domicilio'),
 	 ('envio rapido'),
@@ -1986,7 +2185,7 @@ INSERT INTO public.envio (tipo_envio) VALUES
 	 ('retiro en sucursal'),
 	 ('envio a correo'),
 	 ('envio normal a domicilio');
-INSERT INTO public.envio (tipo_envio) VALUES
+INSERT INTO envio (tipo_envio) VALUES
 	 ('envio a correo'),
 	 ('retiro en sucursal'),
 	 ('envio a correo'),
@@ -1997,7 +2196,7 @@ INSERT INTO public.envio (tipo_envio) VALUES
 	 ('envio normal a domicilio'),
 	 ('retiro en sucursal'),
 	 ('envio normal a domicilio');
-INSERT INTO public.envio (tipo_envio) VALUES
+INSERT INTO envio (tipo_envio) VALUES
 	 ('envio rapido'),
 	 ('envio rapido'),
 	 ('envio a correo'),
@@ -2008,7 +2207,7 @@ INSERT INTO public.envio (tipo_envio) VALUES
 	 ('envio rapido'),
 	 ('envio a correo'),
 	 ('envio rapido');
-INSERT INTO public.envio (tipo_envio) VALUES
+INSERT INTO envio (tipo_envio) VALUES
 	 ('retiro en sucursal'),
 	 ('envio rapido'),
 	 ('retiro en sucursal'),
@@ -2019,7 +2218,7 @@ INSERT INTO public.envio (tipo_envio) VALUES
 	 ('envio a correo'),
 	 ('envio rapido'),
 	 ('envio a correo');
-INSERT INTO public.envio (tipo_envio) VALUES
+INSERT INTO envio (tipo_envio) VALUES
 	 ('envio normal a domicilio'),
 	 ('envio rapido'),
 	 ('retiro en sucursal'),
@@ -2030,7 +2229,7 @@ INSERT INTO public.envio (tipo_envio) VALUES
 	 ('envio normal a domicilio'),
 	 ('envio rapido'),
 	 ('envio normal a domicilio');
-INSERT INTO public.envio (tipo_envio) VALUES
+INSERT INTO envio (tipo_envio) VALUES
 	 ('envio normal a domicilio'),
 	 ('envio normal a domicilio'),
 	 ('retiro en sucursal'),
@@ -2041,7 +2240,7 @@ INSERT INTO public.envio (tipo_envio) VALUES
 	 ('retiro en sucursal'),
 	 ('retiro en sucursal'),
 	 ('envio a correo');
-INSERT INTO public.envio (tipo_envio) VALUES
+INSERT INTO envio (tipo_envio) VALUES
 	 ('envio a correo'),
 	 ('envio a correo'),
 	 ('envio a correo'),
@@ -2052,7 +2251,7 @@ INSERT INTO public.envio (tipo_envio) VALUES
 	 ('envio rapido'),
 	 ('envio rapido'),
 	 ('envio rapido');
-INSERT INTO public.envio (tipo_envio) VALUES
+INSERT INTO envio (tipo_envio) VALUES
 	 ('retiro en sucursal'),
 	 ('retiro en sucursal'),
 	 ('envio normal a domicilio'),
@@ -2063,7 +2262,7 @@ INSERT INTO public.envio (tipo_envio) VALUES
 	 ('envio a correo'),
 	 ('retiro en sucursal'),
 	 ('envio normal a domicilio');
-INSERT INTO public.envio (tipo_envio) VALUES
+INSERT INTO envio (tipo_envio) VALUES
 	 ('envio a correo'),
 	 ('envio a correo'),
 	 ('envio a correo'),
@@ -2074,7 +2273,7 @@ INSERT INTO public.envio (tipo_envio) VALUES
 	 ('envio a correo'),
 	 ('envio normal a domicilio'),
 	 ('retiro en sucursal');
-INSERT INTO public.envio (tipo_envio) VALUES
+INSERT INTO envio (tipo_envio) VALUES
 	 ('envio a correo'),
 	 ('retiro en sucursal'),
 	 ('envio rapido'),
@@ -2085,7 +2284,7 @@ INSERT INTO public.envio (tipo_envio) VALUES
 	 ('envio normal a domicilio'),
 	 ('envio normal a domicilio'),
 	 ('envio normal a domicilio');
-INSERT INTO public.envio (tipo_envio) VALUES
+INSERT INTO envio (tipo_envio) VALUES
 	 ('envio a correo'),
 	 ('envio normal a domicilio'),
 	 ('envio normal a domicilio'),
@@ -2096,7 +2295,7 @@ INSERT INTO public.envio (tipo_envio) VALUES
 	 ('retiro en sucursal'),
 	 ('envio rapido'),
 	 ('retiro en sucursal');
-INSERT INTO public.envio (tipo_envio) VALUES
+INSERT INTO envio (tipo_envio) VALUES
 	 ('envio normal a domicilio'),
 	 ('retiro en sucursal'),
 	 ('envio normal a domicilio'),
@@ -2107,7 +2306,7 @@ INSERT INTO public.envio (tipo_envio) VALUES
 	 ('envio normal a domicilio'),
 	 ('envio rapido'),
 	 ('envio rapido');
-INSERT INTO public.envio (tipo_envio) VALUES
+INSERT INTO envio (tipo_envio) VALUES
 	 ('envio normal a domicilio'),
 	 ('retiro en sucursal'),
 	 ('envio rapido'),
@@ -2118,7 +2317,7 @@ INSERT INTO public.envio (tipo_envio) VALUES
 	 ('envio a correo'),
 	 ('envio normal a domicilio'),
 	 ('envio a correo');
-INSERT INTO public.envio (tipo_envio) VALUES
+INSERT INTO envio (tipo_envio) VALUES
 	 ('envio normal a domicilio'),
 	 ('envio a correo'),
 	 ('retiro en sucursal'),
@@ -2129,7 +2328,7 @@ INSERT INTO public.envio (tipo_envio) VALUES
 	 ('envio a correo'),
 	 ('retiro en sucursal'),
 	 ('envio normal a domicilio');
-INSERT INTO public.envio (tipo_envio) VALUES
+INSERT INTO envio (tipo_envio) VALUES
 	 ('envio a correo'),
 	 ('retiro en sucursal'),
 	 ('retiro en sucursal'),
@@ -2140,7 +2339,7 @@ INSERT INTO public.envio (tipo_envio) VALUES
 	 ('envio a correo'),
 	 ('envio rapido'),
 	 ('envio normal a domicilio');
-INSERT INTO public.envio (tipo_envio) VALUES
+INSERT INTO envio (tipo_envio) VALUES
 	 ('envio rapido'),
 	 ('envio rapido'),
 	 ('envio rapido'),
@@ -2151,7 +2350,7 @@ INSERT INTO public.envio (tipo_envio) VALUES
 	 ('retiro en sucursal'),
 	 ('envio normal a domicilio'),
 	 ('envio rapido');
-INSERT INTO public.envio (tipo_envio) VALUES
+INSERT INTO envio (tipo_envio) VALUES
 	 ('envio normal a domicilio'),
 	 ('envio normal a domicilio'),
 	 ('envio rapido'),
@@ -2162,7 +2361,7 @@ INSERT INTO public.envio (tipo_envio) VALUES
 	 ('retiro en sucursal'),
 	 ('retiro en sucursal'),
 	 ('retiro en sucursal');
-INSERT INTO public.envio (tipo_envio) VALUES
+INSERT INTO envio (tipo_envio) VALUES
 	 ('envio normal a domicilio'),
 	 ('envio a correo'),
 	 ('envio rapido'),
@@ -2173,7 +2372,7 @@ INSERT INTO public.envio (tipo_envio) VALUES
 	 ('envio normal a domicilio'),
 	 ('retiro en sucursal'),
 	 ('retiro en sucursal');
-INSERT INTO public.envio (tipo_envio) VALUES
+INSERT INTO envio (tipo_envio) VALUES
 	 ('envio rapido'),
 	 ('retiro en sucursal'),
 	 ('retiro en sucursal'),
@@ -2184,7 +2383,7 @@ INSERT INTO public.envio (tipo_envio) VALUES
 	 ('retiro en sucursal'),
 	 ('envio normal a domicilio'),
 	 ('retiro en sucursal');
-INSERT INTO public.envio (tipo_envio) VALUES
+INSERT INTO envio (tipo_envio) VALUES
 	 ('envio rapido'),
 	 ('retiro en sucursal'),
 	 ('envio rapido'),
@@ -2195,7 +2394,7 @@ INSERT INTO public.envio (tipo_envio) VALUES
 	 ('retiro en sucursal'),
 	 ('envio a correo'),
 	 ('envio a correo');
-INSERT INTO public.envio (tipo_envio) VALUES
+INSERT INTO envio (tipo_envio) VALUES
 	 ('envio normal a domicilio'),
 	 ('envio rapido'),
 	 ('envio normal a domicilio'),
@@ -2206,7 +2405,7 @@ INSERT INTO public.envio (tipo_envio) VALUES
 	 ('retiro en sucursal'),
 	 ('envio normal a domicilio'),
 	 ('envio a correo');
-INSERT INTO public.envio (tipo_envio) VALUES
+INSERT INTO envio (tipo_envio) VALUES
 	 ('envio rapido'),
 	 ('envio rapido'),
 	 ('envio rapido'),
@@ -2217,7 +2416,7 @@ INSERT INTO public.envio (tipo_envio) VALUES
 	 ('envio a correo'),
 	 ('envio rapido'),
 	 ('retiro en sucursal');
-INSERT INTO public.envio (tipo_envio) VALUES
+INSERT INTO envio (tipo_envio) VALUES
 	 ('envio a correo'),
 	 ('envio a correo'),
 	 ('retiro en sucursal'),
@@ -2229,7 +2428,8 @@ INSERT INTO public.envio (tipo_envio) VALUES
 	 ('envio a correo'),
 	 ('envio rapido');
 
-INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
+
+INSERT INTO resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Store yes travel company. Price movement paper near leave story ok. Cost gas owner. Choose plan level today respond feel. Your send give trip black.',2,39),
 	 ('Factor as task democratic land music great. Drop able forward director benefit government. Couple environment pressure miss manager. Significant camera road indeed seem statement child. Science allow middle under fine southern your. Rock never matter join family stage.',5,165),
 	 ('Walk during section data service. Total indeed power how. Board make inside just together we. Forward remain month Democrat.',2,105),
@@ -2240,7 +2440,7 @@ INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Particular black parent much listen road room. Wrong fear reveal toward himself. Feel apply million.',4,259),
 	 ('Money under suddenly laugh join item. Offer pick trade voice again capital. Race instead bag current must happy.',2,55),
 	 ('Remain never entire society. Account peace pay popular goal financial. Skin manager physical lay it reveal. Manage with born page stand share yes.',1,269);
-INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
+INSERT INTO resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Ever money begin turn. Education although method. Military even baby physical environmental per.',3,110),
 	 ('Artist brother old development information job tree. Human reflect answer research piece. It law since deal create gun rise. Appear worker power drive project. Star participant friend difference finally. Age ground the fire hotel.',4,115),
 	 ('Including collection instead culture international the mind. View agent suffer develop. Maintain town machine produce. Later relationship social night.',4,40),
@@ -2251,7 +2451,7 @@ INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Arm most but myself bar mouth suggest. Herself modern wide recognize radio. Off time political writer indicate opportunity. Nice man always stage. Continue without end heart them.',2,147),
 	 ('Very current wish fine money PM. Happy read describe rich. Audience good always war. Ready try discussion discuss office gun.',4,164),
 	 ('Interview good thousand. Another environment section study. You finally position box more cup old. Family crime certainly measure before. Research doctor wind report song Mr. Give affect education when beyond almost occur guess.',4,114);
-INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
+INSERT INTO resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Religious bring on nice six debate. Where line really bill scene. Able him follow expert effect mention. Morning future understand candidate.',1,253),
 	 ('Away society scene against customer. Note give common about. Unit nation eat live. Whom serious bad full people whole. Candidate growth suggest listen onto page cover when.',2,188),
 	 ('Name wind sense choice. Professor him happy recently city. Senior building beautiful necessary without outside win.',4,142),
@@ -2262,7 +2462,7 @@ INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Wait carry write everybody catch. Late direction dinner arrive entire key. Year what interest official interesting test.',2,166),
 	 ('Economic left animal thought marriage out. Themselves study agreement bar by store. Growth score produce head writer involve. Vote determine travel. Improve effect star machine.',4,71),
 	 ('Something necessary as mind strong scene. White but meeting follow pick shake. Tax nearly remember just finally very guess. Half organization organization scientist civil first music summer. Toward yeah fill top high. Deal throughout wide knowledge various.',2,181);
-INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
+INSERT INTO resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Attorney crime instead this. Believe certain yes cause research citizen later view. Nature door again soon traditional. Road specific sing ready attack article key. Else close step ball well number. Have summer base determine have.',1,188),
 	 ('Responsibility really nor more. General return conference so home town. Various benefit history development letter away build.',1,34),
 	 ('Close score number college them your question. Recognize attorney around news. Nearly step keep pick enough nice he.',1,111),
@@ -2273,7 +2473,7 @@ INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Main exactly weight me. Bad space write learn. Week everybody significant somebody reason. Why very opportunity time trip.',5,90),
 	 ('Score late make. Federal statement two Mrs per fine. Its late positive everything computer blood. May person as situation. Finish house long pressure.',5,23),
 	 ('Development TV tree deal business brother all. There nation establish bad few prepare agree. Something however off score end keep. National protect guy bar ability. Season majority final reveal.',5,171);
-INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
+INSERT INTO resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Determine finish board onto ball. By during cold policy right. Interesting moment system leg those carry spring scientist. Need drug head blue rock.',2,252),
 	 ('Western vote you artist party popular want. Put year officer help law business sea customer. Citizen yet pattern few face possible ask. Page American father thought others behavior. Draw long spring whatever land stay firm what.',1,200),
 	 ('Painting exactly modern education and without responsibility. Police Democrat dream huge bag. Small particular have material kind. Service either boy may black church.',2,285),
@@ -2284,7 +2484,7 @@ INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Population half town difficult. By movie foreign. Eight pull music but. Clear note safe hand support official. College but think such Congress.',1,64),
 	 ('Those job glass discover. Stuff play whom. New around son keep film yeah near. Drive rock economic. Expect style sometimes act degree. Like for free you foreign.',4,277),
 	 ('Fear course weight pressure walk. Cell push machine however stock short buy. Run improve anyone evidence. As job yeah suddenly matter act serve lay. Get probably where candidate region situation. Now wrong by research care.',5,171);
-INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
+INSERT INTO resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Space bit which idea person. Court investment store. Worker budget since official low. Draw page current decide person. Wait car north far already wait technology.',2,289),
 	 ('Including someone never. Idea glass material at administration him college. Wrong officer special. Learn less direction place field.',4,137),
 	 ('Argue rise cover dream sell. Several explain hit population style subject no real. Far mission control stop because. Green hold explain. Enter say miss water democratic room idea.',3,236),
@@ -2295,7 +2495,7 @@ INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Camera billion Republican rate often myself. Meeting day gas relate. Offer until treatment. Chance method build. Mother beyond image plant administration in treatment. Away after across.',2,270),
 	 ('Determine rich response company. Military case four from modern receive different. Early work son smile detail bed. Mouth eight moment table.',4,111),
 	 ('Lead when form require rich stock. Account piece agent. Stock responsibility away class have you trial wear. There should risk over. Much either program commercial seek security watch. Be try everyone chance like.',4,68);
-INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
+INSERT INTO resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Sport husband stand media interview relate. Sense Mr great reflect none hear news lot. Staff avoid fly people.',3,79),
 	 ('Result section enough check huge magazine. Mr rest Congress high situation civil notice. Local matter TV court child difference reach trip. Through plant environmental blood why. Home wide half control gas ever.',1,277),
 	 ('Yeah trip nation real player smile. Seek draw body physical back. Remain dog after science teacher.',2,260),
@@ -2306,7 +2506,7 @@ INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
 	 ('National account notice management. Debate political guy young value else point. Energy behavior system particular compare chance. Senior service phone although clear fly not. Stock structure themselves yourself. Public consumer much.',1,267),
 	 ('Between including evidence water. Exactly according home audience travel floor. Child still government like. Employee style by talk case law. Together responsibility personal more agency run.',1,56),
 	 ('Appear own paper order view form. Keep whether single million herself soon knowledge. Anyone wait coach discussion class. Security assume little might suggest alone word. Day leg best including gas find nice. While add peace letter goal.',3,61);
-INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
+INSERT INTO resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Save want nation watch knowledge. Finish write never whatever pass five stuff serve. Future training very near other.',3,201),
 	 ('Green whether during several. Investment development account. Rise she result both.',4,219),
 	 ('Believe or head and poor student wall. Consumer teacher economic billion allow. When star opportunity bar offer many news. Less cell car local.',3,294),
@@ -2317,7 +2517,7 @@ INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Laugh in meet plant about guy scene each. Open American word it add race. Save such since bit. Mind measure sound my data actually. Thus short shoulder want western. Sport she various much.',4,74),
 	 ('Education realize in outside any expect wall else. Tell each who vote dog draw run. Message understand together administration wrong. During require whole eight. Mission day piece black everyone if campaign. Beyond today fine baby.',2,132),
 	 ('Plan range middle place like. Trouble system security ability. Establish join interest system staff military Mrs.',4,109);
-INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
+INSERT INTO resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Reality travel about guy along player include. Sing single chair put owner stay culture. Month style science environmental better space require. While approach work environmental describe. Project fund often. Detail organization attack finish.',2,285),
 	 ('Understand though apply thank off culture. Suffer positive real then. Serious write herself effort plant bill standard.',1,230),
 	 ('Treat stop war a article energy unit. Three its college dream drug center body. Whether marriage sign say pretty. Grow prove condition civil fish sell contain. Loss season together speak president realize. Fact itself agency down.',3,132),
@@ -2328,7 +2528,7 @@ INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Head parent score race bar capital. Material film give there show special recently. Carry degree meet energy. Exactly choice once push piece ball what discuss. Age career international truth sometimes.',3,217),
 	 ('War own beautiful environmental something bill. Indicate hold throughout sister activity hospital. Peace who make safe teacher discuss example. Southern man structure discover build. Human in economic century follow should town.',3,213),
 	 ('Air or southern health network. Way song goal interview investment natural reach. Push return firm easy board training exactly catch. Light cup kind yet. Successful with mention sport throughout matter.',4,246);
-INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
+INSERT INTO resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Experience most phone especially industry he sometimes. Clearly age international already sing wear wind rather. Ahead even knowledge arrive huge however.',4,15),
 	 ('Wonder stuff bill student side event environment. Same own democratic mission. Power them arm main true child. Politics walk better base dog suffer thank law.',4,252),
 	 ('Security boy century begin Democrat. Maintain affect without source. Know start its environment gun offer. Plan cover idea economy.',4,10),
@@ -2339,7 +2539,7 @@ INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Against finish hundred suggest act mean recently. Huge position lot term. Nature fine couple worry significant full.',4,206),
 	 ('Turn technology political call Mr know idea. Else place professional speak cause seven or. Whole each visit subject free out. Officer material eye training. Relationship despite nation. Improve range size.',1,216),
 	 ('Nor be wonder security success drug he. Matter cold even. Nation traditional level unit. Reduce street them never. Trial bad such occur. Actually prove event matter again option partner.',3,14);
-INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
+INSERT INTO resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Specific real whole suggest. All ahead class case. Senior respond mind. Meeting only activity name according kind beyond production. Technology my age who why Republican.',1,11),
 	 ('State message various over town idea. Southern once support remember herself. Appear never international present. Throw training establish future thought quickly. President camera specific join her.',3,204),
 	 ('Weight mission beyond as gun somebody. Situation with why why clearly in. Watch draw think science.',1,69),
@@ -2350,7 +2550,7 @@ INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
 	 ('While understand thus investment nothing clear current different. Message world ago plant poor pressure return. Among site strong dog local evening notice past. Health continue until career affect. Goal somebody send station coach your unit guess. May ok but answer fear later pick.',2,227),
 	 ('Fish security develop give will current sport. Yeah anyone how without example. Particularly star turn drug leave month cup. Drive author cultural defense form near off. Long raise buy start month run turn. Forget ask cover may find group medical.',5,141),
 	 ('Study practice debate check. Worry bag door large back. Money situation fear view. Style draw past answer.',5,213);
-INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
+INSERT INTO resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Start surface dinner why. Simply him first particular far. Set few world billion on others provide. Indeed Mr rock there role first budget. Check plant member. Role Republican a between agency.',4,116),
 	 ('Big south enough billion bit. Six painting what news. With write few level may issue. Four hotel force science.',1,11),
 	 ('Purpose effort figure. Data yeah politics happen thousand fund kind. Project mother thousand behavior everybody fire weight blue. Performance I Democrat section.',4,196),
@@ -2361,7 +2561,7 @@ INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Process offer exactly air growth. Race total pass put. Realize protect letter pattern throw not large. Human yet pass major agree.',5,57),
 	 ('Stage now around adult actually kid respond. Friend movement fly coach. State finally store factor draw foot. Wife exist specific. So conference enjoy necessary. Prevent drive peace image.',1,292),
 	 ('Officer who around nice task. Source establish peace go. Least song represent real believe field yet. Value plan base wide popular few rather could.',2,64);
-INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
+INSERT INTO resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Party parent though wait unit discover boy. Those bar name notice government up no. Other charge yard business you sister sort.',5,280),
 	 ('Direction very plant ok amount. Above data wife born. According green risk forward off. Happy research look parent cold. Onto along particularly art partner.',4,28),
 	 ('Conference cup white western growth. Join perhaps address her increase foot former. Cover care maybe health medical without who need. He government experience watch bank art. Century school American hope per provide. Put pattern fly scientist since.',2,272),
@@ -2372,7 +2572,7 @@ INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Option suggest reveal. They direction issue between guess. American keep government area continue maybe. Look begin sell only. Recent build southern receive raise up. Age green author generation radio fine.',4,11),
 	 ('Place stand almost ever which dark happy. And year book town. Spring identify draw fall prepare factor. Tax experience ball best often mouth. Bank structure hard.',3,222),
 	 ('Bad with if baby market car. Three great from free early. Last discuss edge report. Clearly thousand service study idea situation. Happy important away. Perhaps more still offer source.',3,254);
-INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
+INSERT INTO resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Along our scientist south feel up model. Top close marriage property available bank establish. Good behavior however paper still artist thought. High build citizen carry half. Fish fine eye success.',5,142),
 	 ('Song cover matter. Anyone go couple community reflect. Few stop nearly should thank.',1,105),
 	 ('Issue pull about. Around radio opportunity local. Manager along small green employee personal crime particularly.',1,149),
@@ -2383,7 +2583,7 @@ INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Stock toward seat point. Music war save else everything food ok. Great watch fish billion. Send throughout decision lay. Whom child person society century meeting. Including represent red very local upon.',1,99),
 	 ('Second daughter involve back senior. Coach crime trip interview appear standard lawyer probably. Citizen pick respond upon. Watch above everybody alone reveal government. Buy important pass fire open study.',1,298),
 	 ('Half story last kid water some writer. Avoid from seat world most. Suddenly pick exactly.',1,289);
-INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
+INSERT INTO resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Trial call hold choose. Stand really one training court business. Position red ago sign why. Off respond receive practice world community.',2,33),
 	 ('Answer body painting dark war item list. Ability car network into kid let. Wall operation whom service. Federal this kid leader hold. Theory establish knowledge move chance risk. Everything team ahead gas society.',1,73),
 	 ('Feel behind ready challenge. Do happy bad cut foreign manager card. Forget early effect different full. Major most administration among my analysis enough.',3,263),
@@ -2394,7 +2594,7 @@ INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Friend matter over gun effort. Condition left responsibility popular physical. Give rich miss trade. Then decade American some guess according. Wait could report.',5,100),
 	 ('Bar nice cut into share rock. Garden wide sometimes later anyone manage traditional. Set still bar against husband can. Apply line should born heart listen their. Century away the full production require move deep.',2,48),
 	 ('Picture walk most shake. Herself low agent record last. Painting pattern second the then language general. Kind eye character draw film late letter. Financial use final write memory top.',2,161);
-INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
+INSERT INTO resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Surface agency affect cover. Local account laugh western yeah security affect. East plan assume. Ability trouble see everybody political major. Morning amount their value.',1,83),
 	 ('Food off traditional include paper study those skin. Design between create. College buy total remember five former evidence old. Recent them carry everything. Attorney discover yourself situation among alone assume.',5,276),
 	 ('Economic stock large senior history. Few doctor four sign stand or page. Former picture large.',2,234),
@@ -2405,7 +2605,7 @@ INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Member item campaign model truth personal. Mrs must exist rather. Pick wear audience lawyer wide. Whom cover tree employee at center. Sister arrive style. Or recent care car teach concern.',2,157),
 	 ('Later mention visit. Act management claim section and draw left. Fall resource cold difficult. Strong show enough plant much however by. Economic garden identify material stand spend. Before responsibility director care available politics year color.',2,256),
 	 ('Theory control hot few. Today development PM church expert. View boy suggest order. Plan speech a commercial school above. Grow continue page its agent card.',1,5);
-INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
+INSERT INTO resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Use perhaps white case season indeed. Too determine reveal agree fight. May whether born Mrs food these structure. Analysis once more face. Citizen choose then environmental nearly. Involve boy only paper high investment.',5,219),
 	 ('Social relate ability whole. Kitchen place herself international lot security daughter. Television huge behavior nothing language. Action impact anything require article treat.',5,145),
 	 ('Start protect actually probably. Truth hair stuff visit. Reason account recognize because.',1,176),
@@ -2416,7 +2616,7 @@ INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Behind red else he seem continue. Character meeting card truth article face. Into than choose whatever across report. Discuss foreign I voice.',4,111),
 	 ('During leave several yes. Sign on white yeah. Military skill relate left candidate may claim. Own health five quality fly stop where. My front animal individual. Help left religious garden help form daughter rule.',5,62),
 	 ('Quality fight describe time these. Walk sense task loss. Hit star pretty will treatment spring. Project put soon issue.',1,190);
-INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
+INSERT INTO resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Board film either. Produce fish and assume affect recognize rule. Leader as young job western voice dinner. Wear trip street. Water alone source but catch space study.',4,156),
 	 ('Action professional lay task successful man blood. Area continue your land. Social whose road approach board stay. Although vote too sport theory offer. Force feeling each trip write. Force throughout cell kid whatever bill.',1,30),
 	 ('Eye live view dog well. Year also sister hair idea. Camera hit include action year whether population side.',4,105),
@@ -2427,7 +2627,7 @@ INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Imagine voice film discover create likely. City live avoid including until. Forward expert tell strategy mean fire sometimes. Then happy compare bed.',2,288),
 	 ('Call nature amount edge. Ability kitchen early continue wife. Move five learn performance memory stay seat.',3,26),
 	 ('Offer student commercial nature. Player decade probably she even. Nice push reveal visit indicate example across. Citizen paper fly next. Green through instead force get.',3,28);
-INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
+INSERT INTO resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Space participant really strategy civil order church. Place street blue PM personal. Response research spring third occur. Organization if social article.',1,247),
 	 ('Together thought into least. Hold their open owner participant size. Item certain attack sign. Economy peace hit base.',4,109),
 	 ('College house sound state page seem. Offer different son idea day. Sport opportunity feel Democrat management wear forget. Moment picture movement back trouble well state. Discover first theory picture political back.',5,231),
@@ -2438,7 +2638,7 @@ INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Play long across throw leader college Republican. Their find company throw. Head artist alone only rule. Yard buy page.',1,237),
 	 ('View whom choose control close similar. Mind along cup. Claim something level above reason cup.',5,188),
 	 ('Amount wife born once never nation. Line reason consider event important grow phone control. Its work role identify ground cover. Speech remain recently join success shake. Sell let standard simple.',3,101);
-INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
+INSERT INTO resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Economy whatever little window this structure. Through write tonight serve class agree clearly. Forward second family wind property community. Worry into television grow. Stuff travel floor ever question remember.',3,118),
 	 ('Purpose boy option letter pull his question show. Without perform treat idea walk language information. Avoid case forget clear peace.',1,220),
 	 ('Morning practice natural guess young develop. Lead worker technology risk. Bring one officer which nor. World instead choose among. Phone author professor thought effort similar. Evening population record rate.',5,45),
@@ -2449,7 +2649,7 @@ INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Standard buy piece much happy. Best year arm attention. Put address boy recently common east. Deep may staff nice affect important team. End business peace tell group become.',2,44),
 	 ('Buy seat always also. Point today focus trip rule why. Practice here fast. Partner religious such guy. Letter even anything water everything professor. Red example water effort sign and.',1,117),
 	 ('Paper event method put identify yeah also. Record he whole table occur certain happen. New without night Mr century medical. Western father join decision edge.',3,29);
-INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
+INSERT INTO resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Trouble tax determine this speech various. My rich campaign owner modern democratic teacher. Address TV improve identify coach yourself different. Reach see design possible.',4,49),
 	 ('Team citizen but establish consider. Page purpose feeling young ever relationship. However share international coach. Information article wide matter sell hotel. Sense country deep now physical participant true.',3,269),
 	 ('Forward more beautiful sound. Heart drive rate then. Practice political computer fine box argue. Theory no keep tell drop dinner herself. West occur spring training exist expect little.',1,56),
@@ -2460,7 +2660,7 @@ INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Long article magazine wide ago instead. Investment wish model finally. Fly effect find born. Again particular among away close.',3,22),
 	 ('To peace organization baby season effort particularly thank. Find return create evidence term culture many. Military director certain wait year mention example. Style hope particular strategy sort. Dinner same reflect medical end woman.',5,27),
 	 ('Foot voice city cup point carry performance give. Since develop space they for under plan. Reduce than step yourself fire. Vote thank nice cell hospital painting so. Century fear forget body treatment. Similar same college positive.',2,255);
-INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
+INSERT INTO resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Family in security although. Contain these coach day provide. Mrs discussion student. Meet seek financial research position.',3,236),
 	 ('Play road exactly clearly star strong. Item assume buy ability cell. Give conference trade short make indeed economic. If coach foot conference create measure. Suffer audience agent list million wife foreign.',2,213),
 	 ('Large where rock behavior current necessary. Travel certain matter people quality meet wind. White change morning law where.',5,104),
@@ -2471,7 +2671,7 @@ INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Opportunity quickly attorney operation up imagine. Approach at something color reason foreign spring. Community watch evening event civil situation go.',2,193),
 	 ('Crime he ever effect be ago. Because group free already. Number run win.',3,21),
 	 ('Imagine perhaps until sister miss watch even. Too spend value budget field only toward light. Service main able talk.',3,19);
-INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
+INSERT INTO resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Center join office study. Reality remain so college building everything. Long movement own smile score.',1,101),
 	 ('Mission lawyer serious finish life theory value. Treat plant program simple truth close position. Half recognize pay. Yes improve look father father among. Tax black middle pressure risk for trade. Beautiful organization field space choose.',2,235),
 	 ('Court strategy few. System cultural how main appear. Child add fall question. Beyond ability employee available young player. Ok middle official rather especially bag foot.',4,200),
@@ -2482,7 +2682,7 @@ INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Then operation physical collection. Artist can science adult ask area marriage cultural. Upon phone policy table later. Sign fact firm loss. Concern cost than feel door agency let. Heart air likely party should if million.',1,140),
 	 ('Especially voice trial off. Understand perform opportunity maybe source six consider. Yard up woman effect tell think. Effect finally win left assume material since.',1,25),
 	 ('Him tough cell bar movie. Draw finally Mr rise relationship safe. Cup kind later her as character education. Likely senior wear represent. Responsibility class we computer image any individual.',4,25);
-INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
+INSERT INTO resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Order argue measure knowledge. Theory often although practice himself candidate. Sister buy government responsibility something speak. Edge sea third daughter ok. Scene talk training in guy.',2,140),
 	 ('Full age price. Statement available choose force build value evidence mind. Hotel increase important. Pass campaign eat clearly improve house star door. Employee land painting show dinner see size experience.',1,228),
 	 ('Despite strong true region hard performance treatment. Message dream end pass. Republican movie friend question ok. Suffer hair image opportunity into. Bad phone wall hold stand. Economic piece shoulder amount feeling interest writer it.',3,254),
@@ -2493,7 +2693,7 @@ INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Situation as answer ago race program season. Approach cause network guess decide why. Stage important blue whom.',5,106),
 	 ('International through before. Mention relationship product value still better effect. Magazine high practice while worry scene opportunity adult. Hot very end should move. Former beyond light organization check mean seek.',5,92),
 	 ('Truth activity though popular. We good business Congress positive state social. Budget even join likely both wide the hospital. History shoulder including let serve because by. Today customer scientist prepare. Provide feeling little history commercial least recognize wonder.',2,55);
-INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
+INSERT INTO resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Pay staff attack human campaign include. Bring recent specific happy court brother. Eight teach those character significant risk point middle. Usually lawyer bar.',5,32),
 	 ('Read professor true then. Compare ball allow share environment mind. Pay article space issue people window system. Relationship north continue enjoy.',2,231),
 	 ('Deep run southern natural have. Rule election sound be not. Method issue card wrong visit girl but. Once heart large no specific I establish. Particularly himself offer west surface television hundred.',2,204),
@@ -2504,7 +2704,7 @@ INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Unit recently meeting leave. Although energy create plan name. Clear half born around rule between final.',1,137),
 	 ('Prevent lawyer wonder. Water so court next hear. Price evening camera onto campaign.',1,23),
 	 ('Second with poor. Answer spring dog including look. Bar campaign serve choose require. Traditional position stock lawyer world political. Member edge cover everything yard major water lot. Popular manage mission positive.',1,50);
-INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
+INSERT INTO resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Write tax doctor increase radio whether race. Major official special. Professional air laugh hour west later because.',1,219),
 	 ('Author probably want manage seat stay Mr pretty. Theory eye personal image statement office back whole. Number friend subject of peace.',4,222),
 	 ('Decide long check over no specific give order. Property experience outside rise. Management range five country laugh sing. Traditional another community which.',1,61),
@@ -2515,7 +2715,7 @@ INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Court make myself age. Good south officer reveal key drive eye. Can once not project sometimes scientist skin. Teacher reflect walk commercial visit better.',3,289),
 	 ('Third around develop opportunity specific subject situation. Daughter democratic wife fear part up. Middle skin attention democratic. Respond nature administration loss child style. Throw when find although political.',2,264),
 	 ('Company hold deal. Require similar by certainly nor west sure. Choose business walk thousand about.',4,184);
-INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
+INSERT INTO resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Network source short every. Paper Republican believe husband collection. Natural final although generation even. Suddenly discuss discover.',5,2),
 	 ('Away country although clear certain term usually value. Include well leg evening tough push. Usually dark recently increase natural audience. Discussion forget large hard book. Glass point meeting fly control recently send. Similar realize sport.',2,126),
 	 ('Station deal poor. Cultural position goal security something industry outside. Response behavior growth free local look work.',5,14),
@@ -2526,7 +2726,7 @@ INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Cut rather manage consider. Race gas administration push want. Identify policy while few seven nothing.',5,248),
 	 ('Forward why fear century south here. Each focus what. Age where assume he reason ago. Life reflect instead center because later federal continue.',2,23),
 	 ('Already easy sing building. Age save certain discuss. Whatever effort light management enjoy. See for city meet ago. White ten measure long.',3,128);
-INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
+INSERT INTO resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Show special real once writer well. Tend coach yes beyond provide. Short that brother baby scene almost stage against. Computer glass official wide message responsibility serious. Just seat agreement risk.',3,125),
 	 ('Drop within partner know each ever. Teacher court let camera agent you card. Available walk interesting.',3,288),
 	 ('Head stop among prepare rate trouble early. Training response subject above. Few painting common. Marriage process policy design.',3,267),
@@ -2537,7 +2737,7 @@ INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Character age head believe there right soldier popular. Relationship plan himself decade suddenly their. By truth point hold. Worry occur own describe.',5,10),
 	 ('Include beat exist chair doctor. World focus ask list. Method Republican professor senior material firm. Measure build personal source far. There until pretty eight. Day while who lot together often field.',2,52),
 	 ('State capital trouble. From finish media when stay significant view. Evidence through fact bank contain party stuff. Necessary woman might. Shake card memory always.',1,66);
-INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
+INSERT INTO resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Available often subject middle manage performance lose design. Couple both public heavy itself far because. Attorney place toward action truth appear. Kind interest fear week power. Bank major program much feel common. But professional wear crime ago.',4,128),
 	 ('Executive but same some. Learn yard present cause wonder. That grow give task chance man identify. Later go but college group wide.',5,287),
 	 ('On teach west challenge. To term final international health use staff. Side deal page participant when. Financial stuff outside time.',5,61),
@@ -2548,7 +2748,7 @@ INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Ten sort against. Nothing miss real describe. Election despite data store on cultural customer. Feeling toward leg my a. Western police floor admit both night site.',2,135),
 	 ('Outside than speech important simple international must bank. Street under culture pay recent little tend. Growth range right class.',3,266),
 	 ('Trial section forward knowledge management commercial fact. After glass key its across. Bag interview model success both.',2,260);
-INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
+INSERT INTO resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Home low administration majority. Chair theory while add. Generation feeling maybe movement American organization return. Character pick chair current idea blood yet also.',1,274),
 	 ('Certainly case detail hospital suffer. Protect wear bed. Involve center ok general indeed away.',2,8),
 	 ('Development prove rise who. Evidence sure for coach capital. Really finish music get. By attack effort less choice.',3,121),
@@ -2560,7 +2760,8 @@ INSERT INTO public.resenia (resenia_producto,calificacion,producto) VALUES
 	 ('Learn leader item news box. Tend expect employee benefit. Method force attention young oil. Term rise dark. Clearly arrive long two probably seek.',5,207),
 	 ('Eye cut participant one. Mention short degree check marriage American black number. Off note recently trial performance time since put. Study turn professional mind so maintain.',5,297);
 
-INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
+
+INSERT INTO pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-10-28',65,166,1),
 	 ('2023-08-20',159,45,1),
 	 ('2023-10-28',188,131,1),
@@ -2571,7 +2772,7 @@ INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-09-24',73,191,1),
 	 ('2023-08-28',289,100,1),
 	 ('2023-09-11',173,162,1);
-INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
+INSERT INTO pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-08-15',190,163,1),
 	 ('2023-10-02',297,236,1),
 	 ('2023-08-01',145,34,1),
@@ -2582,7 +2783,7 @@ INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-08-23',40,226,1),
 	 ('2023-09-12',65,166,1),
 	 ('2023-10-14',203,49,1);
-INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
+INSERT INTO pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-08-13',108,190,1),
 	 ('2023-09-14',86,177,1),
 	 ('2023-09-21',32,112,1),
@@ -2593,7 +2794,7 @@ INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-10-06',66,167,1),
 	 ('2023-10-07',190,163,1),
 	 ('2023-09-07',118,285,1);
-INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
+INSERT INTO pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-09-10',101,28,1),
 	 ('2023-10-05',290,96,1),
 	 ('2023-08-17',32,112,1),
@@ -2604,7 +2805,7 @@ INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-10-06',217,104,1),
 	 ('2023-10-27',191,145,1),
 	 ('2023-08-23',157,206,1);
-INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
+INSERT INTO pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-09-24',293,273,1),
 	 ('2023-09-15',89,73,1),
 	 ('2023-10-29',132,24,1),
@@ -2615,7 +2816,7 @@ INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-10-08',108,190,1),
 	 ('2023-10-10',51,82,1),
 	 ('2023-09-10',37,144,1);
-INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
+INSERT INTO pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-11-04',143,202,1),
 	 ('2023-09-26',268,86,1),
 	 ('2023-09-26',275,189,1),
@@ -2626,7 +2827,7 @@ INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-10-06',28,224,1),
 	 ('2023-09-06',245,298,1),
 	 ('2023-10-04',182,8,1);
-INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
+INSERT INTO pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-10-05',208,87,1),
 	 ('2023-08-22',120,225,1),
 	 ('2023-09-27',79,177,1),
@@ -2637,7 +2838,7 @@ INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-08-06',240,144,1),
 	 ('2023-08-02',245,298,1),
 	 ('2023-09-01',266,103,1);
-INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
+INSERT INTO pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-08-26',244,233,1),
 	 ('2023-10-09',208,87,1),
 	 ('2023-10-02',37,144,1),
@@ -2648,7 +2849,7 @@ INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-10-28',173,162,1),
 	 ('2023-08-20',172,102,1),
 	 ('2023-10-09',209,286,1);
-INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
+INSERT INTO pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-11-02',118,285,1),
 	 ('2023-09-21',99,260,1),
 	 ('2023-10-07',62,198,1),
@@ -2659,7 +2860,7 @@ INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-08-09',73,191,1),
 	 ('2023-10-30',103,151,1),
 	 ('2023-08-10',123,280,1);
-INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
+INSERT INTO pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-08-25',232,99,1),
 	 ('2023-10-21',115,291,1),
 	 ('2023-11-02',185,11,1),
@@ -2670,7 +2871,7 @@ INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-10-18',160,203,1),
 	 ('2023-09-09',64,17,1),
 	 ('2023-09-13',106,236,1);
-INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
+INSERT INTO pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-10-09',240,144,1),
 	 ('2023-10-24',171,138,1),
 	 ('2023-09-06',259,194,1),
@@ -2681,7 +2882,7 @@ INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-09-07',232,99,1),
 	 ('2023-10-13',32,112,1),
 	 ('2023-09-02',278,212,1);
-INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
+INSERT INTO pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-09-10',272,123,1),
 	 ('2023-10-24',123,280,1),
 	 ('2023-09-11',205,200,1),
@@ -2692,7 +2893,7 @@ INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-09-09',141,252,1),
 	 ('2023-09-15',73,191,1),
 	 ('2023-09-24',95,89,1);
-INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
+INSERT INTO pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-08-07',32,112,1),
 	 ('2023-10-06',196,110,1),
 	 ('2023-08-18',275,189,1),
@@ -2703,7 +2904,7 @@ INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-10-25',77,82,1),
 	 ('2023-09-15',272,123,1),
 	 ('2023-10-19',14,260,1);
-INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
+INSERT INTO pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-09-10',160,203,1),
 	 ('2023-10-26',167,60,1),
 	 ('2023-08-24',4,14,1),
@@ -2714,7 +2915,7 @@ INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-10-26',139,14,1),
 	 ('2023-09-17',40,226,1),
 	 ('2023-10-22',237,199,1);
-INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
+INSERT INTO pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-08-09',47,216,1),
 	 ('2023-10-15',79,177,1),
 	 ('2023-09-02',52,107,1),
@@ -2725,7 +2926,7 @@ INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-09-22',114,67,1),
 	 ('2023-10-14',65,166,1),
 	 ('2023-10-24',22,187,1);
-INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
+INSERT INTO pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-10-16',24,167,1),
 	 ('2023-09-02',229,148,1),
 	 ('2023-09-29',145,34,1),
@@ -2736,7 +2937,7 @@ INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-10-07',213,221,1),
 	 ('2023-08-07',204,220,1),
 	 ('2023-10-27',74,124,1);
-INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
+INSERT INTO pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-09-21',98,44,1),
 	 ('2023-09-07',6,237,1),
 	 ('2023-11-01',297,236,1),
@@ -2747,7 +2948,7 @@ INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-09-17',293,273,1),
 	 ('2023-10-13',176,44,1),
 	 ('2023-10-31',114,67,1);
-INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
+INSERT INTO pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-09-01',182,8,1),
 	 ('2023-08-21',106,236,1),
 	 ('2023-09-25',225,41,1),
@@ -2758,7 +2959,7 @@ INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-09-22',13,259,1),
 	 ('2023-08-14',118,285,1),
 	 ('2023-09-25',133,114,1);
-INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
+INSERT INTO pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-08-31',3,42,1),
 	 ('2023-09-30',191,145,1),
 	 ('2023-11-03',159,45,1),
@@ -2769,7 +2970,7 @@ INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-10-02',293,273,1),
 	 ('2023-08-15',111,196,1),
 	 ('2023-08-15',42,128,1);
-INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
+INSERT INTO pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-10-07',147,91,1),
 	 ('2023-08-30',266,103,1),
 	 ('2023-11-06',88,29,1),
@@ -2780,7 +2981,7 @@ INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-08-25',132,24,1),
 	 ('2023-10-22',275,189,1),
 	 ('2023-09-30',103,151,1);
-INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
+INSERT INTO pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-11-03',37,144,1),
 	 ('2023-09-06',271,235,1),
 	 ('2023-10-10',174,299,1),
@@ -2791,7 +2992,7 @@ INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-08-28',145,34,1),
 	 ('2023-08-21',271,235,1),
 	 ('2023-08-07',64,17,1);
-INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
+INSERT INTO pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-09-29',67,96,1),
 	 ('2023-10-18',256,77,1),
 	 ('2023-11-05',165,100,1),
@@ -2802,7 +3003,7 @@ INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-08-20',172,102,1),
 	 ('2023-08-27',289,100,1),
 	 ('2023-08-25',204,220,1);
-INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
+INSERT INTO pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-09-02',46,51,1),
 	 ('2023-10-04',108,190,1),
 	 ('2023-08-29',42,128,1),
@@ -2813,7 +3014,7 @@ INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-10-05',76,159,1),
 	 ('2023-08-29',232,99,1),
 	 ('2023-08-12',167,60,1);
-INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
+INSERT INTO pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-09-11',51,82,1),
 	 ('2023-09-16',143,202,1),
 	 ('2023-10-04',153,101,1),
@@ -2824,7 +3025,7 @@ INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-08-12',190,163,1),
 	 ('2023-09-21',244,233,1),
 	 ('2023-11-03',77,82,1);
-INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
+INSERT INTO pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-08-19',263,294,1),
 	 ('2023-09-18',15,156,1),
 	 ('2023-09-04',124,81,1),
@@ -2835,7 +3036,7 @@ INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-10-15',205,200,1),
 	 ('2023-08-02',204,220,1),
 	 ('2023-08-22',225,41,1);
-INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
+INSERT INTO pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-09-22',62,198,1),
 	 ('2023-08-10',42,128,1),
 	 ('2023-10-25',215,1,1),
@@ -2846,7 +3047,7 @@ INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-08-07',220,253,1),
 	 ('2023-09-29',13,259,1),
 	 ('2023-09-07',100,90,1);
-INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
+INSERT INTO pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-10-23',115,291,1),
 	 ('2023-10-17',279,182,1),
 	 ('2023-09-25',79,177,1),
@@ -2857,7 +3058,7 @@ INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-08-15',143,202,1),
 	 ('2023-11-09',237,199,1),
 	 ('2023-10-06',91,229,1);
-INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
+INSERT INTO pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-09-09',28,224,1),
 	 ('2023-10-16',156,111,1),
 	 ('2023-11-08',156,111,1),
@@ -2868,7 +3069,7 @@ INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-09-13',215,1,1),
 	 ('2023-10-27',95,89,1),
 	 ('2023-08-15',278,212,1);
-INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
+INSERT INTO pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-09-15',217,104,1),
 	 ('2023-09-05',259,194,1),
 	 ('2023-11-05',190,163,1),
@@ -2879,7 +3080,7 @@ INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-08-04',42,128,1),
 	 ('2023-10-05',172,102,1),
 	 ('2023-08-20',160,203,1);
-INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
+INSERT INTO pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-09-12',6,237,1),
 	 ('2023-08-01',208,87,1),
 	 ('2023-08-15',153,101,1),
@@ -2891,7 +3092,8 @@ INSERT INTO public.pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-10-23',266,103,1),
 	 ('2023-10-09',76,159,1);
 
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (8,'Recibido','envio a correo',true,104,232,163,112),
 	 (4,'Recibido','retiro en sucursal',true,45,234,139,154),
 	 (0,'Recibido','retiro en sucursal',true,45,28,161,237),
@@ -2902,7 +3104,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (9,'Preparando el envio','envio rapido',false,248,205,105,24),
 	 (1,'Preparando el envio','envio normal a domicilio',false,284,280,86,32),
 	 (4,'Recibido','envio normal a domicilio',false,114,2,121,196);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (1,'Enviado','envio a correo',false,113,187,22,178),
 	 (4,'Recibido','envio rapido',true,1,96,21,177),
 	 (3,'Recibido','envio normal a domicilio',false,31,213,18,128),
@@ -2913,7 +3115,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (4,'Preparando el envio','retiro en sucursal',true,209,84,181,222),
 	 (8,'Recibido','envio rapido',false,83,182,28,265),
 	 (7,'Recibido','envio normal a domicilio',true,52,232,54,112);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (1,'Enviado','retiro en sucursal',true,14,281,4,9),
 	 (0,'Enviado','envio normal a domicilio',true,123,234,158,221),
 	 (2,'Preparando el envio','envio rapido',true,292,70,176,40),
@@ -2924,7 +3126,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (6,'Recibido','retiro en sucursal',false,123,279,165,280),
 	 (2,'Preparando el envio','retiro en sucursal',false,197,120,138,239),
 	 (4,'Preparando el envio','envio rapido',true,228,180,94,174);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (0,'Listo para enviar','envio a correo',false,190,25,25,79),
 	 (2,'Listo para enviar','envio rapido',false,108,31,78,144),
 	 (2,'Listo para enviar','envio normal a domicilio',false,255,51,100,260),
@@ -2935,7 +3137,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (6,'Recibido','retiro en sucursal',false,190,234,157,55),
 	 (8,'Enviado','envio rapido',true,190,189,171,216),
 	 (8,'Recibido','retiro en sucursal',true,112,101,3,111);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (9,'Enviado','retiro en sucursal',false,268,64,36,218),
 	 (1,'Listo para enviar','retiro en sucursal',true,36,40,141,73),
 	 (4,'Listo para enviar','envio normal a domicilio',false,209,39,141,131),
@@ -2946,7 +3148,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (3,'Recibido','envio a correo',true,171,28,38,226),
 	 (9,'Preparando el envio','envio rapido',false,121,267,47,132),
 	 (8,'Listo para enviar','envio normal a domicilio',true,101,136,172,58);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (6,'Preparando el envio','envio normal a domicilio',true,101,68,195,116),
 	 (4,'Recibido','envio normal a domicilio',false,101,135,31,110),
 	 (7,'Enviado','retiro en sucursal',false,107,159,200,85),
@@ -2957,7 +3159,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (0,'Listo para enviar','envio normal a domicilio',false,198,24,140,205),
 	 (9,'Enviado','envio normal a domicilio',true,220,130,139,273),
 	 (2,'Listo para enviar','envio rapido',false,172,179,17,256);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (7,'Preparando el envio','envio normal a domicilio',false,177,20,85,239),
 	 (9,'Enviado','envio a correo',false,18,277,106,85),
 	 (6,'Preparando el envio','envio a correo',true,148,65,82,87),
@@ -2968,7 +3170,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (2,'Recibido','envio rapido',false,253,297,28,55),
 	 (4,'Enviado','retiro en sucursal',true,200,167,15,156),
 	 (7,'Preparando el envio','retiro en sucursal',true,81,21,138,76);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (5,'Enviado','envio a correo',false,197,81,58,148),
 	 (1,'Preparando el envio','envio a correo',true,167,92,176,92),
 	 (5,'Preparando el envio','envio rapido',false,168,286,29,20),
@@ -2979,7 +3181,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (2,'Preparando el envio','envio normal a domicilio',true,82,160,153,173),
 	 (9,'Preparando el envio','envio rapido',false,235,30,60,252),
 	 (9,'Enviado','envio a correo',true,63,65,70,95);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (6,'Enviado','envio a correo',false,166,165,34,20),
 	 (9,'Enviado','retiro en sucursal',false,41,62,60,171),
 	 (7,'Listo para enviar','envio a correo',true,45,103,59,219),
@@ -2990,7 +3192,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (2,'Preparando el envio','envio a correo',false,255,46,121,153),
 	 (0,'Recibido','envio normal a domicilio',true,45,90,164,175),
 	 (7,'Preparando el envio','envio normal a domicilio',true,3,179,5,233);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (7,'Preparando el envio','envio rapido',true,5,266,96,140),
 	 (3,'Listo para enviar','envio normal a domicilio',true,190,284,24,147),
 	 (3,'Listo para enviar','envio normal a domicilio',false,59,291,170,236),
@@ -3001,7 +3203,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (0,'Preparando el envio','envio a correo',false,209,27,167,8),
 	 (5,'Recibido','retiro en sucursal',true,64,139,158,9),
 	 (6,'Listo para enviar','envio normal a domicilio',false,272,230,129,126);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (3,'Enviado','envio normal a domicilio',true,270,297,185,73),
 	 (4,'Listo para enviar','retiro en sucursal',false,58,96,62,288),
 	 (0,'Listo para enviar','retiro en sucursal',false,97,283,92,242),
@@ -3012,7 +3214,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (0,'Enviado','envio normal a domicilio',true,123,32,40,169),
 	 (0,'Enviado','envio a correo',true,18,75,116,11),
 	 (3,'Listo para enviar','envio a correo',true,177,170,98,109);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (6,'Recibido','envio rapido',false,217,118,25,113),
 	 (1,'Recibido','retiro en sucursal',false,272,233,155,8),
 	 (9,'Preparando el envio','envio a correo',false,159,224,1,245),
@@ -3023,7 +3225,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (4,'Preparando el envio','retiro en sucursal',true,138,148,37,154),
 	 (0,'Preparando el envio','envio normal a domicilio',false,291,149,112,83),
 	 (5,'Preparando el envio','envio normal a domicilio',false,103,256,130,78);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (7,'Preparando el envio','retiro en sucursal',false,106,261,100,148),
 	 (4,'Preparando el envio','envio rapido',false,78,21,76,52),
 	 (1,'Enviado','envio rapido',false,196,13,25,292),
@@ -3034,7 +3236,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (5,'Listo para enviar','retiro en sucursal',true,247,113,61,232),
 	 (9,'Listo para enviar','envio rapido',false,221,202,178,31),
 	 (6,'Recibido','envio normal a domicilio',true,68,27,143,183);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (9,'Recibido','envio a correo',true,39,21,107,95),
 	 (4,'Listo para enviar','envio rapido',false,197,87,163,264),
 	 (1,'Recibido','envio a correo',false,276,112,65,24),
@@ -3045,7 +3247,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (6,'Preparando el envio','envio a correo',true,107,241,167,64),
 	 (3,'Listo para enviar','envio normal a domicilio',false,236,236,158,18),
 	 (2,'Listo para enviar','retiro en sucursal',false,272,257,72,211);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (7,'Listo para enviar','retiro en sucursal',false,29,291,181,192),
 	 (8,'Listo para enviar','envio a correo',true,96,41,71,272),
 	 (5,'Preparando el envio','envio rapido',true,226,275,97,187),
@@ -3056,7 +3258,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (0,'Enviado','envio normal a domicilio',true,76,171,188,5),
 	 (8,'Preparando el envio','envio a correo',false,99,88,156,3),
 	 (8,'Listo para enviar','envio normal a domicilio',false,223,48,92,160);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (0,'Enviado','envio rapido',true,203,95,88,275),
 	 (3,'Listo para enviar','envio normal a domicilio',true,118,222,130,44),
 	 (2,'Listo para enviar','envio a correo',false,223,12,88,74),
@@ -3067,7 +3269,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (7,'Enviado','envio normal a domicilio',false,44,255,108,52),
 	 (6,'Recibido','retiro en sucursal',true,171,205,32,60),
 	 (3,'Recibido','envio normal a domicilio',true,260,151,16,279);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (9,'Preparando el envio','envio a correo',false,138,159,136,94),
 	 (6,'Recibido','envio a correo',true,175,116,176,231),
 	 (1,'Recibido','retiro en sucursal',true,212,251,115,44),
@@ -3078,7 +3280,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (4,'Recibido','envio rapido',false,68,98,115,239),
 	 (3,'Enviado','envio normal a domicilio',false,299,264,124,276),
 	 (9,'Recibido','retiro en sucursal',false,286,243,3,85);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (0,'Enviado','envio normal a domicilio',false,29,86,178,256),
 	 (6,'Enviado','envio normal a domicilio',true,277,21,106,282),
 	 (8,'Listo para enviar','envio a correo',true,34,136,47,183),
@@ -3089,7 +3291,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (9,'Enviado','envio a correo',true,60,300,165,80),
 	 (3,'Enviado','envio rapido',false,295,45,153,142),
 	 (1,'Preparando el envio','envio normal a domicilio',false,178,154,7,299);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (3,'Recibido','retiro en sucursal',true,3,187,154,10),
 	 (3,'Enviado','envio a correo',false,292,116,86,288),
 	 (3,'Listo para enviar','envio normal a domicilio',true,153,2,135,241),
@@ -3100,7 +3302,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (2,'Listo para enviar','envio a correo',true,253,29,190,181),
 	 (0,'Listo para enviar','envio rapido',true,97,280,139,294),
 	 (7,'Enviado','retiro en sucursal',false,122,164,176,85);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (6,'Enviado','envio normal a domicilio',true,268,291,156,45),
 	 (3,'Enviado','envio normal a domicilio',false,70,270,128,260),
 	 (2,'Listo para enviar','envio a correo',true,149,128,28,216),
@@ -3111,7 +3313,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (1,'Enviado','envio rapido',false,270,207,177,84),
 	 (6,'Enviado','retiro en sucursal',false,109,261,74,81),
 	 (1,'Preparando el envio','envio a correo',true,270,251,37,118);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (3,'Preparando el envio','envio normal a domicilio',true,11,300,200,177),
 	 (4,'Listo para enviar','envio normal a domicilio',false,123,88,158,136),
 	 (8,'Recibido','retiro en sucursal',true,99,24,148,163),
@@ -3122,7 +3324,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (9,'Preparando el envio','retiro en sucursal',true,94,45,148,145),
 	 (2,'Listo para enviar','envio rapido',false,128,199,43,57),
 	 (1,'Preparando el envio','retiro en sucursal',false,236,62,46,129);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (6,'Recibido','envio rapido',true,31,264,176,7),
 	 (9,'Listo para enviar','envio normal a domicilio',true,281,249,3,86),
 	 (4,'Preparando el envio','envio normal a domicilio',true,73,198,110,169),
@@ -3133,7 +3335,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (2,'Recibido','retiro en sucursal',false,209,41,73,46),
 	 (9,'Enviado','envio a correo',false,83,69,109,21),
 	 (3,'Recibido','envio rapido',false,177,282,48,123);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (4,'Listo para enviar','envio rapido',true,109,123,99,86),
 	 (0,'Listo para enviar','retiro en sucursal',false,203,1,10,17),
 	 (4,'Recibido','envio a correo',false,37,209,8,127),
@@ -3144,7 +3346,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (5,'Recibido','retiro en sucursal',true,203,234,156,219),
 	 (4,'Listo para enviar','retiro en sucursal',false,284,126,21,276),
 	 (4,'Enviado','retiro en sucursal',false,113,104,124,196);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (5,'Enviado','retiro en sucursal',true,171,146,76,26),
 	 (0,'Preparando el envio','envio normal a domicilio',false,144,223,189,161),
 	 (7,'Enviado','envio rapido',true,244,102,173,73),
@@ -3155,7 +3357,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (1,'Listo para enviar','envio rapido',true,259,211,77,72),
 	 (2,'Enviado','envio rapido',true,131,299,6,41),
 	 (5,'Listo para enviar','envio normal a domicilio',true,273,186,56,150);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (6,'Listo para enviar','envio a correo',true,197,258,166,95),
 	 (7,'Preparando el envio','envio rapido',true,278,72,5,114),
 	 (6,'Listo para enviar','envio rapido',false,108,179,169,84),
@@ -3166,7 +3368,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (6,'Listo para enviar','envio a correo',false,29,64,35,66),
 	 (8,'Preparando el envio','envio rapido',false,284,189,10,130),
 	 (9,'Recibido','envio a correo',true,198,93,76,109);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (5,'Preparando el envio','envio rapido',true,45,195,50,223),
 	 (5,'Enviado','envio a correo',false,27,152,44,165),
 	 (3,'Preparando el envio','envio rapido',true,226,273,164,107),
@@ -3177,7 +3379,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (0,'Listo para enviar','retiro en sucursal',true,251,80,72,40),
 	 (8,'Listo para enviar','envio a correo',false,109,225,153,81),
 	 (8,'Enviado','envio normal a domicilio',false,119,260,130,137);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (7,'Listo para enviar','retiro en sucursal',false,157,277,25,130),
 	 (4,'Recibido','envio a correo',false,233,101,9,238),
 	 (0,'Recibido','retiro en sucursal',true,181,200,8,68),
@@ -3188,7 +3390,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (6,'Listo para enviar','envio normal a domicilio',true,151,57,46,233),
 	 (9,'Preparando el envio','retiro en sucursal',true,177,247,124,121),
 	 (3,'Listo para enviar','envio rapido',true,37,44,81,219);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (0,'Recibido','envio rapido',false,273,259,113,212),
 	 (1,'Listo para enviar','envio normal a domicilio',true,2,271,116,294),
 	 (4,'Enviado','envio a correo',true,145,102,33,109),
@@ -3199,7 +3401,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (6,'Listo para enviar','envio normal a domicilio',false,110,206,108,276),
 	 (6,'Enviado','envio rapido',false,159,22,29,265),
 	 (3,'Recibido','envio rapido',false,88,274,128,2);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (3,'Listo para enviar','envio normal a domicilio',true,177,127,189,271),
 	 (1,'Preparando el envio','envio a correo',true,153,155,119,6),
 	 (6,'Enviado','envio normal a domicilio',false,121,86,128,84),
@@ -3210,7 +3412,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (4,'Listo para enviar','envio normal a domicilio',false,71,269,42,20),
 	 (5,'Preparando el envio','envio normal a domicilio',true,201,74,30,263),
 	 (4,'Enviado','envio a correo',false,83,291,117,270);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (8,'Listo para enviar','envio a correo',false,119,298,160,178),
 	 (2,'Enviado','envio a correo',false,119,169,88,79),
 	 (6,'Preparando el envio','envio normal a domicilio',true,197,54,48,216),
@@ -3221,7 +3423,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (3,'Enviado','retiro en sucursal',true,64,197,34,166),
 	 (2,'Preparando el envio','envio normal a domicilio',false,194,250,160,108),
 	 (2,'Enviado','envio rapido',true,110,273,89,183);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (4,'Recibido','envio rapido',false,253,83,129,240),
 	 (5,'Recibido','envio a correo',true,49,200,137,58),
 	 (5,'Preparando el envio','envio rapido',false,255,192,183,101),
@@ -3232,7 +3434,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (1,'Recibido','envio normal a domicilio',true,237,198,135,19),
 	 (7,'Preparando el envio','envio rapido',false,230,53,182,217),
 	 (6,'Enviado','envio normal a domicilio',false,172,287,93,153);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (1,'Enviado','envio a correo',false,195,26,72,293),
 	 (9,'Listo para enviar','envio rapido',true,282,88,170,298),
 	 (0,'Listo para enviar','envio rapido',false,5,27,4,280),
@@ -3243,7 +3445,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (0,'Enviado','envio normal a domicilio',true,89,80,56,38),
 	 (2,'Listo para enviar','envio rapido',true,290,26,5,248),
 	 (2,'Enviado','retiro en sucursal',false,297,294,95,34);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (7,'Recibido','envio a correo',true,295,200,75,224),
 	 (5,'Recibido','envio rapido',false,215,275,146,245),
 	 (6,'Preparando el envio','retiro en sucursal',false,198,219,167,246),
@@ -3254,7 +3456,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (8,'Recibido','envio normal a domicilio',true,99,118,181,221),
 	 (0,'Recibido','envio normal a domicilio',true,78,213,66,298),
 	 (4,'Preparando el envio','envio normal a domicilio',false,176,116,128,39);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (7,'Enviado','retiro en sucursal',true,172,225,57,28),
 	 (7,'Recibido','retiro en sucursal',true,220,187,138,177),
 	 (1,'Recibido','envio rapido',true,221,186,133,53),
@@ -3265,7 +3467,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (5,'Listo para enviar','retiro en sucursal',true,46,219,91,289),
 	 (4,'Preparando el envio','retiro en sucursal',false,40,88,51,277),
 	 (0,'Listo para enviar','envio a correo',false,220,220,40,245);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (0,'Listo para enviar','envio rapido',true,83,184,193,172),
 	 (9,'Listo para enviar','envio normal a domicilio',true,153,173,85,156),
 	 (6,'Enviado','envio normal a domicilio',true,280,149,115,174),
@@ -3276,7 +3478,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (2,'Enviado','envio a correo',false,29,99,150,67),
 	 (0,'Preparando el envio','envio a correo',true,155,167,2,124),
 	 (4,'Enviado','envio rapido',false,244,284,97,253);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (7,'Preparando el envio','envio normal a domicilio',false,225,28,192,213),
 	 (1,'Recibido','retiro en sucursal',true,300,78,16,106),
 	 (9,'Listo para enviar','retiro en sucursal',false,298,269,100,52),
@@ -3287,7 +3489,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (1,'Enviado','envio normal a domicilio',true,2,68,36,237),
 	 (9,'Preparando el envio','envio a correo',true,35,8,85,271),
 	 (2,'Listo para enviar','envio rapido',true,86,296,103,289);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (3,'Preparando el envio','retiro en sucursal',false,11,295,89,34),
 	 (5,'Listo para enviar','envio a correo',false,110,124,65,218),
 	 (1,'Recibido','retiro en sucursal',true,218,133,128,48),
@@ -3298,7 +3500,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (8,'Enviado','retiro en sucursal',true,291,2,119,174),
 	 (3,'Preparando el envio','envio normal a domicilio',false,144,206,98,2),
 	 (6,'Recibido','envio normal a domicilio',true,40,111,107,40);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (6,'Recibido','retiro en sucursal',false,244,8,124,128),
 	 (6,'Listo para enviar','retiro en sucursal',true,3,136,140,45),
 	 (1,'Preparando el envio','envio rapido',true,108,137,133,286),
@@ -3309,7 +3511,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (1,'Listo para enviar','retiro en sucursal',false,100,39,134,34),
 	 (5,'Recibido','retiro en sucursal',false,269,81,120,141),
 	 (4,'Preparando el envio','envio a correo',false,110,10,171,178);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (7,'Recibido','envio a correo',true,231,130,29,237),
 	 (3,'Preparando el envio','envio rapido',false,87,209,46,276),
 	 (7,'Recibido','retiro en sucursal',true,277,17,53,54),
@@ -3320,7 +3522,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (3,'Listo para enviar','retiro en sucursal',false,114,64,59,207),
 	 (7,'Listo para enviar','envio normal a domicilio',true,244,65,134,274),
 	 (2,'Enviado','envio normal a domicilio',false,35,90,80,269);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (9,'Listo para enviar','envio a correo',false,196,155,99,249),
 	 (2,'Recibido','envio normal a domicilio',true,298,150,95,38),
 	 (9,'Listo para enviar','envio normal a domicilio',false,194,137,98,217),
@@ -3331,7 +3533,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (0,'Recibido','envio rapido',true,82,59,91,261),
 	 (9,'Recibido','envio rapido',true,198,260,49,60),
 	 (5,'Enviado','retiro en sucursal',true,58,99,195,96);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (8,'Recibido','envio rapido',false,99,51,59,267),
 	 (7,'Listo para enviar','envio rapido',true,119,144,116,169),
 	 (0,'Listo para enviar','envio rapido',true,229,240,26,121),
@@ -3342,7 +3544,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (9,'Listo para enviar','envio rapido',true,225,178,169,193),
 	 (6,'Recibido','envio rapido',true,220,115,196,88),
 	 (6,'Enviado','envio rapido',false,28,271,31,197);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (6,'Recibido','envio rapido',true,290,141,53,225),
 	 (9,'Recibido','envio a correo',true,28,9,71,224),
 	 (6,'Enviado','retiro en sucursal',true,252,123,131,45),
@@ -3353,7 +3555,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (2,'Enviado','envio rapido',false,60,63,72,267),
 	 (6,'Recibido','envio normal a domicilio',false,77,261,63,32),
 	 (7,'Listo para enviar','envio a correo',true,28,90,152,206);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (2,'Preparando el envio','envio rapido',false,18,239,98,277),
 	 (1,'Listo para enviar','envio normal a domicilio',true,145,209,106,257),
 	 (4,'Preparando el envio','envio normal a domicilio',false,255,206,162,94),
@@ -3364,7 +3566,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (2,'Recibido','retiro en sucursal',true,71,90,59,28),
 	 (7,'Recibido','envio a correo',false,65,136,87,245),
 	 (2,'Recibido','retiro en sucursal',false,232,180,74,66);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (6,'Enviado','envio a correo',true,250,183,34,36),
 	 (7,'Recibido','envio normal a domicilio',false,244,279,141,131),
 	 (5,'Enviado','envio normal a domicilio',true,5,33,175,60),
@@ -3375,7 +3577,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (6,'Listo para enviar','envio rapido',false,68,265,119,212),
 	 (4,'Listo para enviar','envio a correo',true,89,158,84,43),
 	 (9,'Enviado','envio normal a domicilio',false,297,237,82,152);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (4,'Listo para enviar','retiro en sucursal',false,230,196,44,149),
 	 (8,'Recibido','envio rapido',true,39,217,36,190),
 	 (3,'Enviado','retiro en sucursal',false,82,142,20,239),
@@ -3386,7 +3588,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (8,'Recibido','retiro en sucursal',false,193,176,109,47),
 	 (0,'Listo para enviar','envio rapido',false,172,64,177,194),
 	 (5,'Listo para enviar','envio normal a domicilio',false,129,27,43,142);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (1,'Enviado','envio a correo',true,270,5,97,96),
 	 (6,'Recibido','retiro en sucursal',false,152,14,152,39),
 	 (6,'Preparando el envio','envio normal a domicilio',true,8,84,133,98),
@@ -3397,7 +3599,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (9,'Enviado','envio a correo',false,39,177,93,18),
 	 (7,'Listo para enviar','envio rapido',true,176,57,75,188),
 	 (0,'Recibido','envio rapido',true,71,148,31,54);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (1,'Preparando el envio','envio a correo',false,82,145,193,85),
 	 (7,'Recibido','envio normal a domicilio',false,226,272,102,278),
 	 (2,'Enviado','retiro en sucursal',true,46,151,110,4),
@@ -3408,7 +3610,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (0,'Recibido','retiro en sucursal',true,284,49,94,64),
 	 (5,'Enviado','envio rapido',true,128,92,88,232),
 	 (2,'Recibido','envio rapido',false,250,185,110,148);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (4,'Listo para enviar','envio rapido',true,31,76,129,48),
 	 (6,'Preparando el envio','retiro en sucursal',true,224,18,28,147),
 	 (0,'Listo para enviar','envio a correo',false,295,167,135,22),
@@ -3419,7 +3621,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (9,'Enviado','retiro en sucursal',true,255,296,162,156),
 	 (0,'Preparando el envio','envio rapido',false,230,96,2,137),
 	 (9,'Preparando el envio','retiro en sucursal',false,82,62,49,280);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (8,'Preparando el envio','envio normal a domicilio',true,129,109,122,71),
 	 (0,'Listo para enviar','envio rapido',false,49,189,154,211),
 	 (2,'Listo para enviar','retiro en sucursal',true,148,250,163,13),
@@ -3430,7 +3632,7 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (8,'Preparando el envio','retiro en sucursal',false,259,238,121,299),
 	 (4,'Recibido','retiro en sucursal',true,87,20,155,216),
 	 (9,'Preparando el envio','envio a correo',false,223,50,190,127);
-INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
+INSERT INTO item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,producto,direccion,pedido) VALUES
 	 (2,'Enviado','retiro en sucursal',false,11,97,133,267),
 	 (5,'Recibido','envio a correo',true,277,58,164,146),
 	 (4,'Recibido','envio rapido',false,57,225,154,290),
@@ -3442,7 +3644,8 @@ INSERT INTO public.item (cantidad,estado,tipo_entrega,envio_domicilio,usuario,pr
 	 (0,'Enviado','envio normal a domicilio',true,159,89,108,143),
 	 (5,'Listo para enviar','envio rapido',false,29,222,155,69);
 
-INSERT INTO public.usuario_direccion (usuario,direccion) VALUES
+
+INSERT INTO usuario_direccion (usuario,direccion) VALUES
 	 (10,187),
 	 (297,3),
 	 (47,40),
@@ -3453,7 +3656,7 @@ INSERT INTO public.usuario_direccion (usuario,direccion) VALUES
 	 (39,171),
 	 (202,34),
 	 (196,92);
-INSERT INTO public.usuario_direccion (usuario,direccion) VALUES
+INSERT INTO usuario_direccion (usuario,direccion) VALUES
 	 (181,177),
 	 (128,190),
 	 (117,125),
@@ -3464,7 +3667,7 @@ INSERT INTO public.usuario_direccion (usuario,direccion) VALUES
 	 (167,25),
 	 (219,36),
 	 (210,110);
-INSERT INTO public.usuario_direccion (usuario,direccion) VALUES
+INSERT INTO usuario_direccion (usuario,direccion) VALUES
 	 (82,7),
 	 (246,116),
 	 (142,156),
@@ -3475,7 +3678,7 @@ INSERT INTO public.usuario_direccion (usuario,direccion) VALUES
 	 (299,91),
 	 (243,30),
 	 (38,90);
-INSERT INTO public.usuario_direccion (usuario,direccion) VALUES
+INSERT INTO usuario_direccion (usuario,direccion) VALUES
 	 (190,36),
 	 (61,136),
 	 (235,184),
@@ -3486,7 +3689,7 @@ INSERT INTO public.usuario_direccion (usuario,direccion) VALUES
 	 (131,107),
 	 (68,112),
 	 (267,128);
-INSERT INTO public.usuario_direccion (usuario,direccion) VALUES
+INSERT INTO usuario_direccion (usuario,direccion) VALUES
 	 (243,32),
 	 (200,63),
 	 (41,200),
@@ -3497,7 +3700,7 @@ INSERT INTO public.usuario_direccion (usuario,direccion) VALUES
 	 (37,153),
 	 (52,180),
 	 (200,110);
-INSERT INTO public.usuario_direccion (usuario,direccion) VALUES
+INSERT INTO usuario_direccion (usuario,direccion) VALUES
 	 (242,86),
 	 (158,53),
 	 (49,147),
@@ -3508,7 +3711,7 @@ INSERT INTO public.usuario_direccion (usuario,direccion) VALUES
 	 (242,95),
 	 (243,71),
 	 (211,95);
-INSERT INTO public.usuario_direccion (usuario,direccion) VALUES
+INSERT INTO usuario_direccion (usuario,direccion) VALUES
 	 (148,141),
 	 (26,187),
 	 (189,162),
@@ -3519,7 +3722,7 @@ INSERT INTO public.usuario_direccion (usuario,direccion) VALUES
 	 (64,142),
 	 (165,100),
 	 (27,129);
-INSERT INTO public.usuario_direccion (usuario,direccion) VALUES
+INSERT INTO usuario_direccion (usuario,direccion) VALUES
 	 (59,79),
 	 (294,133),
 	 (83,158),
@@ -3530,7 +3733,7 @@ INSERT INTO public.usuario_direccion (usuario,direccion) VALUES
 	 (167,99),
 	 (6,158),
 	 (60,188);
-INSERT INTO public.usuario_direccion (usuario,direccion) VALUES
+INSERT INTO usuario_direccion (usuario,direccion) VALUES
 	 (56,128),
 	 (97,81),
 	 (209,23),
@@ -3541,7 +3744,7 @@ INSERT INTO public.usuario_direccion (usuario,direccion) VALUES
 	 (93,155),
 	 (1,166),
 	 (122,3);
-INSERT INTO public.usuario_direccion (usuario,direccion) VALUES
+INSERT INTO usuario_direccion (usuario,direccion) VALUES
 	 (256,76),
 	 (9,167),
 	 (19,165),
@@ -3553,7 +3756,8 @@ INSERT INTO public.usuario_direccion (usuario,direccion) VALUES
 	 (82,35),
 	 (300,40);
 
-INSERT INTO public.item_envio (item,envio) VALUES
+
+INSERT INTO item_envio (item,envio) VALUES
 	 (200,31),
 	 (114,86),
 	 (457,237),
@@ -3564,7 +3768,7 @@ INSERT INTO public.item_envio (item,envio) VALUES
 	 (71,288),
 	 (77,147),
 	 (48,93);
-INSERT INTO public.item_envio (item,envio) VALUES
+INSERT INTO item_envio (item,envio) VALUES
 	 (310,24),
 	 (230,8),
 	 (97,194),
@@ -3575,7 +3779,7 @@ INSERT INTO public.item_envio (item,envio) VALUES
 	 (363,2),
 	 (369,281),
 	 (80,267);
-INSERT INTO public.item_envio (item,envio) VALUES
+INSERT INTO item_envio (item,envio) VALUES
 	 (463,183),
 	 (340,187),
 	 (382,130),
@@ -3586,7 +3790,7 @@ INSERT INTO public.item_envio (item,envio) VALUES
 	 (283,147),
 	 (110,164),
 	 (174,68);
-INSERT INTO public.item_envio (item,envio) VALUES
+INSERT INTO item_envio (item,envio) VALUES
 	 (437,111),
 	 (378,182),
 	 (212,287),
@@ -3597,7 +3801,7 @@ INSERT INTO public.item_envio (item,envio) VALUES
 	 (320,80),
 	 (81,68),
 	 (45,276);
-INSERT INTO public.item_envio (item,envio) VALUES
+INSERT INTO item_envio (item,envio) VALUES
 	 (70,49),
 	 (372,186),
 	 (51,294),
@@ -3608,7 +3812,7 @@ INSERT INTO public.item_envio (item,envio) VALUES
 	 (42,190),
 	 (415,233),
 	 (490,277);
-INSERT INTO public.item_envio (item,envio) VALUES
+INSERT INTO item_envio (item,envio) VALUES
 	 (234,175),
 	 (40,198),
 	 (121,58),
@@ -3619,7 +3823,7 @@ INSERT INTO public.item_envio (item,envio) VALUES
 	 (182,216),
 	 (492,65),
 	 (96,276);
-INSERT INTO public.item_envio (item,envio) VALUES
+INSERT INTO item_envio (item,envio) VALUES
 	 (235,29),
 	 (314,209),
 	 (319,92),
@@ -3630,7 +3834,7 @@ INSERT INTO public.item_envio (item,envio) VALUES
 	 (288,137),
 	 (432,227),
 	 (91,118);
-INSERT INTO public.item_envio (item,envio) VALUES
+INSERT INTO item_envio (item,envio) VALUES
 	 (240,29),
 	 (362,216),
 	 (476,210),
@@ -3641,7 +3845,7 @@ INSERT INTO public.item_envio (item,envio) VALUES
 	 (216,125),
 	 (426,125),
 	 (374,50);
-INSERT INTO public.item_envio (item,envio) VALUES
+INSERT INTO item_envio (item,envio) VALUES
 	 (28,183),
 	 (428,277),
 	 (349,129),
@@ -3652,7 +3856,7 @@ INSERT INTO public.item_envio (item,envio) VALUES
 	 (209,99),
 	 (271,196),
 	 (86,61);
-INSERT INTO public.item_envio (item,envio) VALUES
+INSERT INTO item_envio (item,envio) VALUES
 	 (336,296),
 	 (321,162),
 	 (359,62),
@@ -3663,7 +3867,7 @@ INSERT INTO public.item_envio (item,envio) VALUES
 	 (224,220),
 	 (418,152),
 	 (109,179);
-INSERT INTO public.item_envio (item,envio) VALUES
+INSERT INTO item_envio (item,envio) VALUES
 	 (155,203),
 	 (292,21),
 	 (2,96),
@@ -3674,7 +3878,7 @@ INSERT INTO public.item_envio (item,envio) VALUES
 	 (177,14),
 	 (68,12),
 	 (262,64);
-INSERT INTO public.item_envio (item,envio) VALUES
+INSERT INTO item_envio (item,envio) VALUES
 	 (364,223),
 	 (322,71),
 	 (229,40),
@@ -3685,7 +3889,7 @@ INSERT INTO public.item_envio (item,envio) VALUES
 	 (435,110),
 	 (280,131),
 	 (342,17);
-INSERT INTO public.item_envio (item,envio) VALUES
+INSERT INTO item_envio (item,envio) VALUES
 	 (199,100),
 	 (425,195),
 	 (409,121),
@@ -3696,7 +3900,7 @@ INSERT INTO public.item_envio (item,envio) VALUES
 	 (380,247),
 	 (35,227),
 	 (407,279);
-INSERT INTO public.item_envio (item,envio) VALUES
+INSERT INTO item_envio (item,envio) VALUES
 	 (104,289),
 	 (248,172),
 	 (462,289),
@@ -3707,7 +3911,7 @@ INSERT INTO public.item_envio (item,envio) VALUES
 	 (365,237),
 	 (56,40),
 	 (389,104);
-INSERT INTO public.item_envio (item,envio) VALUES
+INSERT INTO item_envio (item,envio) VALUES
 	 (384,241),
 	 (269,193),
 	 (421,76),
@@ -3718,7 +3922,7 @@ INSERT INTO public.item_envio (item,envio) VALUES
 	 (17,142),
 	 (434,30),
 	 (461,168);
-INSERT INTO public.item_envio (item,envio) VALUES
+INSERT INTO item_envio (item,envio) VALUES
 	 (449,233),
 	 (179,147),
 	 (411,241),
@@ -3729,7 +3933,7 @@ INSERT INTO public.item_envio (item,envio) VALUES
 	 (102,31),
 	 (346,137),
 	 (451,230);
-INSERT INTO public.item_envio (item,envio) VALUES
+INSERT INTO item_envio (item,envio) VALUES
 	 (76,48),
 	 (431,169),
 	 (327,288),
@@ -3740,7 +3944,7 @@ INSERT INTO public.item_envio (item,envio) VALUES
 	 (112,245),
 	 (19,223),
 	 (373,7);
-INSERT INTO public.item_envio (item,envio) VALUES
+INSERT INTO item_envio (item,envio) VALUES
 	 (187,182),
 	 (379,124),
 	 (247,75),
@@ -3751,7 +3955,7 @@ INSERT INTO public.item_envio (item,envio) VALUES
 	 (381,25),
 	 (67,33),
 	 (402,245);
-INSERT INTO public.item_envio (item,envio) VALUES
+INSERT INTO item_envio (item,envio) VALUES
 	 (120,277),
 	 (7,2),
 	 (242,185),
@@ -3762,7 +3966,7 @@ INSERT INTO public.item_envio (item,envio) VALUES
 	 (252,78),
 	 (311,248),
 	 (446,59);
-INSERT INTO public.item_envio (item,envio) VALUES
+INSERT INTO item_envio (item,envio) VALUES
 	 (135,294),
 	 (441,194),
 	 (258,243),
@@ -3773,7 +3977,7 @@ INSERT INTO public.item_envio (item,envio) VALUES
 	 (387,91),
 	 (309,70),
 	 (24,16);
-INSERT INTO public.item_envio (item,envio) VALUES
+INSERT INTO item_envio (item,envio) VALUES
 	 (442,247),
 	 (486,245),
 	 (361,216),
@@ -3784,7 +3988,7 @@ INSERT INTO public.item_envio (item,envio) VALUES
 	 (228,89),
 	 (10,25),
 	 (58,88);
-INSERT INTO public.item_envio (item,envio) VALUES
+INSERT INTO item_envio (item,envio) VALUES
 	 (332,260),
 	 (355,15),
 	 (150,252),
@@ -3795,7 +3999,7 @@ INSERT INTO public.item_envio (item,envio) VALUES
 	 (251,186),
 	 (9,6),
 	 (241,242);
-INSERT INTO public.item_envio (item,envio) VALUES
+INSERT INTO item_envio (item,envio) VALUES
 	 (170,294),
 	 (326,8),
 	 (4,133),
@@ -3806,7 +4010,7 @@ INSERT INTO public.item_envio (item,envio) VALUES
 	 (447,201),
 	 (126,133),
 	 (157,230);
-INSERT INTO public.item_envio (item,envio) VALUES
+INSERT INTO item_envio (item,envio) VALUES
 	 (470,22),
 	 (33,199),
 	 (377,204),
@@ -3817,7 +4021,7 @@ INSERT INTO public.item_envio (item,envio) VALUES
 	 (272,274),
 	 (221,28),
 	 (78,21);
-INSERT INTO public.item_envio (item,envio) VALUES
+INSERT INTO item_envio (item,envio) VALUES
 	 (236,68),
 	 (63,287),
 	 (354,59),
@@ -3828,7 +4032,7 @@ INSERT INTO public.item_envio (item,envio) VALUES
 	 (210,96),
 	 (357,166),
 	 (267,278);
-INSERT INTO public.item_envio (item,envio) VALUES
+INSERT INTO item_envio (item,envio) VALUES
 	 (274,4),
 	 (108,219),
 	 (30,232),
@@ -3839,7 +4043,7 @@ INSERT INTO public.item_envio (item,envio) VALUES
 	 (213,156),
 	 (153,2),
 	 (438,283);
-INSERT INTO public.item_envio (item,envio) VALUES
+INSERT INTO item_envio (item,envio) VALUES
 	 (41,117),
 	 (497,70),
 	 (95,169),
@@ -3850,7 +4054,7 @@ INSERT INTO public.item_envio (item,envio) VALUES
 	 (83,114),
 	 (474,16),
 	 (257,32);
-INSERT INTO public.item_envio (item,envio) VALUES
+INSERT INTO item_envio (item,envio) VALUES
 	 (202,232),
 	 (499,206),
 	 (69,139),
@@ -3861,7 +4065,7 @@ INSERT INTO public.item_envio (item,envio) VALUES
 	 (264,81),
 	 (62,144),
 	 (312,9);
-INSERT INTO public.item_envio (item,envio) VALUES
+INSERT INTO item_envio (item,envio) VALUES
 	 (282,200),
 	 (166,168),
 	 (44,125),
@@ -3872,7 +4076,7 @@ INSERT INTO public.item_envio (item,envio) VALUES
 	 (284,5),
 	 (484,65),
 	 (303,281);
-INSERT INTO public.item_envio (item,envio) VALUES
+INSERT INTO item_envio (item,envio) VALUES
 	 (3,177),
 	 (127,249),
 	 (246,244),
@@ -3884,7 +4088,82 @@ INSERT INTO public.item_envio (item,envio) VALUES
 	 (54,223),
 	 (26,72);
 
-INSERT INTO public.oferta_producto (oferta,producto) VALUES
+
+-- pregunta_producto_usuario
+
+
+INSERT INTO producto_categoria (producto,categoria) VALUES
+	 (301,5),
+	 (301,22),
+	 (301,9),
+	 (302,1),
+	 (302,16),
+	 (303,5),
+	 (303,11),
+	 (303,22),
+	 (304,1),
+	 (304,16);
+INSERT INTO producto_categoria (producto,categoria) VALUES
+	 (305,20),
+	 (305,16),
+	 (305,2),
+	 (306,1),
+	 (306,10),
+	 (306,16),
+	 (307,11),
+	 (307,5),
+	 (308,11),
+	 (308,5);
+INSERT INTO producto_categoria (producto,categoria) VALUES
+	 (308,22),
+	 (308,9),
+	 (309,16),
+	 (309,1),
+	 (310,16),
+	 (310,1);
+
+
+INSERT INTO pregunta_respuesta (pregunta,respuesta) VALUES
+	 (1,2),
+	 (3,4),
+	 (4,5),
+	 (6,7),
+	 (8,9),
+	 (9,10),
+	 (10,11),
+	 (12,13),
+	 (14,15),
+	 (15,16);
+INSERT INTO pregunta_respuesta (pregunta,respuesta) VALUES
+	 (16,17),
+	 (18,19),
+	 (20,21),
+	 (21,22),
+	 (23,24),
+	 (25,26),
+	 (26,27),
+	 (27,28),
+	 (29,30),
+	 (31,32);
+INSERT INTO pregunta_respuesta (pregunta,respuesta) VALUES
+	 (33,34),
+	 (34,35),
+	 (36,37),
+	 (37,38),
+	 (39,40),
+	 (41,42),
+	 (42,43),
+	 (43,44),
+	 (45,46),
+	 (47,48);
+INSERT INTO pregunta_respuesta (pregunta,respuesta) VALUES
+	 (48,49),
+	 (50,51),
+	 (52,53),
+	 (54,55);
+
+
+INSERT INTO oferta_producto (oferta,producto) VALUES
 	 (7,249),
 	 (17,154),
 	 (8,165),
@@ -3895,7 +4174,7 @@ INSERT INTO public.oferta_producto (oferta,producto) VALUES
 	 (19,92),
 	 (15,297),
 	 (19,46);
-INSERT INTO public.oferta_producto (oferta,producto) VALUES
+INSERT INTO oferta_producto (oferta,producto) VALUES
 	 (10,111),
 	 (13,225),
 	 (14,5),
@@ -3906,7 +4185,7 @@ INSERT INTO public.oferta_producto (oferta,producto) VALUES
 	 (18,294),
 	 (6,294),
 	 (15,265);
-INSERT INTO public.oferta_producto (oferta,producto) VALUES
+INSERT INTO oferta_producto (oferta,producto) VALUES
 	 (9,118),
 	 (5,103),
 	 (10,88),
@@ -3917,7 +4196,7 @@ INSERT INTO public.oferta_producto (oferta,producto) VALUES
 	 (2,10),
 	 (18,288),
 	 (7,231);
-INSERT INTO public.oferta_producto (oferta,producto) VALUES
+INSERT INTO oferta_producto (oferta,producto) VALUES
 	 (19,207),
 	 (4,43),
 	 (19,173),
@@ -3928,7 +4207,7 @@ INSERT INTO public.oferta_producto (oferta,producto) VALUES
 	 (5,186),
 	 (18,75),
 	 (5,227);
-INSERT INTO public.oferta_producto (oferta,producto) VALUES
+INSERT INTO oferta_producto (oferta,producto) VALUES
 	 (2,228),
 	 (13,232),
 	 (13,199),
@@ -3939,7 +4218,7 @@ INSERT INTO public.oferta_producto (oferta,producto) VALUES
 	 (12,173),
 	 (18,264),
 	 (16,248);
-INSERT INTO public.oferta_producto (oferta,producto) VALUES
+INSERT INTO oferta_producto (oferta,producto) VALUES
 	 (11,71),
 	 (19,28),
 	 (12,5),
@@ -3950,7 +4229,7 @@ INSERT INTO public.oferta_producto (oferta,producto) VALUES
 	 (3,79),
 	 (8,50),
 	 (18,135);
-INSERT INTO public.oferta_producto (oferta,producto) VALUES
+INSERT INTO oferta_producto (oferta,producto) VALUES
 	 (4,218),
 	 (20,97),
 	 (11,14),
@@ -3961,7 +4240,7 @@ INSERT INTO public.oferta_producto (oferta,producto) VALUES
 	 (10,145),
 	 (1,288),
 	 (4,291);
-INSERT INTO public.oferta_producto (oferta,producto) VALUES
+INSERT INTO oferta_producto (oferta,producto) VALUES
 	 (17,75),
 	 (8,200),
 	 (16,22),
@@ -3972,7 +4251,7 @@ INSERT INTO public.oferta_producto (oferta,producto) VALUES
 	 (16,216),
 	 (15,127),
 	 (2,84);
-INSERT INTO public.oferta_producto (oferta,producto) VALUES
+INSERT INTO oferta_producto (oferta,producto) VALUES
 	 (5,197),
 	 (8,155),
 	 (20,102),
@@ -3983,7 +4262,7 @@ INSERT INTO public.oferta_producto (oferta,producto) VALUES
 	 (16,209),
 	 (8,146),
 	 (16,292);
-INSERT INTO public.oferta_producto (oferta,producto) VALUES
+INSERT INTO oferta_producto (oferta,producto) VALUES
 	 (11,230),
 	 (16,230),
 	 (13,240),
@@ -3994,7 +4273,7 @@ INSERT INTO public.oferta_producto (oferta,producto) VALUES
 	 (16,13),
 	 (18,16),
 	 (17,240);
-INSERT INTO public.oferta_producto (oferta,producto) VALUES
+INSERT INTO oferta_producto (oferta,producto) VALUES
 	 (19,178),
 	 (20,110),
 	 (15,35),
@@ -4005,7 +4284,7 @@ INSERT INTO public.oferta_producto (oferta,producto) VALUES
 	 (14,130),
 	 (10,168),
 	 (20,168);
-INSERT INTO public.oferta_producto (oferta,producto) VALUES
+INSERT INTO oferta_producto (oferta,producto) VALUES
 	 (12,73),
 	 (4,280),
 	 (15,198),
@@ -4016,7 +4295,7 @@ INSERT INTO public.oferta_producto (oferta,producto) VALUES
 	 (2,120),
 	 (12,47),
 	 (16,133);
-INSERT INTO public.oferta_producto (oferta,producto) VALUES
+INSERT INTO oferta_producto (oferta,producto) VALUES
 	 (6,43),
 	 (7,136),
 	 (11,165),
@@ -4027,7 +4306,7 @@ INSERT INTO public.oferta_producto (oferta,producto) VALUES
 	 (15,12),
 	 (4,209),
 	 (10,24);
-INSERT INTO public.oferta_producto (oferta,producto) VALUES
+INSERT INTO oferta_producto (oferta,producto) VALUES
 	 (14,48),
 	 (15,289),
 	 (12,209),
@@ -4038,7 +4317,7 @@ INSERT INTO public.oferta_producto (oferta,producto) VALUES
 	 (19,38),
 	 (11,85),
 	 (11,255);
-INSERT INTO public.oferta_producto (oferta,producto) VALUES
+INSERT INTO oferta_producto (oferta,producto) VALUES
 	 (19,234),
 	 (14,174),
 	 (18,265),
@@ -4049,7 +4328,7 @@ INSERT INTO public.oferta_producto (oferta,producto) VALUES
 	 (16,213),
 	 (1,282),
 	 (10,31);
-INSERT INTO public.oferta_producto (oferta,producto) VALUES
+INSERT INTO oferta_producto (oferta,producto) VALUES
 	 (16,260),
 	 (3,290),
 	 (5,232),
@@ -4060,7 +4339,7 @@ INSERT INTO public.oferta_producto (oferta,producto) VALUES
 	 (18,21),
 	 (3,166),
 	 (1,212);
-INSERT INTO public.oferta_producto (oferta,producto) VALUES
+INSERT INTO oferta_producto (oferta,producto) VALUES
 	 (18,183),
 	 (15,48),
 	 (7,52),
@@ -4071,7 +4350,7 @@ INSERT INTO public.oferta_producto (oferta,producto) VALUES
 	 (19,148),
 	 (1,118),
 	 (10,95);
-INSERT INTO public.oferta_producto (oferta,producto) VALUES
+INSERT INTO oferta_producto (oferta,producto) VALUES
 	 (16,45),
 	 (13,183),
 	 (19,62),
@@ -4082,7 +4361,7 @@ INSERT INTO public.oferta_producto (oferta,producto) VALUES
 	 (1,137),
 	 (5,284),
 	 (14,204);
-INSERT INTO public.oferta_producto (oferta,producto) VALUES
+INSERT INTO oferta_producto (oferta,producto) VALUES
 	 (13,260),
 	 (16,26),
 	 (17,95),
@@ -4093,7 +4372,7 @@ INSERT INTO public.oferta_producto (oferta,producto) VALUES
 	 (12,66),
 	 (2,122),
 	 (2,187);
-INSERT INTO public.oferta_producto (oferta,producto) VALUES
+INSERT INTO oferta_producto (oferta,producto) VALUES
 	 (11,74),
 	 (2,250),
 	 (16,299),
@@ -4104,7 +4383,7 @@ INSERT INTO public.oferta_producto (oferta,producto) VALUES
 	 (1,17),
 	 (2,125),
 	 (14,201);
-INSERT INTO public.oferta_producto (oferta,producto) VALUES
+INSERT INTO oferta_producto (oferta,producto) VALUES
 	 (5,180),
 	 (16,199),
 	 (17,172),
@@ -4115,7 +4394,7 @@ INSERT INTO public.oferta_producto (oferta,producto) VALUES
 	 (13,35),
 	 (14,283),
 	 (18,164);
-INSERT INTO public.oferta_producto (oferta,producto) VALUES
+INSERT INTO oferta_producto (oferta,producto) VALUES
 	 (3,243),
 	 (4,69),
 	 (14,30),
@@ -4126,7 +4405,7 @@ INSERT INTO public.oferta_producto (oferta,producto) VALUES
 	 (14,189),
 	 (5,290),
 	 (9,47);
-INSERT INTO public.oferta_producto (oferta,producto) VALUES
+INSERT INTO oferta_producto (oferta,producto) VALUES
 	 (19,206),
 	 (12,136),
 	 (12,296),
@@ -4137,7 +4416,7 @@ INSERT INTO public.oferta_producto (oferta,producto) VALUES
 	 (18,151),
 	 (18,212),
 	 (11,101);
-INSERT INTO public.oferta_producto (oferta,producto) VALUES
+INSERT INTO oferta_producto (oferta,producto) VALUES
 	 (19,292),
 	 (1,32),
 	 (2,64),
@@ -4148,7 +4427,7 @@ INSERT INTO public.oferta_producto (oferta,producto) VALUES
 	 (5,271),
 	 (17,277),
 	 (12,135);
-INSERT INTO public.oferta_producto (oferta,producto) VALUES
+INSERT INTO oferta_producto (oferta,producto) VALUES
 	 (20,210),
 	 (20,257),
 	 (6,97),
@@ -4159,7 +4438,7 @@ INSERT INTO public.oferta_producto (oferta,producto) VALUES
 	 (3,239),
 	 (15,225),
 	 (16,140);
-INSERT INTO public.oferta_producto (oferta,producto) VALUES
+INSERT INTO oferta_producto (oferta,producto) VALUES
 	 (6,55),
 	 (14,207),
 	 (15,188),
@@ -4170,7 +4449,7 @@ INSERT INTO public.oferta_producto (oferta,producto) VALUES
 	 (8,20),
 	 (2,268),
 	 (13,25);
-INSERT INTO public.oferta_producto (oferta,producto) VALUES
+INSERT INTO oferta_producto (oferta,producto) VALUES
 	 (20,205),
 	 (19,193),
 	 (11,206),
@@ -4181,7 +4460,7 @@ INSERT INTO public.oferta_producto (oferta,producto) VALUES
 	 (10,162),
 	 (8,163),
 	 (20,143);
-INSERT INTO public.oferta_producto (oferta,producto) VALUES
+INSERT INTO oferta_producto (oferta,producto) VALUES
 	 (7,78),
 	 (9,162),
 	 (12,56),
@@ -4192,7 +4471,7 @@ INSERT INTO public.oferta_producto (oferta,producto) VALUES
 	 (12,168),
 	 (17,200),
 	 (4,26);
-INSERT INTO public.oferta_producto (oferta,producto) VALUES
+INSERT INTO oferta_producto (oferta,producto) VALUES
 	 (10,196),
 	 (19,110),
 	 (1,46),
@@ -4203,7 +4482,7 @@ INSERT INTO public.oferta_producto (oferta,producto) VALUES
 	 (13,209),
 	 (1,194),
 	 (17,2);
-INSERT INTO public.oferta_producto (oferta,producto) VALUES
+INSERT INTO oferta_producto (oferta,producto) VALUES
 	 (9,157),
 	 (8,197),
 	 (5,52),
