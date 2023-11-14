@@ -78,8 +78,7 @@ def fakeProductData(cursor) -> str:
     else:
         stock = fakeEn.bothify(text= "##")
     calification = random.randint(1,5)
-    randomUser = getRandomUser(cursor)
-    return f"{isNew}, '{unityPrice}','{detail}', '{description}' , '{productName}', '{stock}', {calification}, {randomUser}"
+    return f"{isNew}, '{unityPrice}','{detail}', '{description}' , '{productName}', '{stock}', {calification}"
 
 def fakeShipping(cursor) -> str:
     shippingType = random.choice(list(SHIPPING_TYPE))
@@ -138,3 +137,9 @@ def fakeOfertProduct(cursor) -> str:
     ofert = random.choice(list(getOrder(cursor)))
     product = random.choice(list(getProduct(cursor)))
     return f"{ofert}, {product}"
+
+def fakeAskProductUser(cursor) -> str:
+    ask = 0
+    product = random.choice(list(getProduct(cursor)))
+    user = getRandomUser(cursor)
+    return f"{ask}, {product}, {user}"

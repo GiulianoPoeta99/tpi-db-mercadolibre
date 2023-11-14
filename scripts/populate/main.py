@@ -94,11 +94,12 @@ fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuant
 # tabla producto
 numberTable += 1
 table = 'producto'
-values = 'es_nuevo, precio_unitario, detalle, descripcion_producto, nombre_producto, stock, calificacion, usuario'
+values = 'es_nuevo, precio_unitario, detalle, descripcion_producto, nombre_producto, stock, calificacion'
 dataFunction = fakeProductData # nombre de la funcion hecha en fakerData
 minProductQuantity = 300
 maxQuantity = 3000 # si se hace con esto se da a entender que es el mismo numero por lo tanto no hay intervalo
 warning = False # se escribe un mensaje de advertencia del paso anterior 
+print("Se agregaran 10 manualmente para la muestra.")
 # ¡No se toca!
 fillTable(connection, cursor, numberTable, table, values, dataFunction, minProductQuantity, maxQuantity, warning)
 
@@ -201,10 +202,15 @@ warning = False
 fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
 
 # tabla pregunta_producto_usuario
-numberTable += 1
+numberTable += 1 
 table = 'pregunta_producto_usuario'
-notFillTable(table, numberTable)
-sleep(2)
+values = 'pregunta, producto, usuario'
+dataFunction = fakeAskProductUser
+minQuantity = len(getProduct(cursor))
+maxQuantity = minQuantity
+warning = False 
+print("se agregaran mas manualmente para las preguntas.")
+fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
 
 # tabla producto_categoria
 numberTable += 1
