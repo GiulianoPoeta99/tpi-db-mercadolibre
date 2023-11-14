@@ -98,15 +98,32 @@ INSERT INTO pregunta_respuesta VALUES
 
 INSERT INTO producto_categoria VALUES
 	(301, 5),  -- Lámpara de escritorio - Hogar
+	(301, 22),  -- Lámpara de escritorio - Herramientas y Mejoras para el Hogar
+	(301,9), -- Lámpara de escritorio - Libros y Material de Oficina
 	(302, 1),  -- Samsung Galaxy S23 Fe - Electrónica
+	(302, 16), -- Samsung Galaxy S23 Fe - Electrónica de Consumo
 	(303, 5),  -- Mesa auxiliar - Hogar
+	(303,11), -- Mesa auxiliar - Muebles
+	(303, 22), -- Mesa auxiliar - Herramientas y Mejoras para el Hogar
 	(304, 1), -- Notebook Ryzen 7 Asus Vivobook - Electrónica
+	(304, 16),  -- Notebook Ryzen 7 Asus Vivobook - Electrónica de Consumo
 	(305, 20), -- Reloj Unisex Gadnic - Joyas y Relojes
+	(305,16), -- Reloj Unisex Gadnic -  Electrónica de Consumo
+	(305,2),  -- Reloj Unisex Gadnic - Ropa y Accesorios
 	(306, 1),  -- Smart TV LG Smart TV 43ur8750 - Electrónica
+	(306,10),  -- Smart TV LG Smart TV 43ur8750 - Electrodomésticos
+	(306,16), -- Smart TV LG Smart TV 43ur8750 - Electrónica de Consumo
 	(307, 11), -- Silla de comedor - Muebles
+	(307,5),  -- Silla de comedor - Hogar
 	(308, 11), -- Mesa de centro - Muebles
+	(308,5), -- Mesa de centro - Hogar
+	(308,22),  -- Mesa de centro - Herramientas y Mejoras para el Hogar
+	(308,9), -- Mesa de centro - Libros y Material de Oficina
 	(309, 16), -- Parlante Philco Djp10p - Electrónica de Consumo
+	(309,1), -- Parlante Philco Djp10p - Electrónica
+	(310,16), -- Auriculares inalámbricos - Electrónica
 	(310, 1); -- Auriculares inalámbricos - Electrónica
+
 
 INSERT INTO pregunta_producto_usuario (pregunta, producto, usuario) VALUES
 	(1,301,17),
