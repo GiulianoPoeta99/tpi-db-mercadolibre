@@ -1543,17 +1543,6 @@ INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_produc
 	 (false,1525.23,'Budget focus production situation image choice. Between alone standard difference indeed.','Campaign here write whole opportunity sometimes either. Quite throw music short story responsibility. What before full eye level wish senior.','Panasonic HZ2000',1,3),
 	 (true,5060.00,'Book town blue. Call attack quality key yes decide.','Free information left. Collection option his drop source surface edge. Produce trouble soldier least.','OnePlus 7T',44,1),
 	 (false,8062.77,'Three yes west total. Article product accept white.','Travel in despite role voice tough public. Next good something certainly. Magazine president his help smile choose source. Specific begin answer may star pressure.','Huawei Mate 10 Pro',1,1);
-INSERT INTO public.producto (es_nuevo,precio_unitario,detalle,descripcion_producto,nombre_producto,stock,calificacion) VALUES
-	 (false,19530.00,'Lámpara de escritorio','Lámpara de escritorio moderna con base de madera','Lámpara de escritorio',20,4),
-	 (true,519999.99,'Samsung Galaxy S23 Fe 256gb 8gb Ram Negro','Procesador y memoria RAM de 8 GB, alcanzará un alto rendimiento con gran velocidad y memoria interna de 256 GB.','Samsung Galaxy S23 Fe',50,5),
-	 (false,30990.00,'Mesa auxiliar','Mesa auxiliar redonda de metal con acabado dorado','Mesa auxiliar dorada',2,3),
-	 (true,569999.99,'Notebook Ryzen 7 Asus Vivobook Amd 512gb Ssd 16gb Ram','ASUS VivoBook 15 39,6 cm (15.6") Full HD AMD Ryzen 7 5800H 16 GB DDR4-SDRAM 512 GB SSD Wi-Fi 6E (802.11ax) Windows 11 Home Quiet Blue','Notebook Ryzen 7 Asus Vivobook',10,4),
-	 (true,259999.00,'Smart TV LG Smart TV 43ur8750 ','Televisor LED WebOS  de 44 pulgadas con resolución 4K UHD 220V','Smart TV LG Smart TV 43ur8750',5,5),
-	 (false,45000.00,'Silla de comedor','Silla de comedor moderna y ergonómica','Silla de comedor ergonómica',4,3),
-	 (false,60500.00,'Mesa de centro','Mesa de centro de madera maciza con cajones de almacenamiento','Mesa de centro moderna',1,4),
-	 (true,28999.00,'Parlante Philco Djp10p Portátil Con Bluetooth 220v','Altavoz Bluetooth portátil con batería de larga duración','Parlante Philco Djp10p',40,4),
-	 (false,30000.00,'Auriculares inalámbricos','Auriculares inalámbricos con cancelación de ruido','AirPods Pro 2da Generación',1,5),
-	 (true,13999.99,'Reloj Unisex Gadnic Alarma Cronometro Elegante Digital Color de la malla Negro','Reloj de pulsera resistente al agua con malla negra','Reloj Unisex Gadnic',30,5);
 
 INSERT INTO public.oferta (porcentaje,fecha_desde,fecha_hasta) VALUES
 	 (19.00,'2023-11-03','2024-01-17'),
