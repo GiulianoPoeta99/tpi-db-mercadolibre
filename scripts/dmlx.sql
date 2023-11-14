@@ -1,4 +1,5 @@
 INSERT INTO pregunta VALUES
+	(0, '', '1900-01-01'),
 	(1,'¿La lámpara de escritorio incluye la bombilla?', '2020-09-01'),
 	(2,'Hola, no. Cualquier otra consulta estoy a su disposición', '2020-09-01'),
 	(3,'Bombita De cuantos w soporta el artefacto ? El portalámparas es universal ?', '2020-09-01'),
