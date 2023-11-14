@@ -48,7 +48,6 @@ CREATE TABLE producto (
     nombre_producto VARCHAR(255) NOT NULL,
     stock INT NOT NULL,
     calificacion INT NOT NULL CHECK (calificacion >= 1 AND calificacion <= 5),
-    usuario INT NOT NULL REFERENCES usuario(numero_cliente) ON DELETE RESTRICT ON UPDATE CASCADE
 );
 
 CREATE TABLE categoria (
