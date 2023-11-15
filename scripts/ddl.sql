@@ -47,7 +47,7 @@ CREATE TABLE producto (
     descripcion_producto TEXT NULL,
     nombre_producto VARCHAR(255) NOT NULL,
     stock INT NOT NULL,
-    calificacion INT NOT NULL CHECK (calificacion >= 1 AND calificacion <= 5),
+    calificacion INT NOT NULL CHECK (calificacion >= 1 AND calificacion <= 5)
 );
 
 CREATE TABLE categoria (
