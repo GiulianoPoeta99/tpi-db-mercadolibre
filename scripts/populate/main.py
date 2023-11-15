@@ -76,10 +76,10 @@ numberTable += 1
 table = 'direccion'
 values = 'codigo_postal, calle, altura'
 dataFunction = fakeAdressData
-minQuantity = 100
-maxQuantity = len(getUsers(cursor)) *2
+minAdressesQuantity = 100
+maxQuantity = len(getUsers(cursor)) * 2
 warning = False
-fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
+fillTable(connection, cursor, numberTable, table, values, dataFunction, minAdressesQuantity, maxQuantity, warning)
 
 # tabla metodo_de_pago
 numberTable += 1
@@ -91,26 +91,28 @@ maxQuantity = 10000
 warning = False
 fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
 
-#tabla producto
+# tabla producto
 numberTable += 1
 table = 'producto'
-values = 'es_nuevo, precio_unitario, detalle, descripcion_producto, nombre_producto, stock, calificacion, usuario'
+values = 'es_nuevo, precio_unitario, detalle, descripcion_producto, nombre_producto, stock, calificacion'
 dataFunction = fakeProductData # nombre de la funcion hecha en fakerData
-minQuantity = 300
+minProductQuantity = 300
 maxQuantity = 3000 # si se hace con esto se da a entender que es el mismo numero por lo tanto no hay intervalo
 warning = False # se escribe un mensaje de advertencia del paso anterior 
+print("Se agregaran 10 manualmente para la muestra.")
 # ¡No se toca!
-fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
-# 
+fillTable(connection, cursor, numberTable, table, values, dataFunction, minProductQuantity, maxQuantity, warning)
 
 # tabla categoria
 numberTable += 1
-print('La tabla categoria para hacer la muestra se carga manualmente.\n\n')
+table = 'categoria'
+notFillTable(table, numberTable)
 sleep(2)
 
 # tabla categoria_subcateoria
 numberTable += 1
-print('La tabla categoria_subcategoria para hacer la muestra se carga manualmente.\n\n')
+table = 'categoria_subcateoria'
+notFillTable(table, numberTable)
 sleep(2)
 
 # tabla oferta
@@ -118,68 +120,38 @@ numberTable += 1
 table = 'oferta'
 values = 'porcentaje, fecha_desde, fecha_hasta'
 dataFunction = fakeOfertData
-minQuantity = 10
+minOfertQuantity = 10
 maxQuantity = 100
 warning = False
+fillTable(connection, cursor, numberTable, table, values, dataFunction, minOfertQuantity, maxQuantity, warning)
+
+# tabla pregunta
+numberTable += 1
+table = 'pregunta'
+notFillTable(table, numberTable)
+sleep(2)
+
+# tabla imagen
+numberTable += 1
+table = 'imagen'
+values = 'producto, imagen'
+dataFunction = fakeImage
+minQuantity = minProductQuantity
+maxQuantity = 50000
+warning = False
 fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
-
-# CREATE TABLE pregunta (
-#     id_pregunta SERIAL NOT NULL PRIMARY KEY,
-#     preguntas_del_producto TEXT NOT NULL,
-#     fecha_de_la_pregunta DATE NOT NULL
-# );
-
-# numberTable += 1 
-# table = 'pregunta'
-# values = 'preguntas_del_producto, fecha_de_la_pregunta'
-# dataFunction = fakeQuestionData
-# minQuantity = 50
-# maxQuantity = 500 
-# warning = False 
-# fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
-
-# CREATE TABLE imagen (
-#     producto INT NOT NULL REFERENCES producto(numero_articulo) ON DELETE RESTRICT ON UPDATE CASCADE,
-#     imagen VARCHAR(255) NOT NULL,
-#     PRIMARY KEY (producto, imagen)
-# );
-
-# tabla table_name
-# numberTable += 1
-# table = 'image'
-# values = 'producto, imagen'
-# dataFunction = fakeImageData # nombre de la funcion hecha en fakerData
-# minQuantity = 100
-# maxQuantity = minQuantity # si se hace con esto se da a entender que es el mismo numero por lo tanto no hay intervalo
-# warning = True/False # se escribe un mensaje de advertencia del paso anterior 
-# ¡No se toca!
-# fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
-
-
-# CREATE TABLE envio (
-#     id_envio SERIAL NOT NULL PRIMARY KEY,
-#     tipo_envio VARCHAR(255) NOT NULL 
-# );
 
 # tabla envio 
 numberTable += 1
 table = 'envio'
 values = 'tipo_envio'
 dataFunction = fakeShipping # nombre de la funcion hecha en fakerData
-minQuantity = 300
+minShippingQuantity = 300
 maxQuantity = 3000 # si se hace con esto se da a entender que es el mismo numero por lo tanto no hay intervalo
 warning = False 
-fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
+fillTable(connection, cursor, numberTable, table, values, dataFunction, minShippingQuantity, maxQuantity, warning)
 
-
-# CREATE TABLE resenia (
-#     id_resenia SERIAL NOT NULL PRIMARY KEY,
-#     resenia_producto TEXT NOT NULL,
-#     calificacion INT NOT NULL,
-#     producto INT NOT NULL REFERENCES producto(numero_articulo) ON DELETE RESTRICT ON UPDATE CASCADE
-# );
-
-#tabla resenia 
+# tabla resenia 
 numberTable += 1
 table = 'resenia'
 values = 'resenia_producto, calificacion, producto'
@@ -189,15 +161,7 @@ maxQuantity = 3000 # si se hace con esto se da a entender que es el mismo numero
 warning = False 
 fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
 
-# CREATE TABLE pedido (
-#     numero_de_pedido SERIAL NOT NULL PRIMARY KEY,
-#     fecha_pedido DATE NOT NULL,
-#     metodo_pago INT NOT NULL REFERENCES metodo_de_pago(id_tarjeta) ON DELETE RESTRICT ON UPDATE CASCADE,
-#     particular INT NOT NULL REFERENCES particular(usuario) ON DELETE RESTRICT ON UPDATE CASCADE,
-#     resenia INT NOT NULL REFERENCES resenia(id_resenia) ON DELETE RESTRICT ON UPDATE CASCADE
-# );
-
-#tabla pedido 
+# tabla pedido 
 numberTable += 1 
 table = 'pedido'
 values = 'fecha_pedido, metodo_pago, particular, resenia'
@@ -205,9 +169,9 @@ dataFunction = fakeOrder
 minOrderQuantity = 1000 
 maxQuantity = 6000
 warning = False 
-fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
+fillTable(connection, cursor, numberTable, table, values, dataFunction, minOrderQuantity, maxQuantity, warning)
 
-#tabla item 
+# tabla item 
 numberTable += 1 
 table = 'item'
 values = 'cantidad, estado, tipo_entrega, envio_domicilio, usuario, producto, direccion, pedido'
@@ -217,41 +181,71 @@ maxQuantity = 6000
 warning = False 
 fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
 
-# CREATE TABLE usuario_direccion (
-#     usuario INT NOT NULL REFERENCES usuario(numero_cliente) ON DELETE RESTRICT ON UPDATE CASCADE,
-#     direccion INT NOT NULL REFERENCES direccion(id_direccion) ON DELETE RESTRICT ON UPDATE CASCADE,
-#     PRIMARY KEY (usuario, direccion)
-# );
+# tabla usuario_direccion 
+numberTable += 1 
+table = 'usuario_direccion'
+values = 'usuario, direccion'
+dataFunction = fakeUserAdress 
+minQuantity = minAdressesQuantity
+maxQuantity = minQuantity
+warning = False 
+fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
 
-# CREATE TABLE item_envio (
-#     item INT NOT NULL PRIMARY KEY REFERENCES item(id_item) ON DELETE RESTRICT ON UPDATE CASCADE,
-#     envio INT NOT NULL REFERENCES envio(id_envio) ON DELETE RESTRICT ON UPDATE CASCADE
-# );
+# tabla item_envio 
+numberTable += 1 
+table = 'item_envio'
+values = 'item, envio'
+dataFunction = fakeItemShipping
+minQuantity = minShippingQuantity
+maxQuantity = minQuantity
+warning = False 
+fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
 
-# CREATE TABLE pregunta_producto_usuario (
-#     pregunta INT NOT NULL REFERENCES pregunta(id_pregunta) ON DELETE RESTRICT ON UPDATE CASCADE,
-#     producto INT NOT NULL REFERENCES producto(numero_articulo) ON DELETE RESTRICT ON UPDATE CASCADE,
-#     usuario INT NOT NULL REFERENCES usuario(numero_cliente) ON DELETE RESTRICT ON UPDATE CASCADE,
-#     PRIMARY KEY (pregunta, producto, usuario)
-# );
+# tabla pregunta_producto_usuario
+numberTable += 1 
+table = 'pregunta_producto_usuario'
+values = 'pregunta, producto, usuario'
+dataFunction = fakeAskProductUser
+minQuantity = len(getProduct(cursor))
+maxQuantity = minQuantity
+warning = False 
+print("se agregaran mas manualmente para las preguntas.")
+fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
 
-# CREATE TABLE producto_categoria (
-#     producto INT NOT NULL REFERENCES producto(numero_articulo) ON DELETE RESTRICT ON UPDATE CASCADE,
-#     categoria INT NOT NULL REFERENCES categoria(id_categoria) ON DELETE RESTRICT ON UPDATE CASCADE,
-#     PRIMARY KEY (producto, categoria)
-# );
+# tabla producto_categoria
+numberTable += 1
+table = 'producto_categoria'
+notFillTable(table, numberTable)
+sleep(2)
 
-# CREATE TABLE pregunta_respuesta (
-#     pregunta INT NOT NULL REFERENCES pregunta(id_pregunta) ON DELETE RESTRICT ON UPDATE CASCADE,
-#     respuesta INT NOT NULL REFERENCES pregunta(id_pregunta) ON DELETE RESTRICT ON UPDATE CASCADE,
-#     PRIMARY KEY (pregunta, respuesta)
-# );
+# tabla pregunta_respuesta
+numberTable += 1
+table = 'pregunta_respuesta'
+notFillTable(table, numberTable)
+sleep(2)
 
-# CREATE TABLE oferta_producto (
-#     oferta INT NOT NULL REFERENCES oferta(id_oferta) ON DELETE RESTRICT ON UPDATE CASCADE,
-#     producto INT NOT NULL REFERENCES producto(numero_articulo) ON DELETE RESTRICT ON UPDATE CASCADE,
-#     PRIMARY KEY (oferta, producto)
-# );
+# tabla oferta_producto 
+numberTable += 1 
+table = 'oferta_producto'
+values = 'oferta, producto'
+dataFunction = fakeOfertProduct
+minQuantity = minOfertQuantity * 4
+maxQuantity = minQuantity
+warning = False 
+fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
+
+print('''\n
+Las tablas:
+  * producto
+  * categoria
+  * categoria_subcateoria
+  * pregunta
+  * pregunta_producto_usuario
+  * producto_categoria
+  * pregunta_respuesta
+      
+Se rellenaran manualmente en el archivo "dml.sql".
+''')
 
 sleep(3)
 clearScreen()

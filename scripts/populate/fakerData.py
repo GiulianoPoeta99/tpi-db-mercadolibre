@@ -35,7 +35,7 @@ def fakeCorporateData(cursor: psycopg2.extensions.cursor) -> str:
     return f"{randomUser}, '{cuit}', '{fantasyName}', '{creationDate}'"
 
 def fakeParticularData(cursor: psycopg2.extensions.cursor) -> str:
-    randomUser = random.choice(list(getUsersNotCorporate(cursor)))
+    randomUser = random.choice(list(getUsersNotCorporateAvaible(cursor)))
     dni = fakeEn.bothify(text = '########')
     dateOfBirth = fakeEn.past_date('-29220d') # Genera una fecha pasada aleatoria en los últimos 80 años
     firstName = fakeEsAr.first_name()
@@ -78,8 +78,7 @@ def fakeProductData(cursor) -> str:
     else:
         stock = fakeEn.bothify(text= "##")
     calification = random.randint(1,5)
-    randomUser = getRandomUser(cursor)
-    return f"{isNew}, '{unityPrice}','{detail}', '{description}' , '{productName}', '{stock}', {calification}, {randomUser}"
+    return f"{isNew}, '{unityPrice}','{detail}', '{description}' , '{productName}', '{stock}', {calification}"
 
 def fakeShipping(cursor) -> str:
     shippingType = random.choice(list(SHIPPING_TYPE))
@@ -93,8 +92,12 @@ def fakeReview(cursor) -> str:
 
 def fakeOrder(cursor) -> str: 
     orderDate = fakeEn.date_between('-100d','+1d')
-    particular = random.choice(list(getUsersNotCorporate(cursor))) #esta lista esta volviendo vacia no entiendo por que
-    paymentMethod = getPaymentMethod(cursor, particular)
+    particular = random.choice(list(getUsersNotCorporate(cursor))) 
+    paymentMethodList = list(getPaymentMethod(cursor, particular))
+    while not(paymentMethodList): 
+        particular = random.choice(list(getUsersNotCorporate(cursor)))
+        paymentMethodList = list(getPaymentMethod(cursor, particular))
+    paymentMethod = random.choice(paymentMethodList) 
     review = getReview(cursor)
     return f"'{orderDate}', {paymentMethod}, {particular}, {review} "
 
@@ -106,10 +109,37 @@ def fakeItem(cursor) -> str: #queda un error en esta funcion pendiente de resolv
     product = random.choice(list(getProduct(cursor)))
     address = random.choice(list(getAddress(cursor)))
     orderNumber = random.choice(list(getOrder(cursor)))
-    orderType = getShippingTypeOrder(cursor, orderNumber)
+    orderType = getShippingTypeOrder(cursor, orderNumber)   
     if orderType in ['envio rapido','envio normal a domicilio']: 
         homeShip = True 
     else: 
         homeShip = False 
     
-    return f" {quantity}, '{state}','{shippingType}', {homeShip}, {user}, {product}, '{address}', {orderNumber}"
+    return f"{quantity}, '{state}','{shippingType}', {homeShip}, {user}, {product}, '{address}', {orderNumber}"
+
+def fakeImage(cursor) -> str: 
+    product = random.choice(list(getProduct(cursor)))
+    productName = getProductName(cursor, product)
+    imageSource =  fakeEn.word()+ ".JPEG"
+    return f"{product}, '{imageSource}'"   
+
+def fakeUserAdress(cursor) -> str:
+    user = getRandomUser(cursor)
+    address = random.choice(list(getAddress(cursor)))
+    return f"{user}, {address}"
+
+def fakeItemShipping(cursor) -> str:
+    item = random.choice(list(getItems(cursor)))
+    shippping = random.choice(list(getShippings(cursor)))
+    return f"{item}, {shippping}"
+
+def fakeOfertProduct(cursor) -> str:
+    ofert = random.choice(list(getOrder(cursor)))
+    product = random.choice(list(getProduct(cursor)))
+    return f"{ofert}, {product}"
+
+def fakeAskProductUser(cursor) -> str:
+    ask = 0
+    product = random.choice(list(getProduct(cursor)))
+    user = getRandomUser(cursor)
+    return f"{ask}, {product}, {user}"

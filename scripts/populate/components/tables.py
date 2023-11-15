@@ -74,7 +74,7 @@ def executeInsert(
                 cursor.execute(getInsert(table, values, data))
             except psycopg2.Error as error:
                 errors.append(printError(table, error))
-                print(printError(table, error))
+                # print(printError(table, error))
                 connection.rollback()
                 sleep(0.02)
             else:
@@ -88,7 +88,7 @@ def executeInsert(
 def fillTable(
     connection: psycopg2.extensions.connection, 
     cursor: psycopg2.extensions.cursor,
-    numberTable: str,
+    numberTable: int,
     table: str,
     values: str,
     dataFunction: any,
@@ -108,3 +108,7 @@ def fillTable(
             count = minQuantity
         clearScreen()
         executeInsert(connection, cursor, table, values, count, dataFunction)
+
+def notFillTable(table: str, numberTable: int) -> None:
+    print(Fore.MAGENTA + f'({numberTable})' + Fore.RESET + f' ¿Quiere cargar la tabla {table}?')
+    print(Fore.YELLOW + f'⚠ - La tabla {table} para hacer la muestra se carga manualmente. - ⚠\n\n' + Fore.RESET)

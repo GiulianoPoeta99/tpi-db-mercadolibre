@@ -14,6 +14,15 @@ def getUsersNotCorporate(cursor: psycopg2.extensions.cursor) -> list:
     cursor.execute(searchCorporateUser)
     corporateUser = cursor.fetchall()
     corporateUser = [element[0] for element in corporateUser]
+
+    return set(getUsers(cursor)) - set(corporateUser)
+
+# obtengo los usuarios que no son empresas
+def getUsersNotCorporateAvaible(cursor: psycopg2.extensions.cursor) -> list:
+    searchCorporateUser = "SELECT usuario FROM empresa"
+    cursor.execute(searchCorporateUser)
+    corporateUser = cursor.fetchall()
+    corporateUser = [element[0] for element in corporateUser]
     searchParticularUser = "SELECT usuario FROM particular"
     cursor.execute(searchParticularUser)
     particularUser = cursor.fetchall()
@@ -31,7 +40,7 @@ def getProduct(cursor: psycopg2.extensions.cursor) -> list:
 
 # obtengo direcciones de usuarios existentes
 def getAddress(cursor: psycopg2.extensions.cursor) -> list:
-    query = "SELECT direccion FROM usuario_direccion"
+    query = "SELECT id_direccion FROM direccion"
     cursor.execute(query)
     allAddress = cursor.fetchall()
     allAddress = [element[0] for element in allAddress]
@@ -46,17 +55,16 @@ def getOrder(cursor: psycopg2.extensions.cursor) -> list:
     return allOrders 
 
 #obtengo un metodo de pago del usuario solicitado
-def getPaymentMethod(cursor: psycopg2.extensions.cursor, userNumber) -> int:
-    query = "SELECT id_tarjeta FROM metodo_de_pago WHERE usuario = %s"
-    cursor.execute(query, (userNumber,))
-    result = cursor.fetchone()
-    return result[0] #problema: si tiene multiples metodos de pago siempre va a usar el mismo
-    
+def getPaymentMethod(cursor: psycopg2.extensions.cursor, userNumber) -> list:
+    query = f"SELECT id_tarjeta FROM metodo_de_pago WHERE usuario = {userNumber}"
+    cursor.execute(query)
+    results = cursor.fetchall()
+    return [result[0] for result in results] if results else [] 
     
 #obtengo tipo de envio del pedido 
 def getShippingTypeOrder(cursor: psycopg2.extensions.cursor, orderNumber) -> str:
-    query = "SELECT tipo_envio FROM envio WHERE id_envio = %s" 
-    cursor.execute(query, (orderNumber,))
+    query = f"SELECT tipo_envio FROM envio WHERE id_envio = {orderNumber}" 
+    cursor.execute(query)
     result = cursor.fetchone()
     return result[0]
 
@@ -65,4 +73,25 @@ def getReview(cursor: psycopg2.extensions.cursor) -> int:
     cursor.execute(query)
     result = cursor.fetchone()
     return result[0]
+
+def getProductName(cursor: psycopg2.extensions.cursor, productID) -> str:
+    query = f"SELECT nombre_producto FROM producto WHERE numero_articulo = {productID}"
+    cursor.execute(query)
+    result = cursor.fetchone()
+    return result[0] 
+
+def getItems(cursor) -> list:
+    query = "SELECT id_item FROM item"
+    cursor.execute(query)
+    allItems = cursor.fetchall()
+    allItems = [element[0] for element in allItems]
+    return allItems
+
+def getShippings(cursor) -> list:
+    query = "SELECT id_envio FROM envio"
+    cursor.execute(query)
+    allItems = cursor.fetchall()
+    allItems = [element[0] for element in allItems]
+    return allItems
+
     
