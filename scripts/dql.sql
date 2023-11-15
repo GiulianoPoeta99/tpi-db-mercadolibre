@@ -259,3 +259,19 @@ GROUP BY
 	p2.preguntas,
 	i.cantidad_vendido
 ORDER BY p.numero_articulo;
+
+
+--Todos los particulares mayores de 18 años que publicaron productos ordenados por apellido y nombre
+SELECT 
+	ppu.usuario,
+	p.apellido ,
+	p.nombre,
+	p.fecha_nacimiento, 
+	pr.nombre_producto,
+	AGE(NOW(), p.fecha_nacimiento) as Edad
+FROM pregunta_producto_usuario AS ppu  
+	INNER JOIN usuario AS u ON (u.numero_cliente = ppu.usuario)
+	INNER JOIN producto AS pr ON (pr.numero_articulo = ppu.producto)
+	INNER JOIN particular AS p ON(p.usuario = u.numero_cliente)
+WHERE AGE(NOW(), fecha_nacimiento) > INTERVAL '18 years'
+ORDER BY apellido, nombre  ASC; 
