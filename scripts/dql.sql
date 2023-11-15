@@ -73,8 +73,9 @@ ORDER BY mi.pedido;
 
 WITH RECURSIVE PreguntasRecursivas AS (
   SELECT
-    pr.pregunta
-  FROM pregunta_respuesta pr
+    pr.pregunta,
+    pr.respuesta
+  FROM pregunta_respuesta AS pr
   WHERE pr.pregunta = :id_inicial
 
   UNION ALL
@@ -82,8 +83,8 @@ WITH RECURSIVE PreguntasRecursivas AS (
   SELECT
     pr.pregunta,
     pr.respuesta
-  FROM pregunta_respuesta pr
-  INNER JOIN PreguntasRecursivas prr ON pr.pregunta = prr.respuesta
+  FROM pregunta_respuesta AS pr
+  INNER JOIN PreguntasRecursivas as prr ON (pr.pregunta = prr.respuesta)
 )
 SELECT 
 	p.preguntas_del_producto AS pregunta,
