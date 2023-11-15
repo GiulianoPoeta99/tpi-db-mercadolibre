@@ -147,3 +147,36 @@ CREATE TABLE oferta_producto (
     producto INT NOT NULL REFERENCES producto(numero_articulo) ON DELETE RESTRICT ON UPDATE CASCADE,
     PRIMARY KEY (oferta, producto)
 );
+
+-- calificacion promedio
+CREATE VIEW getCalificacionPromedio AS
+SELECT 
+	p.numero_articulo,
+	-- count(r.calificacion)AS cantidad,
+	CASE 
+		WHEN avg(r.calificacion) IS NULL THEN 0.00
+		ELSE avg(r.calificacion)
+	END AS promedio
+FROM producto AS p
+LEFT JOIN resenia AS r ON (p.numero_articulo = r.producto)
+GROUP BY p.numero_articulo
+ORDER BY p.numero_articulo ASC;
+
+-- monto de items
+CREATE VIEW montos_item AS  — esta vista sirve para obtener total de item
+SELECT
+    i.pedido,
+	CASE
+   	 WHEN e.tipo_envio = 'envio rapido' THEN  i.cantidad * p.precio_unitario + 400
+   	 WHEN e.tipo_envio = 'envio normal a domicilio' THEN i.cantidad * p.precio_unitario + 200
+   	 WHEN e.tipo_envio = 'envio a correo' THEN i.cantidad * p.precio_unitario + 150
+   	 WHEN e.tipo_envio = 'retiro en sucursal' THEN i.cantidad * p.precio_unitario
+	END AS monto  –momento hardcoder
+FROM
+	item AS i
+INNER JOIN producto AS p ON (i.producto = p.numero_articulo)
+INNER JOIN item_envio AS ie ON (ie.item  = i.id_item)  
+INNER JOIN envio AS e ON (e.id_envio = ie.envio)
+GROUP BY monto, i.pedido
+ORDER by pedido ASC;
+

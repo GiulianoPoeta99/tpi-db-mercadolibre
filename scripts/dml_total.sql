@@ -4518,6 +4518,275 @@ INSERT INTO producto_categoria (producto,categoria) VALUES
 	 (309,1),
 	 (310,16),
 	 (310,1);
+INSERT INTO producto_categoria VALUES
+   (11, 1),  -- Google Pixel 4a - Electrónica
+   (12, 3),  -- Birkenstock Yao - Calzado
+   (13, 1),  -- Google Pixel 3 XL - Electrónica
+   (14, 5),  -- Planta - Hogar
+   (15, 1),  -- OnePlus 3 - Electrónica
+   (16, 1),  -- Sony Xperia 10 - Electrónica
+   (17, 1),  -- Google Pixel 2 - Electrónica
+   (18, 15), -- Cuadro - Arte y Manualidades
+   (19, 5), -- Espejo - Hogar
+   (20, 1);-- Huawei P30 Pro - Electrónica
+INSERT INTO producto_categoria VALUES
+   (21, 1),  -- OnePlus 6 - Electrónica
+   (22, 1),  -- Huawei P40 Lite - Electrónica
+   (23, 21), -- Amana ABB1924BRM - Electrodomésticos de Cocina
+   (24, 5), -- Espejo - Hogar
+   (25, 1),  -- Teléfono - Electrónica
+   (26, 3),  -- Ecco Biom Fjuel - Calzado
+   (27, 1),  -- Huawei P20 Pro - Electrónica
+   (28, 3),  -- Vionic Tide - Calzado
+   (29, 3),  -- Vans Old Skool - Calzado
+   (30, 3); -- Birkenstock Mayari - Calzado
+INSERT INTO producto_categoria VALUES
+   (31, 2),  -- UGG Fluff Yeah - Ropa y Accesorios
+   (32, 11), -- Silla - Muebles
+   (33, 3),  -- Dr. Martens 2976 Chelsea Boot - Calzado
+   (34, 1),  -- Huawei P30 Pro - Electrónica
+   (35, 1),  -- Samsung Galaxy A51 - Electrónica
+   (36, 1),  -- OnePlus 7T - Electrónica
+   (37, 51),  -- Columbia Redmond V2 - Equipamiento para Deportes de Montaña
+   (38, 1),  -- Samsung Galaxy S10e - Electrónica
+   (39, 3),  -- Timberland Earthkeepers - Calzado
+   (40, 1);  -- Samsung Galaxy Note 10 - Electrónica
+INSERT INTO producto_categoria VALUES
+   (41, 10), -- KitchenAid KRFC300ESS - Electrodomésticos
+   (42, 11), -- Birkenstock Milano - Muebles
+   (43, 11), -- Silla - Muebles
+   (44, 3),  -- Converse Chuck 70 - Calzado
+   (45, 3),  -- Vans Authentic - Calzado
+   (46, 3),  -- Cole Haan Original Grand - Calzado
+   (47, 1),  -- Xiaomi Mi 9T Pro - Electrónica
+   (48, 1),  -- Google Pixel 3a XL - Electrónica
+   (49, 3), -- Dr. Martens 1460 - Calzado
+   (50, 2),  -- UGG Dakota - Ropa y Accesorios
+   (51, 1), -- Sony Xperia XZ - Electrónica
+   (52, 1),  -- Samsung Galaxy A51 - Electrónica
+   (53, 1),  -- iPhone 6 Plus - Electrónica
+   (54, 5), -- Taza - Hogar 
+   (55, 31),  -- Teva Tirra - Equipamiento para Viajes y Aventuras
+   (56, 7),  -- Paraguas - Deportes y Actividades al Aire Libre
+   (57, 16), -- Sony Xperia 5 II - Electrónica de Consumo
+   (58, 3),  -- Birkenstock Yao - Calzado
+   (59, 3),  -- Fila Disruptor II - Calzado
+   (60, 27);  -- Under Armour Charged Assert 8 - Equipamiento para Deportes y Fitness'
+INSERT INTO producto_categoria VALUES
+   (61, 16), -- Sony Xperia 5 II - Electrónica de Consumo
+   (62, 38), -- Keen Targhee II - Equipamiento para Deportes de Montaña
+   (63, 14), -- Guitarra - Instrumentos Musicales
+   (64, 3),  -- Dr. Martens 1460 - Calzado
+   (65, 10), -- Samsung QLED Q90T - Electrodomésticos
+   (66,22),  -- Vela - Herramientas y Mejoras para el Hogar
+   (67, 27), -- Salomon XA Pro 3D V8 - Equipamiento para Deportes y Fitness
+   (68,10), -- Samsung QLED Q90T - Electrodomésticos
+   (69, 10), -- LG OLED C1 - Electrodomésticos
+   (70, 9), -- Libro - Libros y Material de Oficina
+   (71, 3), -- Converse Chuck 70 - Calzado
+   (72, 31), -- Teva Tirra - Equipamiento para Viajes y Aventuras
+   (73, 21), -- KitchenAid KRMF706ESS - Electrodomésticos de Cocina
+   (74, 11), -- Mesa - Muebles
+   (75, 20), -- Reloj - Joyas y Relojes
+   (76, 1), -- OnePlus 7T Pro - Electrónica
+   (77, 57), -- Toalla - Productos de Aseo Personal
+   (78, 16), -- Sony Xperia 10 - Electrónica de Consumo
+   (79, 27),  -- ASICS Gel-Nimbus 23 - Equipamiento para Deportes y Fitness
+   (80, 16); -- Sony Xperia 10 Plus - Electrónica de Consumo
+INSERT INTO producto_categoria VALUES
+   (81, 3),  -- Reebok Classic Leather - Calzado
+   (82, 10), -- LG NanoCell 90 - Electrodomésticos
+   (83, 1), -- Google Pixel 2 XL - Electrónica
+   (84, 1), -- OnePlus 5T - Electrónica
+   (85, 1), -- Xiaomi Mi A3 - Electrónica
+   (86, 7),  -- Hoka One One Clifton 7 - Deportes y Actividades al Aire Libre
+   (87, 16), -- Sony Xperia XZ1 - Electrónica de Consumo
+   (88, 10), -- Samsung QLED Q90T - Electrodomésticos
+   (89, 3), -- Crocs Classic - Calzado
+   (90, 3);  -- Converse Chuck Taylor All Star High Top - Calzado
+INSERT INTO producto_categoria VALUES
+   (91, 7), -- Chaco Z/Cloud - Deportes y Actividades al Aire Libre
+   (92, 10), -- TCL 6-Series R635 - Electrodomésticos
+   (93, 1),  -- Xiaomi Mi A2 - Electrónica
+   (94, 9), -- Lápiz - Libros y Material de Oficina
+   (95, 7), -- Chaco Z/2 Classic - Deportes y Actividades al Aire Libre
+   (96, 7), -- Chaco Z/2 Classic - Deportes y Actividades al Aire Libre
+   (97, 1),  -- OnePlus 6T - Electrónica
+   (98, 1),  -- OnePlus 8 Pro - Electrónica
+   (99, 3),  -- Steve Madden Gills - Calzado
+   (100, 27),  -- ASICS Gel-Kayano 27 - Equipamiento para Deportes y Fitness
+   (101, 1), -- Xiaomi Mi 11 - Electrónica
+   (102, 1),  -- Xiaomi Mi A2 - Electrónica
+   (103, 1), -- Xiaomi Redmi Note 8 Pro - Electrónica
+   (104, 1), -- Google Pixel XL - Electrónica
+   (105, 1), -- Google Pixel 3 XL - Electrónica
+   (106, 21),  -- LG LFXS28968S - Electrodomésticos de Cocina
+   (107, 33), -- Keen Newport H2 - Equipamiento para Acampar y Excursionismo
+   (108, 1), -- Google Pixel - Electrónica
+   (109, 7), -- Paraguas - Deportes y Actividades al Aire Libre
+   (110, 1); -- Xiaomi Redmi Note 7 - Electrónica
+INSERT INTO producto_categoria VALUES
+   (111, 16), -- Sony Xperia L3 - Electrónica de Consumo
+   (112, 3),  -- New Balance 990 - Calzado
+   (113, 2),  -- Converse Chuck Taylor All Star - Ropa y Accesorios
+   (114, 1), -- Xiaomi Redmi Note 9S - Electrónica
+   (115, 1),  -- Samsung Galaxy S10e - Electrónica
+   (116, 16), -- Sony Xperia XZ3 - Electrónica de Consumo
+   (117, 1), -- iPhone 5s - Electrónica
+   (118, 16), -- Sony Xperia XZ1 - Electrónica de Consumo
+   (119, 16), -- Sony Xperia XZ2 - Electrónica de Consumo
+   (120, 1);  -- Xiaomi Mi A3 - Electrónica
+INSERT INTO producto_categoria VALUES
+   (121, 3), -- Merrell Jungle Moc - Calzado
+   (122, 16), -- Sony Xperia 5 II - Electrónica de Consumo
+   (123, 16), -- Huawei Mate 20 Lite - Electrónica de Consumo
+   (124, 16), -- Huawei P20 Pro - Electrónica de Consumo
+   (125, 7),  -- Teva Hurricane XLT2 - Deportes y Actividades al Aire Libre
+   (126, 16), -- Laptop - Electrónica de Consumo
+   (127, 10), -- Vizio OLED H1 - Electrodomésticos
+   (128, 21), -- LG LFXS28968S - Electrodomésticos de Cocina
+   (129, 7),  -- Chaco Z/2 Classic - Deportes y Actividades al Aire Libre
+   (130, 27); -- Ecco Biom Fjuel - Equipamiento para Deportes y Fitness
+INSERT INTO producto_categoria VALUES
+   (131, 27), -- Mizuno Wave Rider 24 - Equipamiento para Deportes y Fitness
+   (132, 3), -- Birkenstock Zurich - Calzado
+   (133, 1), -- iPhone 11 - Electrónica
+   (134, 3), -- Birkenstock Milano - Calzado
+   (135, 22),  -- Vela - Herramientas y Mejoras para el Hogar
+   (136, 3), -- Reebok Club C 85 - Calzado
+   (137, 7), -- ASICS Gel-Nimbus 23 - Deportes y Actividades al Aire Libre
+   (138, 3),  -- Crocs Classic Clog - Calzado
+   (139, 7),  -- Chaco Z/Cloud - Deportes y Actividades al Aire Libre
+   (140, 1); -- Xiaomi Mi 9T Pro - Electrónica
+INSERT INTO producto_categoria (producto, categoria) VALUES
+   (141, 3),    -- Skechers Go Walk - Calzado
+   (142, 3),    -- Toms Avalon - Calzado
+   (143, 1),    --Xiaomi Poco F2 Pro - Electrónica
+   (144, 1),    -- OnePlus 9 - Electrónica
+   (145, 1),    -- Reebok Nano X1- Calzado
+   (146, 10),    -- LG OLED C1 - Electrodomésticos
+   (147, 3),    -- Cole Haan Grand Crosscourt - Calzado
+   (148, 1),    -- Xiaomi Mi Note 10 - Electrónica
+   (149, 1),    -- iPhone 13 Pro - Electrónica
+   (150, 3);   -- Chaco Z/Volv - Deportes y Actividades al Aire Libre
+INSERT INTO producto_categoria (producto, categoria) VALUES
+   (151, 1),   -- OnePlus 7T - Electrónica
+   (152, 1),   -- OnePlus 8 Pro - Electrónica
+   (153, 10),  -- Maytag MVWB865GC - Electrodomésticos
+   (154, 5),   -- Espejo - Hogar
+   (155, 1),   -- Sony Xperia 10 Plus - Electrónica
+   (156, 1),   -- iPhone 6s - Electrónica
+   (157, 1),   -- Sony Xperia XA2 - Electrónica
+   (158, 1),   -- Google Pixel 2 - Electrónica
+   (159, 3),   -- Vionic Tide - Calzado
+   (160, 10);   -- TCL 6-Series R635  - Electrodoméstico
+INSERT INTO producto_categoria (producto, categoria) VALUES
+   (161, 1),   -- Huawei P40 Lite  - Electrónica
+   (162, 16),   -- OnePlus 9  - Electrónica de Consumo
+   (163, 1),   -- Xiaomi Redmi Note 7 - Electrónica
+   (164, 1),   -- Xiaomi Redmi Note 9S  - Electrónica
+   (165, 16),   -- Xiaomi Redmi Note 7  - Electrónica de Consumo
+   (166, 21),  -- KitchenAid KRMF706ESS  - Electrodomésticos de Cocina
+   (167, 7),   -- Brooks Ghost 13  - Deportes y Actividades al Aire Libre
+   (168, 10),  -- Electrolux EFLS627UIW  - Electrodomésticos
+   (169, 3),   -- Toms Alpargata  - Calzado
+   (170, 10);  -- LG WT7300CW  - Electrodomésticos
+INSERT INTO producto_categoria (producto, categoria) VALUES
+   (171, 3),   -- Birkenstock Gizeh  - Calzado
+   (172, 7),   -- ASICS Gel-Nimbus 23  - Deportes y Actividades al Aire Libre
+   (173, 1),   -- OnePlus 8 Pro  - Electrónica
+   (174, 21),  -- Frigidaire FGHD2368TF  - Electrodomésticos de Cocina
+   (175, 21),  -- Maytag MRT118FFFH  - Electrodomésticos de Cocina
+   (176, 51),   -- Merrell Moab 2  - Equipamiento para Deportes de Montaña
+   (177, 1),   -- Huawei Mate 10 Pro  - Electrónica
+   (178, 10),  -- GE GTW720BPNDG  - Electrodomésticos
+   (179, 2),   -- UGG Ansley  - Ropa y Accesorios
+   (180, 1);   -- Samsung Galaxy Note 20 Ultra  - Electrónica
+INSERT INTO producto_categoria (producto, categoria) VALUES
+   (181, 3),   -- Columbia Redmond V2  - Calzado
+   (182, 3),   -- Fila Ray Tracer  - Calzado
+   (183, 2),   -- Bolso  - Ropa y Accesorios
+   (184, 3),   -- Puma Cali  - Calzado
+   (185, 1),   -- OnePlus One  - Electrónica
+   (186, 7),   -- Paraguas  - Deportes y Actividades al Aire Libre
+   (187, 1),   -- iPhone 6s  - Electrónica
+   (188, 9),   -- Lápiz  - Libros y Material de Oficina
+   (189, 1),   -- Xiaomi Mi 10  - Electrónica
+   (190, 21),  -- Amana NTW4516FW - Electrodomésticos de Cocina
+   (191, 1),   -- Google Pixel 3 XL  - Electrónica
+   (192, 5),   -- Cepillo  - Hogar
+   (193, 1),   -- OnePlus 6T  - Electrónica
+   (194, 1),   -- Xiaomi Mi 9T Pro  - Electrónica
+   (195, 3),   -- Vans Sk8-Hi  - Calzado
+   (196, 16),   -- Philips OLED 805  - Electrónica de Consumo
+   (197, 21),  -- Amana NTW4516FW  - Electrodomésticos de Cocina
+   (198, 10),  -- Samsung RS27T5200SR  - Electrodomésticos
+   (199, 3),   -- Birkenstock Zurich  - Calzado
+   (200, 1);   -- Samsung Galaxy A52  - Electrónica
+INSERT INTO producto_categoria (producto, categoria) VALUES
+   (201, 3),   -- Hoka One One Clifton 7  - Calzado
+   (202, 7),   -- Skechers Go Run  - Deportes y Actividades al Aire Libre
+   (203, 7),   -- Teva Tirra  - Deportes y Actividades al Aire Libre
+   (204, 1),   -- OnePlus 9 Pro  - Electrónica
+   (205, 8),   -- Pelota  - Juguetes y Juegos
+   (206, 7),   -- Columbia Newton Ridge Plus Waterproof Amped  - Deportes y Actividades al Aire Libre
+   (207, 1),   -- Samsung Galaxy Note 8  - Electrónica
+   (208, 3),   -- Birkenstock Milano - Calzado
+   (209, 10),  -- Samsung DV42H5000EW  - Electrodomésticos
+   (210, 3),   -- Sanuk Yoga Mat  - Calzado
+   (211, 10),   -- LG NanoCell 90  - Electrodomésticos
+   (212, 1),   -- iPhone 6  - Electrónica
+   (213, 1),   -- Google Pixel 6 - Electrónica
+   (214, 3),   -- Birkenstock Zurich - Calzado
+   (215, 2),   -- UGG Ansley - Ropa y Accesorios
+   (216, 7),   -- Skechers Ultra Flex - Deportes y Actividades al Aire Libre
+   (217, 1),   -- OnePlus 3 - Electrónica
+   (218, 1),   -- Huawei Mate 20 Pro - Electrónica
+   (219, 3),   -- Dr. Martens 1460 - Calzado
+   (220, 3);   -- Reebok Classic Leather - Calzado
+INSERT INTO producto_categoria (producto, categoria) VALUES
+   (221, 33),   -- Columbia Redmond V2 - Equipamiento para Acampar y Excursionismo
+   (222, 2),   -- UGG Dakota - Ropa y Accesorios
+   (223, 2),   -- Converse Chuck Taylor All Star - Ropa y Accesorios
+   (224, 26),   -- Cámara - Cámaras y Fotografía
+   (225, 3),   -- Puma RS-X - Calzado
+   (226, 1),   -- Huawei Nova 5T - Electrónica
+   (227, 3),   -- Mizuno Wave Horizon 5 - Calzado
+   (228, 1),   -- Xiaomi Redmi Note 8 Pro - Electrónica
+   (229, 2),   -- UGG Dakota - Ropa y Accesorios
+   (230, 10),   -- Maytag MVWB865GC - Electrodomésticos'
+   (231, 9),   -- Libro - Libros y Material de Oficina
+   (232, 2),   -- Dr. Martens 2976 Chelsea Boot - Ropa y Accesorios
+   (233, 7),   -- Teva Tirra - Deportes y Actividades al Aire Libre
+   (234, 26),   -- Cámara - Cámaras y Fotografía
+   (235, 3),   -- Skechers Ultra Flex - Calzado
+   (236, 3),   -- Toms Avalon - Calzado
+   (237, 1),   -- Xiaomi Mi 11 - Electrónica
+   (238, 16),   -- Sony Bravia XR A90J - Electrónica de Consumo
+   (239, 5),   -- Cepillo - Hogar
+   (240, 16);  -- Xiaomi Poco X3 - Electrónica de Consumo
+INSERT INTO producto_categoria (producto, categoria) VALUES
+   (241, 1),   -- Samsung Galaxy S9+ - Electrónica
+   (242, 8),   -- Bufanda - Ropa y Accesorios
+   (243, 1),   -- Samsung Galaxy A52 - Electrónica
+   (244, 1),   -- Samsung Galaxy S21 - Electrónica
+   (245, 3),   -- Reebok Classic Leather - Calzado
+   (246, 3),   -- Vans Sk8-Hi - Calzado
+   (247, 3),   -- Cole Haan Zerogrand - Calzado
+   (248, 26),   -- Cámara - Cámaras y Fotografía
+   (249, 1),   -- OnePlus 7T Pro - Electrónica
+   (250, 21),   -- Bosch SHPM65W55N - Electrodomésticos de Cocina
+   (251, 16),   -- LG WT7300CW - Electrónica de Consumo
+   (252, 1),   -- Huawei Mate 20 Pro - Electrónica
+   (253, 3),   -- ASICS Gel-Nimbus 23 - Calzado
+   (254, 2),   -- Sanuk Yoga Mat - Ropa y Accesorios
+   (255, 3),   -- Nike Air Max 90 - Calzado
+   (256, 1),   -- Samsung Galaxy S10e - Electrónica
+   (257, 1),   -- Huawei P40 Pro - Electrónica
+   (258, 3),   -- Fila Disruptor - Calzado
+   (259, 21),   -- Bosch SHPM78W55N - Electrodomésticos de Cocina
+   (260, 9);   -- Libro - Libros y Material de Oficina
+
 
 
 INSERT INTO pregunta_respuesta (pregunta,respuesta) VALUES
