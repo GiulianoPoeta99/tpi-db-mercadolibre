@@ -98,7 +98,7 @@ def fakeOrder(cursor) -> str:
         particular = random.choice(list(getUsersNotCorporate(cursor)))
         paymentMethodList = list(getPaymentMethod(cursor, particular))
     paymentMethod = random.choice(paymentMethodList) 
-    review = getReview(cursor)
+    review = random.choice(getReview(cursor))
     return f"'{orderDate}', {paymentMethod}, {particular}, {review} "
 
 def fakeItem(cursor) -> str: #queda un error en esta funcion pendiente de resolver
