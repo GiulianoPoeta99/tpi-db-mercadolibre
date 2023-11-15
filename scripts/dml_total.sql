@@ -2782,7 +2782,7 @@ INSERT INTO pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-09-18',191,145,17),
 	 ('2023-08-23',40,226,18),
 	 ('2023-09-12',65,166,19),
-	 ('2023-10-14',203,49,110);
+	 ('2023-10-14',203,49,20);
 INSERT INTO pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-08-13',108,190,21),
 	 ('2023-09-14',86,177,22),
@@ -2793,7 +2793,7 @@ INSERT INTO pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-11-01',89,73,27),
 	 ('2023-10-06',66,167,28),
 	 ('2023-10-07',190,163,29),
-	 ('2023-09-07',118,285,210);
+	 ('2023-09-07',118,285,30);
 INSERT INTO pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-09-10',101,28,31),
 	 ('2023-10-05',290,96,32),
@@ -2804,7 +2804,7 @@ INSERT INTO pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-11-04',29,60,37),
 	 ('2023-10-06',217,104,38),
 	 ('2023-10-27',191,145,39),
-	 ('2023-08-23',157,206,310);
+	 ('2023-08-23',157,206,40);
 INSERT INTO pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-09-24',293,273,41),
 	 ('2023-09-15',89,73,42),
@@ -2815,7 +2815,7 @@ INSERT INTO pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-10-04',259,194,47),
 	 ('2023-10-08',108,190,48),
 	 ('2023-10-10',51,82,49),
-	 ('2023-09-10',37,144,410);
+	 ('2023-09-10',37,144,50);
 INSERT INTO pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-11-04',143,202,51),
 	 ('2023-09-26',268,86,52),
@@ -2826,7 +2826,7 @@ INSERT INTO pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-09-05',132,24,57),
 	 ('2023-10-06',28,224,58),
 	 ('2023-09-06',245,298,59),
-	 ('2023-10-04',182,8,510);
+	 ('2023-10-04',182,8,60);
 INSERT INTO pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-10-05',208,87,61),
 	 ('2023-08-22',120,225,62),
@@ -2837,7 +2837,7 @@ INSERT INTO pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-08-31',222,77,67),
 	 ('2023-08-06',240,144,68),
 	 ('2023-08-02',245,298,69),
-	 ('2023-09-01',266,103,610);
+	 ('2023-09-01',266,103,70);
 INSERT INTO pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-08-26',244,233,71),
 	 ('2023-10-09',208,87,72),
@@ -2848,7 +2848,7 @@ INSERT INTO pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-08-11',1,228,77),
 	 ('2023-10-28',173,162,78),
 	 ('2023-08-20',172,102,79),
-	 ('2023-10-09',209,286,710);
+	 ('2023-10-09',209,286,80);
 INSERT INTO pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-11-02',118,285,81),
 	 ('2023-09-21',99,260,82),
@@ -2859,7 +2859,7 @@ INSERT INTO pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-08-22',43,74,87),
 	 ('2023-08-09',73,191,88),
 	 ('2023-10-30',103,151,89),
-	 ('2023-08-10',123,280,810);
+	 ('2023-08-10',123,280,90);
 INSERT INTO pedido (fecha_pedido,metodo_pago,particular,resenia) VALUES
 	 ('2023-08-25',232,99,91),
 	 ('2023-10-21',115,291,92),
