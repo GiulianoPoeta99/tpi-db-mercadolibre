@@ -17,7 +17,7 @@ INNER JOIN producto AS p ON (i.producto = p.numero_articulo)
 INNER JOIN item_envio AS ie ON (ie.item  = i.id_item) 
 INNER JOIN envio AS e ON (e.id_envio = ie.envio);
 
-
+-- (*) vista de calificacion promedio
 -- calificacion promedio
 CREATE VIEW getCalificacionPromedio AS
 SELECT 
