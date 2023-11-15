@@ -1,4 +1,4 @@
-1.
+-- 1.
 -- monto_total 
 SELECT
    i.id_item,
@@ -32,7 +32,7 @@ LEFT JOIN resenia AS r ON (p.numero_articulo = r.producto)
 GROUP BY p.numero_articulo
 ORDER BY p.numero_articulo ASC;
 
-2.
+-- 2.
 -- Carrito 
 
 CREATE VIEW montos_item AS  — esta vista sirve para obtener total de item
@@ -52,7 +52,7 @@ INNER JOIN envio AS e ON (e.id_envio = ie.envio)
 GROUP BY monto, i.pedido
 ORDER by pedido ASC;
 
-–aca obtengo el resumen del ‘carrito’
+-- aca obtengo el resumen del ‘carrito’
 SELECT
     mi.pedido, SUM(mi.monto) AS monto_pedido_final,
     e.tipo_envio,
@@ -68,7 +68,7 @@ ORDER BY mi.pedido;
 
 
 
-3.
+-- 3.
 -- preguntas recursivas
 
 WITH RECURSIVE PreguntasRecursivas AS (
@@ -92,7 +92,7 @@ FROM PreguntasRecursivas pr
 INNER JOIN pregunta p ON (pr.pregunta = p.id_pregunta)
 INNER JOIN pregunta r ON (pr.respuesta = r.id_pregunta);
 
-4.
+-- 4.
 -- ver tipos de usuarios
 SELECT 
 	u.numero_cliente,
@@ -102,7 +102,7 @@ FROM usuario AS u
 	LEFT JOIN empresa AS e ON (u.numero_cliente = e.usuario)
 	LEFT JOIN particular AS p ON (u.numero_cliente = p.usuario);
 
-5.
+-- 5.
 -- Cantidad de productos vendidos por usuario
 SELECT
 	u.numero_cliente,
@@ -156,7 +156,7 @@ ORDER BY u.numero_cliente ASC;
 
 
 -- ====================================================================
-6.
+-- 6.
 -- producto detallado
 SELECT
    p.numero_articulo,
