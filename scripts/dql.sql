@@ -35,7 +35,7 @@ ORDER BY p.numero_articulo ASC;
 -- 2.
 -- Carrito 
 
-CREATE VIEW montos_item AS  — esta vista sirve para obtener total de item
+CREATE VIEW montos_item AS  -- esta vista sirve para obtener total de item
 SELECT
     i.pedido,
 	CASE
@@ -43,7 +43,7 @@ SELECT
    	 WHEN e.tipo_envio = 'envio normal a domicilio' THEN i.cantidad * p.precio_unitario + 200
    	 WHEN e.tipo_envio = 'envio a correo' THEN i.cantidad * p.precio_unitario + 150
    	 WHEN e.tipo_envio = 'retiro en sucursal' THEN i.cantidad * p.precio_unitario
-	END AS monto  –momento hardcoder
+	END AS monto  --momento hardcoder
 FROM
 	item AS i
 INNER JOIN producto AS p ON (i.producto = p.numero_articulo)
@@ -263,7 +263,6 @@ ORDER BY p.numero_articulo;
 
 --Todos los particulares mayores de 18 años que publicaron productos ordenados por apellido y nombre
 SELECT 
-	ppu.usuario,
 	p.apellido ,
 	p.nombre,
 	p.fecha_nacimiento, 
@@ -275,3 +274,6 @@ FROM pregunta_producto_usuario AS ppu
 	INNER JOIN particular AS p ON(p.usuario = u.numero_cliente)
 WHERE AGE(NOW(), fecha_nacimiento) > INTERVAL '18 years'
 ORDER BY apellido, nombre  ASC; 
+
+
+
