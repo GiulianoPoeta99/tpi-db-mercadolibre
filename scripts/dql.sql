@@ -276,4 +276,12 @@ WHERE AGE(NOW(), fecha_nacimiento) > INTERVAL '18 years'
 ORDER BY apellido, nombre  ASC; 
 
 
-
+-- Numero de productos publicados en cada categoria ordenados por cantidad de productos de la misma 
+SELECT 
+	c.nombre, COUNT(c.nombre) AS producto_por_categoria
+FROM pregunta_producto_usuario AS ppu  
+	INNER JOIN producto AS pr ON (pr.numero_articulo = ppu.producto)
+	INNER JOIN producto_categoria AS pc ON (ppu.producto = pc.producto)
+	INNER JOIN categoria AS c ON (c.id_categoria  = pc.categoria)
+GROUP BY c.nombre 
+ORDER BY producto_por_categoria  ASC; 
