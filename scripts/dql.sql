@@ -1,3 +1,5 @@
+-- Obligatorios para atributos calculados 
+
 -- 1.
 -- Monto total de cada item con nombre de producto y cantidad de unidades correspondientes ordenado por monto 
 SELECT
@@ -32,7 +34,9 @@ LEFT JOIN resenia AS r ON (p.numero_articulo = r.producto)
 GROUP BY p.numero_articulo
 ORDER BY p.numero_articulo ASC;
 
---3.
+-- Para corregir ====================================================================
+
+--1.
 --Todos los particulares mayores de 18 años que publicaron productos ordenados por apellido y nombre
 SELECT 
 	p.apellido ,
@@ -47,7 +51,7 @@ FROM pregunta_producto_usuario AS ppu
 WHERE AGE(NOW(), fecha_nacimiento) > INTERVAL '18 years'
 ORDER BY apellido, nombre  ASC; 
 
---4,
+--2,
 -- Numero de productos publicados en cada categoria ordenados por cantidad de productos de la misma 
 SELECT 
 	c.nombre, COUNT(c.nombre) AS producto_por_categoria
@@ -59,7 +63,7 @@ GROUP BY c.nombre
 ORDER BY producto_por_categoria  ASC; 
 
 
---5.
+--3.
 -- Eligiendo el id de pregunta podes ver todo el hilo de la conversacion 
 
 WITH RECURSIVE PreguntasRecursivas AS (
@@ -85,7 +89,7 @@ INNER JOIN pregunta p ON (pr.pregunta = p.id_pregunta)
 INNER JOIN pregunta r ON (pr.respuesta = r.id_pregunta);
 
 
--- 5.
+-- 4.
 -- Cantidad de productos vendidos por usuario
 SELECT
 	u.numero_cliente,
