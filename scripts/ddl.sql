@@ -163,7 +163,7 @@ GROUP BY p.numero_articulo
 ORDER BY p.numero_articulo ASC;
 
 -- monto de items
-CREATE VIEW montos_item AS  — esta vista sirve para obtener total de item
+CREATE VIEW montos_item AS -- esta vista sirve para obtener total de item
 SELECT
     i.pedido,
 	CASE
@@ -171,7 +171,7 @@ SELECT
    	 WHEN e.tipo_envio = 'envio normal a domicilio' THEN i.cantidad * p.precio_unitario + 200
    	 WHEN e.tipo_envio = 'envio a correo' THEN i.cantidad * p.precio_unitario + 150
    	 WHEN e.tipo_envio = 'retiro en sucursal' THEN i.cantidad * p.precio_unitario
-	END AS monto  –momento hardcoder
+	END AS monto  --momento hardcoder
 FROM
 	item AS i
 INNER JOIN producto AS p ON (i.producto = p.numero_articulo)
