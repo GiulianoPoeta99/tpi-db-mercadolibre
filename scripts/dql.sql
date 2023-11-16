@@ -1,24 +1,24 @@
 -- 1.
--- monto_total 
+-- Monto total de cada item con nombre de producto y cantidad de unidades correspondientes ordenado por monto 
 SELECT
-   i.id_item,
-   --i.cantidad,
-   --p.precio_unitario,
-   --e.tipo_envio,
+	p.nombre_producto ,
+	i.cantidad,
    CASE
    	WHEN e.tipo_envio = 'envio rapido' THEN  i.cantidad * p.precio_unitario + 400
    	WHEN e.tipo_envio = 'envio normal a domicilio' THEN i.cantidad * p.precio_unitario + 200
    	WHEN e.tipo_envio = 'envio a correo' THEN i.cantidad * p.precio_unitario + 150
    	WHEN e.tipo_envio = 'retiro en sucursal' THEN i.cantidad * p.precio_unitario
-   END AS monto
+   END AS monto_item
 FROM
    item AS i
 INNER JOIN producto AS p ON (i.producto = p.numero_articulo)
 INNER JOIN item_envio AS ie ON (ie.item  = i.id_item) 
-INNER JOIN envio AS e ON (e.id_envio = ie.envio);
+INNER JOIN envio AS e ON (e.id_envio = ie.envio)
+ORDER BY monto_item ASC;
 
+--2.
 -- (*) vista de calificacion promedio
--- calificacion promedio
+-- calificacion promedio de cada producto a partir de las resenias
 CREATE VIEW getCalificacionPromedio AS
 SELECT 
 	p.numero_articulo,
@@ -32,44 +32,35 @@ LEFT JOIN resenia AS r ON (p.numero_articulo = r.producto)
 GROUP BY p.numero_articulo
 ORDER BY p.numero_articulo ASC;
 
--- 2.
--- Carrito 
+--3.
+--Todos los particulares mayores de 18 años que publicaron productos ordenados por apellido y nombre
+SELECT 
+	p.apellido ,
+	p.nombre,
+	p.fecha_nacimiento, 
+	pr.nombre_producto,
+	AGE(NOW(), p.fecha_nacimiento) as Edad
+FROM pregunta_producto_usuario AS ppu  
+	INNER JOIN usuario AS u ON (u.numero_cliente = ppu.usuario)
+	INNER JOIN producto AS pr ON (pr.numero_articulo = ppu.producto)
+	INNER JOIN particular AS p ON(p.usuario = u.numero_cliente)
+WHERE AGE(NOW(), fecha_nacimiento) > INTERVAL '18 years'
+ORDER BY apellido, nombre  ASC; 
 
-CREATE VIEW montos_item AS  -- esta vista sirve para obtener total de item
-SELECT
-    i.pedido,
-	CASE
-   	 WHEN e.tipo_envio = 'envio rapido' THEN  i.cantidad * p.precio_unitario + 400
-   	 WHEN e.tipo_envio = 'envio normal a domicilio' THEN i.cantidad * p.precio_unitario + 200
-   	 WHEN e.tipo_envio = 'envio a correo' THEN i.cantidad * p.precio_unitario + 150
-   	 WHEN e.tipo_envio = 'retiro en sucursal' THEN i.cantidad * p.precio_unitario
-	END AS monto  --momento hardcoder
-FROM
-	item AS i
-INNER JOIN producto AS p ON (i.producto = p.numero_articulo)
-INNER JOIN item_envio AS ie ON (ie.item  = i.id_item)  
-INNER JOIN envio AS e ON (e.id_envio = ie.envio)
-GROUP BY monto, i.pedido
-ORDER by pedido ASC;
-
--- aca obtengo el resumen del ‘carrito’
-SELECT
-    mi.pedido, SUM(mi.monto) AS monto_pedido_final,
-    e.tipo_envio,
-    p.fecha_pedido,
-    pa.apellido,
-    pa.nombre
-FROM montos_item AS mi
-INNER JOIN envio AS e ON (mi.pedido = e.id_envio)
-INNER JOIN pedido AS p ON (p.numero_de_pedido = mi.pedido)
-INNER JOIN particular AS pa ON (pa.usuario = p.particular)
-GROUP BY  mi.pedido, e.tipo_envio , p.fecha_pedido, pa.apellido, pa.nombre
-ORDER BY mi.pedido;
+--4,
+-- Numero de productos publicados en cada categoria ordenados por cantidad de productos de la misma 
+SELECT 
+	c.nombre, COUNT(c.nombre) AS producto_por_categoria
+FROM pregunta_producto_usuario AS ppu  
+	INNER JOIN producto AS pr ON (pr.numero_articulo = ppu.producto)
+	INNER JOIN producto_categoria AS pc ON (ppu.producto = pc.producto)
+	INNER JOIN categoria AS c ON (c.id_categoria  = pc.categoria)
+GROUP BY c.nombre 
+ORDER BY producto_por_categoria  ASC; 
 
 
-
--- 3.
--- preguntas recursivas
+--5.
+-- Eligiendo el id de pregunta podes ver todo el hilo de la conversacion 
 
 WITH RECURSIVE PreguntasRecursivas AS (
   SELECT
@@ -93,15 +84,6 @@ FROM PreguntasRecursivas pr
 INNER JOIN pregunta p ON (pr.pregunta = p.id_pregunta)
 INNER JOIN pregunta r ON (pr.respuesta = r.id_pregunta);
 
--- 4.
--- ver tipos de usuarios
-SELECT 
-	u.numero_cliente,
-	e.nombre_fantasia  AS empresa,
-	concat_ws(' ', p.nombre, p.apellido) AS particular
-FROM usuario AS u
-	LEFT JOIN empresa AS e ON (u.numero_cliente = e.usuario)
-	LEFT JOIN particular AS p ON (u.numero_cliente = p.usuario);
 
 -- 5.
 -- Cantidad de productos vendidos por usuario
@@ -156,9 +138,9 @@ LEFT JOIN (
 ORDER BY u.numero_cliente ASC;
 
 
--- ====================================================================
--- 6.
--- producto detallado
+-- Extras ====================================================================
+
+-- producto detallado, trae toda la informacion relacionada al producto incluyendo las resenias y las preguntas
 SELECT 
 	p.numero_articulo,
 	p.precio_unitario AS precio,
@@ -260,28 +242,13 @@ GROUP BY
 	i.cantidad_vendido
 ORDER BY p.numero_articulo;
 
-
---Todos los particulares mayores de 18 años que publicaron productos ordenados por apellido y nombre
+-- ver tipos de usuarios
 SELECT 
-	p.apellido ,
-	p.nombre,
-	p.fecha_nacimiento, 
-	pr.nombre_producto,
-	AGE(NOW(), p.fecha_nacimiento) as Edad
-FROM pregunta_producto_usuario AS ppu  
-	INNER JOIN usuario AS u ON (u.numero_cliente = ppu.usuario)
-	INNER JOIN producto AS pr ON (pr.numero_articulo = ppu.producto)
-	INNER JOIN particular AS p ON(p.usuario = u.numero_cliente)
-WHERE AGE(NOW(), fecha_nacimiento) > INTERVAL '18 years'
-ORDER BY apellido, nombre  ASC; 
+	u.numero_cliente,
+	e.nombre_fantasia  AS empresa,
+	concat_ws(' ', p.nombre, p.apellido) AS particular
+FROM usuario AS u
+	LEFT JOIN empresa AS e ON (u.numero_cliente = e.usuario)
+	LEFT JOIN particular AS p ON (u.numero_cliente = p.usuario);
 
 
--- Numero de productos publicados en cada categoria ordenados por cantidad de productos de la misma 
-SELECT 
-	c.nombre, COUNT(c.nombre) AS producto_por_categoria
-FROM pregunta_producto_usuario AS ppu  
-	INNER JOIN producto AS pr ON (pr.numero_articulo = ppu.producto)
-	INNER JOIN producto_categoria AS pc ON (ppu.producto = pc.producto)
-	INNER JOIN categoria AS c ON (c.id_categoria  = pc.categoria)
-GROUP BY c.nombre 
-ORDER BY producto_por_categoria  ASC; 
