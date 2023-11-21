@@ -178,16 +178,21 @@ def fillTablesAuto(cursor: psycopg2.extensions.cursor, connection: psycopg2.exte
     warning = False 
     fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
 
+    # no funciona
     # tabla pregunta_producto_usuario
-    numberTable += 1 
+    numberTable += 1
     table = 'pregunta_producto_usuario'
-    values = 'pregunta, producto, usuario'
-    dataFunction = fakeAskProductUser
-    minQuantity = len(getProduct(cursor))
-    maxQuantity = minQuantity
-    warning = False 
-    print("se agregaran mas manualmente para las preguntas.")
-    fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
+    notFillTable(table, numberTable)
+    sleep(2)
+    # numberTable += 1 
+    # table = 'pregunta_producto_usuario'
+    # values = 'pregunta, producto, usuario'
+    # dataFunction = fakeAskProductUser
+    # minQuantity = len(getProduct(cursor))
+    # maxQuantity = minQuantity
+    # warning = False 
+    # print("se agregaran mas manualmente para las preguntas.")
+    # fillTable(connection, cursor, numberTable, table, values, dataFunction, minQuantity, maxQuantity, warning)
 
     # tabla producto_categoria
     numberTable += 1
