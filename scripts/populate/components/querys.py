@@ -66,8 +66,6 @@ def getShippingTypeOrder(cursor: psycopg2.extensions.cursor, orderNumber) -> str
     query = f"SELECT tipo_envio FROM envio WHERE id_envio = {orderNumber}" 
     cursor.execute(query)
     result = cursor.fetchone()
-    print(str(orderNumber)+'\n')
-    print(result)
     return result[0]
 
 def getReview(cursor: psycopg2.extensions.cursor) -> int:
