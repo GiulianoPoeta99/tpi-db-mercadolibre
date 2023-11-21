@@ -140,9 +140,8 @@ def fakeOfertProduct(cursor) -> str:
     product = random.choice(list(getProduct(cursor)))
     return f"{ofert}, {product}"
 
-# TODO: arreglar la carga de esta tabla
-# def fakeAskProductUser(cursor) -> str:
-#     ask = 0
-#     product = random.choice(list(getProduct(cursor)))
-#     user = getRandomUser(cursor)
-#     return f"{ask}, {product}, {user}"
+def fakeAskProductUser(cursor) -> str:
+    ask = 0
+    product = random.choice(list(getProduct(cursor)))
+    user = getRandomUser(cursor)
+    return f"{ask}, {product}, {user}"
