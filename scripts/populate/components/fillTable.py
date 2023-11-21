@@ -5,7 +5,7 @@ from alive_progress import alive_bar
 from time import sleep
 
 from components.constants import *
-from fakerData import *
+from components.fakerData import *
 from components.querys import *
 from components.customProviders import *
 

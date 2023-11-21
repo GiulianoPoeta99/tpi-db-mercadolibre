@@ -148,7 +148,6 @@ CREATE TABLE oferta_producto (
     PRIMARY KEY (oferta, producto)
 );
 
--- calificacion promedio
 CREATE VIEW getCalificacionPromedio AS
 SELECT 
 	p.numero_articulo,
@@ -162,7 +161,6 @@ LEFT JOIN resenia AS r ON (p.numero_articulo = r.producto)
 GROUP BY p.numero_articulo
 ORDER BY p.numero_articulo ASC;
 
--- monto de items
 CREATE VIEW montos_item AS -- esta vista sirve para obtener total de item
 SELECT
     i.pedido,
@@ -180,7 +178,6 @@ INNER JOIN envio AS e ON (e.id_envio = ie.envio)
 GROUP BY monto, i.pedido
 ORDER by pedido ASC;
 
--- vista de producto detallado
 CREATE VIEW producto_detallado as
 SELECT 
 	p.numero_articulo,
@@ -282,4 +279,3 @@ GROUP BY
 	p2.preguntas,
 	i.cantidad_vendido
 ORDER BY p.numero_articulo;
-

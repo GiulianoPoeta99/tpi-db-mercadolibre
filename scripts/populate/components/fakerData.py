@@ -101,6 +101,7 @@ def fakeOrder(cursor) -> str:
     review = random.choice(list(getReview(cursor)))
     return f"'{orderDate}', {paymentMethod}, {particular}, {review} "
 
+# TODO: arreglar el problema del homeShipping
 def fakeItem(cursor) -> str: #queda un error en esta funcion pendiente de resolver
     quantity = fakeEn.bothify(text="#")
     state = random.choice(list(SHIPPING_STATE))
@@ -109,11 +110,12 @@ def fakeItem(cursor) -> str: #queda un error en esta funcion pendiente de resolv
     product = random.choice(list(getProduct(cursor)))
     address = random.choice(list(getAddress(cursor)))
     orderNumber = random.choice(list(getOrder(cursor)))
-    orderType = getShippingTypeOrder(cursor, orderNumber)   
-    if orderType in ['envio rapido','envio normal a domicilio']: 
-        homeShip = True 
-    else: 
-        homeShip = False 
+    # orderType = getShippingTypeOrder(cursor, orderNumber)   
+    # if orderType in ['envio rapido','envio normal a domicilio']: 
+    #     homeShip = True 
+    # else: 
+    #     homeShip = False
+    homeShip = True  
     
     return f"{quantity}, '{state}','{shippingType}', {homeShip}, {user}, {product}, '{address}', {orderNumber}"
 
@@ -138,8 +140,9 @@ def fakeOfertProduct(cursor) -> str:
     product = random.choice(list(getProduct(cursor)))
     return f"{ofert}, {product}"
 
-def fakeAskProductUser(cursor) -> str:
-    ask = 0
-    product = random.choice(list(getProduct(cursor)))
-    user = getRandomUser(cursor)
-    return f"{ask}, {product}, {user}"
+# TODO: arreglar la carga de esta tabla
+# def fakeAskProductUser(cursor) -> str:
+#     ask = 0
+#     product = random.choice(list(getProduct(cursor)))
+#     user = getRandomUser(cursor)
+#     return f"{ask}, {product}, {user}"
