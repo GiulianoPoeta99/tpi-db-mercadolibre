@@ -255,12 +255,3 @@ arg_products_provider = DynamicProvider(
         'Toalla', 'Auriculares', 'Pelota', 'Cuchillo', 'Lápiz'
     ]
 )
-# arg_questions_provider = DynamicProvider(
-#     provider_name = "question_provider",
-#     elements = ['¿Cuál es el precio del producto?', '¿Cuál es la disponibilidad en stock?', '¿Cuál es el tiempo estimado de entrega?', '¿Cuáles son las opciones de envío disponibles?', '¿Viene con garantía? ¿Cuánto tiempo dura la garantía?', '¿Cuáles son las características y especificaciones del producto?', '¿Hay opciones de color o tamaño?', '¿El producto es nuevo o reacondicionado?', '¿Se pueden realizar devoluciones o cambios?', '¿Cuál es la política de devoluciones?', '¿El producto viene con accesorios incluidos?', '¿Es compatible con otros productos o dispositivos?', '¿Hay descuentos o promociones disponibles?', '¿Cuáles son las formas de pago aceptadas?', '¿El producto tiene alguna limitación o restricción de uso?', '¿Cuál es la marca y modelo del producto?', '¿Se proporciona servicio de instalación o montaje?', '¿El producto tiene certificaciones de calidad o seguridad?', '¿Cómo se realiza el mantenimiento o limpieza del producto?', '¿Hay opiniones o reseñas de otros compradores sobre el producto?']
-# ):
-
-# arg_answers_provider = DynamicProvider(
-#     provider_name = "answers_providers",
-#     elements = []
-# ))

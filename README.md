@@ -1,8 +1,31 @@
-# Postgres
+# Trabajo Practico integrador Bases de datos 1
 
-## Instalamos Docker
-### Para Debian/Ubuntu
-#### Referencia: 
+## Mercado libre
+
+### Consigna
+
+La consigna se encuentra en la carpeta de [docs/](./docs/) del proyecto.
+
+---
+
+### Dependencias
+
+- Docker
+- Docker compose
+- pytohn
+- pip
+- virtualenv
+
+---
+
+### Instalamos Docker
+
+---
+
+#### Docker para Debian/Ubuntu
+
+##### Referencia para Debian/Ubuntu
+
 [Instalación de docker para ubuntu](https://docs.docker.com/engine/install/ubuntu).
 
 ```bash
@@ -22,66 +45,109 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 ```
 
-### Para Arch
+---
+
+##### Docker para Arch
 
 ```bash
-# PENDIENTE...
+sudo pacman -Syu
+sudo pacman -S docker docker-compose
+sudo systemctl enable docker
+sudo systemctl start docker
+sudo usermod -aG docker $USER
 ```
 
-### Para NixOS
+---
+
+##### Docker para MacOS/Windows
+
+- Descargar de la pagina el instalador de docker desktop
+- instalar docker desktop
+- ejecutar docker desktop
+
+---
+
+### Instalamos python
+
+#### Referencia python
+
+[Python](https://www.python.org/)
+
+---
+
+#### Python para Debian/Ubuntu
 
 ```bash
-# PENDIENTE...
+sudo apt install python3
+sudo apt install pip3
+sudo apt install python-virtualenv
 ```
 
-### Para MacOS
+---
+
+#### Python para Arch
 
 ```bash
-# PENDIENTE...
+sudo pacman -S python
+sudo pacman -S pip
+sudo pacman -S python-virtualenv
 ```
 
+---
 
-## Configuración
-### Producción/Desarrollo
+##### Python para MacOS/Windows
 
-Copiamos el archivo de ejemplo "**.env.sample**", le cambiamos el nombre a "**.env**" y le agregamos los valores a las variables de entorno que correspondan para la instancia requerida. <br>
-En produccion hay que cambiar el nombre de los secretos en el archivo **compose.yml**.
+- Descargar de la pagina el instalador de python
+- instalar python
+
+```sh
+pip install virtualenv
+```
+
+---
+
+### Configuración
+
+---
+
+Copiamos el archivo de ejemplo "**.env.sample**", le cambiamos el nombre a "**.env**" y le agregamos los valores a las variables de entorno que correspondan para la instancia requerida.
 
 ```bash
 cp .env.sample .env
 nano .env
 ```
 
-## Iniciar contenedor
+---
+
+### Iniciar contenedor
 
 La opción "**-d**" se puede sacar si se quiere ver los logs al crear el contenedor.
-
-### Producción/Desarrollo
 
 ```bash
 docker compose up -d development
 ```
 
-## Detener contenedor
+---
+
+### Detener contenedor
 
 Si esta corriendo sin la opción "**-d**" simplemente apretar Ctrl+C.
-
-### Producción/Desarrollo
 
 ```bash
 docker compose down
 ```
 
-## Base de Datos
+---
+
+### Base de Datos
 
 Toda la base de datos se guardara en "**/database/data**"
 
 Para conectarse a una terminal del contenedor (sólo para debug).
 Usar los datos configurados previamente en "**.env**".
 
-### Producción/Desarrollo
+**POSTGRES_USER**: está en el archivo "**.env**"
 
-**POSTGRES_USER**: está en el archivo "**.env**" <br>
 **POSTGRES_DB**: está en el archivo "**.env**"
 
 ```bash
@@ -91,36 +157,73 @@ docker compose exec -it development bash
 psql -U ${POSTGRES_USER} ${POSTGRES_DB}
 ```
 
-## Backups
+---
+
+#### Crear y rellenar con datos falsos
+
+Para hacer esto se utilizo la libreria Faker para poder rellenar las tablas con datos falsos y tambien se hizo un pequeño programa para crear la base de datos.
+
+---
+
+##### Proceso
+
+Antes de esto hay que tener iniciado el contenedor de la base de datos.
+
+1. Creamos el entorno virtual
+2. Iniciamos el entorno virtual de python
+3. Instalamos las dependencias
+
+```bash
+# 1) 
+python -m venv venv
+
+# 2) para Linux/MacOS
+source ./venv/bin/activate
+
+# 3)
+pip install -r requirements.txt
+```
+
+Luego ejecutamos el archivo [main.py](./scripts/populate/main.py) y se mostrara el programa.
+
+> .[!WARNING].
+> Hay una funcion de rellenado de la db que no esta terminada y no se puede ejecutar el dml obligatorio durante la ejecucion de los datos de Faker.
+---
+
+#### Backups
 
 Se creó un volumen para guardar los **backups** en "**/backups**".
 
-### Realizar backup
+---
+
+##### Realizar backup
 
 Para hacer el backup tenemos que entrar a una shell del contenedor y generar el archivo de backup en la carpeta donde esta montado el volumen.
 Usar los datos configurados previamente en "**.env**"
 
-**DB_USER_FILE**: está en el archivo "**.env**" <br>
-**DB_NAME**: está en el archivo "**.env**"
+**POSTGRES_USER**: está en el archivo "**.env**"
+
+**POSTGRES_DB**: está en el archivo "**.env**"
 
 ```bash
 docker compose exec -it prod bash
 
 # dentro del contenedor
-pg_dump -U ${DB_USER_FILE} ${DB_NAME} > backups/${DB_NAME}$(date "+%Y%m%d-%H_%M").sql
+pg_dump -U ${POSTGRES_USER} ${POSTGRES_DB} > backups/${DB_NAME}$(date "+%Y%m%d-%H_%M").sql
 exit
 ```
 
-### Restaurar backup
+---
 
-#### Desarrollo
+#### Restaurar backup
 
 Para restaurar el backup tenemos que entrar a una shell del contenedor y restaurar el backup que se encuentra en el volumen montado.
 
-* Hay que asegurarse de tener el backup en la carpeta **/backups**.
+- Hay que asegurarse de tener el backup en la carpeta **/backups**.
 
-**DB_USER**: está en el archivo "**.env**" <br>
-**DB_NAME**: está en el archivo "**.env**"
+**POSTGRES_USER**: está en el archivo "**.env**"
+
+**POSTGRES_DB**: está en el archivo "**.env**"
 
 ```bash
 # Descomprimo el backup
@@ -137,6 +240,6 @@ docker compose -f dev.compose.yml up -d development
 docker compose exec -it development bash
 
 # dentro del contenedor
-psql -U ${DB_USER} -d ${DB_NAME} -f backups/NOMBRE_BACKUP.sql
+psql -U ${POSTGRES_USER} -d ${POSTGRES_DB} -f backups/NOMBRE_BACKUP.sql
 exit
 ```

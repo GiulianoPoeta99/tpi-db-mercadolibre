@@ -17,7 +17,6 @@ def createDataBase(connection: psycopg2.extensions.connection, cursor: psycopg2.
         print(Fore.RED + f"Ocurrió un error al leer el archivo: \n{str(error)}")
     else:
         print(Fore.GREEN + '✔ - El archivo se leyo correctamente. - ✔ \n')
-        # print('\n')
     
     arrayCreates = content.split(';')
 
