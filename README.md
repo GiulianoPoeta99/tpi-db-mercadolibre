@@ -186,7 +186,7 @@ pip install -r requirements.txt
 
 Luego ejecutamos el archivo [main.py](./scripts/populate/main.py) y se mostrara el programa.
 
-> .[!WARNING].
+> [!WARNING]
 > Hay una funcion de rellenado de la db que no esta terminada y no se puede ejecutar el dml obligatorio durante la ejecucion de los datos de Faker.
 ---
 
