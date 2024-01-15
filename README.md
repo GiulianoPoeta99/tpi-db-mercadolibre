@@ -12,7 +12,7 @@ La consigna se encuentra en la carpeta de [docs/](./docs/) del proyecto.
 
 - Docker
 - Docker compose
-- pytohn
+- python
 - pip
 - virtualenv
 
